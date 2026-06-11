@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /en/cookie-policy.html
+Disallow: /en/privacy-policy.html
+Disallow: /en/legal-notice.html
+Disallow: /politique-en-matiere-de-cookies.html
+Disallow: /politique-relative-aux-donnees-personnelles.html
+Disallow: /mentions-legales.html
+
+Sitemap: https://www.sigmund.lu/sitemap.xml

@@ -1,2 +1,102 @@
 # sigmund-website
-Static website for www.sigmund.lu
+
+Static marketing website for **[www.sigmund.lu](https://www.sigmund.lu)** — an administrative management application for mental health professionals (psychiatrists, psychotherapists, psychologists) practising in Luxembourg.
+
+Developed and maintained by **Hippocrate Sàrl** (Bertrange, Luxembourg).
+
+---
+
+## Overview
+
+Sigmund is a SaaS product that handles the administrative side of a private mental health practice: appointment scheduling, patient records, invoicing, CNS-format billing, PID (Paiement Immédiat Direct) management, unpaid invoice reminders, waiting list, session notes, prescriptions, and more.
+
+This repository is the **public-facing marketing website** only. The application itself runs at `demo.sigmund.lu` / `demo-en.sigmund.lu`.
+
+---
+
+## Running locally
+
+No build step required. Open any HTML file directly in a browser, or serve the root folder with any static server:
+
+```bash
+# Python
+python -m http.server 8080
+
+# Node (npx)
+npx serve .
+```
+
+Then visit `http://localhost:8080`.
+
+---
+
+## Pages
+
+| FR | EN | Description |
+|---|---|---|
+| `index.html` | `en/index.html` | Homepage |
+| `solution-administrative-psychiatre.html` | `en/administrative-solution-psychiatrist.html` | Psychiatrist landing page |
+| `solution-administrative-psychotherapeute.html` | `en/administrative-solution-psychotherapist.html` | Psychotherapist landing page |
+| `solution-administrative-psychologue.html` | `en/administrative-solution-psychologist.html` | Psychologist landing page |
+| `politique-en-matiere-de-cookies.html` | `en/cookie-policy.html` | Cookie policy |
+| `politique-relative-aux-donnees-personnelles.html` | `en/privacy-policy.html` | Privacy policy |
+| `mentions-legales.html` | `en/legal-notice.html` | Legal notice |
+
+Legal pages are excluded from search engine indexing (`robots.txt` + `<meta name="robots" content="noindex">`).
+
+---
+
+## Assets
+
+```
+assets/
+├── css/
+│   └── sigmund.css      All custom styles shared by every page
+├── js/
+│   └── main.js          Cookie consent initialisation + active nav-link highlight
+└── images/              All images — webp format for photos, svg for illustrations
+```
+
+---
+
+## Tech stack
+
+All dependencies are loaded from CDN — nothing to install.
+
+| Library | Version | Purpose |
+|---|---|---|
+| Bootstrap | 5.3.3 | Layout, navbar, grid, utilities |
+| Bootstrap Icons | 1.11.3 | Icons (`bi bi-*`) |
+| flag-icons | 7.2.3 | Language switcher flags (`fi fi-*`) |
+| vanilla-cookieconsent | 3 | GDPR cookie consent banner |
+| Google Fonts — Inter | — | Body font (300–800) |
+
+Contact forms submit via POST to `https://rake.red/to/a1b2c3d4`.
+
+---
+
+## SEO
+
+- `sitemap.xml` — lists all 8 indexable pages (4 FR + 4 EN) with `hreflang` alternates
+- `robots.txt` — disallows legal/policy pages; points to sitemap
+- Every page has `<link rel="canonical">` and `<link rel="alternate" hreflang="...">` tags
+- Open Graph meta tags on the homepage
+
+---
+
+## Deployment
+
+The site is hosted on **Odoo SA** infrastructure (static hosting). Deploy by pushing or uploading the files — no build, no compilation.
+
+---
+
+## Legal
+
+- **Publisher:** Hippocrate Sàrl — RCS Luxembourg B282221
+- **Director of publication:** Sylvain Perez
+- **VAT:** LU35353830
+- **Registered office:** 11 rue des Aubépines, L-8052 Bertrange, Luxembourg
+- **Hosting:** Odoo SA, Chaussée de Namur 40, 1367 Grand-Rosière, Belgium
+- **Image credits:** Freepik (premium licence) and iStock (licence agreement)
+- **Design:** [studio e-conique](https://www.e-conique.com/)
+- Copyright 2024–2026 © Hippocrate Sàrl — All rights reserved

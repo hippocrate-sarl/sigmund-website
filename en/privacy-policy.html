@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Privacy Policy — Sigmund</title>
+  <meta name="description" content="Read the privacy policy of the Sigmund application website."/>
+  <meta name="robots" content="noindex"/>
+  <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+  <link rel="canonical" href="https://www.sigmund.lu/en/politique-relative-aux-donnees-personnelles/"/>
+  <link rel="alternate" hreflang="fr" href="../politique-relative-aux-donnees-personnelles.html"/>
+  <link rel="alternate" hreflang="en" href="privacy-policy.html"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="../assets/css/sigmund.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  <style>
+    .sg-legal-header { background: var(--sg-gradient); padding: 56px 0 48px; position: relative; overflow: hidden; }
+    .sg-legal-header::before { content: ""; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+    .sg-legal-header h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; letter-spacing: -.5px; margin: 0; }
+    .sg-legal-header .header-icon { width: 52px; height: 52px; background: rgba(255,255,255,.15); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .sg-legal-header .header-icon i { font-size: 1.5rem; color: #fff; }
+    .sg-toc { background: #f8fbff; border-radius: 14px; padding: 1.5rem 2rem; border: 1px solid rgba(107,164,250,.15); }
+    .sg-toc p { font-size: .82rem; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; color: var(--sg-primary); margin-bottom: .75rem; }
+    .sg-toc-links { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .sg-toc-links a { display: inline-flex; align-items: center; gap: .4rem; background: #fff; border: 1px solid rgba(107,164,250,.25); border-radius: 20px; padding: .35rem .9rem; font-size: .85rem; color: var(--sg-dark); text-decoration: none; transition: all .2s; }
+    .sg-toc-links a:hover { background: var(--sg-primary); color: #fff; border-color: var(--sg-primary); }
+    .sg-toc-links a i { font-size: .8rem; color: var(--sg-primary); transition: color .2s; }
+    .sg-toc-links a:hover i { color: #fff; }
+    .sg-legal-content h2 { font-size: 1.15rem; font-weight: 700; color: var(--sg-dark); margin: 2.5rem 0 .75rem; padding-bottom: .5rem; border-bottom: 2px solid rgba(107,164,250,.15); }
+    .sg-legal-content h3 { font-size: .98rem; font-weight: 700; color: var(--sg-primary); margin: 1.5rem 0 .4rem; }
+    .sg-legal-content p, .sg-legal-content li { color: #444; line-height: 1.8; font-size: .95rem; }
+    .sg-legal-content ul { padding-left: 1.25rem; }
+    .sg-legal-content a { color: var(--sg-primary); }
+    .sg-update-badge { display: inline-flex; align-items: center; gap: .5rem; background: #f8fbff; border: 1px solid rgba(107,164,250,.2); border-radius: 8px; padding: .4rem .9rem; font-size: .82rem; color: #666; margin-bottom: 1.5rem; }
+    .sg-update-badge i { color: var(--sg-primary); }
+    .sg-alert-note { background: rgba(107,164,250,.08); border-left: 4px solid var(--sg-primary); border-radius: 0 8px 8px 0; padding: .9rem 1.25rem; font-size: .88rem; color: #555; margin-bottom: 1.5rem; }
+    .sg-provider-card { background: #fff; border: 1px solid rgba(107,164,250,.15); border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: .75rem; }
+    .sg-provider-card strong { color: var(--sg-dark); font-size: .92rem; }
+    .sg-provider-card p { font-size: .88rem; color: #555; margin: .35rem 0 .5rem; line-height: 1.65; }
+    .sg-provider-card address { font-size: .82rem; color: #888; font-style: normal; line-height: 1.7; margin: 0; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="sg-navbar navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="../assets/images/logo-sigmund.webp" alt="Sigmund" height="52"/></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="administrative-solution-psychiatrist.html">Psychiatrist</a></li>
+        <li class="nav-item"><a class="nav-link" href="administrative-solution-psychotherapist.html">Psychotherapist</a></li>
+        <li class="nav-item"><a class="nav-link" href="administrative-solution-psychologist.html">Psychologist</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <span class="sg-phone d-none d-lg-block"><a href="tel:+352621223881"><i class="bi bi-telephone me-2"></i>+352 621 223 881</a> &nbsp; <a href="tel:+352621641447"><i class="bi bi-telephone me-2"></i>+352 621 641 447</a></span>
+        <div class="sg-lang-switch"><a href="../politique-relative-aux-donnees-personnelles.html"><span class="fi fi-fr"></span></a> <a href="privacy-policy.html" class="active"><span class="fi fi-gb"></span></a></div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="sg-legal-header">
+  <div class="container">
+    <div class="d-flex align-items-center gap-3">
+      <div class="header-icon"><i class="bi bi-shield-lock"></i></div>
+      <h1 class="mb-0">Privacy Policy</h1>
+    </div>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<section class="sg-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <!-- TOC -->
+        <div class="sg-toc mb-5">
+          <p>On this page</p>
+          <div class="sg-toc-links">
+            <a href="#scope"><i class="bi bi-chevron-right"></i>Scope</a>
+            <a href="#controller"><i class="bi bi-chevron-right"></i>Data controller</a>
+            <a href="#controller-processing"><i class="bi bi-chevron-right"></i>Hippocrate as controller</a>
+            <a href="#processor"><i class="bi bi-chevron-right"></i>Hippocrate as processor</a>
+            <a href="#cookies"><i class="bi bi-chevron-right"></i>Cookies</a>
+            <a href="#providers"><i class="bi bi-chevron-right"></i>Service providers</a>
+            <a href="#transfer"><i class="bi bi-chevron-right"></i>Transfer outside EU</a>
+            <a href="#sharing"><i class="bi bi-chevron-right"></i>Data sharing</a>
+            <a href="#complaint"><i class="bi bi-chevron-right"></i>Complaint</a>
+            <a href="#updates"><i class="bi bi-chevron-right"></i>Updates</a>
+            <a href="#contact"><i class="bi bi-chevron-right"></i>Contact us</a>
+          </div>
+        </div>
+
+        <div class="sg-legal-content">
+
+          <p class="fst-italic" style="font-size:.85rem;color:#888;border-left:3px solid var(--sg-primary);padding-left:.75rem;margin-bottom:2rem;">This is the automatically translated English version of the privacy policy. Only the <a href="../politique-relative-aux-donnees-personnelles.html">French version</a> of the privacy policy is legally binding.</p>
+
+          <h2 id="scope">Scope</h2>
+          <p>Through the services we provide, we collect various personal and sensitive data. We also act as a data processor for our clients, who themselves collect data, in order to process it using our software. In accordance with the provisions of the General Data Protection Regulation (GDPR), this policy explains what data or categories of data we collect, on what legal basis, for what purposes, how long we retain it, with whom we share it, and what the rights of data subjects are. This policy also mentions the data processors we use to process personal data, distinguishing between those who are recipients of your personal data and those who act solely as technical service providers and are not recipients of your personal data.</p>
+
+          <h2 id="controller">Data controller</h2>
+          <p>The data controller for the personal and sensitive data covered by this policy is HIPPOCRATE SÀRL. This is a limited liability company under Luxembourg law, registered under number B282221 in the trade and companies register.</p>
+          <p>Its registered office is located at 11 rue des Aubépines L-8052 Bertrange (LUXEMBOURG) and you can contact us by email addressed to <a href="mailto:privacy@hippocrate.lu">privacy@hippocrate.lu</a>.</p>
+
+          <h2 id="controller-processing">Processing of personal data for which Hippocrate is the data controller</h2>
+          <p>As part of our business activities, the services we offer, and the software you use, we collect and process personal data. Some personal data is processed for multiple purposes, so the following sections may repeat them. Regarding the retention period for personal data, the longest applicable period applies.</p>
+
+          <h3>Customers</h3>
+          <p>We collect and process the personal data of our customers when we enter into a business relationship.</p>
+          <p>Based on the legal grounds of contract performance, and in order to manage our relationship with you, we process your identification and contact information. This information is required to create an account for you on our software, to identify you, and to contact you. We retain this information in our active database for the duration of the contract, plus an additional month to allow you to retrieve it. We may continue to store this information in our encrypted backups for six months after the contract ends. You have the right to access, rectify, and erase all or part of this data. You can exercise these rights through the user interface of the software for which you have a user agreement. As this information is necessary to identify you for contract performance, you cannot exercise your right to erasure before the legally mandated period.</p>
+          <p>Based on the legal grounds of contract performance and legal obligations related to invoicing, we process your identification and contact data to generate invoices for the use of our software. This data is required to create accounting documents related to your use of our software, to track payments, and, if necessary, to send you payment reminders. We retain this data in our active database for the duration of the contract or for ten years after the invoice date. You have the right to access, rectify, and erase all or part of this data. You can exercise these rights through the user interface of the software for which you have a user agreement. As this information is necessary to identify you for the purposes of contract execution and invoicing, you cannot exercise your right to erasure before the legally mandated period.</p>
+          <p>Based on the legal grounds of contract performance, and to ensure that the invoices you generate with our software allow your patients to submit them for reimbursement to the Caisse Nationale de Santé, we process additional personal data (such as the practitioner code in the Grand Duchy of Luxembourg). This data is optional for the proper functioning of our software. We retain this data in our active database for the duration of the contract, plus an additional month to allow you to retrieve the data. We may continue to store this data in our archive database for two years after the contract ends. You have the right to access, rectify, and erase all or part of this data. These rights can be exercised via the user interface of the software for which you have a user agreement.</p>
+
+          <h3>Prospects</h3>
+          <p>Before entering into a contractual relationship with our clients, we discuss our software and services with them. For this purpose, we collect and process personal data.</p>
+          <p>Based on our legitimate interest, and in order to contact you to inform you about our company and software, we process your personal identification and contact data. This data is necessary for us to contact you after assessing which of our software programs are best suited to your profession. We retain this data for three years from the date of collection, three years after our last interaction, or until you withdraw your consent. You have the right to access, modify, and delete this data. These rights can be exercised by contacting us using the methods mentioned at the beginning and end of this policy. We inform you of your rights in our communications and offer you the option to register your choice to no longer be contacted, should you wish to do so. In this case, we limit your data to your initials and the contact information (telephone, postal address, email address) that we have on file, so that we no longer use it to contact you.</p>
+          <p>Based on our legitimate interest, and in order to respond to your questions and requests regarding our company and software, we process your personal identification and contact data collected through the form you complete on one of our websites. Your name and email address are required so that we can contact you. Your telephone number is optional. We retain this data for three years from the date you provide it to us, three years after our last interaction, or until you withdraw your consent. You have the right to access, rectify, and erase all or part of this data. These rights can be exercised by contacting us using the methods mentioned at the beginning and end of this policy.</p>
+
+          <h2 id="processor">Processing of personal data for which Hippocrate acts as a subcontractor</h2>
+          <p>The services and software we provide to our clients allow them to process your personal data, where applicable. In this case, they are the data controllers, and we act as data processors. In accordance with our duty to assist, we support our clients in managing requests to exercise their rights. Whenever possible, we inform you about the data we collect and where to find this policy. We do this through automated messages when we contact you for a legitimate reason related to our clients' use of our services and software. Some personal data is processed for multiple purposes, so the following sections may repeat them. Regarding the retention period for personal data, the longest applicable period applies.</p>
+
+          <h3>Patients</h3>
+          <p>Our services and software allow our clients to collect and process your personal data as soon as you join their patient base.</p>
+          <p>Based on the legal grounds of fulfilling the contract we have with our clients and our own legitimate interest in identifying, contacting, and monitoring your medical treatments, we process your personal identification and contact data, as recorded by our clients when they use our services and software. This information is required so that our clients can contact you regarding your treatments and sessions. We retain this data in our active database for the duration of the contract with our clients, plus an additional month to allow them to return the data. We may continue to store this information in our encrypted backups for six months after the contract ends. Furthermore, if our clients delete this data from our services or software, we retain it in our active database for a maximum of one week after this action. You have the right to access, rectify, and erase all or part of this data. These rights can be exercised with our clients or by contacting us through the methods mentioned at the beginning and end of this policy. If this data was used to generate invoices, you may not be able to exercise your right to erasure until our clients have confirmed payment of the invoice and saved it in their accounting software. As this information is also necessary for our clients' legitimate interest in identifying you, contacting you, and monitoring your treatment as part of the performance of the contract they have entered into with us, its erasure may not be possible before the completion of your ongoing medical treatments.</p>
+          <p>Based on the legal grounds of fulfilling the contract we have with our clients and our own legitimate interest, in order to identify you to a health or social security organization, we process your personal identification data with that organization, as recorded by our clients when they use our services and software. This information is optional for the operation of our services and software. We retain this data in our active database for the duration of the contract with our clients, plus one month to allow them to return the data. We may continue to store this information in our encrypted backups for six months after the end of the contract. Furthermore, if our clients delete this data from our services or software, we retain it in our active database for a maximum of one week after this action. If this information has been used to generate invoices, we retain it for ten years from the date of the last invoice. You have the right to access, rectify, and erase all or part of this data. These rights can be exercised with our clients or by contacting us using the methods mentioned at the beginning and end of this policy. As this information is necessary to generate valid invoices for the health or social security organizations you depend on, its erasure may prevent you from receiving reimbursement or complicate your claims process. If this data was used to generate invoices, you may not be able to exercise your right to erasure until our clients have confirmed payment of the invoice and saved it in their accounting software.</p>
+          <p>Based on the legal grounds of fulfilling the contract we have with our clients and our own legitimate interest, in order to accurately reflect the treatments performed on your invoices and prevent exceeding the prescribed number of sessions, we process your personal data, namely the prescribing physician's prescription and related treatments, as uploaded and recorded by our clients when they use our services and software. This information is mandatory so that our clients can record the prescribed treatment, track the number of sessions remaining, and generate the corresponding invoices. We retain this data in our active database for the duration of the contract with our clients, plus an additional month to allow them to retrieve the data. We may continue to store this information in our encrypted backups for six months after the contract ends. Furthermore, if our clients delete this data from our services or software, we retain it in our active database for a maximum of one week after this action. You have the right to access, rectify, and erase all or part of this data. These rights can be exercised with our clients or by contacting us through the methods mentioned at the beginning and end of this policy. As this information is necessary to generate valid invoices for the health or social security organizations you depend on, deleting it may prevent you from receiving reimbursement or make your claims more difficult. If this data was used to generate invoices, you may not be able to exercise your right to erasure until our clients have confirmed payment of the invoice and saved it in their accounting software. Furthermore, as this information is necessary for our clients' legitimate interest in identifying you, contacting you, and monitoring your treatment as part of the contract they have with us, its deletion may not be possible before the completion of your ongoing medical treatments.</p>
+          <p>Based on the legal grounds of fulfilling the contract we have with our clients and our own legitimate interest, in order to prescribe medical treatments (including procedures or medications), we process your personal data related to these treatments, as recorded by our clients when they use our services and software. This information is mandatory so that our clients can record the prescribed treatments and generate the corresponding prescriptions. We retain this data in our active database for the duration of the contract with our clients, plus one month to allow them to retrieve the data. We may continue to store this information in our encrypted backups for six months after the end of the contract. Furthermore, if our clients delete this data from our services or software, we retain it in our active database for a maximum of one week after this action. You have the right to access, rectify, and erase all or part of this data. These rights can be exercised with our clients or by contacting us using the methods mentioned at the beginning and end of this policy. Because this information is necessary to issue valid prescriptions with regard to the health or social security organizations you depend on, its erasure may prevent you from having a prescription recorded in our client's patient file. Furthermore, because this information is necessary for our clients' legitimate interest in being able to identify you, contact you, and monitor the treatments they prescribe as part of the contract they have entered into with us, its erasure may not be possible before the completion of your current medical treatments.</p>
+          <p>Based on the legal grounds of fulfilling the contract we have with our clients and our own legitimate interest, we process your personal data relating to your sessions, as recorded by our clients when they use our services and software, in order to inform you of the dates, times, and duration of your sessions, and to allow our clients to track the number of sessions completed for each of your treatments. This information is mandatory so that our clients can prepare your sessions, track the number of sessions in relation to the prescription if applicable, and generate the corresponding invoices. This information is also mandatory for our services and software to confirm the date, time, and location of your future sessions, to remind you of them in a timely manner, and to inform you of any changes. We retain this data in our active database for the duration of the contract with our clients, plus one month to allow them to retrieve the data. We may continue to store this information in our encrypted backups for six months after the end of the contract. Furthermore, if our clients delete this data from our services or software, we only retain it for a maximum of one week in our active database after this operation. You have the right to access, rectify, and erase all or part of this data. These rights can be exercised with our clients or by contacting us through the methods mentioned at the beginning and end of this policy. If this data was used to generate invoices, you may not be able to exercise your right to erasure until our clients have confirmed payment of the invoice and saved it in their accounting software. Moreover, as this information is necessary for our clients' legitimate interest in monitoring your treatment as part of the performance of the contract they have entered into with us, its deletion may not be possible before the completion of your ongoing medical treatments.</p>
+
+          <h3>Contact persons for patients</h3>
+          <p>Our services and software allow our clients to collect and process your personal data as soon as they have knowledge of your identification and contact information on the one hand, and of your link with one of their patients on the other.</p>
+          <p>Based on the legal grounds of contract performance, our clients' legitimate interests, and potentially the protection of the vital interests of individuals, we process your personal identification and contact data, as recorded by our clients when they use our services and software, in order to contact a designated contact person for one of their patients. This information is mandatory so that our clients can contact you regarding a patient for whom you are responsible (as a parent or guardian, for example) or about whom you hold information related to their situation or health (as a manager within a care, accommodation, or support organization, for example). We retain this data in our active database for the duration of the contract with our clients, plus one month to allow them to return the data. We may continue to store this information in our encrypted backups for six months after the contract ends. Furthermore, if our clients delete this data from our services or software, we only keep it for a maximum of one week in our active database after this operation. You have the right to access, rectify, and erase all or part of this data. These rights can be exercised with our clients or by contacting us through the methods mentioned at the beginning and end of this policy. Because this information may be necessary to protect the vital interests of individuals, you may not be able to exercise your right to erase all or part of this data.</p>
+
+          <h3>Doctors</h3>
+          <p>Our services and software allow our clients to collect and process your personal data as soon as one of your patients presents a prescription for a treatment that you have prescribed.</p>
+          <p>Based on the legal grounds of contract performance and our legitimate interest in linking prescriptions to prescribing physicians, we process your personal identification and contact data, as recorded by our clients when they use our services and software. This information is mandatory so that our clients can contact you regarding your shared patients and so that your physician code appears on the fee statements generated by our services and software for our clients' patients and the Caisse Nationale de Santé. We retain this data in our active database for the duration of the contract with our clients, plus an additional month to allow them to return the data. We may continue to store this information in our encrypted backups for six months after the contract ends. Furthermore, if our clients delete this data from our services or software, we retain it in our active database for a maximum of one week after this action. You have the right to access, rectify, and erase all or part of this data. These rights can be exercised with our clients or by contacting us through the methods mentioned at the beginning and end of this policy. Because this information may be necessary to protect the vital interests of individuals, you may not be able to exercise your right to erase all or part of this data. If this data has been used to generate invoices, you may not be able to exercise your right to erase your doctor code.</p>
+
+          <h3>Contacts</h3>
+          <p>Our services and software allow our clients to collect and process your personal data as soon as you express the wish to join their patient base.</p>
+          <p>Based on the legal grounds of contract performance and our legitimate interest in contacting you to offer you a place in their patient list, we process your personal identification and contact information, as recorded by our clients when they use our services and software. This information is mandatory for our clients to contact you and offer you the opportunity to become their patient. We retain this data for three years from the date our clients record it in our services and software, three years after the last interaction our client reports having had, or until you withdraw your consent. We keep this data in our active database for a maximum of the duration of the contract with our clients plus one month to allow them to return the data. We may continue to store this information in our encrypted backups for six months after the contract ends. Furthermore, if our clients delete this data from our services or software, we retain it in our active database for a maximum of one week after this action. You have the right to access, rectify, and erase all or part of this data. These rights can be exercised with our clients, or by contacting us through the means mentioned at the beginning and end of this policy.</p>
+
+          <h2 id="cookies">Cookies</h2>
+          <p>When you visit one of our websites or use one of our software programs, we may place cookies on your web browser.</p>
+          <p>Our websites use session and preference cookies, which are essential for their proper functioning. Session cookies allow us to count visits to our websites without identifying you personally. Preference cookies allow you to view pages in your selected language when multiple languages are available.</p>
+          <p>Our services and software use session cookies to identify you and allow you to access features reserved for you.</p>
+          <p>These cookies comply with the criteria for exemption from consent as defined by the CNPD (<a href="https://cnpd.public.lu/content/dam/cnpd/fr/actualites/national/2022/fiche-pratique-CNPD-cookies-2022-01-27.pdf" target="_blank" rel="noopener">CNPD practical guide</a>).</p>
+
+          <h2 id="providers">Service providers and subcontractors</h2>
+          <p>To provide services and software to our clients, but also for the operational needs of our company, we rely on a limited list of service providers.</p>
+
+          <div class="sg-provider-card">
+            <div class="provider-name"><i class="bi bi-box-seam me-2"></i>Odoo</div>
+            <p>To operate our websites, create our accounting documents, and manage our customer and prospect database, we use the services of the Belgian company Odoo SA.</p>
+            <p>You can contact this company by email at <a href="mailto:privacy@odoo.com">privacy@odoo.com</a> or by post sent to:<br>
+            <strong>Odoo S.A. — Data protection</strong><br>
+            Chaussée de Namur, 40<br>1367 Grand-Rosière — BELGIUM</p>
+          </div>
+
+          <div class="sg-provider-card">
+            <div class="provider-name"><i class="bi bi-globe me-2"></i>Gandi</div>
+            <p>To operate the services and software that our clients use, we rely on the IT hosting services of the French company Gandi SAS. All personal data processing is carried out in a data center located in Bissen, in the Grand Duchy of Luxembourg.</p>
+            <p>You can contact this company by email at <a href="mailto:dpo@gandi.net">dpo@gandi.net</a> or by post sent to:<br>
+            <strong>Gandi SAS</strong><br>
+            63-65 Boulevard Masséna<br>75013 Paris — FRANCE</p>
+          </div>
+
+          <div class="sg-provider-card">
+            <div class="provider-name"><i class="bi bi-microsoft me-2"></i>Microsoft</div>
+            <p>To manage our customer database and certain aspects of our relationship with them (such as email communication and satisfaction surveys), we use the services of the American company Microsoft. To store all of our data, Microsoft uses data centers located entirely within European Union countries.</p>
+            <p>You can contact this company by telephone at +353 (1) 706-3117 or by mail sent to:<br>
+            <strong>Microsoft's Data Protection Officer in the European Union</strong><br>
+            One Microsoft Place, South County Business Park<br>Leopardstown, Dublin 18 D18 P521 — IRELAND</p>
+          </div>
+
+          <div class="sg-provider-card">
+            <div class="provider-name"><i class="bi bi-phone me-2"></i>Cyclop</div>
+            <p>To store encrypted backups of our active database, we use the services of the Luxembourg company Cyclop Sàrl.</p>
+            <p>You can contact this company by email at <a href="mailto:dpo@cyclop.lu">dpo@cyclop.lu</a>, or by mail sent to:<br>
+            <strong>CYCLOP</strong><br>
+            103, route d'Esch<br>L-3230 Bettembourg — LUXEMBOURG</p>
+          </div>
+
+          <div class="sg-provider-card">
+            <div class="provider-name"><i class="bi bi-envelope me-2"></i>Brevo</div>
+            <p>To send emails from our services and software to our clients and their patients, we use the services of the French company Brevo SAS.</p>
+            <p>You can contact this company by email at <a href="mailto:dpo@brevo.com">dpo@brevo.com</a>, or by mail sent to:<br>
+            <strong>Brevo SAS — DPO Team</strong><br>
+            106 boulevard Haussmann<br>75008 Paris — FRANCE</p>
+          </div>
+
+          <h2 id="transfer">Data transfer outside the European Union or European Economic Area</h2>
+          <p>Generally, the data we process with our own services and software is processed exclusively within the territory of the Grand Duchy of Luxembourg. The personal data of our customers that we process through subcontractors is not necessarily stored within the European Union. Odoo, for example, uses the services of the Irish company Google Cloud EMEA Ltd, a subsidiary of the US company Google LLC, to store data in France and Belgium, but cannot guarantee that backups are also stored there. Microsoft has data centers in Europe; however, it remains subject to US law.</p>
+          <p>The United States is a country whose level of data protection is only partially aligned with the European GDPR. Only transfers of personal data to entities certified under the Data Privacy Framework (DPF) do not require additional transfer mechanisms. Microsoft Corporation and Google LLC are DPF-certified, which authorizes the transfer of personal data, whether at our initiative or as a consequence of the internal organization of our subcontractors.</p>
+
+          <h2 id="sharing">Sharing your personal data</h2>
+          <p>Unless explicitly stated otherwise, such as the clauses below, we do not disclose your personal data. This includes selling, exchanging, or transferring your data, whether for free or for payment. However, we reserve the right to share or disclose anonymized or aggregated data, rendering it non-personal, for marketing communications or statistical purposes. We may also be required to share your personal data if compelled to do so by a court order. In such cases, and if the court order authorizes us to do so, we will endeavor to contact you to inform you and allow you to file an appeal if you wish.</p>
+
+          <h2 id="complaint">Complaint</h2>
+          <p>If you believe that the processing of your personal data by Hippocrate Sàrl constitutes a violation of the General Data Protection Regulation (GDPR), you may file a complaint with the <a href="https://cnpd.public.lu/en.html" target="_blank" rel="noopener">CNPD</a>.</p>
+
+          <h2 id="updates">Updates to our policy</h2>
+          <div class="sg-update-badge"><i class="bi bi-clock-history me-2"></i>Last updated: Monday, December 15, 2025, amended on Monday, February 9, 2026</div>
+          <p>We may update this policy to clarify certain terms. We may also modify its clauses to reflect changes in the operation of our websites or software. Each time a new version is published, the "last updated" date at the top of the policy will be updated, and we will communicate a summary of the changes, to the extent possible, to our software customers and to individuals whose personal data we process as a data processor on behalf of our customers.</p>
+
+          <h2 id="contact">Contact us</h2>
+          <p>Despite the care we have taken in drafting this policy, you may still have questions. You can contact us by writing your message in French or English and sending it by email to <a href="mailto:privacy@hippocrate.lu">privacy@hippocrate.lu</a>, or by post sent to:</p>
+          <div class="sg-alert-note">
+            <i class="bi bi-envelope-fill me-2"></i>
+            <span><strong>HIPPOCRATE SÀRL</strong><br>
+            11 rue des Aubépines<br>L-8052 Bertrange — LUXEMBOURG</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="sg-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h6>Useful links</h6>
+        <a href="cookie-policy.html">Cookie Policy</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="legal-notice.html">Legal notice</a>
+      </div>
+      <div class="col-md-4">
+        <h6>About Us</h6>
+        <p style="color:#aaa;font-size:.87rem;line-height:1.6;">We are a team of passionate individuals whose goal is to improve the working conditions of psychiatrists, psychotherapists, and psychologists using Sigmund, developed by <a href="https://www.hippocrate.lu" target="_blank" rel="noopener"><strong>Hippocrate</strong></a>. We believe that technology should be relevant and useful, while remaining in the background.</p>
+        <img src="../assets/images/made-in-luxembourg-blanc.webp" alt="Made in Luxembourg" height="52"/>
+      </div>
+      <div class="col-md-4">
+        <h6>Contact</h6>
+          <a href="mailto:contact@sigmund.lu"><i class="bi bi-envelope me-2"></i>contact@sigmund.lu</a>
+          <a href="tel:+352621223881"><i class="bi bi-telephone me-2"></i>+352 621 223 881</a>
+          <a href="tel:+352621641447"><i class="bi bi-telephone me-2"></i>+352 621 641 447</a>
+          <a href="https://maps.app.goo.gl/HJKtFqZwnAyrUAAv7" target="_blank" rel="noopener"><i class="bi bi-geo-alt me-2"></i>11 rue des Aubépines L-8052 Bertrange</a>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between mt-4 align-items-center flex-wrap gap-2">
+      <p class="copyright mb-0">Copyright 2024-2026 © <a href="https://www.hippocrate.lu" target="_blank" rel="noopener">Hippocrate Sàrl</a> — All rights reserved | design: <a href="https://www.e-conique.com/" target="_blank" rel="noopener">studio e-conique</a></p>
+      <div class="sg-lang-switch"><a href="../politique-relative-aux-donnees-personnelles.html">Français</a> | <a href="privacy-policy.html" class="active">English (UK)</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

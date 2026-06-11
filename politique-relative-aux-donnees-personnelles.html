@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Politique relative aux données personnelles — Sigmund</title>
+  <meta name="description" content="Découvrez la politique relative aux données personnelles du site web présentant l'application Sigmund."/>
+  <meta name="robots" content="noindex"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="canonical" href="https://www.sigmund.lu/politique-relative-aux-donnees-personnelles/"/>
+  <link rel="alternate" hreflang="fr" href="politique-relative-aux-donnees-personnelles.html"/>
+  <link rel="alternate" hreflang="en" href="en/privacy-policy.html"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="assets/css/sigmund.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  <style>
+    .sg-legal-header { background: var(--sg-gradient); padding: 56px 0 48px; position: relative; overflow: hidden; }
+    .sg-legal-header::before { content: ""; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+    .sg-legal-header h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; letter-spacing: -.5px; margin: 0; }
+    .sg-legal-header .header-icon { width: 52px; height: 52px; background: rgba(255,255,255,.15); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .sg-legal-header .header-icon i { font-size: 1.5rem; color: #fff; }
+    .sg-toc { background: #f8fbff; border-radius: 14px; padding: 1.5rem 2rem; border: 1px solid rgba(107,164,250,.15); }
+    .sg-toc p { font-size: .82rem; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; color: var(--sg-primary); margin-bottom: .75rem; }
+    .sg-toc-links { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .sg-toc-links a { display: inline-flex; align-items: center; gap: .4rem; background: #fff; border: 1px solid rgba(107,164,250,.25); border-radius: 20px; padding: .35rem .9rem; font-size: .85rem; color: var(--sg-dark); text-decoration: none; transition: all .2s; }
+    .sg-toc-links a:hover { background: var(--sg-primary); color: #fff; border-color: var(--sg-primary); }
+    .sg-toc-links a i { font-size: .8rem; color: var(--sg-primary); transition: color .2s; }
+    .sg-toc-links a:hover i { color: #fff; }
+    .sg-legal-content h2 { font-size: 1.15rem; font-weight: 700; color: var(--sg-dark); margin: 2.5rem 0 .75rem; padding-bottom: .5rem; border-bottom: 2px solid rgba(107,164,250,.15); }
+    .sg-legal-content h3 { font-size: .98rem; font-weight: 700; color: var(--sg-primary); margin: 1.5rem 0 .4rem; }
+    .sg-legal-content p, .sg-legal-content li { color: #444; line-height: 1.8; font-size: .95rem; }
+    .sg-legal-content ul { padding-left: 1.25rem; }
+    .sg-legal-content a { color: var(--sg-primary); }
+    .sg-update-badge { display: inline-flex; align-items: center; gap: .5rem; background: #f8fbff; border: 1px solid rgba(107,164,250,.2); border-radius: 8px; padding: .4rem .9rem; font-size: .82rem; color: #666; margin-bottom: 1.5rem; }
+    .sg-update-badge i { color: var(--sg-primary); }
+    .sg-provider-card { background: #fff; border: 1px solid rgba(107,164,250,.15); border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: .75rem; }
+    .sg-provider-card strong { color: var(--sg-dark); font-size: .92rem; }
+    .sg-provider-card p { font-size: .88rem; color: #555; margin: .35rem 0 .5rem; line-height: 1.65; }
+    .sg-provider-card address { font-size: .82rem; color: #888; font-style: normal; line-height: 1.7; margin: 0; }
+    .sg-alert-note { background: rgba(107,164,250,.08); border-left: 4px solid var(--sg-primary); border-radius: 0 8px 8px 0; padding: .9rem 1.25rem; font-size: .88rem; color: #555; margin-bottom: 1.5rem; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="sg-navbar navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="assets/images/logo-sigmund.webp" alt="Sigmund" height="52"/></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="solution-administrative-psychiatre.html">Psychiatre</a></li>
+        <li class="nav-item"><a class="nav-link" href="solution-administrative-psychotherapeute.html">Psychothérapeute</a></li>
+        <li class="nav-item"><a class="nav-link" href="solution-administrative-psychologue.html">Psychologue</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <span class="sg-phone d-none d-lg-block"><a href="tel:+352621223881"><i class="bi bi-telephone me-2"></i>+352 621 223 881</a> &nbsp; <a href="tel:+352621641447"><i class="bi bi-telephone me-2"></i>+352 621 641 447</a></span>
+        <div class="sg-lang-switch"><a href="politique-relative-aux-donnees-personnelles.html" class="active"><span class="fi fi-fr"></span></a> <a href="en/privacy-policy.html"><span class="fi fi-gb"></span></a></div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="sg-legal-header">
+  <div class="container">
+    <div class="d-flex align-items-center gap-3">
+      <div class="header-icon"><i class="bi bi-shield-lock"></i></div>
+      <h1 class="mb-0">Politique relative aux données personnelles</h1>
+    </div>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<section class="sg-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <!-- TOC -->
+        <div class="sg-toc mb-5">
+          <p>Sur cette page</p>
+          <div class="sg-toc-links">
+            <a href="#champ-application"><i class="bi bi-chevron-right"></i>Champ d'application</a>
+            <a href="#responsable"><i class="bi bi-chevron-right"></i>Responsable du traitement</a>
+            <a href="#responsable-traitement"><i class="bi bi-chevron-right"></i>Hippocrate responsable</a>
+            <a href="#sous-traitant"><i class="bi bi-chevron-right"></i>Hippocrate sous-traitant</a>
+            <a href="#cookies"><i class="bi bi-chevron-right"></i>Cookies</a>
+            <a href="#prestataires"><i class="bi bi-chevron-right"></i>Prestataires</a>
+            <a href="#transfert"><i class="bi bi-chevron-right"></i>Transfert hors UE</a>
+            <a href="#partage"><i class="bi bi-chevron-right"></i>Partage</a>
+            <a href="#reclamation"><i class="bi bi-chevron-right"></i>Réclamation</a>
+            <a href="#mises-a-jour"><i class="bi bi-chevron-right"></i>Mises à jour</a>
+            <a href="#contact"><i class="bi bi-chevron-right"></i>Nous contacter</a>
+          </div>
+        </div>
+
+        <div class="sg-legal-content">
+
+          <h2 id="champ-application">Champ d'application</h2>
+          <p>Au travers des services que nous fournissons, nous collectons différentes données à caractère personnel et sensible. Nous intervenons également en tant que sous-traitant de nos clients qui collectent eux-mêmes des données afin de les traiter à l'aide de nos logiciels. Conformément aux dispositions du Règlement Général sur la Protection des Données (RGPD), cette politique explique quelles données ou catégories de données nous collectons, sur quelles bases juridiques, à quelles finalités, pendant combien de temps nous les conservons, avec qui nous les partageons et quels sont les droits des personnes concernées. Cette politique mentionne également les sous-traitants auxquels nous faisons appel pour le traitement des données personnelles, en distinguant ceux qui en sont destinataires de ceux qui n'interviennent qu'en tant que fournisseurs de service techniques et qui ne sont pas destinataires de vos données personnelles.</p>
+
+          <h2 id="responsable">Responsable du traitement</h2>
+          <p>Le responsable du traitement des données à caractère personnel et sensible sur laquelle porte cette politique est la société HIPPOCRATE SÀRL. Il s'agit d'une société à responsabilité limitée de droit luxembourgeois, immatriculée sous le numéro B282221 au registre de commerce et des sociétés.</p>
+          <p>Son siège social est situé au 11 rue des Aubépines L-8052 Bertrange (LUXEMBOURG) et vous pouvez nous contacter par courriel adressé à <a href="mailto:privacy@hippocrate.lu">privacy@hippocrate.lu</a>.</p>
+
+          <h2 id="responsable-traitement">Traitements de données personnelles pour lesquels Hippocrate est responsable du traitement</h2>
+          <p>Dans le cadre de nos activités, des services que nous proposons et des logiciels que vous utilisez, nous collectons et traitons des données personnelles. Certaines données personnelles sont traitées pour servir plusieurs finalités, aussi les sections qui suivent peuvent les répéter. En ce qui concerne la durée de conservation des données personnelles, c'est la plus longue qui s'applique.</p>
+
+          <h3>Clients</h3>
+          <p>Nous collectons et traitons les données personnelles de nos clients lorsque nous entrons en relation commerciale.</p>
+          <p>Sur la base légale de l'exécution du contrat conclu, afin de gérer la relation avec nos clients, nous traitons vos données d'identification et de contact. Ces données sont obligatoires pour nous permettre de vous créer un compte sur nos logiciels, de vous identifier et de vous contacter. Nous conservons ces données en base active pendant la durée du contrat, allongée d'un mois pour vous permettre la restitution des données. Nous pouvons continuer à stocker ces informations dans nos sauvegardes chiffrées pendant six mois après la fin du contrat. Vous avez un droit d'accès, de rectification et d'effacement de tout ou partie de ces données. Vos droits d'accès et de rectification s'exercent via l'interface utilisateur du logiciel pour lequel vous avez un contrat d'utilisation. Comme ces informations sont nécessaires pour vous identifier dans le cadre de l'exécution du contrat, vous ne pouvez pas exercer votre droit à l'effacement avant le délai prévu par la loi.</p>
+          <p>Sur la base légale de l'exécution du contrat conclu et des obligations légales relatives à la facturation, afin d'établir des factures quant à l'utilisation de nos logiciels, nous traitons vos données d'identification et de contact. Ces données sont obligatoires pour créer les pièces comptables afférentes à votre utilisation de nos logiciels, au suivi des paiements et éventuellement pour procéder à votre relance. Nous conservons ces données en base active pendant la durée du contrat ou dix ans après l'émission des factures. Vous avez un droit d'accès, de rectification et d'effacement de tout ou partie de ces données. Vos droits d'accès et de modification s'exercent via l'interface utilisateur du logiciel pour lequel vous avez un contrat d'utilisation. Comme ces informations sont nécessaires pour vous identifier dans le cadre de l'exécution du contrat et de la facturation, vous ne pouvez pas exercer votre droit à l'effacement avant le délai prévu par la loi.</p>
+          <p>Sur la base légale de l'exécution du contrat conclu, afin que les factures que vous générez avec nos logiciels permettent à vos patients de les présenter pour remboursement à la Caisse Nationale de Santé du Luxembourg, nous traitons des données personnelles supplémentaires (comme le code praticien au Grand-Duché de Luxembourg). Ces données sont facultatives pour le bon fonctionnement de nos logiciels. Nous conservons ces données en base active pendant la durée du contrat, allongée d'un mois pour vous permettre la restitution des données. Nous pouvons continuer à stocker ces données en base d'archive pendant deux ans après la fin du contrat. Vous avez un droit d'accès, de rectification et d'effacement de tout ou partie de ces données. Ces droits s'exercent via l'interface utilisateur du logiciel pour lequel vous avez un contrat d'utilisation.</p>
+
+          <h3>Prospects</h3>
+          <p>Avant d'entrer en relation contractuelle avec nos clients, nous échangeons avec eux au sujet de nos logiciels et services. À cet effet, nous collectons et traitons des données personnelles.</p>
+          <p>Sur la base légale de notre intérêt légitime, afin de pouvoir vous contacter pour vous faire connaître notre société et nos logiciels, nous traitons vos données personnelles d'identification et de contact. Ces données nous sont nécessaires pour que nous puissions vous contacter en ayant au préalable évalué lesquels de nos logiciels sont les plus adaptés à votre profession. Nous conservons ces données pendant trois ans à dater du moment où nous les collectons, trois ans après le dernier échange que nous ayons, ou jusqu'à ce que vous retiriez votre consentement. Vous avez un droit d'accès, de modification et de suppression de ces données. Ces droits s'exercent en nous contactant via les moyens cités en début, et rappelés en fin, de la présente politique. Nous vous informons de vos droits dans nos communications et nous vous proposons d'enregistrer votre choix de ne plus être contacté, si tel est votre souhait. Dans ce cas, nous limitons vos données à vos initiales et aux moyens de contact (téléphone, adresse postale, adresse de courrier électronique) dont nous avons connaissance pour ne plus les utiliser pour vous contacter.</p>
+          <p>Sur la base légale de notre intérêt légitime, afin de pouvoir répondre à vos questions et demandes concernant notre société et nos logiciels, nous traitons vos données personnelles d'identification et de contact, recueillies dans le formulaire que vous remplissez sur un de nos sites Web. Votre nom et votre adresse de courrier électronique sont obligatoires afin que nous puissions vous recontacter. Votre numéro de téléphone est facultatif. Nous conservons ces données pendant trois ans à dater du moment où vous nous les communiquez, trois ans après le dernier échange que nous ayons, ou jusqu'à ce que vous retiriez votre consentement. Vous avez un droit d'accès, de rectification et d'effacement de tout ou partie de ces données. Ces droits s'exercent en nous contactant via les moyens cités en début, et rappelés en fin, de la présente politique.</p>
+
+          <h2 id="sous-traitant">Traitements de données personnelles pour lesquelles Hippocrate est sous-traitant</h2>
+          <p>Les services et logiciels que nous fournissons à nos clients leur permettent de traiter, le cas échéant, vos données personnelles. Dans ce cas, ils sont les responsables du traitement et nous intervenons en tant que sous-traitants. Dans le respect de l'obligation d'assistance, nous accompagnons nos clients quant à la gestion des demandes d'exercice de vos droits. Autant que faire se peut, nous vous informons des données que nous collectons et nous vous indiquons où trouver la présente politique. Nous faisons ceci par le biais des messages automatisés, lorsque nous entrons en contact avec vous pour un motif légitime au regard de l'utilisation de nos services et logiciels par nos clients. Certaines données personnelles sont traitées pour servir plusieurs finalités, aussi les sections qui suivent peuvent les répéter. En ce qui concerne la durée de conservation des données personnelles, c'est la plus longue qui s'applique.</p>
+
+          <h3>Patients</h3>
+          <p>Nos services et logiciels permettent à nos clients de collecter et de traiter vos données personnelles dès lors que vous intégrez leur patientèle.</p>
+          <p>Sur les bases légales de l'exécution du contrat que nous avons conclu avec nos clients et de leur propre intérêt légitime, afin de pouvoir vous identifier, vous contacter et suivre vos traitements médicaux, nous traitons vos données personnelles d'identification et de contact, telles qu'enregistrées par nos clients lorsqu'ils utilisent nos services et logiciels. Ces informations sont obligatoires afin que nos clients puissent vous contacter au sujet de vos traitements et séances. Nous conservons ces données en base active pendant la durée du contrat conclu avec nos clients, allongée d'un mois pour leur permettre la restitution des données. Nous pouvons continuer à stocker ces informations dans nos sauvegardes chiffrées pendant six mois après la fin du contrat. D'autre part, si nos clients suppriment ces données de nos services ou de nos logiciels, nous ne les conservons qu'au maximum une semaine dans notre base active après cette opération. Vous avez un droit d'accès, de rectification et d'effacement de tout ou partie de ces données. Ces droits s'exercent auprès de nos clients, ou en nous contactant via les moyens cités en début, et rappelés en fin, de la présente politique. Si ces données ont été utilisées lors de la génération de factures, vous pourriez ne pas pouvoir exercer votre droit à l'effacement avant que nos clients aient confirmé le paiement de la facture et qu'ils l'aient sauvegardée dans leur logiciel comptable. Comme ces informations sont également nécessaires pour l'intérêt légitime de nos clients de pouvoir vous identifier, vous contacter et suivre vos traitements dans le cadre de l'exécution du contrat qu'ils ont conclu avec nous, leur effacement peut ne pas être possible avant la fin de vos traitements médicaux en cours.</p>
+          <p>Sur les bases légales de l'exécution du contrat que nous avons conclu avec nos clients et de leur propre intérêt légitime, afin de pouvoir vous identifier auprès d'un organisme de santé ou de sécurité sociale, nous traitons vos données personnelles d'identification auprès de cet organisme, telles qu'enregistrées par nos clients lorsqu'ils utilisent nos services et logiciels. Ces informations sont facultatives au regard du fonctionnement de nos services et logiciels. Nous conservons ces données en base active pendant la durée du contrat conclu avec nos clients, allongée d'un mois pour leur permettre la restitution des données. Nous pouvons continuer à stocker ces informations dans nos sauvegardes chiffrées pendant six mois après la fin du contrat. D'autre part, si nos clients suppriment ces données de nos services ou de nos logiciels, nous ne les conservons qu'au maximum une semaine dans notre base active après cette opération. Si ces informations ont été utilisées lors de la génération de factures, nous les conservons pendant dix ans à partir de l'émission de la dernière facture. Vous avez un droit d'accès, de rectification et d'effacement de tout ou partie de ces données. Ces droits s'exercent auprès de nos clients, ou en nous contactant via les moyens cités en début, et rappelés en fin, de la présente politique. Comme ces informations sont nécessaires pour établir des factures valides au regard des organismes de santé ou de sécurité sociale dont vous dépendez, leur effacement peut vous empêcher de bénéficier d'un remboursement, ou rendre vos démarches plus difficiles. Si ces données ont été utilisées lors de la génération de factures, vous pourriez ne pas pouvoir exercer votre droit à l'effacement avant que nos clients aient confirmé le paiement de la facture et qu'ils l'aient sauvegardée dans leur logiciel comptable.</p>
+          <p>Sur les bases légales de l'exécution du contrat que nous avons conclu avec nos clients et de leur propre intérêt légitime, afin de pouvoir mentionner les traitements suivis sur vos factures et de prévenir tout dépassement du nombre de séances prescrites, nous traitons vos données personnelles que sont l'ordonnance du médecin prescripteur et les traitements afférents, telles que téléversées et enregistrées par nos clients lorsqu'ils utilisent nos services et logiciels. Ces informations sont obligatoires afin que nos clients puissent enregistrer le traitement prescrit, suivre le nombre de séances restantes, et générer les factures correspondantes. Nous conservons ces données en base active pendant la durée du contrat conclu avec nos clients, allongée d'un mois pour leur permettre la restitution des données. Nous pouvons continuer à stocker ces informations dans nos sauvegardes chiffrées pendant six mois après la fin du contrat. D'autre part, si nos clients suppriment ces données de nos services ou de nos logiciels, nous ne les conservons qu'au maximum une semaine dans notre base active après cette opération. Vous avez un droit d'accès, de rectification et d'effacement de tout ou partie de ces données. Ces droits s'exercent auprès de nos clients, ou en nous contactant via les moyens cités en début, et rappelés en fin, de la présente politique. Comme ces informations sont nécessaires pour établir des factures valides au regard des organismes de santé ou de sécurité sociale dont vous dépendez, leur effacement peut vous empêcher de bénéficier d'un remboursement, ou rendre vos démarches plus difficiles. Si ces données ont été utilisées lors de la génération de factures, vous pourriez ne pas pouvoir exercer votre droit à l'effacement avant que nos clients aient confirmé le paiement de la facture et qu'ils l'aient sauvegardée dans un logiciel comptable. D'autre part, comme ces informations sont nécessaires pour l'intérêt légitime de nos clients de pouvoir vous identifier, vous contacter et suivre vos traitements dans le cadre de l'exécution du contrat qu'ils ont conclu avec nous, leur effacement peut ne pas être possible avant la fin de vos traitements médicaux en cours.</p>
+          <p>Sur les bases légales de l'exécution du contrat que nous avons conclu avec nos clients et de leur propre intérêt légitime, afin de pouvoir vous prescrire des traitements médicaux (notamment des actes ou des médicaments), nous traitons vos données personnelles en lien avec les traitements afférents, telles qu'enregistrées par nos clients lorsqu'ils utilisent nos services et logiciels. Ces informations sont obligatoires afin que nos clients puissent enregistrer les traitements prescrits, et générer les ordonnances correspondantes. Nous conservons ces données en base active pendant la durée du contrat conclu avec nos clients, allongée d'un mois pour leur permettre la restitution des données. Nous pouvons continuer à stocker ces informations dans nos sauvegardes chiffrées pendant six mois après la fin du contrat. D'autre part, si nos clients suppriment ces données de nos services ou de nos logiciels, nous ne les conservons qu'au maximum une semaine dans notre base active après cette opération. Vous avez un droit d'accès, de rectification et d'effacement de tout ou partie de ces données. Ces droits s'exercent auprès de nos clients, ou en nous contactant via les moyens cités en début, et rappelés en fin, de la présente politique. Comme ces informations sont nécessaires pour établir des ordonnances valides au regard des organismes de santé ou de sécurité sociale dont vous dépendez, leur effacement peut vous empêcher de bénéficier de l'enregistrement d'une ordonnance dans le dossier patient de notre client. D'autre part, comme ces informations sont nécessaires au regard de l'intérêt légitime de nos clients de pouvoir vous identifier, vous contacter et suivre les traitements qu'ils vous prescrivent dans le cadre de l'exécution du contrat qu'ils ont conclu avec nous, leur effacement peut ne pas être possible avant la fin de vos traitements médicaux en cours.</p>
+          <p>Sur les bases légales de l'exécution du contrat que nous avons conclu avec nos clients et de leur propre intérêt légitime, afin de pouvoir vous informer des dates, heures et durée de vos séances d'une part, et afin de permettre à nos clients de suivre le nombre de séances effectuées pour chacun de vos traitements, nous traitons vos données personnelles relatives aux séances, telles qu'enregistrées par nos clients lorsqu'ils utilisent nos services et logiciels. Ces informations sont obligatoires afin que nos clients puissent préparer vos séances, en suivre le nombre au regard de l'ordonnance les prescrivant s'il y a lieu, et générer les factures correspondantes. Ces informations sont également obligatoires pour que nos services et logiciels vous confirment la date, l'heure et le lieu de vos futures séances, qu'ils vous les rappellent en temps utile, et qu'ils vous informent des modifications éventuelles. Nous conservons ces données en base active pendant la durée du contrat conclu avec nos clients, allongée d'un mois pour leur permettre la restitution des données. Nous pouvons continuer à stocker ces informations dans nos sauvegardes chiffrées pendant six mois après la fin du contrat. D'autre part, si nos clients suppriment ces données de nos services ou de nos logiciels, nous ne les conservons qu'au maximum une semaine dans notre base active après cette opération. Vous avez un droit d'accès, de rectification et d'effacement de tout ou partie de ces données. Ces droits s'exercent auprès de nos clients, ou en nous contactant via les moyens cités en début, et rappelés en fin, de la présente politique. Si ces données ont été utilisées lors de la génération de factures, vous pourriez ne pas pouvoir exercer votre droit à l'effacement avant que nos clients aient confirmé le paiement de la facture et qu'ils l'aient sauvegardée dans leur logiciel comptable. D'autre part, comme ces informations sont nécessaires pour l'intérêt légitime de nos clients de pouvoir suivre vos traitements dans le cadre de l'exécution du contrat qu'ils ont conclu avec nous, leur suppression peut ne pas être possible avant la fin de vos traitements médicaux en cours.</p>
+
+          <h3>Personnes de contact pour les patients</h3>
+          <p>Nos services et logiciels permettent à nos clients de collecter et de traiter vos données personnelles dès lors qu'ils ont connaissance de vos informations d'identification et de contact d'une part, et de votre lien avec un de leurs patients d'autre part.</p>
+          <p>Sur les bases légales de l'exécution du contrat que nous avons conclu avec nos clients, de leur propre intérêt légitime, et éventuellement de la sauvegarde des intérêts vitaux de personnes physiques, afin de pouvoir joindre une personne de contact d'un de leurs patients, nous traitons vos données personnelles d'identification et de contact, telles qu'enregistrées par nos clients lorsqu'ils utilisent nos services et logiciels. Ces informations sont obligatoires afin que nos clients puissent vous contacter au sujet d'un patient dont vous avez la responsabilité (en tant que parent ou tuteur par exemple) ou pour lequel vous détenez des informations en rapport avec sa situation ou sa santé (en tant que responsable au sein d'organisme d'accueil, d'hébergement ou de soins par exemple). Nous conservons ces données en base active pendant la durée du contrat conclu avec nos clients, allongée d'un mois pour leur permettre la restitution des données. Nous pouvons continuer à stocker ces informations dans nos sauvegardes chiffrées pendant six mois après la fin du contrat. D'autre part, si nos clients suppriment ces données de nos services ou de nos logiciels, nous ne les conservons qu'au maximum une semaine dans notre base active après cette opération. Vous avez un droit d'accès, de rectification et d'effacement de tout ou partie de ces données. Ces droits s'exercent auprès de nos clients, ou en nous contactant via les moyens cités en début, et rappelés en fin, de la présente politique. Comme ces informations peuvent s'avérer nécessaires pour la sauvegarde des intérêts vitaux de personnes physiques, vous pourriez ne pas pouvoir exercer votre droit à l'effacement de tout ou partie de ces données.</p>
+
+          <h3>Médecins</h3>
+          <p>Nos services et logiciels permettent à nos clients de collecter et de traiter vos données personnelles dès lors qu'un de vos patients présente une ordonnance pour un traitement que vous avez prescrit.</p>
+          <p>Sur les bases légales de l'exécution du contrat que nous avons conclu avec nos clients et de leur propre intérêt légitime, afin de pouvoir lier une ordonnance à un médecin prescripteur, nous traitons vos données personnelles d'identification et de contact, telles qu'enregistrées par nos clients lorsqu'ils utilisent nos services et logiciels. Ces informations sont obligatoires afin que nos clients puissent vous contacter au sujet de vos patients communs et que votre code médecin apparaisse sur les mémoires d'honoraires générés par nos services et logiciels à destination des patients de nos clients et de la Caisse Nationale de Santé du Luxembourg. Nous conservons ces données en base active pendant la durée du contrat conclu avec nos clients, allongée d'un mois pour leur permettre la restitution des données. Nous pouvons continuer à stocker ces informations dans nos sauvegardes chiffrées pendant six mois après la fin du contrat. D'autre part, si nos clients suppriment ces données de nos services ou de nos logiciels, nous ne les conservons qu'au maximum une semaine dans notre base active après cette opération. Vous avez un droit d'accès, de rectification et d'effacement de tout ou partie de ces données. Ces droits s'exercent auprès de nos clients, ou en nous contactant via les moyens cités en début, et rappelés en fin, de la présente politique. Comme ces informations peuvent s'avérer nécessaires pour la sauvegarde des intérêts vitaux de personnes physiques, vous pourriez ne pas pouvoir exercer votre droit à l'effacement de tout ou partie de ces données. Si ces données ont été utilisées lors de la génération de factures, vous pourriez ne pas pouvoir exercer votre droit à l'effacement de votre code médecin.</p>
+
+          <h3>Contacts</h3>
+          <p>Nos services et logiciels permettent à nos clients de collecter et de traiter vos données personnelles dès lors que vous exprimez le souhait d'intégrer leur patientèle.</p>
+          <p>Sur les bases légales de l'exécution du contrat que nous avons conclu avec nos clients et de leur propre intérêt légitime, afin de pouvoir vous recontacter pour intégrer leur patientèle, nous traitons vos données personnelles d'identification et de contact, telles qu'enregistrées par nos clients lorsqu'ils utilisent nos services et logiciels. Ces informations sont obligatoires afin que nos clients puissent vous contacter pour vous proposer de devenir leur patient. Nous conservons ces données pendant trois ans à dater du moment où nos clients les enregistrent dans nos services et logiciels, trois ans après le dernier échange que notre client signale avoir eu, ou jusqu'à ce que vous retiriez votre consentement. Au maximum, nous conservons ces données en base active pendant la durée du contrat conclu avec nos clients, allongée d'un mois pour leur permettre la restitution des données. Nous pouvons continuer à stocker ces informations dans nos sauvegardes chiffrées pendant six mois après la fin du contrat. D'autre part, si nos clients suppriment ces données de nos services ou de nos logiciels, nous ne les conservons qu'au maximum une semaine dans notre base active après cette opération. Vous avez un droit d'accès, de rectification et d'effacement de tout ou partie de ces données. Ces droits s'exercent auprès de nos clients, ou en nous contactant via les moyens cités en début, et rappelés en fin, de la présente politique.</p>
+
+          <h2 id="cookies">Cookies</h2>
+          <p>Lorsque vous visitez un de nos sites Web ou que vous utilisez un de nos logiciels, nous pouvons déposer des cookies sur votre navigateur Web.</p>
+          <p>Nos sites utilisent des cookies de session et de préférences qui sont nécessaires au bon fonctionnement des sites Web. Les premiers nous permettent de comptabiliser les visites que nos sites Web reçoivent, sans pour autant vous identifier. Les seconds vous permettent d'afficher les pages dans la langue que vous avez sélectionnée lorsque plusieurs langues sont disponibles.</p>
+          <p>Nos services et logiciels utilisent des cookies de session pour vous identifier et vous permettre d'accéder aux fonctionnalités qui vous sont réservées.</p>
+          <p>Ces cookies respectent les critères d'exemption du consentement tels que définis par la CNPD (<a href="https://cnpd.public.lu/content/dam/cnpd/fr/actualites/national/2022/fiche-pratique-CNPD-cookies-2022-01-27.pdf" target="_blank" rel="noopener">fiche pratique CNPD</a>).</p>
+
+          <h2 id="prestataires">Prestataires de service et sous-traitants</h2>
+          <p>Pour fournir les services et logiciels à nos clients, mais également pour les besoins de fonctionnement de notre société, nous nous appuyons sur une liste restreinte de fournisseurs de services.</p>
+
+          <div class="sg-provider-card">
+            <div class="provider-name"><i class="bi bi-box-seam me-2"></i>Odoo</div>
+            <p>Pour opérer nos sites Web, créer nos pièces comptables, gérer notre base de données de clients et de prospects, nous utilisons les services de la société belge Odoo SA.</p>
+            <p>Vous pouvez contacter cette société par courrier électronique adressé à <a href="mailto:privacy@odoo.com">privacy@odoo.com</a> ou par courrier postal envoyé à :<br>
+            <strong>Odoo S.A. — Protection des données</strong><br>
+            Chaussée de Namur, 40<br>1367 Grand-Rosière — BELGIQUE</p>
+          </div>
+
+          <div class="sg-provider-card">
+            <div class="provider-name"><i class="bi bi-globe me-2"></i>Gandi</div>
+            <p>Pour opérer les services et logiciels que nos clients utilisent, nous recourons aux services d'hébergement informatique de la société française Gandi SAS. Les traitements des données à caractère personnel sont tous effectués dans un centre informatique localisé à Bissen, sur le territoire du Grand-Duché de Luxembourg.</p>
+            <p>Vous pouvez contacter cette société par courrier électronique adressé à <a href="mailto:dpo@gandi.net">dpo@gandi.net</a> ou par courrier postal envoyé à :<br>
+            <strong>Gandi SAS</strong><br>
+            63-65 Boulevard Masséna<br>75013 Paris — FRANCE</p>
+          </div>
+
+          <div class="sg-provider-card">
+            <div class="provider-name"><i class="bi bi-microsoft me-2"></i>Microsoft</div>
+            <p>Pour gérer notre base de données de clients et certains aspects de notre relation avec eux (comme la communication par courrier électronique et les enquêtes de satisfaction), nous utilisons les services de la société états-unienne Microsoft. Pour stocker l'ensemble de nos données, Microsoft utilise des centres de données tous localisés dans des pays de l'Union Européenne.</p>
+            <p>Vous pouvez contacter cette société par téléphone au +353 (1) 706-3117 ou par courrier postal envoyé à :<br>
+            <strong>Délégué à la protection des données dans l'Union européenne de Microsoft</strong><br>
+            One Microsoft Place, South County Business Park<br>Leopardstown, Dublin 18 D18 P521 — IRLANDE</p>
+          </div>
+
+          <div class="sg-provider-card">
+            <div class="provider-name"><i class="bi bi-phone me-2"></i>Cyclop</div>
+            <p>Pour stocker les sauvegardes chiffrées de notre base active, nous utilisons les services de la société luxembourgeoise Cyclop Sàrl.</p>
+            <p>Vous pouvez contacter cette société par courrier électronique adressé à <a href="mailto:dpo@cyclop.lu">dpo@cyclop.lu</a>, ou par courrier postal envoyé à :<br>
+            <strong>CYCLOP</strong><br>
+            103, route d'Esch<br>L-3230 Bettembourg — LUXEMBOURG</p>
+          </div>
+
+          <div class="sg-provider-card">
+            <div class="provider-name"><i class="bi bi-envelope me-2"></i>Brevo</div>
+            <p>Pour envoyer des courriers électroniques depuis nos services et logiciels, à destination de nos clients et de leurs patients, nous utilisons les services de la société française Brevo SAS.</p>
+            <p>Vous pouvez contacter cette société par courrier électronique adressé à <a href="mailto:dpo@brevo.com">dpo@brevo.com</a>, ou par courrier postal à :<br>
+            <strong>Brevo SAS — Équipe DPO</strong><br>
+            106 boulevard Haussmann<br>75008 Paris — FRANCE</p>
+          </div>
+
+          <h2 id="transfert">Transfert de données hors Union Européenne ou Espace Économique Européen</h2>
+          <p>De manière générale, les données que nous traitons avec nos propres services et logiciels le sont exclusivement sur le territoire du Grand-Duché de Luxembourg. Les données personnelles de nos clients que nous traitons via des sous-traitants ne sont pas nécessairement stockées au sein de l'Union Européenne. Odoo, par exemple, recourt aux services de la société irlandaise Google Cloud EMEA Ltd, filiale de la société états-unienne Google LLC, pour stocker des données en France et en Belgique, mais ne peut garantir que les sauvegardes le soient aussi. La société Microsoft a des centres de données en Europe, néanmoins elle reste soumise au droit américain.</p>
+          <p>Les États-Unis sont un pays dont le niveau de protection est en adéquation partielle avec le RGPD européen. Seuls les transferts de données à caractère personnel vers les entités certifiées DPF (Data Privacy Framework) ne nécessitent pas d'encadrement par des outils de transfert. Les sociétés Microsoft Corporation et Google LLC sont certifiées DPF, ce qui autorise donc le transfert de données à caractère personnel, qu'il soit à notre initiative ou une conséquence de l'organisation interne de nos sous-traitants.</p>
+
+          <h2 id="partage">Partage de vos données personnelles</h2>
+          <p>En l'absence de clause explicite contraire, comme celles qui suivent, nous ne divulguons pas vos données à caractère personnel. Ceci inclut la vente, l'échange, le transfert à titre gratuit ou onéreux. Nous nous réservons toutefois le droit de partager ou de divulguer des données anonymisées ou agrégées, de sorte que celles-ci n'aient plus de caractère personnel, et ce aux fins de communication marketing ou de statistiques. Nous pourrions aussi être amenés à partager vos données personnelles si une décision de justice nous y contraignait. Dans pareil cas, et si ladite décision nous y autorise, nous nous efforcerions de vous contacter afin que vous en soyez informés et que vous puissiez soumettre un recours suspensif si vous le souhaitiez.</p>
+
+          <h2 id="reclamation">Réclamation</h2>
+          <p>Si vous estimez que le traitement de vos données personnelles effectué par Hippocrate Sàrl constitue une violation du Règlement Général sur la Protection des Données (RGPD), vous pouvez introduire une réclamation auprès de la <a href="https://cnpd.public.lu" target="_blank" rel="noopener">CNPD</a>.</p>
+
+          <h2 id="mises-a-jour">Mises à jour de notre politique</h2>
+          <div class="sg-update-badge"><i class="bi bi-clock-history me-2"></i>Dernière mise à jour : lundi 15 décembre 2025, amendée le lundi 9 février 2026</div>
+          <p>Nous pouvons faire évoluer cette politique pour en clarifier certains termes. Nous pouvons également en modifier les clauses pour refléter des changements dans le fonctionnement de nos sites Web ou de nos logiciels. À chaque fois qu'une nouvelle version sera publiée, la mention de dernière mise en jour en haut de la politique sera actualisée et nous communiquerons, autant que faire se peut, la synthèse des changements aux clients de nos logiciels et aux personnes dont nous conservons les données personnelles en tant que sous-traitant pour le compte de nos clients.</p>
+
+          <h2 id="contact">Nous contacter</h2>
+          <p>Malgré tout le soin que nous avons apporté à la rédaction de la présente politique, vous pourriez avoir des questions à nous adresser. Vous pouvez nous contacter en rédigeant votre message en français ou en anglais, et en l'adressant par courrier électronique à <a href="mailto:privacy@hippocrate.lu">privacy@hippocrate.lu</a>, ou par courrier postal envoyé à :</p>
+          <div class="sg-alert-note">
+            <i class="bi bi-envelope-fill me-2"></i>
+            <span><strong>HIPPOCRATE SÀRL</strong><br>
+            11 rue des Aubépines<br>L-8052 Bertrange — LUXEMBOURG</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="sg-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h6>Liens utiles</h6>
+        <a href="politique-en-matiere-de-cookies.html">Politique en matière de cookies</a>
+        <a href="politique-relative-aux-donnees-personnelles.html">Politique relative aux données personnelles</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+      </div>
+      <div class="col-md-4">
+        <h6>À propos de nous</h6>
+        <p style="color:#aaa;font-size:.87rem;line-height:1.6;">Nous sommes une équipe de passionnés dont le but est d'améliorer le confort de travail des médecins psychiatres, psychothérapeutes et psychologues grâce à Sigmund, développé par la société <a href="https://www.hippocrate.lu" target="_blank" rel="noopener"><strong>Hippocrate</strong></a>. Nous pensons que la technologie doit être pertinente, utile, tout en s'effaçant derrière l'usage qu'elle permet.</p>
+        <img src="assets/images/made-in-luxembourg-blanc.webp" alt="Made in Luxembourg" height="52"/>
+      </div>
+      <div class="col-md-4">
+        <h6>Contact</h6>
+          <a href="mailto:contact@sigmund.lu"><i class="bi bi-envelope me-2"></i>contact@sigmund.lu</a>
+          <a href="tel:+352621223881"><i class="bi bi-telephone me-2"></i>+352 621 223 881</a>
+          <a href="tel:+352621641447"><i class="bi bi-telephone me-2"></i>+352 621 641 447</a>
+          <a href="https://maps.app.goo.gl/HJKtFqZwnAyrUAAv7" target="_blank" rel="noopener"><i class="bi bi-geo-alt me-2"></i>11 rue des Aubépines L-8052 Bertrange</a>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between mt-4 align-items-center flex-wrap gap-2">
+      <p class="copyright mb-0">Copyright 2024-2026 © <a href="https://www.hippocrate.lu" target="_blank" rel="noopener">Hippocrate Sàrl</a> — Tous droits réservés | conception : <a href="https://www.e-conique.com/" target="_blank" rel="noopener">studio e-conique</a></p>
+      <div class="sg-lang-switch"><a href="politique-relative-aux-donnees-personnelles.html" class="active">Français</a> | <a href="en/privacy-policy.html">English (UK)</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

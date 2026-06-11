@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Sigmund, the administrative solution dedicated to psychotherapists</title>
+  <meta name="description" content="Sigmund, the solution designed for mental health professionals in Luxembourg: save time and free yourself from administrative tasks."/>
+  <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+  <link rel="canonical" href="https://www.sigmund.lu/en/solution-administrative-psychotherapeute/"/>
+  <link rel="alternate" hreflang="fr" href="../solution-administrative-psychotherapeute.html"/>
+  <link rel="alternate" hreflang="en" href="administrative-solution-psychotherapist.html"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" rel="stylesheet"/>
+  <link href="../assets/css/sigmund.css" rel="stylesheet"/>
+  <style>
+    :root {
+      --sg-primary: #6BA4FA;
+      --sg-light: #92BCFB;
+      --sg-dark: #333333;
+      --sg-light-bg: #EAF2FF;
+      --sg-gradient: linear-gradient(135deg, #6BA4FA 0%, #4a86e8 100%);
+    }
+    body { font-family: 'Inter', sans-serif; color: var(--sg-dark); }
+
+    /* NAVBAR */
+    .sg-navbar { background: #fff; box-shadow: 0 2px 12px rgba(107,164,250,0.10); }
+    .sg-navbar .nav-link { color: var(--sg-dark); font-weight: 500; transition: color .2s; }
+    .sg-navbar .nav-link:hover { color: var(--sg-primary); }
+    .sg-phone { font-size: .82rem; color: #666; }
+    .sg-lang-switch a { font-size: .82rem; color: #888; text-decoration: none; }
+    .sg-lang-switch a.active, .sg-lang-switch a:hover { color: var(--sg-primary); font-weight: 600; }
+
+    /* HERO */
+    .sg-hero { background: linear-gradient(135deg, #d6e8ff 0%, #f8faff 100%); color: var(--sg-dark); padding: 80px 0 60px; }
+    .sg-hero h1 { font-size: clamp(1.6rem, 3.5vw, 2.5rem); font-weight: 800; letter-spacing: -.5px; margin-bottom: 1.2rem; color: var(--sg-primary); }
+    .sg-hero .sg-subtitle { font-size: 1.05rem; color: #555; margin-bottom: 1.5rem; font-weight: 400; }
+    ul.sg-feat-list { list-style: none; padding: 0; margin-bottom: 2rem; }
+    ul.sg-feat-list li { padding: .35rem 0 .35rem 1.8rem; position: relative; font-size: .95rem; color: #444; }
+    ul.sg-feat-list li::before { content: "\2713"; position: absolute; left: 0; color: var(--sg-primary); font-weight: 700; }
+    .btn-sg-primary { display: inline-block; background: var(--sg-primary); color: #fff; font-weight: 700; padding: .75rem 2rem; border-radius: 50px; text-decoration: none; font-size: .95rem; transition: all .2s; border: none; }
+    .btn-sg-primary:hover { background: #5590e8; color: #fff; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.15); }
+    .sg-hero-img { max-width: 100%; height: auto; filter: drop-shadow(0 8px 24px rgba(107,164,250,.25)); }
+
+    /* SECTIONS */
+    .sg-section { padding: 72px 0; }
+    .sg-section-alt { background: #f8fbff; }
+    .sg-section-title { font-size: clamp(1.2rem, 2.5vw, 1.65rem); font-weight: 800; color: var(--sg-dark); text-align: center; margin-bottom: 2.5rem; letter-spacing: -.3px; }
+    .sg-section-title span { color: var(--sg-primary); }
+
+    /* PICTO CARDS */
+    .sg-picto-card { background: #fff; border-radius: 14px; padding: 1.5rem 1.2rem; text-align: center; box-shadow: 0 2px 12px rgba(107,164,250,.10); height: 100%; transition: transform .2s, box-shadow .2s; border: 1px solid rgba(107,164,250,.12); }
+    .sg-picto-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(107,164,250,.18); }
+    .sg-picto-card img { width: 64px; height: 64px; object-fit: contain; margin-bottom: 1rem; }
+    .sg-picto-card h5 { font-size: .92rem; font-weight: 700; color: var(--sg-dark); margin-bottom: .5rem; }
+    .sg-picto-card p { font-size: .82rem; color: #666; margin: 0; line-height: 1.5; }
+
+    /* TESTIMONIALS */
+    .sg-testimonials { background: url("../assets/images/sigmund-solution-tout-en-un-psychotherapeute.webp") center/cover no-repeat; padding: 72px 0; position: relative; }
+    .sg-testimonials::before { content: ""; position: absolute; inset: 0; background: rgba(255,255,255,0.15); }
+    .sg-testimonials .sg-section-title { color: #fff; text-shadow: 0 1px 4px rgba(0,0,0,.4); }
+
+    .sg-pricing-section-bg { background: var(--sg-gradient); padding: 72px 0; }
+    .sg-pricing { background: #fff; border-radius: 20px; padding: 3rem 2.5rem; color: var(--sg-dark); }
+    .sg-pricing .pricing-label { font-size: 1.15rem; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; color: var(--sg-primary); margin-bottom: .75rem; }
+    .sg-pricing .price { font-size: 3rem; font-weight: 800; letter-spacing: -1px; color: var(--sg-dark); }
+    .sg-pricing .price sup { font-size: 1.5rem; vertical-align: top; margin-top: .8rem; }
+    .sg-pricing .price sub { font-size: 1rem; font-weight: 400; color: #666; }
+    .sg-pricing ul { list-style: none; padding: 0; margin: 1.5rem 0; }
+    .sg-pricing ul li { padding: .35rem 0; font-size: .95rem; color: #333; display: flex; align-items: center; gap: .6rem; }
+    .sg-pricing ul li i { color: var(--sg-primary); font-size: 1.05rem; flex-shrink: 0; }
+    .sg-pricing ul li::before { content: none; }
+    .sg-pricing .option-line { font-size: .88rem; font-style: italic; color: #555; margin-bottom: 1.5rem; display: block; }
+    .sg-pricing-img-wrap { height: 100%; } .sg-pricing-img { border-radius: 16px; box-shadow: 0 16px 60px rgba(0,0,0,.18); object-fit: cover; width: 100%; height: 100%; display: block; }
+
+    /* COMING SOON */
+    .sg-coming-soon { background: #fff; border: 2px dashed var(--sg-primary); border-radius: 14px; padding: 1.5rem; text-align: center; font-size: .92rem; color: var(--sg-dark); height: 100%; }
+    .sg-coming-soon a { color: var(--sg-primary); }
+
+    /* TIMELINE */
+    .sg-timeline { position: relative; padding: 0; list-style: none; }
+    .sg-timeline::before { content: ''; position: absolute; left: 20px; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, var(--sg-primary), var(--sg-light)); border-radius: 3px; }
+    .sg-timeline-item { padding: 0 0 1.25rem 60px; position: relative; }
+    .sg-timeline-item::before { content: ''; position: absolute; left: 11px; top: 6px; width: 20px; height: 20px; border-radius: 50%; background: var(--sg-primary); border: 3px solid #fff; box-shadow: 0 0 0 3px var(--sg-light); }
+    .sg-timeline-year { font-weight: 700; color: var(--sg-primary); font-size: .88rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: .3rem; }
+    .sg-timeline-title { font-weight: 700; color: var(--sg-dark); font-size: 1rem; margin-bottom: .4rem; }
+    .sg-timeline-text { font-size: .88rem; color: #666; line-height: 1.65; margin: 0; }
+
+    /* FAQ */
+    .sg-faq details { border: 1px solid rgba(107,164,250,.2); border-radius: 10px; margin-bottom: .75rem; overflow: hidden; }
+    .sg-faq summary { padding: 1rem 1.25rem; font-weight: 600; font-size: .93rem; cursor: pointer; background: #fff; color: var(--sg-dark); list-style: none; display: flex; justify-content: space-between; align-items: center; }
+    .sg-faq summary::-webkit-details-marker { display: none; }
+    .sg-faq summary::after { content: '+'; font-size: 1.2rem; color: var(--sg-primary); font-weight: 300; transition: transform .2s; }
+    .sg-faq details[open] summary::after { transform: rotate(45deg); }
+    .sg-faq details[open] summary { background: var(--sg-light-bg); color: var(--sg-primary); }
+    .sg-faq .faq-body { padding: 1rem 1.25rem 1.25rem; font-size: .88rem; color: #555; line-height: 1.7; background: #fff; }
+
+    /* CONTACT */
+    .sg-contact-form .form-control { border: 1.5px solid rgba(107,164,250,.3); border-radius: 8px; font-size: .9rem; padding: .65rem .9rem; }
+    .sg-contact-form .form-control:focus { border-color: var(--sg-primary); box-shadow: 0 0 0 3px rgba(107,164,250,.15); }
+    .sg-contact-form .form-label { font-weight: 600; font-size: .87rem; color: var(--sg-dark); }
+
+    /* FOOTER */
+    .sg-footer { background: #1a1a2e; color: #aaa; padding: 56px 0 24px; }
+    .sg-footer h6 { color: #fff; font-weight: 700; text-transform: uppercase; font-size: .78rem; letter-spacing: 1px; margin-bottom: 1rem; }
+    .sg-footer a { color: #aaa; text-decoration: none; display: block; font-size: .87rem; margin-bottom: .4rem; transition: color .2s; }
+    .sg-footer a:hover { color: var(--sg-primary); }
+    .sg-footer hr { border-color: rgba(255,255,255,.08); margin: 2rem 0 1.5rem; }
+    .sg-footer .copyright { font-size: .8rem; color: #666; }
+    .sg-footer .copyright a { display: inline; color: #888; }
+    .sg-footer .sg-lang-switch a { display: inline; color: #888; font-size: .8rem; }
+    .sg-footer .sg-lang-switch a.active { color: var(--sg-primary); }
+
+    @media (max-width: 767px) {
+      .sg-hero { padding: 48px 0 40px; }
+      .sg-section { padding: 48px 0; }
+      .sg-pricing { padding: 2rem 1.5rem; }
+    }
+
+    /* TESTIMONIALS CARD STYLE */
+    .sg-testimonials .sg-carousel { overflow: hidden; }
+    .sg-testimonials .sg-carousel-track { overflow: hidden; }
+    .sg-testimonials .sg-carousel-slide { background: #fff; flex: 0 0 100%; width: 100% !important; max-width: none !important; box-sizing: border-box; padding: 2.5rem 3rem; border-radius: 12px; box-shadow: 0 8px 40px rgba(0,0,0,.15); backdrop-filter: none; }
+    .sg-testimonials .sg-carousel-slide blockquote { color: var(--sg-dark); font-style: italic; font-size: 1rem; line-height: 1.8; }
+    .sg-testimonials .sg-carousel-slide blockquote::before { color: var(--sg-primary); opacity: .4; }
+    .sg-testimonials .sg-carousel-slide .author-name { color: var(--sg-primary); font-weight: 700; }
+    .sg-testimonials .sg-carousel-slide .author-role { color: var(--sg-primary); opacity: .8; }
+    .sg-testimonials .sg-section-title { color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,.5); }
+    .sg-testimonials .sg-dot { background: rgba(255,255,255,.5); }
+    .sg-testimonials .sg-dot.active { background: #fff; }
+    /* COMING SOON CARDS */
+    .sg-soon-card { background: #fff; border: 1.5px solid var(--sg-border); border-radius: 16px; padding: 2rem 1.5rem; text-align: center; height: 100%; transition: box-shadow .2s, transform .2s; }
+    .sg-soon-card:hover { box-shadow: 0 8px 32px rgba(107,164,250,.18); transform: translateY(-3px); }
+    .sg-soon-card .soon-icon { width: 60px; height: 60px; border-radius: 50%; background: var(--sg-light-bg); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; }
+    .sg-soon-card .soon-icon i { font-size: 1.6rem; color: var(--sg-primary); }
+    .sg-soon-card .soon-badge { display: inline-block; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--sg-primary); background: rgba(107,164,250,.12); border-radius: 20px; padding: .2rem .75rem; margin-bottom: .75rem; }
+    .sg-soon-card p { font-size: .92rem; color: #555; margin: 0; line-height: 1.6; }
+    .sg-soon-card a { color: var(--sg-primary); font-weight: 600; }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="sg-navbar navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="../assets/images/logo-sigmund.webp" alt="Sigmund" height="52"/></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="administrative-solution-psychiatrist.html">Psychiatrist</a></li>
+        <li class="nav-item"><a class="nav-link active" href="administrative-solution-psychotherapist.html">Psychotherapist</a></li>
+        <li class="nav-item"><a class="nav-link" href="administrative-solution-psychologist.html">Psychologist</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <span class="sg-phone d-none d-lg-block"><a href="tel:+352621223881"><i class="bi bi-telephone me-2"></i>+352 621 223 881</a> &nbsp; <a href="tel:+352621641447"><i class="bi bi-telephone me-2"></i>+352 621 641 447</a></span>
+        <div class="sg-lang-switch"><a href="../solution-administrative-psychotherapeute.html"><span class="fi fi-fr"></span></a> <a href="administrative-solution-psychotherapist.html" class="active"><span class="fi fi-gb"></span></a></div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="sg-hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <h1>SIGMUND, THE ASSISTANT YOU NEED.</h1>
+        <p class="sg-subtitle">Are you a psychotherapist, and are administrative tasks taking up too much of your daily time?</p>
+        <ul class="sg-feat-list">
+          <li>Manages your agenda</li>
+          <li>Sends appointment reminders</li>
+          <li>Manages your patient records</li>
+          <li>Generates your invoices in CNS format</li>
+          <li>Securely send PID requests to CNS when the service opens</li>
+          <li>Sends reminders for unpaid invoices</li>
+          <li>Perfectly suited to your activity as a psychotherapist</li>
+          <li>Provides valuable assistance for administrative tasks</li>
+        </ul>
+        <a href="https://demo-en.sigmund.lu/" class="btn-sg-primary" target="_blank" rel="noopener">Book a demo</a>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="../assets/images/psychotherapeute-hero.svg" alt="Sigmund assistant for psychotherapists in Luxembourg" class="sg-hero-img"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PICTO FEATURES -->
+<section class="sg-section">
+  <div class="container">
+    <h2 class="sg-section-title">A COMPLETE SOLUTION FOR <span>YOUR PRACTICE</span></h2>
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+      <div class="col"><div class="sg-picto-card">
+        <img src="../assets/images/picto-accessible.webp" alt="Online application"/>
+        <h5>Online application</h5>
+        <p>Accessible anytime from any device</p>
+      </div></div>
+      <div class="col"><div class="sg-picto-card">
+        <img src="../assets/images/picto-intuitif.webp" alt="Intuitive interface"/>
+        <h5>Intuitive interface</h5>
+        <p>Easy to use, no training required</p>
+      </div></div>
+      <div class="col"><div class="sg-picto-card">
+        <img src="../assets/images/picto-evolutif.webp" alt="Feature evolution"/>
+        <h5>Feature evolution</h5>
+        <p>Based on your needs and feedback</p>
+      </div></div>
+      <div class="col"><div class="sg-picto-card">
+        <img src="../assets/images/picto-securise.webp" alt="Secure system"/>
+        <h5>Secure system</h5>
+        <p>Data stored in Luxembourg</p>
+      </div></div>
+      <div class="col"><div class="sg-picto-card">
+        <img src="../assets/images/PID.webp" alt="Immediate Direct Payment"/>
+        <h5>Immediate Direct Payment</h5>
+        <p>Benefit from this feature immediately when the CNS opens the service</p>
+      </div></div>
+      <div class="col"><div class="sg-picto-card">
+        <img src="../assets/images/dashboard.webp" alt="Financial monitoring"/>
+        <h5>Financial monitoring</h5>
+        <p>Manage expenses via financial dashboard</p>
+      </div></div>
+      <div class="col"><div class="sg-picto-card">
+        <img src="../assets/images/export.webp" alt="Confidential export"/>
+        <h5>Confidential export</h5>
+        <p>Export invoices without patient names</p>
+      </div></div>
+      <div class="col"><div class="sg-picto-card">
+        <img src="../assets/images/adresses.webp" alt="Multi-addresses"/>
+        <h5>Multi-addresses</h5>
+        <p>Support for multiple consultation addresses</p>
+      </div></div>
+      <div class="col"><div class="sg-picto-card">
+        <img src="../assets/images/facture.webp" alt="Standardized invoices"/>
+        <h5>Standardized invoices</h5>
+        <p>Generated according to CNS standard format</p>
+      </div></div>
+      <div class="col"><div class="sg-picto-card">
+        <img src="../assets/images/certificat.webp" alt="Certificate of attendance"/>
+        <h5>Certificate of attendance</h5>
+        <p>Create in just one click</p>
+      </div></div>
+      <div class="col"><div class="sg-picto-card">
+        <img src="../assets/images/codes.webp" alt="Custom codes"/>
+        <h5>Custom codes</h5>
+        <p>Add your own codes and treatment types</p>
+      </div></div>
+      <div class="col"><div class="sg-picto-card">
+        <img src="../assets/images/patients.webp" alt="Waiting list"/>
+        <h5>Waiting list</h5>
+        <p>Simplified waiting list management</p>
+      </div></div>
+      <div class="col"><div class="sg-picto-card">
+        <img src="../assets/images/notes-de-seance.webp" alt="Session notes"/>
+        <h5>Session notes</h5>
+        <p>Securely save session notes and documents</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sg-testimonials">
+  <div class="container">
+    <h2 class="sg-section-title">THEY USE SIGMUND</h2>
+    <div class="sg-carousel">
+      <div class="sg-carousel-track">
+        <div class="sg-carousel-slide"><blockquote>I can only recommend Sigmund: it is remarkably simple to use and has considerably lightened my administrative workload. I would even say it is a genuine pleasure to use on a daily basis. What I particularly appreciate is the attentive listening of the technical team, who take user feedback into account and strive to integrate suggestions into the tool's development. Our team is always available and responsive when questions arise.</blockquote>
+          <p class="author-name">C.P.</p>
+          <p class="author-role">Psychotherapist</p></div>
+        <div class="sg-carousel-slide"><blockquote>Sigmund has quickly become an essential and indispensable tool in my private psychotherapy practice. Intuitive, easy to use and constantly evolving, it is a true ally for managing appointments and billing. I also particularly appreciate the availability and responsiveness of the team when I have questions. I recommend Sigmund to all professionals in private practice.</blockquote>
+          <p class="author-name">Laura Gordet Thielen</p>
+          <p class="author-role">Clinical psychologist and psychotherapist in Capellen</p></div>
+        <div class="sg-carousel-slide"><blockquote>This software is essential to my daily practice. I highly recommend it as it provides effective and easy-to-use support. The Sigmund team is very responsive when needed.</blockquote>
+          <p class="author-name">Child psychiatrist, psychotherapist &amp; psychoanalyst</p>
+          <p class="author-role">Mersch</p></div>
+        <div class="sg-carousel-slide"><blockquote>Sigmund is an efficient tool that simplifies the administrative tasks of psychotherapists. This virtual assistant helps ensure that patients no longer miss appointments, as they receive email reminders. Invoices are generated automatically, saving considerable time.</blockquote>
+          <p class="author-name">Magali Cahen</p>
+          <p class="author-role">Psychologist and psychotherapist in Luxembourg</p></div>
+        <div class="sg-carousel-slide"><blockquote>I've been using Sigmund for six months now and I especially appreciate the ease of use of the calendar, the one-click appointment booking and invoicing, and the automatic reminders for unpaid invoices after a user-defined deadline. The developers are also very responsive to questions or suggestions for system feature development. Sigmund truly simplifies my administrative work and represents a significant time saving.</blockquote>
+          <p class="author-name">Françoise Duchamps-Hufenbecher</p>
+          <p class="author-role">Clinical psychologist and psychotherapist for adults and adolescents in Luxembourg</p></div>
+        <div class="sg-carousel-slide"><blockquote>The Sigmund software is an invaluable tool in my daily practice, combining scheduling, administrative tasks, prescriptions, billing, and an overview. It's intuitive and clear. The team's responsiveness is excellent, and I readily recommend it to colleagues for its practicality and organizational benefits.</blockquote>
+          <p class="author-name">Psychotherapist</p>
+          <p class="author-role">Huncherange</p></div>
+        <div class="sg-carousel-slide"><blockquote>I had the opportunity to meet Sylvain during the development of his Sigmund project and therefore was among the first users of this software. I highly recommend that psychotherapists acquire this tool. It is easy to use, intuitive, and perfectly suited to our needs: scheduling, accounting, and administrative tasks... all with a single click! Furthermore, Sylvain and his team are very responsive and attentive to our requests and needs.</blockquote>
+          <p class="author-name">Alexandra Fievet</p>
+          <p class="author-role">Clinical psychologist and psychotherapist for adults and children in Luxembourg</p></div>
+        <div class="sg-carousel-slide"><blockquote>Sigmund is an effective and valuable support in the day-to-day management of the practice. The various essential features greatly facilitate secretarial and accounting tasks: scheduling, session reminders, billing, patient and prescription listings... etc. Sigmund is perfectly suited to the practice of psychotherapy in its current modalities.</blockquote>
+          <p class="author-name">Psychotherapist</p>
+          <p class="author-role">Mersch</p></div>
+        <div class="sg-carousel-slide"><blockquote>Easy and logical to get started with, generating daily fee statements in under a minute — stopwatch in hand — is a significant relief! For the 6 months I've been using it, this tool designed specifically for psychologists and psychotherapists is a truly indispensable support for managing the schedule, appointment reminders, payment reminders, etc. I highly recommend it!</blockquote>
+          <p class="author-name">Catherine Hausherr Psychologue</p>
+          <p class="author-role">Psychotherapist, sworn judicial expert in Luxembourg</p></div>
+        <div class="sg-carousel-slide"><blockquote>More than a simple calendar, Sigmund perfectly meets the administrative needs of my profession. Administrative tasks are automated and I can define the parameters myself: automatic sending of appointment confirmation emails, appointment reminders, and unpaid invoice reminders, to name just the main features. Sigmund is a wonderful administrative assistant that saves me precious time. I definitely cannot do without it anymore.</blockquote>
+          <p class="author-name">Noëmie Perez</p>
+          <p class="author-role">Qualified clinical psychologist and psychotherapist in Bertrange</p></div>
+      </div>
+      <div class="sg-carousel-dots"><button class="sg-dot active" data-idx="0" aria-label="Slide 1"></button><button class="sg-dot" data-idx="1" aria-label="Slide 2"></button><button class="sg-dot" data-idx="2" aria-label="Slide 3"></button><button class="sg-dot" data-idx="3" aria-label="Slide 4"></button><button class="sg-dot" data-idx="4" aria-label="Slide 5"></button><button class="sg-dot" data-idx="5" aria-label="Slide 6"></button><button class="sg-dot" data-idx="6" aria-label="Slide 7"></button><button class="sg-dot" data-idx="7" aria-label="Slide 8"></button><button class="sg-dot" data-idx="8" aria-label="Slide 9"></button><button class="sg-dot" data-idx="9" aria-label="Slide 10"></button></div>
+      <div class="d-flex gap-2 justify-content-center mt-3">
+        <button class="sg-carousel-btn sg-carousel-prev" aria-label="Previous">&#8249;</button>
+        <button class="sg-carousel-btn sg-carousel-next" aria-label="Next">&#8250;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<div class="container pt-5 pb-3">
+  <h2 class="sg-section-title">SIMPLE AND <span>TRANSPARENT PRICING</span></h2>
+</div>
+<section class="sg-pricing-section-bg">
+  <div class="container">
+    <div class="row align-items-stretch g-5">
+      <div class="col-lg-6 d-flex">
+        <div class="sg-pricing w-100">
+          <p class="pricing-label">Subscription</p>
+          <div class="price">90<sub>&nbsp;€/month</sub></div>
+          <ul>
+            <li><i class="bi bi-check-circle-fill"></i>No commitment</li>
+            <li><i class="bi bi-check-circle-fill"></i>All inclusive</li>
+            <li><i class="bi bi-check-circle-fill"></i>Responsive support by email and phone</li>
+            <li><i class="bi bi-check-circle-fill"></i>Covered from the very first session</li>
+          </ul>
+          <span class="option-line">Future option: Access to the PID — €45/month</span>
+          <a href="https://demo-en.sigmund.lu/" class="btn-sg-primary" target="_blank" rel="noopener">Book a 15-day free trial</a>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex">
+        <div class="sg-pricing-img-wrap w-100">
+        <img src="../assets/images/sigmund-abonnement-sans-engagement-psychotherapeute-Grand-Duche-de-Luxembourg.webp"
+             alt="Sigmund subscription Luxembourg"
+             class="sg-pricing-img"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMING SOON -->
+<section class="sg-section sg-section-alt">
+  <div class="container">
+    <h2 class="sg-section-title">FEATURES COMING <span>SOON</span></h2>
+    <div class="row g-4 mt-2">
+      <div class="col-md-4">
+        <div class="sg-soon-card">
+          <div class="soon-icon"><i class="bi bi-calendar2-plus"></i></div>
+          <span class="soon-badge">Coming soon</span>
+          <p>Online booking accessible directly to your existing patients</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="sg-soon-card">
+          <div class="soon-icon"><i class="bi bi-arrow-repeat"></i></div>
+          <span class="soon-badge">Coming soon</span>
+          <p>Calendar synchronisation with Google Calendar and Outlook</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="sg-soon-card">
+          <div class="soon-icon"><i class="bi bi-shield-lock"></i></div>
+          <span class="soon-badge">Coming soon</span>
+          <p>Enhanced security through <a href="https://www.luxid.lu/en/" target="_blank" rel="noopener">LuxID</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="sg-section">
+  <div class="container">
+    <h2 class="sg-section-title">OUR <span>STORY</span></h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <ul class="sg-timeline">
+          <li class="sg-timeline-item">
+            <p class="sg-timeline-year">2013</p>
+            <p class="sg-timeline-title">The story begins</p>
+            <p class="sg-timeline-text">Our first developments were born from the desire to support an adult psychotherapist in her daily practice.</p>
+          </li>
+          <li class="sg-timeline-item">
+            <p class="sg-timeline-year">2013 – 2022</p>
+            <p class="sg-timeline-title">Continuous improvement</p>
+            <p class="sg-timeline-text">Over ten years, the application was enriched with new features specific to the daily needs of psychologists and psychotherapists.</p>
+          </li>
+          <li class="sg-timeline-item">
+            <p class="sg-timeline-year">2023</p>
+            <p class="sg-timeline-title">Application launch</p>
+            <p class="sg-timeline-text">With the arrival of psychotherapy reimbursement and repeated requests from colleagues, the application opened to all practitioners under the name Sigmund.</p>
+          </li>
+          <li class="sg-timeline-item">
+            <p class="sg-timeline-year">2024</p>
+            <p class="sg-timeline-title">PID support</p>
+            <p class="sg-timeline-text">CNS certification and implementation of PID (Immediate Direct Payment) support.</p>
+          </li>
+          <li class="sg-timeline-item">
+            <p class="sg-timeline-year">2025</p>
+            <p class="sg-timeline-title">Application development</p>
+            <p class="sg-timeline-text">Opening of Sigmund to psychiatrists.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sg-section sg-section-alt">
+  <div class="container">
+    <h2 class="sg-section-title">FREQUENTLY ASKED <span>QUESTIONS</span></h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="sg-faq">
+          <details>
+            <summary>How does Sigmund help professionals?</summary>
+            <div class="faq-body">The application reduces the time spent on all administrative activities by bringing several features together in one place, allowing professionals to focus more on their patients.</div>
+          </details>
+          <details>
+            <summary>Where is health data stored?</summary>
+            <div class="faq-body">Health data is stored in the Grand Duchy of Luxembourg and is subject to Luxembourg law as well as the European GDPR, ensuring its security and confidentiality.</div>
+          </details>
+          <details>
+            <summary>What does Sigmund cost?</summary>
+            <div class="faq-body">Sigmund is available for €90/month with no long-term commitment, with responsive support and a range of specific features. With a two-week free trial, there is no reason not to try it. PID access will be available as an option for an additional €45/month when the CNS opens the service.</div>
+          </details>
+          <details>
+            <summary>How do I try Sigmund?</summary>
+            <div class="faq-body">
+              <ol style="padding-left:1.2rem;line-height:2;">
+                <li>Book a demo by filling in the contact form.</li>
+                <li>Explore Sigmund during your two-week free trial.</li>
+                <li>Subscribe for €90/month after your trial.</li>
+                <li>Our team (Guillaume, Sylvain, Franck) is available to answer your questions.</li>
+              </ol>
+            </div>
+          </details>
+          <details>
+            <summary>I only work in practice 2 days a week — is it really useful for me?</summary>
+            <div class="faq-body">Even if you only work 2 days a week, Sigmund can be extremely beneficial by automating administrative tasks, allowing you to focus more on your patients. Many clients work part-time and are delighted to use Sigmund.</div>
+          </details>
+          <details>
+            <summary>Can I import my data from another software?</summary>
+            <div class="faq-body">Yes, our team can help you import your data (patients, sessions, invoices, etc.) from an Excel file or another software.</div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="sg-section">
+  <div class="container">
+    <h2 class="sg-section-title">CONTACT <span>US</span></h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+        <form action="https://rake.red/to/a1b2c3d4" method="POST" class="sg-contact-form">
+          <div class="mb-3">
+            <label class="form-label">Your name *</label>
+            <input type="text" name="nom" class="form-control" required placeholder="Ms. Smith"/>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Phone number</label>
+            <input type="tel" name="telephone" class="form-control" placeholder="+352 621 000 000"/>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Your email *</label>
+            <input type="email" name="email" class="form-control" required placeholder="contact@practice.lu"/>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Subject *</label>
+            <input type="text" name="sujet" class="form-control" required placeholder="Information request"/>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Your question *</label>
+            <textarea name="message" class="form-control" rows="4" required placeholder="Your message..."></textarea>
+          </div>
+          <button type="submit" class="btn-sg-primary" style="background:var(--sg-primary);color:#fff;">SEND</button>
+          <p class="mt-3 text-muted small">You can also write to us directly at <a href="mailto:contact@sigmund.lu">contact@sigmund.lu</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="sg-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h6>Useful links</h6>
+        <a href="cookie-policy.html">Cookies Policy</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="legal-notice.html">Legal notice</a>
+      </div>
+      <div class="col-md-4">
+        <h6>About Us</h6>
+        <p style="color:#aaa;font-size:.87rem;line-height:1.6;">We are a passionate team whose goal is to improve the working comfort of psychiatrists, psychotherapists and psychologists through Sigmund, developed by <a href="https://www.hippocrate.lu" target="_blank" rel="noopener"><strong>Hippocrate</strong></a>. We believe technology should be relevant and useful, while stepping back to let its use speak for itself.</p>
+        <img src="../assets/images/made-in-luxembourg-blanc.webp" alt="Made in Luxembourg" height="52"/>
+      </div>
+      <div class="col-md-4">
+        <h6>Contact</h6>
+          <a href="mailto:contact@sigmund.lu"><i class="bi bi-envelope me-2"></i>contact@sigmund.lu</a>
+          <a href="tel:+352621223881"><i class="bi bi-telephone me-2"></i>+352 621 223 881</a>
+          <a href="tel:+352621641447"><i class="bi bi-telephone me-2"></i>+352 621 641 447</a>
+          <a href="https://maps.app.goo.gl/HJKtFqZwnAyrUAAv7" target="_blank" rel="noopener"><i class="bi bi-geo-alt me-2"></i>11 rue des Aubépines L-8052 Bertrange</a>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between mt-4 align-items-center flex-wrap gap-2">
+      <p class="copyright mb-0">Copyright 2024-2026 © <a href="https://www.hippocrate.lu" target="_blank" rel="noopener">Hippocrate Sàrl</a> — All rights reserved | design: <a href="https://www.e-conique.com/" target="_blank" rel="noopener">studio e-conique</a></p>
+      <div class="sg-lang-switch"><a href="../solution-administrative-psychotherapeute.html">Français</a> | <a href="administrative-solution-psychotherapist.html" class="active">English (UK)</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.sg-carousel').forEach(function(car) {
+    var track = car.querySelector('.sg-carousel-track');
+    var slides = car.querySelectorAll('.sg-carousel-slide');
+    var dots   = car.querySelectorAll('.sg-dot');
+    var current = 0;
+    var timer;
+
+    function goTo(idx) {
+      current = ((idx % slides.length) + slides.length) % slides.length;
+      track.scrollTo({ left: current * track.clientWidth, behavior: 'smooth' });
+      dots.forEach(function(d, i) { d.classList.toggle('active', i === current); });
+    }
+
+    function startAuto() { timer = setInterval(function() { goTo(current + 1); }, 6000); }
+    function stopAuto()  { clearInterval(timer); }
+
+    car.querySelector('.sg-carousel-prev').addEventListener('click', function() { stopAuto(); goTo(current - 1); startAuto(); });
+    car.querySelector('.sg-carousel-next').addEventListener('click', function() { stopAuto(); goTo(current + 1); startAuto(); });
+    dots.forEach(function(d, i) { d.addEventListener('click', function() { stopAuto(); goTo(i); startAuto(); }); });
+
+    track.addEventListener('scroll', function() {
+      var idx = Math.round(track.scrollLeft / track.clientWidth);
+      dots.forEach(function(d, i) { d.classList.toggle('active', i === idx); });
+      current = idx;
+    });
+
+    startAuto();
+  });
+  })
+</script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>         
