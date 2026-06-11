@@ -36,6 +36,15 @@
     <priority>0.9</priority>
   </url>
 
+  <url>
+    <loc>https://www.sigmund.lu/tarifs.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/tarifs.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/pricing.html"/>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- EN pages -->
   <url>
     <loc>https://www.sigmund.lu/en/index.html</loc>
@@ -66,6 +75,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/administrative-solution-psychologist.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/solution-administrative-psychologue.html"/>
     <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sigmund.lu/en/pricing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/tarifs.html"/>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

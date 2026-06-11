@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Sigmund Pricing — Practice management software for mental health professionals in Luxembourg</title>
+  <meta name="description" content="Discover Sigmund's pricing — the practice management software for psychiatrists, psychotherapists and psychologists in Luxembourg. Comparison with Logicare."/>
+  <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+  <link rel="canonical" href="https://www.sigmund.lu/en/pricing/"/>
+  <link rel="alternate" hreflang="fr" href="../tarifs.html"/>
+  <link rel="alternate" hreflang="en" href="pricing.html"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="../assets/css/sigmund.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Sigmund",
+    "operatingSystem": "Web",
+    "applicationCategory": "BusinessApplication",
+    "url": "https://www.sigmund.lu/en/",
+    "offers": {
+      "@type": "Offer",
+      "price": "90",
+      "priceCurrency": "EUR",
+      "description": "Monthly subscription, no commitment — all-inclusive",
+      "eligibleRegion": { "@type": "Country", "name": "Luxembourg" }
+    }
+  }
+  </script>
+  <style>
+    .sg-legal-header { background: var(--sg-gradient); padding: 56px 0 48px; position: relative; overflow: hidden; }
+    .sg-legal-header::before { content: ""; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+    .sg-legal-header h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; letter-spacing: -.5px; margin: 0; }
+    .sg-legal-header .header-icon { width: 52px; height: 52px; background: rgba(255,255,255,.15); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .sg-legal-header .header-icon i { font-size: 1.5rem; color: #fff; }
+
+    .sg-price-card { background: var(--sg-gradient); border-radius: 20px; padding: 2.5rem; color: #fff; }
+    .sg-price-card .price { font-size: 3.5rem; font-weight: 800; line-height: 1; }
+    .sg-price-card .price sub { font-size: 1rem; font-weight: 400; opacity: .85; }
+    .sg-price-card .price-label { font-size: .9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; opacity: .8; margin-bottom: .75rem; }
+    .sg-price-card ul { list-style: none; padding: 0; margin: 1.5rem 0; }
+    .sg-price-card ul li { padding: .4rem 0; font-size: .95rem; display: flex; align-items: center; gap: .6rem; }
+    .sg-price-card ul li i { font-size: 1.1rem; flex-shrink: 0; }
+    .sg-price-option { background: rgba(255,255,255,.15); border-radius: 12px; padding: 1rem 1.25rem; font-size: .9rem; margin-top: 1rem; }
+    .sg-price-option strong { display: block; margin-bottom: .2rem; }
+
+    .sg-compare-table { width: 100%; border-collapse: separate; border-spacing: 0; }
+    .sg-compare-table th { padding: 1rem 1.25rem; font-size: .82rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; }
+    .sg-compare-table th:first-child { text-align: left; color: #888; width: 40%; }
+    .sg-compare-table th.col-sigmund { background: var(--sg-primary); color: #fff; border-radius: 12px 12px 0 0; text-align: center; }
+    .sg-compare-table th.col-logicare { background: #f0f0f0; color: #666; border-radius: 12px 12px 0 0; text-align: center; }
+    .sg-compare-table td { padding: .85rem 1.25rem; font-size: .92rem; border-bottom: 1px solid var(--sg-border); vertical-align: middle; }
+    .sg-compare-table td:first-child { color: #444; font-weight: 500; }
+    .sg-compare-table td.col-sigmund { text-align: center; background: rgba(107,164,250,.05); color: var(--sg-dark); font-weight: 600; }
+    .sg-compare-table td.col-logicare { text-align: center; color: #666; }
+    .sg-compare-table tr:last-child td { border-bottom: none; }
+    .sg-compare-table .check { color: var(--sg-primary); font-size: 1.2rem; }
+    .sg-compare-table .cross { color: #ccc; font-size: 1.2rem; }
+    .sg-compare-table .partial { color: #f0ad4e; font-size: .85rem; font-weight: 600; }
+    .sg-compare-wrap { border: 1px solid var(--sg-border); border-radius: 16px; overflow: hidden; }
+
+    .sg-diff-card { background: #fff; border: 1px solid var(--sg-border); border-radius: 14px; padding: 1.5rem; height: 100%; }
+    .sg-diff-card .diff-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--sg-light-bg); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+    .sg-diff-card .diff-icon i { font-size: 1.4rem; color: var(--sg-primary); }
+    .sg-diff-card h4 { font-size: 1rem; font-weight: 700; margin-bottom: .5rem; }
+    .sg-diff-card p { font-size: .88rem; color: #555; line-height: 1.7; margin: 0; }
+
+    .sg-badge-best { display: inline-block; background: var(--sg-primary); color: #fff; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: .2rem .6rem; border-radius: 20px; vertical-align: middle; margin-left: .4rem; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="sg-navbar navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="../assets/images/logo-sigmund.webp" alt="Sigmund" height="52"/></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="administrative-solution-psychiatrist.html">Psychiatrist</a></li>
+        <li class="nav-item"><a class="nav-link" href="administrative-solution-psychotherapist.html">Psychotherapist</a></li>
+        <li class="nav-item"><a class="nav-link" href="administrative-solution-psychologist.html">Psychologist</a></li>
+        <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <span class="sg-phone d-none d-lg-block"><a href="tel:+352621223881"><i class="bi bi-telephone me-2"></i>+352 621 223 881</a> &nbsp; <a href="tel:+352621641447"><i class="bi bi-telephone me-2"></i>+352 621 641 447</a></span>
+        <div class="sg-lang-switch"><a href="../tarifs.html"><span class="fi fi-fr"></span></a> <a href="pricing.html" class="active"><span class="fi fi-gb"></span></a></div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="sg-legal-header">
+  <div class="container">
+    <div class="d-flex align-items-center gap-3">
+      <div class="header-icon"><i class="bi bi-tag"></i></div>
+      <h1 class="mb-0">Pricing</h1>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO GEO -->
+<section class="sg-section pb-0">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <p style="font-size:1.05rem; color:#555; line-height:1.8;">
+          Mental health professionals in private practice in Luxembourg face a limited software market. Sigmund is the only tool <strong>CNS-certified and PID-approved</strong>, developed exclusively for psychiatrists, psychotherapists and psychologists in Luxembourg since 2013 — with a single, transparent, commitment-free price.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="sg-section">
+  <div class="container">
+    <h2 class="sg-section-title">ONE SIMPLE, <span style="color:var(--sg-primary);">TRANSPARENT PRICE</span></h2>
+    <div class="row g-4 align-items-stretch justify-content-center">
+
+      <div class="col-lg-5">
+        <div class="sg-price-card h-100">
+          <p class="price-label">Monthly subscription</p>
+          <div class="price">90<sub>&nbsp;€/month</sub></div>
+          <ul>
+            <li><i class="bi bi-check-circle-fill"></i>No commitment — cancel anytime</li>
+            <li><i class="bi bi-check-circle-fill"></i>All-inclusive — no hidden fees</li>
+            <li><i class="bi bi-check-circle-fill"></i>Calendar &amp; automatic reminders</li>
+            <li><i class="bi bi-check-circle-fill"></i>Patient records &amp; secure session notes</li>
+            <li><i class="bi bi-check-circle-fill"></i>Automatic invoicing in CNS format</li>
+            <li><i class="bi bi-check-circle-fill"></i>Unpaid invoice management</li>
+            <li><i class="bi bi-check-circle-fill"></i>Waiting list &amp; financial dashboard</li>
+            <li><i class="bi bi-check-circle-fill"></i>Responsive support by email and phone</li>
+            <li><i class="bi bi-check-circle-fill"></i>Data hosted in the Grand Duchy of Luxembourg</li>
+            <li><i class="bi bi-check-circle-fill"></i>15-day free trial, no credit card required</li>
+          </ul>
+          <div class="sg-price-option">
+            <strong><i class="bi bi-plus-circle me-2"></i>PID option — Psychiatrists</strong>
+            Immediate Direct Payment with the CNS: +€45/month
+          </div>
+          <a href="https://demo-en.sigmund.lu/" class="btn-sg-primary mt-4 d-inline-block" target="_blank" rel="noopener" style="background:#fff; color:var(--sg-primary);">Book your 15-day free trial</a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 d-flex flex-column gap-3">
+        <div class="sg-diff-card">
+          <div class="diff-icon"><i class="bi bi-shield-check"></i></div>
+          <h4>CNS-certified — PID-approved</h4>
+          <p>Sigmund is the only Luxembourg mental health software officially certified by the CNS and approved for Immediate Direct Payment. Your patients no longer pay upfront.</p>
+        </div>
+        <div class="sg-diff-card">
+          <div class="diff-icon"><i class="bi bi-geo-alt-fill"></i></div>
+          <h4>Data hosted in Luxembourg</h4>
+          <p>All patient health data is hosted in the Grand Duchy, subject to Luxembourg law and the European GDPR.</p>
+        </div>
+        <div class="sg-diff-card">
+          <div class="diff-icon"><i class="bi bi-person-heart"></i></div>
+          <h4>Built exclusively for mental health</h4>
+          <p>Unlike generalist multi-profession software, Sigmund has been developed since 2013 in direct collaboration with psychiatrists, psychotherapists and psychologists.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="sg-section sg-section-alt">
+  <div class="container">
+    <h2 class="sg-section-title">SIGMUND VS LOGICARE <span style="color:var(--sg-primary);">— COMPARISON</span></h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="sg-compare-wrap">
+          <table class="sg-compare-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th class="col-sigmund">Sigmund <span class="sg-badge-best">Our pick</span></th>
+                <th class="col-logicare">Logicare</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monthly price</td>
+                <td class="col-sigmund">€90/month</td>
+                <td class="col-logicare">€83/month (annual billing)</td>
+              </tr>
+              <tr>
+                <td>Commitment</td>
+                <td class="col-sigmund"><i class="bi bi-check-circle-fill check"></i> No commitment</td>
+                <td class="col-logicare">Annual billing required</td>
+              </tr>
+              <tr>
+                <td>Free trial</td>
+                <td class="col-sigmund"><i class="bi bi-check-circle-fill check"></i> 15 days, no card</td>
+                <td class="col-logicare">Demo on request</td>
+              </tr>
+              <tr>
+                <td>Specialised in mental health</td>
+                <td class="col-sigmund"><i class="bi bi-check-circle-fill check"></i> Exclusively</td>
+                <td class="col-logicare"><i class="bi bi-x-circle cross"></i> Multi-profession</td>
+              </tr>
+              <tr>
+                <td>CNS Luxembourg certification</td>
+                <td class="col-sigmund"><i class="bi bi-check-circle-fill check"></i> Certified</td>
+                <td class="col-logicare"><span class="partial">Partial</span></td>
+              </tr>
+              <tr>
+                <td>PID management (Immediate Direct Payment)</td>
+                <td class="col-sigmund"><i class="bi bi-check-circle-fill check"></i> Yes (psychiatrists)</td>
+                <td class="col-logicare"><i class="bi bi-x-circle cross"></i> No</td>
+              </tr>
+              <tr>
+                <td>Data hosted in Luxembourg</td>
+                <td class="col-sigmund"><i class="bi bi-check-circle-fill check"></i> Yes</td>
+                <td class="col-logicare"><span class="partial">Not specified</span></td>
+              </tr>
+              <tr>
+                <td>CNS-format invoicing</td>
+                <td class="col-sigmund"><i class="bi bi-check-circle-fill check"></i> Yes</td>
+                <td class="col-logicare"><i class="bi bi-check-circle-fill check"></i> Yes</td>
+              </tr>
+              <tr>
+                <td>Automatic reminders</td>
+                <td class="col-sigmund"><i class="bi bi-check-circle-fill check"></i> Yes</td>
+                <td class="col-logicare"><i class="bi bi-check-circle-fill check"></i> Yes</td>
+              </tr>
+              <tr>
+                <td>Prescriptions (psychiatrists)</td>
+                <td class="col-sigmund"><i class="bi bi-check-circle-fill check"></i> Yes</td>
+                <td class="col-logicare"><i class="bi bi-x-circle cross"></i> No</td>
+              </tr>
+              <tr>
+                <td>Experience in Luxembourg</td>
+                <td class="col-sigmund"><i class="bi bi-check-circle-fill check"></i> Since 2013</td>
+                <td class="col-logicare">Recent</td>
+              </tr>
+              <tr>
+                <td>Support</td>
+                <td class="col-sigmund">Email &amp; phone</td>
+                <td class="col-logicare">WhatsApp 7 days/week</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-3" style="font-size:.8rem; color:#aaa;">Sources: logicare.lu (June 2026), sigmund.lu. Logicare price shown as annual billing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="sg-section" style="background:var(--sg-gradient);">
+  <div class="container text-center">
+    <h2 style="color:#fff; font-size:1.6rem; font-weight:800; margin-bottom:1rem;">Try Sigmund free for 15 days</h2>
+    <p style="color:rgba(255,255,255,.85); max-width:500px; margin:0 auto 2rem;">No commitment, no credit card. Our team will guide you through the onboarding.</p>
+    <a href="https://demo-en.sigmund.lu/" class="btn-sg-primary" target="_blank" rel="noopener" style="background:#fff; color:var(--sg-primary);">Book your free trial</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="sg-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h6>Useful links</h6>
+        <a href="team.html">Our team</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="legal-notice.html">Legal notice</a>
+      </div>
+      <div class="col-md-4">
+        <h6>About Us</h6>
+        <p style="color:#aaa;font-size:.87rem;line-height:1.6;">We are a passionate team whose goal is to improve the working comfort of psychiatrists, psychotherapists and psychologists through Sigmund, developed by <a href="https://www.hippocrate.lu" target="_blank" rel="noopener"><strong>Hippocrate</strong></a>. We believe technology should be relevant and useful, while stepping back to let its use speak for itself.</p>
+        <img src="../assets/images/made-in-luxembourg-blanc.webp" alt="Made in Luxembourg" height="52"/>
+      </div>
+      <div class="col-md-4">
+        <h6>Contact</h6>
+          <a href="mailto:contact@sigmund.lu"><i class="bi bi-envelope me-2"></i>contact@sigmund.lu</a>
+          <a href="tel:+352621223881"><i class="bi bi-telephone me-2"></i>+352 621 223 881</a>
+          <a href="tel:+352621641447"><i class="bi bi-telephone me-2"></i>+352 621 641 447</a>
+          <a href="https://maps.app.goo.gl/HJKtFqZwnAyrUAAv7" target="_blank" rel="noopener"><i class="bi bi-geo-alt me-2"></i>11 rue des Aubépines L-8052 Bertrange</a>
+          <a href="https://lu.linkedin.com/company/hippocrate-sarl" target="_blank" rel="noopener"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+          <a href="https://www.facebook.com/sigmund.luxembourg/" target="_blank" rel="noopener"><i class="bi bi-facebook me-2"></i>Facebook</a>
+          <a href="https://www.instagram.com/sigmund_lux/" target="_blank" rel="noopener"><i class="bi bi-instagram me-2"></i>Instagram</a>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between mt-4 align-items-center flex-wrap gap-2">
+      <p class="copyright mb-0">Copyright 2024-2026 © <a href="https://www.hippocrate.lu" target="_blank" rel="noopener">Hippocrate Sàrl</a> — All rights reserved | design: <a href="https://www.e-conique.com/" target="_blank" rel="noopener">studio e-conique</a></p>
+      <div class="sg-lang-switch"><a href="../tarifs.html">Français</a> | <a href="pricing.html" class="active">English (UK)</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
