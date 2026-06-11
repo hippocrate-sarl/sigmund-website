@@ -1,0 +1,29 @@
+# Sigmund
+
+> Sigmund est le logiciel de gestion de cabinet conçu pour les professionnels de la santé mentale au Luxembourg (psychologues, psychothérapeutes, psychiatres).
+
+## Offre
+
+- Prix : 90 euros/mois, sans engagement, tout inclus
+- Option PID (Paiement Immédiat Direct CNS) : +45 euros/mois
+- Essai gratuit : 15 jours, sans carte bancaire
+
+## Fonctionnalités principales
+
+- Agenda et calendrier, fiches patients, facturation automatique format CNS
+- Rappels automatiques rendez-vous, liste d'attente, tableau de bord financier
+- Prescriptions (psychiatres), gestion PID, notes de séance sécurisées
+
+## Cibles
+
+Psychiatres, psychothérapeutes, psychologues en cabinet libéral au Luxembourg
+
+## Entreprise
+
+Hippocrate Sarl, Luxembourg | contact@sigmund.lu | Fondé en 2013
+
+## Liens
+
+- Site principal : https://www.sigmund.lu
+- Démo FR : https://demo.sigmund.lu
+- Démo EN : https://demo-en.sigmund.lu
