@@ -101,7 +101,8 @@ body {
 .sg-hero-img {
   max-height: 23.75rem;
   object-fit: contain;
-  filter: drop-shadow(0 8px 32px rgba(107,164,250,.25));
+  border-radius: 16px;
+  box-shadow: 0 16px 60px rgba(0,0,0,.18);
 }
 
 /* ---------- Buttons ---------- */
