@@ -32,6 +32,19 @@ No build step required. Open any HTML file directly in a browser.
 | `equipe.html` | `en/team.html` | Team page (E-E-A-T) |
 | `facturation-cns.html` | `en/cns-invoicing.html` | CNS invoicing guide |
 | `paiement-immediat-direct.html` | `en/immediate-direct-payment.html` | PID (Immediate Direct Payment) guide |
+| — | — | — |
+| `de/index.html` | — | Homepage (DE) |
+| `de/psychiater.html` | — | Psychiatrist landing page (DE) |
+| `de/psychotherapeut.html` | — | Psychotherapist landing page (DE) |
+| `de/psychologe.html` | — | Psychologist landing page (DE) |
+| `de/preise.html` | — | Pricing (DE) |
+| `de/team.html` | — | Team page (DE) |
+| `de/cns-abrechnung.html` | — | CNS invoicing guide (DE) |
+| `de/direktzahlung.html` | — | PID guide (DE) |
+| `de/cookie-richtlinie.html` | — | Cookie policy (DE) |
+| `de/datenschutz.html` | — | Privacy policy (DE) |
+| `de/impressum.html` | — | Legal notice (DE) |
+| — | — | — |
 | `politique-en-matiere-de-cookies.html` | `en/cookie-policy.html` | Cookie policy |
 | `politique-relative-aux-donnees-personnelles.html` | `en/privacy-policy.html` | Privacy policy |
 | `mentions-legales.html` | `en/legal-notice.html` | Legal notice |

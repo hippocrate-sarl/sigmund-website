@@ -116,12 +116,24 @@ Three columns on all pages:
 
 When adding a new resource page, add its link to the "Ressources" sub-section in the footer of **all** existing pages (FR and EN separately).
 
-## Bilingual structure
+## Trilingual structure
 
-Every FR page has a matching EN counterpart. Language switcher in navbar and footer links between them. Cookie consent language is auto-detected from `<html lang="...">`.
+Every main page has FR, EN and DE counterparts. Language switcher in navbar and footer links between them. Cookie consent language is auto-detected from `<html lang="...">`.
 
 FR pages: assets at `assets/`, links relative from root (e.g. `href="en/index.html"`).
 EN pages: assets at `../assets/`, links relative from `en/` (e.g. `href="../index.html"`).
+DE pages: assets at `../assets/`, links relative from `de/` (e.g. `href="../index.html"`).
+
+DE page URL mapping:
+- `de/index.html` ↔ `index.html` / `en/index.html`
+- `de/psychiater.html` ↔ `solution-administrative-psychiatre.html` / `en/administrative-solution-psychiatrist.html`
+- `de/psychotherapeut.html` ↔ `solution-administrative-psychotherapeute.html` / `en/administrative-solution-psychotherapist.html`
+- `de/psychologe.html` ↔ `solution-administrative-psychologue.html` / `en/administrative-solution-psychologist.html`
+- `de/preise.html` ↔ `tarifs.html` / `en/pricing.html`
+- `de/team.html` ↔ `equipe.html` / `en/team.html`
+- `de/cns-abrechnung.html` ↔ `facturation-cns.html` / `en/cns-invoicing.html`
+- `de/direktzahlung.html` ↔ `paiement-immediat-direct.html` / `en/immediate-direct-payment.html`
+- Legal: `de/cookie-richtlinie.html`, `de/datenschutz.html`, `de/impressum.html`
 
 ## SEO / GEO
 

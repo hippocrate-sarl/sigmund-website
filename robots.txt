@@ -6,5 +6,8 @@ Disallow: /en/legal-notice.html
 Disallow: /politique-en-matiere-de-cookies.html
 Disallow: /politique-relative-aux-donnees-personnelles.html
 Disallow: /mentions-legales.html
+Disallow: /de/cookie-richtlinie.html
+Disallow: /de/datenschutz.html
+Disallow: /de/impressum.html
 
 Sitemap: https://www.sigmund.lu/sitemap.xml

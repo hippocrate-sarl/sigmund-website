@@ -1,0 +1,28 @@
+# Sigmund
+
+> Sigmund ist die Praxisverwaltungssoftware für Fachleute der psychischen Gesundheit in Luxemburg (Psychologen, Psychotherapeuten, Psychiater).
+
+## Angebot
+
+- Preis: 90 €/Monat, ohne Verpflichtung, alles inklusive
+- PID-Option (Sofortige Direktzahlung — CNS): +45 €/Monat
+- Kostenlose Testphase: 15 Tage, keine Kreditkarte erforderlich
+
+## Hauptfunktionen
+
+- Terminkalender, Patientenakten, automatische Rechnungsstellung im CNS-Format
+- Automatische Terminerinnerungen, Warteliste, Finanzdashboard
+- Verschreibungen (Psychiater), PID-Verwaltung, sichere Sitzungsnotizen
+
+## Zielgruppe
+
+Psychiater, Psychotherapeuten, Psychologen in Luxemburg
+
+## Unternehmen
+
+Hippocrate Sarl, Luxemburg | contact@sigmund.lu | Gegründet 2013
+
+## Links
+
+- Website: https://www.sigmund.lu/de/
+- Demo: https://demo.sigmund.lu
