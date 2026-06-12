@@ -782,3 +782,77 @@ body {
 
 .sg-soon-card p { font-size: .92rem; color: #555; margin: 0; line-height: 1.6; }
 .sg-soon-card a { color: var(--sg-primary); font-weight: 600; }
+
+/* ---------- Team cards ---------- */
+.sg-team-card { background: #fff; border: 1px solid var(--sg-border); border-radius: 16px; padding: 2rem 1.5rem; text-align: center; height: 100%; transition: box-shadow .2s, transform .2s; }
+.sg-team-card:hover { box-shadow: var(--sg-shadow); transform: translateY(-3px); }
+.sg-team-card img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 1.25rem; border: 3px solid var(--sg-border); }
+.sg-team-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--sg-dark); margin-bottom: .25rem; }
+.sg-team-card .role { font-size: .85rem; font-weight: 600; color: var(--sg-primary); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 1rem; }
+.sg-team-card p { font-size: .9rem; color: #555; line-height: 1.7; margin-bottom: 1.25rem; }
+.sg-team-card .btn-linkedin { display: inline-flex; align-items: center; gap: .4rem; font-size: .85rem; font-weight: 600; color: var(--sg-primary); border: 1.5px solid var(--sg-primary); border-radius: 50px; padding: .4rem 1rem; text-decoration: none; transition: all .2s; }
+.sg-team-card .btn-linkedin:hover { background: var(--sg-primary); color: #fff; }
+
+/* ---------- Pricing page ---------- */
+.sg-price-card { background: var(--sg-gradient); border-radius: 20px; padding: 2.5rem; color: #fff; }
+.sg-price-card .price { font-size: 3.5rem; font-weight: 800; line-height: 1; }
+.sg-price-card .price sub { font-size: 1rem; font-weight: 400; opacity: .85; }
+.sg-price-card .price-label { font-size: .9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; opacity: .8; margin-bottom: .75rem; }
+.sg-price-card ul { list-style: none; padding: 0; margin: 1.5rem 0; }
+.sg-price-card ul li { padding: .4rem 0; font-size: .95rem; display: flex; align-items: center; gap: .6rem; }
+.sg-price-card ul li i { font-size: 1.1rem; flex-shrink: 0; }
+.sg-price-option { background: rgba(255,255,255,.15); border-radius: 12px; padding: 1rem 1.25rem; font-size: .9rem; margin-top: 1rem; }
+.sg-price-option strong { display: block; margin-bottom: .2rem; }
+.sg-compare-table { width: 100%; border-collapse: separate; border-spacing: 0; }
+.sg-compare-table th { padding: 1rem 1.25rem; font-size: .82rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; }
+.sg-compare-table th:first-child { text-align: left; color: #888; width: 40%; }
+.sg-compare-table th.col-sigmund { background: var(--sg-primary); color: #fff; border-radius: 12px 12px 0 0; text-align: center; }
+.sg-compare-table th.col-logicare { background: #f0f0f0; color: #666; border-radius: 12px 12px 0 0; text-align: center; }
+.sg-compare-table td { padding: .85rem 1.25rem; font-size: .92rem; border-bottom: 1px solid var(--sg-border); vertical-align: middle; }
+.sg-compare-table td:first-child { color: #444; font-weight: 500; }
+.sg-compare-table td.col-sigmund { text-align: center; background: rgba(107,164,250,.05); color: var(--sg-dark); font-weight: 600; }
+.sg-compare-table td.col-logicare { text-align: center; color: #666; }
+.sg-compare-table tr:last-child td { border-bottom: none; }
+.sg-compare-table .check { color: var(--sg-primary); font-size: 1.2rem; }
+.sg-compare-table .cross { color: #ccc; font-size: 1.2rem; }
+.sg-compare-table .partial { color: #f0ad4e; font-size: .85rem; font-weight: 600; }
+.sg-compare-wrap { border: 1px solid var(--sg-border); border-radius: 16px; overflow: hidden; }
+.sg-diff-card { background: #fff; border: 1px solid var(--sg-border); border-radius: 14px; padding: 1.5rem; height: 100%; }
+.sg-diff-card .diff-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--sg-light-bg); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+.sg-diff-card .diff-icon i { font-size: 1.4rem; color: var(--sg-primary); }
+.sg-diff-card h4 { font-size: 1rem; font-weight: 700; margin-bottom: .5rem; }
+.sg-diff-card p { font-size: .88rem; color: #555; line-height: 1.7; margin: 0; }
+.sg-badge-best { display: inline-block; background: var(--sg-primary); color: #fff; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: .2rem .6rem; border-radius: 20px; vertical-align: middle; margin-left: .4rem; }
+
+/* ---------- Cookie policy cards ---------- */
+.sg-cookie-cards { display: flex; flex-direction: column; gap: 1rem; }
+.sg-cookie-card { border-radius: 10px; padding: 1.25rem 1.5rem; border: 1px solid rgba(107,164,250,.25); background: #fff; box-shadow: 0 2px 12px rgba(107,164,250,.08); }
+.sg-cookie-essential { border-left: 4px solid var(--sg-primary); }
+.sg-cookie-optional { border-left: 4px solid #adb5bd; }
+.sg-cookie-card-header { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .75rem; margin-bottom: .6rem; }
+.sg-cookie-badge { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; padding: .2em .6em; border-radius: 4px; }
+.sg-badge-essential { background: rgba(107,164,250,.15); color: #3b6fd4; }
+.sg-badge-optional { background: rgba(173,181,189,.15); color: #6c757d; }
+.sg-cookie-category { font-weight: 600; font-size: .88rem; color: var(--sg-dark); }
+.sg-cookie-name { font-size: .82rem; background: var(--sg-light-bg); padding: .15em .45em; border-radius: 4px; color: #c0392b; }
+.sg-cookie-provider { font-size: .82rem; color: #6c757d; margin-left: auto; }
+.sg-cookie-purpose { font-size: .85rem; color: #555; margin: 0; line-height: 1.6; }
+
+/* ---------- Privacy policy ---------- */
+.sg-update-badge { display: inline-flex; align-items: center; gap: .5rem; background: #f8fbff; border: 1px solid rgba(107,164,250,.2); border-radius: 8px; padding: .4rem .9rem; font-size: .82rem; color: #666; margin-bottom: 1.5rem; }
+.sg-update-badge i { color: var(--sg-primary); }
+.sg-provider-card { background: #fff; border: 1px solid rgba(107,164,250,.15); border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: .75rem; }
+.sg-provider-card strong, .provider-name { font-weight: 700; font-size: .95rem; color: var(--sg-dark); margin-bottom: .4rem; }
+.sg-provider-card p { font-size: .88rem; color: #555; margin: .35rem 0 .5rem; line-height: 1.65; }
+.sg-provider-card address { font-size: .82rem; color: #888; font-style: normal; line-height: 1.7; margin: 0; }
+.sg-alert-note { background: rgba(107,164,250,.08); border-left: 4px solid var(--sg-primary); border-radius: 0 8px 8px 0; padding: .9rem 1.25rem; font-size: .88rem; color: #555; margin-bottom: 1.5rem; }
+
+/* ---------- PID guide flow ---------- */
+.sg-profession-badge.coming-soon { background: #fff8e6; border-color: #f0ad4e; color: #b07d00; }
+.sg-flow { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem; margin: 1.5rem 0; }
+.sg-flow-step { background: #fff; border: 1.5px solid var(--sg-border); border-radius: 10px; padding: .75rem 1.1rem; font-size: .88rem; font-weight: 600; color: var(--sg-dark); text-align: center; flex: 1; min-width: 120px; }
+.sg-flow-step.highlight { background: var(--sg-primary); color: #fff; border-color: var(--sg-primary); }
+.sg-flow-arrow { color: var(--sg-primary); font-size: 1.2rem; font-weight: 700; }
+
+/* ---------- Standalone pages (pt/, lb/) ---------- */
+.sg-standalone-header { background: var(--sg-white); box-shadow: 0 1px 8px rgba(0,0,0,.06); padding: .75rem 0; }
