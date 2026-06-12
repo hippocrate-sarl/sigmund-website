@@ -10,7 +10,7 @@ Developed and maintained by **Hippocrate Sàrl** (Bertrange, Luxembourg).
 
 Sigmund is a SaaS product that handles the administrative side of a private mental health practice: appointment scheduling, patient records, invoicing, CNS-format billing, PID (Paiement Immédiat Direct) management, unpaid invoice reminders, waiting list, session notes, prescriptions, and more.
 
-This repository is the **public-facing marketing website** only. The application itself runs at `demo.sigmund.lu` / `demo-en.sigmund.lu`.
+This repository is the **public-facing marketing website** only. The production application runs at `app.sigmund.lu` (FR + EN). Demo request forms are at `demo.sigmund.lu` (FR) and `demo-en.sigmund.lu` (EN).
 
 ---
 
@@ -47,6 +47,8 @@ Then visit `http://localhost:8080`.
 | `mentions-legales.html` | `en/legal-notice.html` | Legal notice |
 
 Legal pages are excluded from search engine indexing (`robots.txt` + `<meta name="robots" content="noindex">`).
+
+The cookie policy pages reflect that sigmund.lu is a static site with no cookies. The Sigmund application (demo.sigmund.lu) may still use essential session cookies — this distinction is documented in both the cookie policy and privacy policy.
 
 ---
 

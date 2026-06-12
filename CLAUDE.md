@@ -141,7 +141,8 @@ EN pages: assets at `../assets/`, links relative from `en/` (e.g. `href="../inde
 - **Psychotherapy reimbursement**: started in 2023 in Luxembourg — psychotherapists can now invoice CNS
 - Base subscription: **€90/month**, no commitment, 15-day free trial
 - Data stored in Luxembourg (Gandi SAS datacenter in Bissen), subject to Luxembourg law + GDPR
-- Demo app FR: `https://demo.sigmund.lu/` — EN: `https://demo-en.sigmund.lu/`
+- Demo request form FR: `https://demo.sigmund.lu/` — EN: `https://demo-en.sigmund.lu/` (CTA buttons throughout the site)
+- Application URL (production): `https://app.sigmund.lu/` (FR + EN — same URL for both languages)
 - Competitor: **Logicare** (logicare.lu) — €83/month billed annually, multi-profession generalist, no PID
 
 ## What to watch out for
@@ -151,3 +152,4 @@ EN pages: assets at `../assets/`, links relative from `en/` (e.g. `href="../inde
 - The `facturation-cns.html` hero uses `gestion-simple-factures.svg` as a placeholder — replace with a real photo when available
 - No build step — changes to HTML/CSS/JS files are deployed directly
 - `robots.txt` disallows legal/policy pages — do not add guide/resource pages to the disallow list
+- The cookie policy pages state that sigmund.lu sets no cookies. The Sigmund app (demo.sigmund.lu) may use essential session cookies — that distinction is maintained in both the cookie policy and privacy policy pages
