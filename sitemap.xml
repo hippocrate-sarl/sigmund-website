@@ -67,6 +67,16 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.sigmund.lu/equipe.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/equipe.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/team.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/team.html"/>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- EN pages -->
   <url>
     <loc>https://www.sigmund.lu/en/index.html</loc>
@@ -132,6 +142,16 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://www.sigmund.lu/en/team.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/team.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/equipe.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/team.html"/>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- DE pages -->
   <url>
     <loc>https://www.sigmund.lu/de/index.html</loc>
@@ -177,6 +197,15 @@
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sigmund.lu/de/team.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/team.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/equipe.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/team.html"/>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.sigmund.lu/de/cns-abrechnung.html</loc>
