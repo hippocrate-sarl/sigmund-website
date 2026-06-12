@@ -76,7 +76,6 @@ All dependencies are loaded from CDN — nothing to install.
 | Bootstrap | 5.3.3 | Layout, navbar, grid, utilities |
 | Bootstrap Icons | 1.11.3 | Icons (`bi bi-*`) |
 | flag-icons | 7.2.3 | Language switcher flags (`fi fi-*`) |
-| vanilla-cookieconsent | 3 | GDPR cookie consent banner |
 | Google Fonts — Inter | — | Body font (300–800) |
 
 Contact forms submit via POST to `https://rake.red/to/a1b2c3d4`.

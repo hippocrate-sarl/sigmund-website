@@ -479,13 +479,6 @@ body {
 
 .sg-footer .copyright { color: #666; font-size: .8rem; }
 
-/* ---------- Cookie consent ---------- */
-#cc-main .cm__btn[data-role="necessary"] {
-  background: transparent;
-  border: 1px solid #ccc;
-  color: #555;
-}
-
 /* ---------- Language switcher ---------- */
 .sg-lang-switch {
   font-size: .85rem;

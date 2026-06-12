@@ -10,7 +10,6 @@ Developed by **Hippocrate Sàrl** (Bertrange, Luxembourg). Team: Sylvain Perez, 
 - **Bootstrap 5.3** (CDN) — layout and components
 - **Bootstrap Icons 1.11** (CDN) — icons via `<i class="bi bi-*">`
 - **flag-icons 7.2** (CDN) — language switcher flags via `<span class="fi fi-*">`
-- **vanilla-cookieconsent 3** (CDN) — GDPR cookie banner
 - **Google Fonts** — Inter (300/400/500/600/700/800)
 - Contact forms POST to `https://rake.red/to/a1b2c3d4`
 
@@ -44,7 +43,7 @@ en/legal-notice.html
 llms.txt                                          AI crawler description (FR)
 en/llms.txt                                       AI crawler description (EN)
 assets/css/sigmund.css                            All custom styles (shared by all pages)
-assets/js/main.js                                 Cookie consent init + active nav-link highlight
+assets/js/main.js                                 Active nav-link highlight
 assets/images/                                    All images (webp + svg)
   team-sylvain-perez.webp                         Team photo — downloaded from hippocrate.lu
   team-franck-amouyal.webp
