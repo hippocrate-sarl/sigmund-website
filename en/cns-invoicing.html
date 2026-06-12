@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>CNS Invoicing in Luxembourg — Guide for Psychiatrists and Psychotherapists | Sigmund</title>
+  <meta name="description" content="Complete guide to CNS invoicing in Luxembourg for psychiatrists and psychotherapists. Understanding the CNS format, act codes, and how Sigmund automates your billing."/>
+  <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+  <link rel="canonical" href="https://www.sigmund.lu/en/cns-invoicing/"/>
+  <link rel="alternate" hreflang="fr" href="../facturation-cns.html"/>
+  <link rel="alternate" hreflang="en" href="cns-invoicing.html"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="../assets/css/sigmund.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "CNS Invoicing in Luxembourg: practical guide for psychiatrists and psychotherapists",
+    "description": "Complete guide to CNS invoicing in Luxembourg for mental health professionals.",
+    "author": { "@type": "Organization", "name": "Sigmund — Hippocrate Sarl" },
+    "publisher": { "@type": "Organization", "name": "Sigmund", "url": "https://www.sigmund.lu" },
+    "datePublished": "2026-06-12",
+    "dateModified": "2026-06-12",
+    "mainEntityOfPage": "https://www.sigmund.lu/en/cns-invoicing/"
+  }
+  </script>
+  <style>
+    .sg-legal-header { background: var(--sg-gradient); padding: 56px 0 48px; position: relative; overflow: hidden; }
+    .sg-legal-header::before { content: ""; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+    .sg-legal-header h1 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; letter-spacing: -.5px; margin: 0 0 .75rem; }
+    .sg-legal-header p { color: rgba(255,255,255,.85); font-size: 1rem; margin: 0; max-width: 600px; }
+    .sg-legal-header .header-icon { width: 52px; height: 52px; background: rgba(255,255,255,.15); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .sg-legal-header .header-icon i { font-size: 1.5rem; color: #fff; }
+    .sg-guide-hero-img { width: 100%; border-radius: 16px; box-shadow: 0 16px 60px rgba(0,0,0,.12); display: block; }
+    .sg-guide-content h2 { font-size: 1.3rem; font-weight: 700; color: var(--sg-dark); margin: 2.5rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid var(--sg-border); }
+    .sg-guide-content h3 { font-size: 1.05rem; font-weight: 700; color: var(--sg-primary); margin: 1.75rem 0 .6rem; }
+    .sg-guide-content p { color: #444; line-height: 1.85; font-size: .97rem; margin-bottom: 1rem; }
+    .sg-guide-content ul { color: #444; line-height: 1.85; font-size: .97rem; padding-left: 1.5rem; margin-bottom: 1rem; }
+    .sg-guide-content ul li { margin-bottom: .4rem; }
+    .sg-guide-content a { color: var(--sg-primary); }
+    .sg-info-box { background: var(--sg-light-bg); border-left: 4px solid var(--sg-primary); border-radius: 0 10px 10px 0; padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+    .sg-info-box p { margin: 0; font-size: .93rem; color: #444; line-height: 1.7; }
+    .sg-info-box strong { color: var(--sg-primary); }
+    .sg-steps { list-style: none; padding: 0; counter-reset: step-counter; }
+    .sg-steps li { counter-increment: step-counter; padding: 1rem 1rem 1rem 3.5rem; position: relative; border: 1px solid var(--sg-border); border-radius: 10px; margin-bottom: .75rem; background: #fff; font-size: .95rem; color: #444; line-height: 1.7; }
+    .sg-steps li::before { content: counter(step-counter); position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); width: 28px; height: 28px; border-radius: 50%; background: var(--sg-primary); color: #fff; font-weight: 700; font-size: .85rem; display: flex; align-items: center; justify-content: center; }
+    .sg-profession-badge { display: inline-flex; align-items: center; gap: .4rem; background: var(--sg-light-bg); border: 1px solid var(--sg-border); border-radius: 20px; padding: .3rem .9rem; font-size: .85rem; font-weight: 600; color: var(--sg-primary); margin: .25rem; }
+    .sg-faq details { border: 1px solid rgba(107,164,250,.2); border-radius: 10px; margin-bottom: .75rem; overflow: hidden; }
+    .sg-faq summary { padding: 1rem 1.25rem; font-weight: 600; font-size: .93rem; cursor: pointer; background: #fff; color: var(--sg-dark); list-style: none; display: flex; justify-content: space-between; align-items: center; }
+    .sg-faq summary::-webkit-details-marker { display: none; }
+    .sg-faq summary::after { content: '+'; font-size: 1.2rem; color: var(--sg-primary); font-weight: 300; transition: transform .2s; }
+    .sg-faq details[open] summary::after { transform: rotate(45deg); }
+    .sg-faq details[open] summary { background: var(--sg-light-bg); color: var(--sg-primary); }
+    .sg-faq .faq-body { padding: 1rem 1.25rem 1.25rem; font-size: .9rem; color: #555; line-height: 1.75; background: #fff; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="sg-navbar navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="../assets/images/logo-sigmund.webp" alt="Sigmund" height="52"/></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="administrative-solution-psychiatrist.html">Psychiatrist</a></li>
+        <li class="nav-item"><a class="nav-link" href="administrative-solution-psychotherapist.html">Psychotherapist</a></li>
+        <li class="nav-item"><a class="nav-link" href="administrative-solution-psychologist.html">Psychologist</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <span class="sg-phone d-none d-lg-block"><a href="tel:+352621223881"><i class="bi bi-telephone me-2"></i>+352 621 223 881</a> &nbsp; <a href="tel:+352621641447"><i class="bi bi-telephone me-2"></i>+352 621 641 447</a></span>
+        <div class="sg-lang-switch"><a href="../facturation-cns.html"><span class="fi fi-fr"></span></a> <a href="cns-invoicing.html" class="active"><span class="fi fi-gb"></span></a></div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="sg-legal-header">
+  <div class="container">
+    <div class="d-flex align-items-start gap-3">
+      <div class="header-icon mt-1"><i class="bi bi-receipt"></i></div>
+      <div>
+        <h1>CNS Invoicing in Luxembourg</h1>
+        <p>Practical guide for psychiatrists and psychotherapists in private practice</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HERO + INTRO -->
+<section class="sg-section pb-0">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="mb-3">
+          <span class="sg-profession-badge"><i class="bi bi-person-badge"></i>Psychiatrist</span>
+          <span class="sg-profession-badge"><i class="bi bi-person-badge"></i>Psychotherapist</span>
+        </div>
+        <p style="font-size:1.05rem; color:#444; line-height:1.85;">
+          In Luxembourg, the CNS (Caisse Nationale de Santé — National Health Fund) reimburses consultations for psychiatrists and, since 2023, for recognised psychotherapists. To receive these reimbursements, private practitioners must issue invoices in the <strong>CNS-compliant format</strong> — an administrative constraint that can represent up to 20% of working time according to the <a href="https://www.conseil-national.medecin.fr" target="_blank" rel="noopener">French National Medical Board</a>.
+        </p>
+        <p style="font-size:1.05rem; color:#444; line-height:1.85;">
+          This guide explains how CNS invoicing works, who is affected, and how Sigmund — <strong>CNS-certified and PID-approved</strong> — automates the entire process.
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <img src="../assets/images/gestion-simple-factures.svg"
+             alt="CNS invoicing simplified with Sigmund"
+             class="sg-guide-hero-img"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="sg-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 sg-guide-content">
+
+        <h2>What is CNS invoicing?</h2>
+        <p>The CNS (Caisse Nationale de Santé) is Luxembourg's social security body managing healthcare reimbursements. For a consultation to be reimbursed, the practitioner must issue an invoice <strong>compliant with the CNS standard format</strong>, including:</p>
+        <ul>
+          <li>The patient's national identification number (matricule)</li>
+          <li>The act code corresponding to the service provided</li>
+          <li>The date of the consultation</li>
+          <li>The practitioner's identification details (convention number)</li>
+          <li>The fee amount according to the agreed tariff</li>
+        </ul>
+        <p>Any non-compliant invoice is rejected by the CNS, requiring corrections and causing additional reimbursement delays for patients.</p>
+
+        <div class="sg-info-box">
+          <p><strong>Good to know:</strong> since 2023, recognised psychotherapists in Luxembourg can invoice their consultations through the CNS under the psychotherapy reimbursement scheme. This development has opened the Luxembourg market to many practitioners who previously had no access to this system.</p>
+        </div>
+
+        <h2>Who is affected by CNS invoicing?</h2>
+
+        <h3>Psychiatrists</h3>
+        <p>CNS-contracted psychiatrists issue care forms for each consultation. They have specific act codes for their specialty and, since 2024, can benefit from <strong>Immediate Direct Payment (PID)</strong>: the CNS reimburses them directly, without patients having to pay upfront.</p>
+
+        <h3>Psychotherapists</h3>
+        <p>Since the introduction of psychotherapy reimbursement in 2023, recognised psychotherapists can invoice their sessions to the CNS. The PID scheme is being rolled out for this profession — Sigmund will automatically integrate this feature as soon as it is opened by the CNS.</p>
+
+        <h2>How to invoice the CNS in practice</h2>
+        <p>Here are the steps for correct CNS invoicing for a mental health professional in private practice:</p>
+
+        <ol class="sg-steps">
+          <li><strong>Verify patient eligibility</strong> — confirm the patient is affiliated with the CNS and their coverage is active.</li>
+          <li><strong>Record the consultation</strong> — note the date, duration and type of service provided.</li>
+          <li><strong>Select the CNS act code</strong> — each type of consultation corresponds to a specific code in the CNS nomenclature. Codes vary by profession and type of care.</li>
+          <li><strong>Generate the invoice in CNS format</strong> — the invoice must strictly comply with the standardised format required by the CNS, including all mandatory information.</li>
+          <li><strong>Send the invoice</strong> — to the patient or directly via PID (for psychiatrists).</li>
+          <li><strong>Track reimbursements</strong> — check payments received and manage any rejections or unpaid invoices.</li>
+        </ol>
+
+        <div class="sg-info-box">
+          <p><strong>Watch out for CNS rejections:</strong> the most common errors are an incorrect patient identification number, a wrong act code, or a badly formatted consultation date. Each rejection causes additional reimbursement delays and extra administrative work for the practitioner.</p>
+        </div>
+
+        <h2>Sigmund and CNS invoicing: zero errors, zero wasted time</h2>
+        <p>Sigmund is the only practice management software in Luxembourg <strong>officially certified by the CNS</strong>. In practice, this means:</p>
+        <ul>
+          <li>Invoices generated by Sigmund are <strong>automatically compliant</strong> with the CNS format — no manual checking required.</li>
+          <li>CNS act codes are built in and kept up to date within the application.</li>
+          <li>Sigmund allows you to add your <strong>own custom codes</strong> alongside the official CNS codes.</li>
+          <li>Invoicing a consultation takes <strong>under one minute</strong>, stopwatch in hand (as reported by multiple users).</li>
+          <li>Automatic reminders for unpaid invoices can be configured to your preferences.</li>
+        </ul>
+
+        <h3>The PID option for psychiatrists</h3>
+        <p>Sigmund has been <strong>PID (Immediate Direct Payment) approved</strong> by the CNS since 2024. This option, available for psychiatrists at an additional €45/month, enables the CNS to pay you directly: your patients no longer pay upfront. This is a significant advantage for patient retention and simplifies your accounting.</p>
+
+        <h3>Confidential export for your tax return</h3>
+        <p>Sigmund generates an export of your invoices <strong>without patient names</strong>, specifically designed to simplify your income declaration in Luxembourg — while preserving medical confidentiality.</p>
+
+        <h2>Frequently asked questions about CNS invoicing</h2>
+        <div class="sg-faq">
+          <details>
+            <summary>Is CNS invoicing mandatory for psychotherapists?</summary>
+            <div class="faq-body">No, it is not mandatory, but it is essential to allow your patients to be reimbursed by the CNS. Patients who consult a non-contracted psychotherapist cannot benefit from reimbursements. The vast majority of recognised psychotherapists in Luxembourg benefit from being contracted.</div>
+          </details>
+          <details>
+            <summary>Can I invoice the CNS if I work at multiple locations?</summary>
+            <div class="faq-body">Yes. Sigmund natively manages multiple consultation addresses. Each invoice shows the correct address for the consultation, in compliance with CNS requirements.</div>
+          </details>
+          <details>
+            <summary>What happens if the CNS rejects an invoice?</summary>
+            <div class="faq-body">A CNS rejection means the invoice must be corrected and resubmitted. With Sigmund, generated invoices automatically comply with the CNS format, greatly reducing the risk of rejection. If a problem arises, our team is available to assist you.</div>
+          </details>
+          <details>
+            <summary>How do I import my existing CNS codes into Sigmund?</summary>
+            <div class="faq-body">Sigmund includes all official CNS act codes. If you use custom codes, our team can help you import them during your initial setup.</div>
+          </details>
+          <details>
+            <summary>Is PID available for psychotherapists?</summary>
+            <div class="faq-body">PID is currently available only for psychiatrists. Its extension to psychotherapists is being pursued with the CNS. Sigmund will automatically integrate this feature when it is deployed, at no additional configuration cost for subscribers.</div>
+          </details>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="sg-section" style="background:var(--sg-gradient);">
+  <div class="container text-center">
+    <h2 style="color:#fff; font-size:1.6rem; font-weight:800; margin-bottom:1rem;">Simplify your CNS invoicing with Sigmund</h2>
+    <p style="color:rgba(255,255,255,.85); max-width:520px; margin:0 auto 2rem;">CNS-certified, PID-approved, built in Luxembourg since 2013. Try Sigmund free for 15 days — no commitment, no credit card.</p>
+    <div class="d-flex gap-3 justify-content-center flex-wrap">
+      <a href="https://demo-en.sigmund.lu/" class="btn-sg-primary" target="_blank" rel="noopener" style="background:#fff; color:var(--sg-primary);">Book your free trial</a>
+      <a href="pricing.html" class="btn-sg-outline" style="border-color:#fff; color:#fff;">View pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="sg-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h6>Useful links</h6>
+        <a href="team.html">Our team</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="legal-notice.html">Legal notice</a>
+        <h6 class="mt-3">Resources</h6>
+        <a href="cns-invoicing.html">CNS Invoicing</a>
+        <a href="immediate-direct-payment.html">Immediate Direct Payment</a>
+      </div>
+      <div class="col-md-4">
+        <h6>About Us</h6>
+        <p style="color:#aaa;font-size:.87rem;line-height:1.6;">We are a passionate team whose goal is to improve the working comfort of psychiatrists, psychotherapists and psychologists through Sigmund, developed by <a href="https://www.hippocrate.lu" target="_blank" rel="noopener"><strong>Hippocrate</strong></a>. We believe technology should be relevant and useful, while stepping back to let its use speak for itself.</p>
+        <img src="../assets/images/made-in-luxembourg-blanc.webp" alt="Made in Luxembourg" height="52"/>
+      </div>
+      <div class="col-md-4">
+        <h6>Contact</h6>
+          <a href="mailto:contact@sigmund.lu"><i class="bi bi-envelope me-2"></i>contact@sigmund.lu</a>
+          <a href="tel:+352621223881"><i class="bi bi-telephone me-2"></i>+352 621 223 881</a>
+          <a href="tel:+352621641447"><i class="bi bi-telephone me-2"></i>+352 621 641 447</a>
+          <a href="https://maps.app.goo.gl/HJKtFqZwnAyrUAAv7" target="_blank" rel="noopener"><i class="bi bi-geo-alt me-2"></i>11 rue des Aubépines L-8052 Bertrange</a>
+          <a href="https://lu.linkedin.com/company/hippocrate-sarl" target="_blank" rel="noopener"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+          <a href="https://www.facebook.com/sigmund.luxembourg/" target="_blank" rel="noopener"><i class="bi bi-facebook me-2"></i>Facebook</a>
+          <a href="https://www.instagram.com/sigmund_lux/" target="_blank" rel="noopener"><i class="bi bi-instagram me-2"></i>Instagram</a>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between mt-4 align-items-center flex-wrap gap-2">
+      <p class="copyright mb-0">Copyright 2024-2026 © <a href="https://www.hippocrate.lu" target="_blank" rel="noopener">Hippocrate Sàrl</a> — All rights reserved | design: <a href="https://www.e-conique.com/" target="_blank" rel="noopener">studio e-conique</a></p>
+      <div class="sg-lang-switch"><a href="../facturation-cns.html">Français</a> | <a href="cns-invoicing.html" class="active">English (UK)</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

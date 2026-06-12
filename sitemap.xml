@@ -80,6 +80,22 @@
   </url>
 
   <url>
+    <loc>https://www.sigmund.lu/facturation-cns.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/facturation-cns.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/cns-invoicing.html"/>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sigmund.lu/en/cns-invoicing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/cns-invoicing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/facturation-cns.html"/>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.sigmund.lu/en/pricing.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/pricing.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/tarifs.html"/>

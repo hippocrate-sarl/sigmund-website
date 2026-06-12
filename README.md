@@ -38,6 +38,10 @@ Then visit `http://localhost:8080`.
 | `solution-administrative-psychiatre.html` | `en/administrative-solution-psychiatrist.html` | Psychiatrist landing page |
 | `solution-administrative-psychotherapeute.html` | `en/administrative-solution-psychotherapist.html` | Psychotherapist landing page |
 | `solution-administrative-psychologue.html` | `en/administrative-solution-psychologist.html` | Psychologist landing page |
+| `tarifs.html` | `en/pricing.html` | Pricing + Sigmund vs Logicare comparison |
+| `equipe.html` | `en/team.html` | Team page (E-E-A-T) |
+| `facturation-cns.html` | `en/cns-invoicing.html` | CNS invoicing guide |
+| `paiement-immediat-direct.html` | `en/immediate-direct-payment.html` | PID guide *(to be created)* |
 | `politique-en-matiere-de-cookies.html` | `en/cookie-policy.html` | Cookie policy |
 | `politique-relative-aux-donnees-personnelles.html` | `en/privacy-policy.html` | Privacy policy |
 | `mentions-legales.html` | `en/legal-notice.html` | Legal notice |
@@ -51,10 +55,14 @@ Legal pages are excluded from search engine indexing (`robots.txt` + `<meta name
 ```
 assets/
 ├── css/
-│   └── sigmund.css      All custom styles shared by every page
+│   └── sigmund.css           All custom styles shared by every page
 ├── js/
-│   └── main.js          Cookie consent initialisation + active nav-link highlight
-└── images/              All images — webp format for photos, svg for illustrations
+│   └── main.js               Cookie consent initialisation + active nav-link highlight
+└── images/
+    ├── team-sylvain-perez.webp
+    ├── team-franck-amouyal.webp
+    ├── team-guillaume-desrat.webp
+    └── ...                   All other images (webp for photos, svg for illustrations)
 ```
 
 ---
@@ -75,12 +83,14 @@ Contact forms submit via POST to `https://rake.red/to/a1b2c3d4`.
 
 ---
 
-## SEO
+## SEO / GEO
 
-- `sitemap.xml` — lists all 8 indexable pages (4 FR + 4 EN) with `hreflang` alternates
+- `sitemap.xml` — all indexable pages with `hreflang` alternates
+- `llms.txt` + `en/llms.txt` — AI crawler description files (ChatGPT, Perplexity)
 - `robots.txt` — disallows legal/policy pages; points to sitemap
 - Every page has `<link rel="canonical">` and `<link rel="alternate" hreflang="...">` tags
 - Open Graph meta tags on the homepage
+- JSON-LD schemas: `Organization`, `SoftwareApplication`, `AggregateRating`, `FAQPage` (profession pages), `Person` (team page), `Article` (guide pages)
 
 ---
 
