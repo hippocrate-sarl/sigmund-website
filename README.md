@@ -41,7 +41,7 @@ Then visit `http://localhost:8080`.
 | `tarifs.html` | `en/pricing.html` | Pricing + Sigmund vs Logicare comparison |
 | `equipe.html` | `en/team.html` | Team page (E-E-A-T) |
 | `facturation-cns.html` | `en/cns-invoicing.html` | CNS invoicing guide |
-| `paiement-immediat-direct.html` | `en/immediate-direct-payment.html` | PID guide *(to be created)* |
+| `paiement-immediat-direct.html` | `en/immediate-direct-payment.html` | PID (Immediate Direct Payment) guide |
 | `politique-en-matiere-de-cookies.html` | `en/cookie-policy.html` | Cookie policy |
 | `politique-relative-aux-donnees-personnelles.html` | `en/privacy-policy.html` | Privacy policy |
 | `mentions-legales.html` | `en/legal-notice.html` | Legal notice |

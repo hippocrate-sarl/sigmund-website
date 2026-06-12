@@ -24,7 +24,7 @@ solution-administrative-psychologue.html          Psychologist landing page (FR)
 tarifs.html                                       Pricing + Sigmund vs Logicare (FR)
 equipe.html                                       Team page — E-E-A-T (FR)
 facturation-cns.html                              CNS invoicing guide (FR)
-paiement-immediat-direct.html                     PID guide (FR) — to be created
+paiement-immediat-direct.html                     PID guide (FR)
 politique-en-matiere-de-cookies.html              Cookie policy (FR)
 politique-relative-aux-donnees-personnelles.html  Privacy policy (FR)
 mentions-legales.html                             Legal notice (FR)
@@ -36,7 +36,7 @@ en/administrative-solution-psychologist.html
 en/pricing.html                                   Pricing (EN)
 en/team.html                                      Team page (EN)
 en/cns-invoicing.html                             CNS invoicing guide (EN)
-en/immediate-direct-payment.html                  PID guide (EN) — to be created
+en/immediate-direct-payment.html                  PID guide (EN)
 en/cookie-policy.html
 en/privacy-policy.html
 en/legal-notice.html
