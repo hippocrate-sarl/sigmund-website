@@ -152,4 +152,6 @@ EN pages: assets at `../assets/`, links relative from `en/` (e.g. `href="../inde
 - The `facturation-cns.html` hero uses `gestion-simple-factures.svg` as a placeholder — replace with a real photo when available
 - No build step — changes to HTML/CSS/JS files are deployed directly
 - `robots.txt` disallows legal/policy pages — do not add guide/resource pages to the disallow list
-- The cookie policy pages state that sigmund.lu sets no cookies. The Sigmund app (demo.sigmund.lu) may use essential session cookies — that distinction is maintained in both the cookie policy and privacy policy pages
+- The cookie policy pages state that sigmund.lu sets no cookies. The Sigmund app (app.sigmund.lu) may use essential session cookies — that distinction is maintained in both the cookie policy and privacy policy pages
+- Hero H1s on all main menu pages are in sentence case (not uppercase) — consistent with index.html
+- Some HTML files previously had null bytes introduced by bulk PowerShell operations — stripped and resolved. All files are clean UTF-8

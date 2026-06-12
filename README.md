@@ -48,7 +48,7 @@ Then visit `http://localhost:8080`.
 
 Legal pages are excluded from search engine indexing (`robots.txt` + `<meta name="robots" content="noindex">`).
 
-The cookie policy pages reflect that sigmund.lu is a static site with no cookies. The Sigmund application (demo.sigmund.lu) may still use essential session cookies — this distinction is documented in both the cookie policy and privacy policy.
+The cookie policy pages reflect that sigmund.lu is a static site with no cookies. The Sigmund application (app.sigmund.lu) may still use essential session cookies — this distinction is documented in both the cookie policy and privacy policy.
 
 ---
 
