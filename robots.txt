@@ -9,5 +9,7 @@ Disallow: /mentions-legales.html
 Disallow: /de/cookie-richtlinie.html
 Disallow: /de/datenschutz.html
 Disallow: /de/impressum.html
+Disallow: /lb/politik-iwwer-perseinlech-donneeen.html
+Disallow: /pt/politica-relativa-aos-dados-pessoais.html
 
 Sitemap: https://www.sigmund.lu/sitemap.xml
