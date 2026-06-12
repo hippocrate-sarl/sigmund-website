@@ -45,6 +45,8 @@ No build step required. Open any HTML file directly in a browser.
 | `de/datenschutz.html` | — | Privacy policy (DE) |
 | `de/impressum.html` | — | Legal notice (DE) |
 | — | — | — |
+| `lb/politik-iwwer-perseinlech-donneeen.html` | — | Privacy policy (LB — standalone, no nav links) |
+| `pt/politica-relativa-aos-dados-pessoais.html` | — | Privacy policy (PT — standalone, no nav links) |
 | `politique-en-matiere-de-cookies.html` | `en/cookie-policy.html` | Cookie policy |
 | `politique-relative-aux-donnees-personnelles.html` | `en/privacy-policy.html` | Privacy policy |
 | `mentions-legales.html` | `en/legal-notice.html` | Legal notice |

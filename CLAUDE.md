@@ -164,6 +164,8 @@ DE page URL mapping:
 - The `facturation-cns.html` hero uses `gestion-simple-factures.svg` as a placeholder — replace with a real photo when available
 - No build step — push to `main` branch deploys to GitHub Pages automatically
 - `robots.txt` disallows legal/policy pages — do not add guide/resource pages to the disallow list
+- `lb/politik-iwwer-perseinlech-donneeen.html` — standalone Luxembourgish privacy policy, accessible only via email link
+- `pt/politica-relativa-aos-dados-pessoais.html` — standalone Portuguese privacy policy, accessible only via email link, accessible only via email link, no navbar/footer navigation links pointing to it. Uses minimal header (logo only) and sg-footer for copyright.
 - The cookie policy pages state that sigmund.lu sets no cookies. The Sigmund app (app.sigmund.lu) may use essential session cookies — that distinction is maintained in both the cookie policy and privacy policy pages
 - Hero H1s on all main menu pages are in sentence case (not uppercase) — consistent with index.html
 - Some HTML files previously had null bytes introduced by bulk PowerShell operations — stripped and resolved. All files are clean UTF-8
