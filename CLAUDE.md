@@ -150,7 +150,7 @@ EN pages: assets at `../assets/`, links relative from `en/` (e.g. `href="../inde
 - Profession pages have a large inline `<style>` block — keep it, it's intentional
 - When updating shared content (pricing, timeline, FAQ, footer, navbar) across profession pages, update all 3 FR pages AND their 3 EN counterparts
 - The `facturation-cns.html` hero uses `gestion-simple-factures.svg` as a placeholder — replace with a real photo when available
-- No build step — changes to HTML/CSS/JS files are deployed directly
+- No build step — push to `main` branch deploys to GitHub Pages automatically
 - `robots.txt` disallows legal/policy pages — do not add guide/resource pages to the disallow list
 - The cookie policy pages state that sigmund.lu sets no cookies. The Sigmund app (app.sigmund.lu) may use essential session cookies — that distinction is maintained in both the cookie policy and privacy policy pages
 - Hero H1s on all main menu pages are in sentence case (not uppercase) — consistent with index.html

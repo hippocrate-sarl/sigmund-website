@@ -16,17 +16,7 @@ This repository is the **public-facing marketing website** only. The production 
 
 ## Running locally
 
-No build step required. Open any HTML file directly in a browser, or serve the root folder with any static server:
-
-```bash
-# Python
-python -m http.server 8080
-
-# Node (npx)
-npx serve .
-```
-
-Then visit `http://localhost:8080`.
+No build step required. Open any HTML file directly in a browser.
 
 ---
 
@@ -97,7 +87,7 @@ Contact forms submit via POST to `https://rake.red/to/a1b2c3d4`.
 
 ## Deployment
 
-The site is hosted on **Odoo SA** infrastructure (static hosting). Deploy by pushing or uploading the files — no build, no compilation.
+The site is hosted on **GitHub Pages**. Deploy by pushing to the `main` branch — no build, no compilation.
 
 ---
 
@@ -107,7 +97,7 @@ The site is hosted on **Odoo SA** infrastructure (static hosting). Deploy by pus
 - **Director of publication:** Sylvain Perez
 - **VAT:** LU35353830
 - **Registered office:** 11 rue des Aubépines, L-8052 Bertrange, Luxembourg
-- **Hosting:** Odoo SA, Chaussée de Namur 40, 1367 Grand-Rosière, Belgium
+- **Hosting (website):** GitHub Pages — GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA (subject to CLOUD Act — GDPR DPA available, contact: dpo@github.com)
 - **Image credits:** Freepik (premium licence) and iStock (licence agreement)
 - **Design:** [studio e-conique](https://www.e-conique.com/)
 - Copyright 2024–2026 © Hippocrate Sàrl — All rights reserved
