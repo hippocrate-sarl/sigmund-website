@@ -11,15 +11,15 @@ Developed by **Hippocrate Sàrl** (Bertrange, Luxembourg). Team: Sylvain Perez, 
 - **Bootstrap Icons 1.11** (CDN) — icons via `<i class="bi bi-*">`
 - **flag-icons 7.2** (CDN) — language switcher flags via `<span class="fi fi-*">`
 - **Google Fonts** — Inter (300/400/500/600/700/800)
-- Contact forms POST to `https://rake.red/to/a1b2c3d4`
+- Contact forms POST to Brevo (sibforms.com) via `fetch` + `mode: 'no-cors'`, handled by `assets/js/profession.js`
 
 ## File structure
 
 ```
 index.html                                        Homepage (FR)
-solution-administrative-psychiatre.html           Psychiatrist landing page (FR)
-solution-administrative-psychotherapeute.html     Psychotherapist landing page (FR)
-solution-administrative-psychologue.html          Psychologist landing page (FR)
+psychiatre.html           Psychiatrist landing page (FR)
+psychotherapeute.html     Psychotherapist landing page (FR)
+psychologue.html          Psychologist landing page (FR)
 tarifs.html                                       Pricing + Sigmund vs Logicare (FR)
 equipe.html                                       Team page — E-E-A-T (FR)
 facturation-cns.html                              CNS invoicing guide (FR)
@@ -29,9 +29,9 @@ politique-relative-aux-donnees-personnelles.html  Privacy policy (FR)
 mentions-legales.html                             Legal notice (FR)
 
 en/index.html                                     Homepage (EN)
-en/administrative-solution-psychiatrist.html
-en/administrative-solution-psychotherapist.html
-en/administrative-solution-psychologist.html
+en/psychiatrist.html
+en/psychotherapist.html
+en/psychologist.html
 en/pricing.html                                   Pricing (EN)
 en/team.html                                      Team page (EN)
 en/cns-invoicing.html                             CNS invoicing guide (EN)
@@ -43,7 +43,9 @@ en/legal-notice.html
 llms.txt                                          AI crawler description (FR)
 en/llms.txt                                       AI crawler description (EN)
 assets/css/sigmund.css                            All custom styles (shared by all pages)
+assets/css/profession.css                         Overrides for profession landing pages (FR/EN/DE)
 assets/js/main.js                                 Active nav-link highlight
+assets/js/profession.js                           Contact form handler (Brevo fetch, validation, i18n via data-attributes)
 assets/images/                                    All images (webp + svg)
   team-sylvain-perez.webp                         Team photo — downloaded from hippocrate.lu
   team-franck-amouyal.webp
@@ -79,7 +81,7 @@ All custom classes use the `sg-` prefix. The three profession landing pages also
 - **`.sg-navbar`** — sticky top navbar; active link gets `class="nav-link active"`
 - **`.btn-sg-primary`** / **`.btn-sg-outline`** — pill-shaped CTA buttons
 - **`.sg-hero`** — gradient hero section; `.sg-hero-img` has `border-radius: 16px` (homepages only — profession pages override with `border-radius: 0`)
-- **`.sg-feat-list`** — checkmark feature list (CSS `::before` content)
+- **`.sg-feat-list`** — checkmark feature list (CSS `::before` content); on mobile, forced `text-align: left; display: inline-block` to counteract the `.sg-hero { text-align: center }` rule
 - **`.sg-picto-card`** — feature cards with icon + title + description
 - **`.sg-carousel`** / **`.sg-carousel-track`** / **`.sg-carousel-slide`** — pure CSS scroll-snap carousel; JS inlined in each profession page
 - **`.sg-pricing`** — pricing card (white box on gradient background)
@@ -126,9 +128,9 @@ DE pages: assets at `../assets/`, links relative from `de/` (e.g. `href="../inde
 
 DE page URL mapping:
 - `de/index.html` ↔ `index.html` / `en/index.html`
-- `de/psychiater.html` ↔ `solution-administrative-psychiatre.html` / `en/administrative-solution-psychiatrist.html`
-- `de/psychotherapeut.html` ↔ `solution-administrative-psychotherapeute.html` / `en/administrative-solution-psychotherapist.html`
-- `de/psychologe.html` ↔ `solution-administrative-psychologue.html` / `en/administrative-solution-psychologist.html`
+- `de/psychiater.html` ↔ `psychiatre.html` / `en/psychiatrist.html`
+- `de/psychotherapeut.html` ↔ `psychotherapeute.html` / `en/psychotherapist.html`
+- `de/psychologe.html` ↔ `psychologue.html` / `en/psychologist.html`
 - `de/preise.html` ↔ `tarifs.html` / `en/pricing.html`
 - `de/team.html` ↔ `equipe.html` / `en/team.html`
 - `de/cns-abrechnung.html` ↔ `facturation-cns.html` / `en/cns-invoicing.html`
@@ -160,12 +162,12 @@ DE page URL mapping:
 ## What to watch out for
 
 - Profession pages have a large inline `<style>` block — keep it, it's intentional
-- When updating shared content (pricing, timeline, FAQ, footer, navbar) across profession pages, update all 3 FR pages AND their 3 EN counterparts
-- The `facturation-cns.html` hero uses `gestion-simple-factures.svg` as a placeholder — replace with a real photo when available
+- When updating shared content (pricing, timeline, FAQ, footer, navbar) across profession pages, update all 3 FR + 3 EN + 3 DE pages (9 total)
+- The CNS invoicing guide hero (FR/EN/DE) uses the two-image composition from the homepage: `gestion-simple-factures.svg` full-width with `gestion-cabinet-professionels-sante-tableau-de-bord.svg` overlaid bottom-left at 25%
 - No build step — push to `main` branch deploys to GitHub Pages automatically
 - `robots.txt` disallows legal/policy pages — do not add guide/resource pages to the disallow list
 - `lb/politik-iwwer-perseinlech-donneeen.html` — standalone Luxembourgish privacy policy, accessible only via email link
-- `pt/politica-relativa-aos-dados-pessoais.html` — standalone Portuguese privacy policy, accessible only via email link, accessible only via email link, no navbar/footer navigation links pointing to it. Uses minimal header (logo only) and sg-footer for copyright.
+- `pt/politica-relativa-aos-dados-pessoais.html` — standalone Portuguese privacy policy, accessible only via email link, no navbar/footer navigation links pointing to it. Uses minimal header (logo only) and sg-footer for copyright.
 - The cookie policy pages state that sigmund.lu sets no cookies. The Sigmund app (app.sigmund.lu) may use essential session cookies — that distinction is maintained in both the cookie policy and privacy policy pages
 - Hero H1s on all main menu pages are in sentence case (not uppercase) — consistent with index.html
 - Some HTML files previously had null bytes introduced by bulk PowerShell operations — stripped and resolved. All files are clean UTF-8

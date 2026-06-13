@@ -13,27 +13,27 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.sigmund.lu/solution-administrative-psychiatre.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/solution-administrative-psychiatre.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/administrative-solution-psychiatrist.html"/>
+    <loc>https://www.sigmund.lu/psychiatre.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychiatre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychiatrist.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychiater.html"/>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.sigmund.lu/solution-administrative-psychotherapeute.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/solution-administrative-psychotherapeute.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/administrative-solution-psychotherapist.html"/>
+    <loc>https://www.sigmund.lu/psychotherapeute.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychotherapeute.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychotherapist.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychotherapeut.html"/>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.sigmund.lu/solution-administrative-psychologue.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/solution-administrative-psychologue.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/administrative-solution-psychologist.html"/>
+    <loc>https://www.sigmund.lu/psychologue.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychologue.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychologist.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychologe.html"/>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -88,27 +88,27 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.sigmund.lu/en/administrative-solution-psychiatrist.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/administrative-solution-psychiatrist.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/solution-administrative-psychiatre.html"/>
+    <loc>https://www.sigmund.lu/en/psychiatrist.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychiatrist.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychiatre.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychiater.html"/>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.sigmund.lu/en/administrative-solution-psychotherapist.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/administrative-solution-psychotherapist.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/solution-administrative-psychotherapeute.html"/>
+    <loc>https://www.sigmund.lu/en/psychotherapist.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychotherapist.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychotherapeute.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychotherapeut.html"/>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.sigmund.lu/en/administrative-solution-psychologist.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/administrative-solution-psychologist.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/solution-administrative-psychologue.html"/>
+    <loc>https://www.sigmund.lu/en/psychologist.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychologist.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychologue.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychologe.html"/>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -165,8 +165,8 @@
   <url>
     <loc>https://www.sigmund.lu/de/psychiater.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychiater.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/solution-administrative-psychiatre.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/administrative-solution-psychiatrist.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychiatre.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychiatrist.html"/>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -174,8 +174,8 @@
   <url>
     <loc>https://www.sigmund.lu/de/psychotherapeut.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychotherapeut.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/solution-administrative-psychotherapeute.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/administrative-solution-psychotherapist.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychotherapeute.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychotherapist.html"/>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -183,8 +183,8 @@
   <url>
     <loc>https://www.sigmund.lu/de/psychologe.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychologe.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/solution-administrative-psychologue.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/administrative-solution-psychologist.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychologue.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychologist.html"/>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

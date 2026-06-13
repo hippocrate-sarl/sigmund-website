@@ -25,9 +25,9 @@ No build step required. Open any HTML file directly in a browser.
 | FR | EN | Description |
 |---|---|---|
 | `index.html` | `en/index.html` | Homepage |
-| `solution-administrative-psychiatre.html` | `en/administrative-solution-psychiatrist.html` | Psychiatrist landing page |
-| `solution-administrative-psychotherapeute.html` | `en/administrative-solution-psychotherapist.html` | Psychotherapist landing page |
-| `solution-administrative-psychologue.html` | `en/administrative-solution-psychologist.html` | Psychologist landing page |
+| `psychiatre.html` | `en/psychiatrist.html` | Psychiatrist landing page |
+| `psychotherapeute.html` | `en/psychotherapist.html` | Psychotherapist landing page |
+| `psychologue.html` | `en/psychologist.html` | Psychologist landing page |
 | `tarifs.html` | `en/pricing.html` | Pricing + Sigmund vs Logicare comparison |
 | `equipe.html` | `en/team.html` | Team page (E-E-A-T) |
 | `facturation-cns.html` | `en/cns-invoicing.html` | CNS invoicing guide |
@@ -62,9 +62,11 @@ The cookie policy pages reflect that sigmund.lu is a static site with no cookies
 ```
 assets/
 ├── css/
-│   └── sigmund.css           All custom styles shared by every page
+│   ├── sigmund.css           All custom styles shared by every page
+│   └── profession.css        Overrides for profession landing pages (FR/EN/DE)
 ├── js/
-│   └── main.js               Cookie consent initialisation + active nav-link highlight
+│   ├── main.js               Active nav-link highlight
+│   └── profession.js         Contact form handler (Brevo fetch, validation, i18n via data-attributes)
 └── images/
     ├── team-sylvain-perez.webp
     ├── team-franck-amouyal.webp
@@ -85,7 +87,7 @@ All dependencies are loaded from CDN — nothing to install.
 | flag-icons | 7.2.3 | Language switcher flags (`fi fi-*`) |
 | Google Fonts — Inter | — | Body font (300–800) |
 
-Contact forms submit via POST to `https://rake.red/to/a1b2c3d4`.
+Contact forms on profession pages POST to Brevo (sibforms.com) via `fetch` with `mode: 'no-cors'`.
 
 ---
 

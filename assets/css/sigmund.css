@@ -519,6 +519,7 @@ body {
 @media (max-width: 991px) {
   .sg-hero { padding: 3rem 0 2.5rem; text-align: center; }
   .sg-hero .lead, .sg-hero .sg-subtitle { margin: 0 auto; }
+  .sg-hero .sg-feat-list { text-align: left; display: inline-block; }
   .sg-hero-img { max-height: 13.75rem; margin-top: 2rem; }
   .sg-section { padding: 3.125rem 0; }
   .sg-pricing { padding: 2rem 1.5rem; }
