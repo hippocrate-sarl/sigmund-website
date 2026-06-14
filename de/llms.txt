@@ -25,4 +25,4 @@ Hippocrate Sarl, Luxemburg | contact@sigmund.lu | Gegründet 2013
 ## Links
 
 - Website: https://www.sigmund.lu/de/
-- Demo: https://demo.sigmund.lu
+- Demo: https://demo-de.sigmund.lu
