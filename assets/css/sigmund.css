@@ -858,6 +858,10 @@ body {
 /* ---------- Standalone pages (pt/, lb/) ---------- */
 .sg-standalone-header { background: var(--sg-white); box-shadow: 0 1px 8px rgba(0,0,0,.06); padding: .75rem 0; }
 
+/* ---------- Legal pages — scroll offset for sticky navbar ---------- */
+.sg-legal-content h2[id],
+.sg-legal-content h3[id] { scroll-margin-top: 84px; }
+
 /* ---------- Legal pages — sidebar TOC + mobile accordéon ---------- */
 .sg-sidebar-toc { position: sticky; top: 80px; background: #f8fbff; border-left: 3px solid var(--sg-primary); border-radius: 0 8px 8px 0; padding: 1.25rem 1rem 1.25rem 1.25rem; }
 .sg-sidebar-toc > p { font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .07em; color: #999; margin-bottom: .75rem; }
