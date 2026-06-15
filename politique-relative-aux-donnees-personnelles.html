@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
 </head>
 <body>
 
@@ -54,24 +53,45 @@
 <!-- CONTENT -->
 <section class="sg-section">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-
-        <!-- TOC -->
-        <div class="sg-toc mb-5">
+    <div class="row g-5">
+      <div class="col-lg-3 d-none d-lg-block">
+        <nav class="sg-sidebar-toc" aria-label="Table des matières">
           <p>Sur cette page</p>
-          <div class="sg-toc-links">
-            <a href="#champ-application"><i class="bi bi-chevron-right"></i>Champ d'application</a>
-            <a href="#responsable"><i class="bi bi-chevron-right"></i>Responsable du traitement</a>
-            <a href="#responsable-traitement"><i class="bi bi-chevron-right"></i>Hippocrate responsable</a>
-            <a href="#sous-traitant"><i class="bi bi-chevron-right"></i>Hippocrate sous-traitant</a>
-            <a href="#cookies"><i class="bi bi-chevron-right"></i>Cookies</a>
-            <a href="#prestataires"><i class="bi bi-chevron-right"></i>Prestataires</a>
-            <a href="#transfert"><i class="bi bi-chevron-right"></i>Transfert hors UE</a>
-            <a href="#partage"><i class="bi bi-chevron-right"></i>Partage</a>
-            <a href="#reclamation"><i class="bi bi-chevron-right"></i>Réclamation</a>
-            <a href="#mises-a-jour"><i class="bi bi-chevron-right"></i>Mises à jour</a>
-            <a href="#contact"><i class="bi bi-chevron-right"></i>Nous contacter</a>
+          <a href="#champ-application"><i class="bi bi-chevron-right"></i>Champ d'application</a>
+          <a href="#responsable"><i class="bi bi-chevron-right"></i>Responsable du traitement</a>
+          <a href="#responsable-traitement"><i class="bi bi-chevron-right"></i>Hippocrate responsable</a>
+          <a href="#sous-traitant"><i class="bi bi-chevron-right"></i>Hippocrate sous-traitant</a>
+          <a href="#cookies"><i class="bi bi-chevron-right"></i>Cookies</a>
+          <a href="#prestataires"><i class="bi bi-chevron-right"></i>Prestataires</a>
+          <a href="#transfert"><i class="bi bi-chevron-right"></i>Transfert hors UE</a>
+          <a href="#partage"><i class="bi bi-chevron-right"></i>Partage</a>
+          <a href="#reclamation"><i class="bi bi-chevron-right"></i>Réclamation</a>
+          <a href="#mises-a-jour"><i class="bi bi-chevron-right"></i>Mises à jour</a>
+          <a href="#contact"><i class="bi bi-chevron-right"></i>Nous contacter</a>
+        </nav>
+      </div>
+      <div class="col-lg-9">
+
+        <!-- TOC mobile (accordéon, caché sur desktop) -->
+        <div class="d-lg-none mb-4">
+          <button class="sg-mob-toc-btn" type="button" data-bs-toggle="collapse" data-bs-target="#mobileToc" aria-expanded="false" aria-controls="mobileToc">
+            <span><i class="bi bi-list-ul me-2"></i>Sur cette page</span>
+            <i class="bi bi-chevron-down sg-mob-toc-chevron"></i>
+          </button>
+          <div class="collapse" id="mobileToc">
+            <div class="sg-mob-toc-body">
+              <a href="#champ-application">Champ d'application</a>
+              <a href="#responsable">Responsable du traitement</a>
+              <a href="#responsable-traitement">Hippocrate responsable</a>
+              <a href="#sous-traitant">Hippocrate sous-traitant</a>
+              <a href="#cookies">Cookies</a>
+              <a href="#prestataires">Prestataires</a>
+              <a href="#transfert">Transfert hors UE</a>
+              <a href="#partage">Partage</a>
+              <a href="#reclamation">Réclamation</a>
+              <a href="#mises-a-jour">Mises à jour</a>
+              <a href="#contact">Nous contacter</a>
+            </div>
           </div>
         </div>
 
@@ -243,5 +263,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/legal-toc.js"></script>
 </body>
 </html>

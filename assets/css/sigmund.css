@@ -857,3 +857,21 @@ body {
 
 /* ---------- Standalone pages (pt/, lb/) ---------- */
 .sg-standalone-header { background: var(--sg-white); box-shadow: 0 1px 8px rgba(0,0,0,.06); padding: .75rem 0; }
+
+/* ---------- Legal pages — sidebar TOC + mobile accordéon ---------- */
+.sg-sidebar-toc { position: sticky; top: 80px; background: #f8fbff; border-left: 3px solid var(--sg-primary); border-radius: 0 8px 8px 0; padding: 1.25rem 1rem 1.25rem 1.25rem; }
+.sg-sidebar-toc > p { font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .07em; color: #999; margin-bottom: .75rem; }
+.sg-sidebar-toc a { display: flex; align-items: flex-start; gap: .35rem; font-size: .82rem; color: #555; text-decoration: none; padding: .32rem .4rem; border-radius: 5px; line-height: 1.35; transition: color .15s, background .15s; }
+.sg-sidebar-toc a i { flex-shrink: 0; margin-top: .15em; font-size: .65rem; color: #ccc; transition: color .15s; }
+.sg-sidebar-toc a:hover { color: var(--sg-primary); background: rgba(107,164,250,.07); }
+.sg-sidebar-toc a:hover i, .sg-sidebar-toc a.sg-toc-active i { color: var(--sg-primary); }
+.sg-sidebar-toc a.sg-toc-active { color: var(--sg-primary); font-weight: 600; background: rgba(107,164,250,.09); }
+.sg-mob-toc-btn { width: 100%; display: flex; justify-content: space-between; align-items: center; background: #f8fbff; border: 1px solid var(--sg-border); border-radius: 8px; padding: .8rem 1rem; color: #333; font-size: .9rem; font-weight: 600; cursor: pointer; transition: background .15s; }
+.sg-mob-toc-btn[aria-expanded="true"] { border-radius: 8px 8px 0 0; border-bottom-color: transparent; }
+.sg-mob-toc-btn .bi-list-ul { color: var(--sg-primary); }
+.sg-mob-toc-chevron { font-size: .75rem; transition: transform .2s ease; }
+.sg-mob-toc-btn[aria-expanded="true"] .sg-mob-toc-chevron { transform: rotate(180deg); }
+.sg-mob-toc-body { background: #f8fbff; border: 1px solid var(--sg-border); border-top: none; border-radius: 0 0 8px 8px; padding: .5rem .75rem .75rem; }
+.sg-mob-toc-body a { display: block; padding: .45rem .5rem; font-size: .87rem; color: #555; text-decoration: none; border-bottom: 1px solid rgba(107,164,250,.12); }
+.sg-mob-toc-body a:last-child { border-bottom: none; }
+.sg-mob-toc-body a:hover { color: var(--sg-primary); }
