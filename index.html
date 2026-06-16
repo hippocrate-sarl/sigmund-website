@@ -67,6 +67,11 @@
     ]
   }
   </script>
+  <link rel="preload" as="image"
+        imagesrcset="assets/images/sigmund-application-hero-mobile.webp 600w,
+                     assets/images/sigmund-application-hero-1200.webp 1200w,
+                     assets/images/sigmund-application-hero.webp 1920w"
+        imagesizes="(max-width: 991px) 100vw, 50vw">
 </head>
 <body>
 
@@ -74,7 +79,7 @@
 <nav class="sg-navbar navbar navbar-expand-lg sticky-top">
   <div class="container">
     <a class="navbar-brand" href="index.html">
-      <img src="assets/images/logo-sigmund.webp" alt="Sigmund" height="52">
+      <img src="assets/images/logo-sigmund.webp" alt="Sigmund" width="42" height="52">
     </a>
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Menu">
       <span class="navbar-toggler-icon"></span>
@@ -118,8 +123,15 @@
         <a href="https://demo.sigmund.lu/" class="btn-sg-primary mt-2" target="_blank" rel="noopener">Réservez 15 jours d'essai gratuit</a>
       </div>
       <div class="col-lg-6 text-center mt-4 mt-lg-0">
-        <img src="assets/images/sigmund-application-hero.webp"
-             alt="Sigmund sur tablette" class="sg-hero-img img-fluid">
+        <img src="assets/images/sigmund-application-hero-1200.webp"
+             srcset="assets/images/sigmund-application-hero-mobile.webp 600w,
+                     assets/images/sigmund-application-hero-1200.webp 1200w,
+                     assets/images/sigmund-application-hero.webp 1920w"
+             sizes="(max-width: 991px) 100vw, 50vw"
+             alt="Sigmund sur tablette" class="sg-hero-img img-fluid"
+             width="1200" height="801"
+             fetchpriority="high"
+             loading="eager">
       </div>
     </div>
   </div>
@@ -132,7 +144,7 @@
 
       <div class="col-md-4">
         <div class="sg-picto-card text-center">
-          <img src="assets/images/psychiatre-hero.svg" alt="Psychiatre" style="height:11rem;">
+          <img src="assets/images/psychiatre-hero.svg" alt="Psychiatre" width="176" height="176" style="height:11rem;">
           <h5 class="mt-3">VOUS ÊTES PSYCHIATRE ?</h5>
           <a href="psychiatre.html" class="btn-sg-outline mt-3">Découvrez Sigmund, votre allié au quotidien</a>
         </div>
@@ -140,7 +152,7 @@
 
       <div class="col-md-4">
         <div class="sg-picto-card text-center">
-          <img src="assets/images/psychotherapeute-hero.svg" alt="Psychothérapeute" style="height:11rem;">
+          <img src="assets/images/psychotherapeute-hero.svg" alt="Psychothérapeute" width="176" height="176" style="height:11rem;">
           <h5 class="mt-3">VOUS ÊTES PSYCHOTHÉRAPEUTE ?</h5>
           <a href="psychotherapeute.html" class="btn-sg-outline mt-3">Découvrez Sigmund, votre assistant intelligent</a>
         </div>
@@ -148,7 +160,7 @@
 
       <div class="col-md-4">
         <div class="sg-picto-card text-center">
-          <img src="assets/images/psychologue-hero.svg" alt="Psychologue" style="height:11rem;">
+          <img src="assets/images/psychologue-hero.svg" alt="Psychologue" width="176" height="176" style="height:11rem;">
           <h5 class="mt-3">VOUS ÊTES PSYCHOLOGUE ?</h5>
           <a href="psychologue.html" class="btn-sg-outline mt-3">Découvrez Sigmund, votre bras droit administratif</a>
         </div>
@@ -201,7 +213,7 @@
         <p style="color:#aaa; font-size:.87rem; line-height:1.6;">
           Nous sommes une équipe de passionnés dont le but est d'améliorer le confort de travail des médecins psychiatres, psychothérapeutes et psychologues grâce à Sigmund, développé par la société <a href="https://www.hippocrate.lu" target="_blank" rel="noopener"><strong>Hippocrate</strong></a>. Nous pensons que la technologie doit être pertinente, utile, tout en s'effaçant derrière l'usage qu'elle permet.
         </p>
-        <img src="assets/images/made-in-luxembourg-blanc.webp" alt="Made in Luxembourg" height="52">
+        <img src="assets/images/made-in-luxembourg-blanc.webp" alt="Made in Luxembourg" width="64" height="52">
       </div>
       <div class="col-md-4">
         <h6>Contact</h6>

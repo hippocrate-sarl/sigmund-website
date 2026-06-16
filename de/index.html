@@ -66,13 +66,18 @@
     ]
   }
   </script>
+  <link rel="preload" as="image"
+        imagesrcset="../assets/images/sigmund-application-hero-mobile.webp 600w,
+                     ../assets/images/sigmund-application-hero-1200.webp 1200w,
+                     ../assets/images/sigmund-application-hero.webp 1920w"
+        imagesizes="(max-width: 991px) 100vw, 50vw">
 </head>
 <body>
 
 <!-- NAVBAR -->
 <nav class="sg-navbar navbar navbar-expand-lg sticky-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="../assets/images/logo-sigmund.webp" alt="Sigmund" height="52"></a>
+    <a class="navbar-brand" href="index.html"><img src="../assets/images/logo-sigmund.webp" alt="Sigmund" width="42" height="52"></a>
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Menü"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav me-auto">
@@ -111,8 +116,15 @@
         <a href="https://demo-de.sigmund.lu/" class="btn-sg-primary mt-2" target="_blank" rel="noopener">15 Tage kostenlos testen</a>
       </div>
       <div class="col-lg-6 text-center mt-4 mt-lg-0">
-        <img src="../assets/images/sigmund-application-hero.webp"
-             alt="Sigmund auf dem Tablet" class="sg-hero-img img-fluid">
+        <img src="../assets/images/sigmund-application-hero-1200.webp"
+             srcset="../assets/images/sigmund-application-hero-mobile.webp 600w,
+                     ../assets/images/sigmund-application-hero-1200.webp 1200w,
+                     ../assets/images/sigmund-application-hero.webp 1920w"
+             sizes="(max-width: 991px) 100vw, 50vw"
+             alt="Sigmund auf dem Tablet" class="sg-hero-img img-fluid"
+             width="1200" height="801"
+             fetchpriority="high"
+             loading="eager">
       </div>
     </div>
   </div>
@@ -125,7 +137,7 @@
 
       <div class="col-md-4">
         <div class="sg-picto-card text-center">
-          <img src="../assets/images/psychiatre-hero.svg" alt="Psychiater" style="height:11rem;">
+          <img src="../assets/images/psychiatre-hero.svg" alt="Psychiater" width="176" height="176" style="height:11rem;">
           <h5 class="mt-3">SIE SIND PSYCHIATER?</h5>
           <a href="psychiater.html" class="btn-sg-outline mt-3">Entdecken Sie Sigmund, Ihren täglichen Begleiter</a>
         </div>
@@ -133,7 +145,7 @@
 
       <div class="col-md-4">
         <div class="sg-picto-card text-center">
-          <img src="../assets/images/psychotherapeute-hero.svg" alt="Psychotherapeut" style="height:11rem;">
+          <img src="../assets/images/psychotherapeute-hero.svg" alt="Psychotherapeut" width="176" height="176" style="height:11rem;">
           <h5 class="mt-3">SIE SIND PSYCHOTHERAPEUT?</h5>
           <a href="psychotherapeut.html" class="btn-sg-outline mt-3">Entdecken Sie Sigmund, Ihren intelligenten Assistenten</a>
         </div>
@@ -141,7 +153,7 @@
 
       <div class="col-md-4">
         <div class="sg-picto-card text-center">
-          <img src="../assets/images/psychologue-hero.svg" alt="Psychologe" style="height:11rem;">
+          <img src="../assets/images/psychologue-hero.svg" alt="Psychologe" width="176" height="176" style="height:11rem;">
           <h5 class="mt-3">SIE SIND PSYCHOLOGE?</h5>
           <a href="psychologe.html" class="btn-sg-outline mt-3">Entdecken Sie Sigmund, Ihre administrative rechte Hand</a>
         </div>
@@ -190,7 +202,7 @@
       <div class="col-md-4">
         <h6>Über uns</h6>
         <p style="color:#aaa;font-size:.87rem;line-height:1.6;">Wir sind ein Team von Enthusiasten, dessen Ziel es ist, den Arbeitskomfort von Psychiatern, Psychotherapeuten und Psychologen durch Sigmund zu verbessern, das von der Firma <a href="https://www.hippocrate.lu" target="_blank" rel="noopener"><strong>Hippocrate</strong></a> entwickelt wurde. Wir sind überzeugt, dass Technologie relevant und nützlich sein muss, während sie sich hinter dem von ihr ermöglichten Einsatz zurückzieht.</p>
-        <img src="../assets/images/made-in-luxembourg-blanc.webp" alt="Made in Luxembourg" height="52">
+        <img src="../assets/images/made-in-luxembourg-blanc.webp" alt="Made in Luxembourg" width="64" height="52">
       </div>
       <div class="col-md-4">
         <h6>Kontakt</h6>

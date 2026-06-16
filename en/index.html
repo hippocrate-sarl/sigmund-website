@@ -66,13 +66,18 @@
     ]
   }
   </script>
+  <link rel="preload" as="image"
+        imagesrcset="../assets/images/sigmund-application-hero-mobile.webp 600w,
+                     ../assets/images/sigmund-application-hero-1200.webp 1200w,
+                     ../assets/images/sigmund-application-hero.webp 1920w"
+        imagesizes="(max-width: 991px) 100vw, 50vw">
 </head>
 <body>
 
 <!-- NAVBAR -->
 <nav class="sg-navbar navbar navbar-expand-lg sticky-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="../assets/images/logo-sigmund.webp" alt="Sigmund" height="52"></a>
+    <a class="navbar-brand" href="index.html"><img src="../assets/images/logo-sigmund.webp" alt="Sigmund" width="42" height="52"></a>
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav me-auto">
@@ -111,8 +116,15 @@
         <a href="https://demo-en.sigmund.lu/" class="btn-sg-primary mt-2" target="_blank" rel="noopener">Book a 15-day free trial</a>
       </div>
       <div class="col-lg-6 text-center mt-4 mt-lg-0">
-        <img src="../assets/images/sigmund-application-hero.webp"
-             alt="Sigmund on tablet" class="sg-hero-img img-fluid">
+        <img src="../assets/images/sigmund-application-hero-1200.webp"
+             srcset="../assets/images/sigmund-application-hero-mobile.webp 600w,
+                     ../assets/images/sigmund-application-hero-1200.webp 1200w,
+                     ../assets/images/sigmund-application-hero.webp 1920w"
+             sizes="(max-width: 991px) 100vw, 50vw"
+             alt="Sigmund on tablet" class="sg-hero-img img-fluid"
+             width="1200" height="801"
+             fetchpriority="high"
+             loading="eager">
       </div>
     </div>
   </div>
@@ -125,7 +137,7 @@
 
       <div class="col-md-4">
         <div class="sg-picto-card text-center">
-          <img src="../assets/images/psychiatre-hero.svg" alt="Psychiatrist" style="height:11rem;">
+          <img src="../assets/images/psychiatre-hero.svg" alt="Psychiatrist" width="176" height="176" style="height:11rem;">
           <h5 class="mt-3">ARE YOU A PSYCHIATRIST?</h5>
           <a href="psychiatrist.html" class="btn-sg-outline mt-3">Discover Sigmund, your daily ally</a>
         </div>
@@ -133,7 +145,7 @@
 
       <div class="col-md-4">
         <div class="sg-picto-card text-center">
-          <img src="../assets/images/psychotherapeute-hero.svg" alt="Psychotherapist" style="height:11rem;">
+          <img src="../assets/images/psychotherapeute-hero.svg" alt="Psychotherapist" width="176" height="176" style="height:11rem;">
           <h5 class="mt-3">ARE YOU A PSYCHOTHERAPIST?</h5>
           <a href="psychotherapist.html" class="btn-sg-outline mt-3">Discover Sigmund, your intelligent assistant</a>
         </div>
@@ -141,7 +153,7 @@
 
       <div class="col-md-4">
         <div class="sg-picto-card text-center">
-          <img src="../assets/images/psychologue-hero.svg" alt="Psychologist" style="height:11rem;">
+          <img src="../assets/images/psychologue-hero.svg" alt="Psychologist" width="176" height="176" style="height:11rem;">
           <h5 class="mt-3">ARE YOU A PSYCHOLOGIST?</h5>
           <a href="psychologist.html" class="btn-sg-outline mt-3">Discover Sigmund, your administrative right-hand</a>
         </div>
@@ -190,7 +202,7 @@
       <div class="col-md-4">
         <h6>About Us</h6>
         <p style="color:#aaa;font-size:.87rem;line-height:1.6;">We are a passionate team whose goal is to improve the working comfort of psychiatrists, psychotherapists and psychologists through Sigmund, developed by <a href="https://www.hippocrate.lu" target="_blank" rel="noopener"><strong>Hippocrate</strong></a>. We believe technology should be relevant and useful, while stepping back to let its use speak for itself.</p>
-        <img src="../assets/images/made-in-luxembourg-blanc.webp" alt="Made in Luxembourg" height="52">
+        <img src="../assets/images/made-in-luxembourg-blanc.webp" alt="Made in Luxembourg" width="64" height="52">
       </div>
       <div class="col-md-4">
         <h6>Contact</h6>
