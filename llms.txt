@@ -1,30 +1,31 @@
 # Sigmund
 
-> Sigmund est le logiciel de gestion de cabinet conçu pour les professionnels de la santé mentale au Luxembourg (psychologues, psychothérapeutes, psychiatres).
+> Logiciel de gestion de cabinet pour professionnels de la santé mentale au Luxembourg
+> Practice management software for mental health professionals in Luxembourg
+> Praxisverwaltungssoftware für Fachleute der psychischen Gesundheit in Luxemburg
 
-## Offre
+## Offre / Offer / Angebot
 
-- Prix : 90 euros/mois, sans engagement, tout inclus
-- Option PID (Paiement Immédiat Direct CNS) : +45 euros/mois
-- Essai gratuit : 15 jours, sans carte bancaire
+- 90 €/mois · €90/month · 90 €/Monat — sans engagement / no commitment / ohne Verpflichtung
+- Option PID (Paiement Immédiat Direct CNS) : +45 €/mois
+- Essai gratuit 15 jours / 15-day free trial / 15 Tage kostenlos — sans CB / no credit card / ohne Kreditkarte
 
-## Fonctionnalités principales
-
-- Agenda et calendrier, fiches patients, facturation automatique format CNS
-- Rappels automatiques rendez-vous, liste d'attente, tableau de bord financier
-- Prescriptions (psychiatres), gestion PID, notes de séance sécurisées
-
-## Cibles
+## Cibles / Target users / Zielgruppe
 
 Psychiatres, psychothérapeutes, psychologues en cabinet libéral au Luxembourg
+Psychiatrists, psychotherapists, psychologists in private practice in Luxembourg
+Psychiater, Psychotherapeuten, Psychologen in Luxemburg
 
-## Entreprise
+## Entreprise / Company / Unternehmen
 
-Hippocrate Sarl, Luxembourg | contact@sigmund.lu | Fondé en 2013
+Hippocrate Sàrl, Luxembourg | contact@sigmund.lu | Fondé en 2013 / Founded in 2013 / Gegründet 2013
 
-## Liens
+## Liens / Links
 
-- Site principal : https://www.sigmund.lu
-- Démo FR : https://demo.sigmund.lu
-- Démo EN : https://demo-en.sigmund.lu
-- Démo DE : https://demo-de.sigmund.lu
+- FR: https://www.sigmund.lu/
+- EN: https://www.sigmund.lu/en/
+- DE: https://www.sigmund.lu/de/
+- Démo FR / Demo FR: https://demo.sigmund.lu
+- Demo EN: https://demo-en.sigmund.lu
+- Demo DE: https://demo-de.sigmund.lu
+- Contenu complet / Full content / Vollständiger Inhalt: https://www.sigmund.lu/llms-full.txt
