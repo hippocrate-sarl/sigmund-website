@@ -20,12 +20,6 @@ Psychiater, Psychotherapeuten, Psychologen in Luxemburg
 
 Hippocrate Sàrl, Luxembourg | contact@sigmund.lu | Fondé en 2023 / Founded in 2023 / Gegründet 2023 | Logiciel Sigmund en service depuis 2013 / Sigmund software in service since 2013 / Sigmund-Software seit 2013
 
-## Blog / Ressources
-
-- RGPD et dossiers patients au Luxembourg (FR): https://www.sigmund.lu/blog/rgpd-dossiers-patients-luxembourg.html
-- GDPR and patient records in Luxembourg (EN): https://www.sigmund.lu/en/blog/gdpr-patient-records-luxembourg.html
-- DSGVO und Patientenakten in Luxemburg (DE): https://www.sigmund.lu/de/blog/dsgvo-patientenakten-luxemburg.html
-
 ## Liens / Links
 
 - FR: https://www.sigmund.lu/

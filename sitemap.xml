@@ -181,35 +181,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Blog articles — RGPD / GDPR / DSGVO -->
-  <url>
-    <loc>https://www.sigmund.lu/blog/rgpd-dossiers-patients-luxembourg.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/blog/rgpd-dossiers-patients-luxembourg.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/blog/gdpr-patient-records-luxembourg.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/blog/dsgvo-patientenakten-luxemburg.html"/>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.sigmund.lu/en/blog/gdpr-patient-records-luxembourg.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/blog/gdpr-patient-records-luxembourg.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/blog/rgpd-dossiers-patients-luxembourg.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/blog/dsgvo-patientenakten-luxemburg.html"/>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.sigmund.lu/de/blog/dsgvo-patientenakten-luxemburg.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/blog/dsgvo-patientenakten-luxemburg.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/blog/rgpd-dossiers-patients-luxembourg.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/blog/gdpr-patient-records-luxembourg.html"/>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
   <!-- DE pages -->
   <url>
     <loc>https://www.sigmund.lu/de/index.html</loc>

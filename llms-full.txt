@@ -728,24 +728,6 @@ Guides et ressources pratiques pour les psychiatres, psychothérapeutes et psych
 
 ---
 
-## [RGPD et dossiers patients au Luxembourg](https://www.sigmund.lu/blog/rgpd-dossiers-patients-luxembourg.html)
-
-RGPD et dossiers patients au Luxembourg — Obligations des psychiatres, psychothérapeutes et psychologues en cabinet libéral
-Psychiatre — Psychothérapeute — Psychologue
-Les professionnels de la santé mentale traitent quotidiennement des données parmi les plus sensibles : diagnostics, notes de séance, ordonnances, antécédents médicaux. Depuis le 25 mai 2018, le RGPD (Règlement UE 2016/679) encadre strictement ces données, renforcé par la loi luxembourgeoise du 1er août 2018 (CNPD). Non-conformité : amendes jusqu'à 20 millions d'euros ou 4 % du CA mondial (art. 83.5 RGPD).
-Données de santé mentale : catégorie spécialement protégée (art. 9 RGPD). Concernés : diagnostics CIM-11/DSM-5, notes de séances, prescriptions, antécédents, résultats de tests, correspondances, données de facturation CNS.
-Base légale : art. 9.2.h (fins médicales, secret professionnel) ou art. 9.2.a (consentement explicite).
-Durées de conservation : psychiatres 10 ans minimum (Code de déontologie CMDL). Psychothérapeutes/psychologues : 10 ans recommandés. Mineurs : majorité + 10 ans.
-Sécurité (art. 32) : chiffrement, contrôle d'accès, hébergement sécurisé, journalisation, sauvegardes, plan de réponse aux incidents.
-Droits des patients : accès (art. 15), rectification (art. 16), effacement limité (art. 17), portabilité (art. 20), opposition (art. 21). Délai de réponse : 1 mois.
-Obligation d'information (art. 13) : informer dès la première consultation.
-Registre des activités de traitement (art. 30) : document interne, à présenter à la CNPD sur demande.
-DPO : non obligatoire pour les praticiens libéraux en cabinet individuel ; analyse au cas par cas recommandée.
-Violation de données : notification CNPD dans les 72 heures (art. 33). Si risque élevé : informer les patients (art. 34).
-Sigmund : données hébergées au Luxembourg (Bissen, Gandi SAS), chiffrement de bout en bout, export patient en un clic, export comptable anonymisé.
-
----
-
 # 🇬🇧 ENGLISH
 
 ## [Home](https://www.sigmund.lu/en/)
@@ -1451,24 +1433,6 @@ LinkedIn
 ## [Blog EN](https://www.sigmund.lu/en/blog/)
 
 Practical guides and resources for psychiatrists, psychotherapists and psychologists in Luxembourg.
-
----
-
-## [GDPR and patient records in Luxembourg](https://www.sigmund.lu/en/blog/gdpr-patient-records-luxembourg.html)
-
-GDPR and patient records in Luxembourg — Obligations for psychiatrists, psychotherapists and psychologists in private practice
-Psychiatrist — Psychotherapist — Psychologist
-Mental health professionals handle some of the most sensitive personal data daily: diagnoses, session notes, prescriptions, medical history. Since 25 May 2018, the GDPR (EU Regulation 2016/679) strictly governs this data, reinforced in Luxembourg by the law of 1 August 2018 (CNPD). Non-compliance: fines up to €20 million or 4% of global annual turnover (Art. 83.5 GDPR).
-Mental health data: special category (Art. 9 GDPR). Covered: ICD-11/DSM-5 diagnoses, session notes, prescriptions, medical history, test results, correspondence with colleagues, CNS billing data.
-Legal basis: Art. 9.2.h (medical purposes, professional secrecy) or Art. 9.2.a (explicit consent).
-Retention periods: psychiatrists minimum 10 years (CMDL Code of Ethics). Psychotherapists/psychologists: 10 years recommended. Minors: majority + 10 years.
-Security (Art. 32): encryption, access control, secure hosting, access logging, backups, incident response plan.
-Patient rights: access (Art. 15), rectification (Art. 16), erasure limited (Art. 17), portability (Art. 20), objection (Art. 21). Response deadline: 1 month.
-Transparency obligation (Art. 13): inform patients at first consultation.
-Record of processing activities (Art. 30): internal document, to be produced to CNPD on request.
-DPO: generally not mandatory for sole practitioners; case-by-case assessment recommended.
-Data breach: notify CNPD within 72 hours (Art. 33). High risk: also notify patients directly (Art. 34).
-Sigmund: data hosted in Luxembourg (Bissen, Gandi SAS), end-to-end encryption, one-click patient export, anonymised accounting export.
 
 ---
 
@@ -2179,24 +2143,5 @@ LinkedIn
 ## [Blog DE](https://www.sigmund.lu/de/blog/)
 
 Praktische Leitfäden und Ressourcen für Psychiater, Psychotherapeuten und Psychologen in Luxemburg.
-
----
-
-## [DSGVO und Patientenakten in Luxemburg](https://www.sigmund.lu/de/blog/dsgvo-patientenakten-luxemburg.html)
-
-DSGVO und Patientenakten in Luxemburg — Pflichten für Psychiater, Psychotherapeuten und Psychologen in freier Praxis
-Psychiater — Psychotherapeut — Psychologe
-Fachkräfte für psychische Gesundheit verarbeiten täglich besonders sensible personenbezogene Daten: Diagnosen, Sitzungsnotizen, Verschreibungen, Krankengeschichten. Seit dem Inkrafttreten der Datenschutz-Grundverordnung (DSGVO, EU-Verordnung 2016/679) am 25. Mai 2018 unterliegen diese Daten strengen Vorschriften, die in Luxemburg durch das Gesetz vom 1. August 2018 zur Organisation der Nationalen Kommission für den Datenschutz (CNPD) ergänzt werden. Bei Nichtkonformität drohen Bußgelder von bis zu 20 Millionen Euro oder 4 % des weltweiten Jahresumsatzes (Art. 83 Abs. 5 DSGVO).
-Psychische Gesundheitsdaten: eine besonders geschützte Kategorie
-Artikel 9 DSGVO stuft Gesundheitsdaten als „besondere Kategorien" personenbezogener Daten ein. Für Psychiater, Psychotherapeuten und Psychologen betrifft dies: psychiatrische Diagnosen (ICD-11 oder DSM-5), Sitzungsnotizen, Verschreibungen, medizinische Vorgeschichte, Testergebnisse, Korrespondenz mit Kollegen, CNS-Abrechnungsdaten.
-Rechtsgrundlage: Art. 9 Abs. 2 lit. h DSGVO (medizinische Zwecke) oder Art. 9 Abs. 2 lit. a (ausdrückliche Einwilligung).
-Aufbewahrungsfristen: Psychiater mind. 10 Jahre (CMDL-Berufsethikkodex). Psychotherapeuten und Psychologen: 10 Jahre empfohlen. Minderjährige: bis zur Volljährigkeit + 10 Jahre.
-Datensicherheit (Art. 32 DSGVO): Verschlüsselung, Zugangskontrolle, sicheres Hosting, Protokollierung, Backups, Notfallplan.
-Patientenrechte: Auskunft (Art. 15), Berichtigung (Art. 16), Löschung eingeschränkt (Art. 17), Datenübertragbarkeit (Art. 20), Widerspruch (Art. 21). Antwortfrist: 1 Monat.
-Informationspflicht (Art. 13): bei der ersten Konsultation über Verarbeitung informieren.
-Verzeichnis von Verarbeitungstätigkeiten (Art. 30): internes Dokument, auf Anfrage der CNPD vorzulegen.
-Datenschutzbeauftragter (DSB): für einzelne Praxen in der Regel nicht obligatorisch; Einzelfallprüfung empfohlen.
-Datenpannenmeldung: CNPD-Meldung innerhalb 72 Stunden (Art. 33). Bei hohem Risiko: Betroffene direkt informieren (Art. 34).
-Sigmund: Datenhaltung in Luxemburg (Bissen, Gandi SAS), Ende-zu-Ende-Verschlüsselung, Patientenexport per Klick, anonymisierter Buchhaltungsexport.
 
 ---
