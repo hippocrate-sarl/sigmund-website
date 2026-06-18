@@ -32,6 +32,8 @@ No build step required. Open any HTML file directly in a browser.
 | `equipe.html` | `en/team.html` | Team page (E-E-A-T) |
 | `facturation-cns.html` | `en/cns-invoicing.html` | CNS invoicing guide |
 | `paiement-immediat-direct.html` | `en/immediate-direct-payment.html` | PID (Immediate Direct Payment) guide |
+| `blog/index.html` | `en/blog/index.html` | Blog index |
+| `blog/rgpd-dossiers-patients-luxembourg.html` | `en/blog/gdpr-patient-records-luxembourg.html` | GDPR and patient records guide |
 | — | — | — |
 | `de/index.html` | — | Homepage (DE) |
 | `de/psychiater.html` | — | Psychiatrist landing page (DE) |
@@ -41,6 +43,8 @@ No build step required. Open any HTML file directly in a browser.
 | `de/team.html` | — | Team page (DE) |
 | `de/cns-abrechnung.html` | — | CNS invoicing guide (DE) |
 | `de/direktzahlung.html` | — | PID guide (DE) |
+| `de/blog/index.html` | — | Blog index (DE) |
+| `de/blog/dsgvo-patientenakten-luxemburg.html` | — | GDPR and patient records guide (DE) |
 | `de/cookie-richtlinie.html` | — | Cookie policy (DE) |
 | `de/datenschutz.html` | — | Privacy policy (DE) |
 | `de/impressum.html` | — | Legal notice (DE) |
@@ -62,8 +66,7 @@ The cookie policy pages reflect that sigmund.lu is a static site with no cookies
 ```
 assets/
 ├── css/
-│   ├── sigmund.css           All custom styles shared by every page
-│   └── profession.css        Overrides for profession landing pages (FR/EN/DE)
+│   └── sigmund.css           All custom styles shared by every page (profession overrides scoped under body.sg-profession)
 ├── js/
 │   ├── main.js               Active nav-link highlight
 │   └── profession.js         Contact form handler (Brevo fetch, validation, i18n via data-attributes)

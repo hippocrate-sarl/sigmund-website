@@ -39,6 +39,8 @@ en/immediate-direct-payment.html                  PID guide (EN)
 en/cookie-policy.html
 en/privacy-policy.html
 en/legal-notice.html
+en/blog/index.html                                Blog index (EN)
+en/blog/gdpr-patient-records-luxembourg.html      GDPR and patient records guide (EN)
 
 llms.txt                                          AI crawler description (FR)
 en/llms.txt                                       AI crawler description (EN)
@@ -49,6 +51,23 @@ assets/images/                                    All images (webp + svg)
   team-sylvain-perez.webp                         Team photo — downloaded from hippocrate.lu
   team-franck-amouyal.webp
   team-guillaume-desrat.webp
+blog/index.html                                   Blog index (FR)
+blog/rgpd-dossiers-patients-luxembourg.html       RGPD et dossiers patients guide (FR)
+
+de/index.html                                     Homepage (DE)
+de/psychiater.html
+de/psychotherapeut.html
+de/psychologe.html
+de/preise.html                                    Pricing (DE)
+de/team.html                                      Team page (DE)
+de/cns-abrechnung.html                            CNS invoicing guide (DE)
+de/direktzahlung.html                             PID guide (DE)
+de/cookie-richtlinie.html
+de/datenschutz.html
+de/impressum.html
+de/blog/index.html                                Blog index (DE)
+de/blog/dsgvo-patientenakten-luxemburg.html       DSGVO und Patientenakten guide (DE)
+
 favicon.ico
 robots.txt
 sitemap.xml
@@ -74,6 +93,8 @@ Custom CSS lives exclusively in `assets/css/sigmund.css`. CSS variables are defi
 All custom classes use the `sg-` prefix. Profession landing pages have `<body class="sg-profession">` — all profession-specific overrides (hero, section titles, testimonials, pricing, coming-soon callout, contact form) are scoped to `.sg-profession` in the "Profession landing pages" section at the bottom of `sigmund.css`. The profession pages also include a `<style>` block inline for page-specific overrides (e.g. testimonials background image URL).
 
 **Important CSS cascade note:** properties defined in `sigmund.css` apply to ALL pages. Profession-specific overrides use `.sg-profession` ancestor scoping so they never affect non-profession pages. If you add a new property to a shared class in `sigmund.css`, verify it doesn't unintentionally affect profession pages.
+
+**No inline styles, no `<style>` blocks:** never use `style="..."` attributes or `<style>` blocks when creating or modifying pages. All styles — including page-specific ones — must go in `sigmund.css`. Use a new, well-named class and add it there.
 
 ## Key components (sigmund.css)
 
@@ -117,6 +138,8 @@ Three columns on all pages:
 
 When adding a new resource page, add its link to the "Ressources" sub-section in the footer of **all** existing pages (FR and EN separately).
 
+When adding a new blog article, add its card to all 3 blog index pages (`blog/index.html`, `en/blog/index.html`, `de/blog/index.html`) and add all 3 article URLs to `sitemap.xml`.
+
 ## Trilingual structure
 
 Every main page has FR, EN and DE counterparts. Language switcher in navbar and footer links between them. Cookie consent language is auto-detected from `<html lang="...">`.
@@ -134,6 +157,8 @@ DE page URL mapping:
 - `de/team.html` ↔ `equipe.html` / `en/team.html`
 - `de/cns-abrechnung.html` ↔ `facturation-cns.html` / `en/cns-invoicing.html`
 - `de/direktzahlung.html` ↔ `paiement-immediat-direct.html` / `en/immediate-direct-payment.html`
+- `de/blog/index.html` ↔ `blog/index.html` / `en/blog/index.html`
+- `de/blog/dsgvo-patientenakten-luxemburg.html` ↔ `blog/rgpd-dossiers-patients-luxembourg.html` / `en/blog/gdpr-patient-records-luxembourg.html`
 - Legal: `de/cookie-richtlinie.html`, `de/datenschutz.html`, `de/impressum.html`
 
 ## SEO / GEO
@@ -170,3 +195,12 @@ DE page URL mapping:
 - The cookie policy pages state that sigmund.lu sets no cookies. The Sigmund app (app.sigmund.lu) may use essential session cookies — that distinction is maintained in both the cookie policy and privacy policy pages
 - Hero H1s on all main menu pages are in sentence case (not uppercase) — consistent with index.html
 - Some HTML files previously had null bytes introduced by bulk PowerShell operations — stripped and resolved. All files are clean UTF-8
+
+## Before proposing a commit
+
+Always verify these files are up to date before staging a commit:
+
+- **`sitemap.xml`** — add any new page (with full `hreflang` alternates). Do not add legal/policy pages (they are `noindex`).
+- **`robots.txt`** — check that no new indexable page is accidentally disallowed, and that no new legal/policy page needs to be added to the disallow list.
+- **`AGENTS.md`** — update the file structure, DE URL mapping, or any section that describes the pages or conventions you just changed.
+- **`README.md`** — update the pages table if a new page was added or removed.
