@@ -994,3 +994,6 @@ body {
 /* ---------- Legal pages ---------- */
 .sg-translation-note { font-size: .85rem; color: #888; border-left: 3px solid var(--sg-primary); padding-left: .75rem; margin-bottom: 2rem; }
 .sg-legal-note { font-size: .88rem; color: #666; margin-top: .75rem; }
+
+/* ---------- Inline link inside feature list (inherits list color) ---------- */
+.sg-feat-link { color: inherit; text-decoration: underline; }
