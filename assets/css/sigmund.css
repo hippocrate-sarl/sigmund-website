@@ -997,3 +997,6 @@ body {
 
 /* ---------- Inline link inside feature list (inherits list color) ---------- */
 .sg-feat-link { color: inherit; text-decoration: underline; }
+
+/* ---------- Footer "about us" paragraph ---------- */
+.sg-footer-about { color: #aaa; font-size: .87rem; line-height: 1.6; }
