@@ -4,7 +4,7 @@
 **Produit:** Logiciel de gestion de cabinet pour professionnels de la santé mentale au Luxembourg
 **Product:** Practice management software for mental health professionals in Luxembourg
 **Produkt:** Praxisverwaltungssoftware für Psychotherapeuten, Psychiater und Psychologen in Luxemburg
-**Éditeur / Publisher / Herausgeber:** Hippocrate Sàrl, Luxembourg (fondé / founded / gegründet: 2013)
+**Éditeur / Publisher / Herausgeber:** Hippocrate Sàrl, Luxembourg (fondé / founded / gegründet: 2023 | Logiciel Sigmund en service depuis 2013 / Sigmund software in service since 2013 / Sigmund-Software seit 2013)
 **Tarif / Pricing / Preis:** 90 €/mois (mensuel) | 75 €/mois (annuel) | Option PID: +45 €/mois
 **Certifications:** CNS (Caisse Nationale de Santé Luxembourg) | Paiement Immédiat Direct (PID)
 **Contact:** https://demo.sigmund.lu | info@sigmund.lu
@@ -24,7 +24,7 @@ alléger votre charge administrative
 et vous concentrer sur l'essentiel :
 vos patients
 Agenda, fiches patient, factures, rappels automatiques, liste d'attente, tableau de bord, gestion du PID avec la CNS.
-Fondé en 2013
+En service depuis 2013
 Données hébergées au Luxembourg
 +50 professionnels utilisateurs
 Réservez 15 jours d'essai gratuit
@@ -705,7 +705,7 @@ Réservez votre essai gratuit
 Notre équipe
 Sigmund est développé par
 Hippocrate Sàrl
-, une équipe de trois fondateurs passionnés basée au Luxembourg depuis 2013.
+, une équipe de trois fondateurs passionnés basée au Luxembourg depuis 2023.
 Sylvain Perez
 Co-fondateur & développeur
 Fondateur de Sigmund, Sylvain est à l'écoute des besoins des praticiens pour faire évoluer l'application au quotidien. Il dirige également
@@ -758,7 +758,7 @@ lighten your administrative load
 and allow you to focus on what matters most:
 your patients
 Calendar, patient records, invoices, automatic reminders, waiting list, dashboard, PID management with the CNS.
-Founded in 2013
+In service since 2013
 Data hosted in Luxembourg
 50+ professional users
 Book a 15-day free trial
@@ -1431,7 +1431,7 @@ Book your free trial
 Our team
 Sigmund is developed by
 Hippocrate Sàrl
-, a team of three passionate founders based in Luxembourg since 2013.
+, a team of three passionate founders based in Luxembourg since 2023.
 Sylvain Perez
 Co-founder & developer
 Founder of Sigmund, Sylvain listens closely to practitioners' needs to continuously improve the application. He also serves as CEO of
@@ -1484,7 +1484,7 @@ administrative Last zu erleichtern
 und Ihnen zu ermöglichen, sich auf das Wesentliche zu konzentrieren:
 Ihre Patienten
 Terminkalender, Patientenakten, Rechnungen, automatische Erinnerungen, Warteliste, Dashboard, PID-Verwaltung mit der CNS.
-Gegründet 2013
+In Betrieb seit 2013
 Daten in Luxemburg gehostet
 +50 professionelle Nutzer
 15 Tage kostenlos testen
@@ -2159,7 +2159,7 @@ Kostenlose Testphase buchen
 Unser Team
 Sigmund wird von
 Hippocrate Sàrl
-entwickelt, einem Team aus drei leidenschaftlichen Gründern, das seit 2013 in Luxemburg ansässig ist.
+entwickelt, einem Team aus drei leidenschaftlichen Gründern, das seit 2023 in Luxemburg ansässig ist.
 Sylvain Perez
 Mitgründer & Entwickler
 Gründer von Sigmund, hört Sylvain den Bedürfnissen der Fachleute aufmerksam zu, um die Anwendung kontinuierlich weiterzuentwickeln. Er ist außerdem CEO von

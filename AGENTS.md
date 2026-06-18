@@ -169,7 +169,7 @@ DE page URL mapping:
 - JSON-LD on team page: `Person` × 3 (with LinkedIn `sameAs`)
 - JSON-LD on tarifs/pricing: `SoftwareApplication` + `Offer` + `eligibleRegion: Luxembourg`
 - JSON-LD on guide pages: `Article` (with `datePublished`, `dateModified`)
-- E-E-A-T badges on homepage hero: "Fondé en 2013", "Données hébergées au Luxembourg", "+50 professionnels"
+- E-E-A-T badges on homepage hero: "En service depuis 2013" / "In service since 2013" / "In Betrieb seit 2013", "Données hébergées au Luxembourg", "+50 professionnels"
 - GEO-citable openings on profession pages: 20% admin time stat (Ordre national des médecins)
 
 ## Important domain knowledge
