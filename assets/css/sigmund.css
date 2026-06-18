@@ -660,6 +660,7 @@ body {
 }
 
 .sg-info-card p { font-size: .9rem; color: #444; margin: 0; line-height: 1.7; }
+.sg-info-card--narrow { max-width: 360px; }
 
 /* ---------- Guide pages ---------- */
 .sg-guide-hero-img {
@@ -947,8 +948,49 @@ body {
 .sg-form-panel--success { color: #085229; background-color: #e7faf0; border: 1px solid #13ce66; }
 .sg-field-error { font-size: .82rem; color: #661d1d; background-color: #ffeded; border: 1px solid #ff4949; border-radius: 4px; padding: .25rem .5rem; margin-top: .25rem; display: none; }
 .sg-honeypot    { display: none !important; }
+.sg-profession .sg-faq ol { padding-left: 1.2rem; line-height: 2; }
 
 @media (max-width: 767px) {
   .sg-profession .sg-hero { padding: 48px 0 40px; }
   .sg-profession .sg-pricing { padding: 2rem 1.5rem; }
 }
+
+/* ---------- Section title accent ---------- */
+.sg-section-title span { color: var(--sg-primary); }
+
+/* ---------- Two-image composition (guide hero + homepage) ---------- */
+.sg-img-compose { position: relative; display: inline-block; width: 100%; }
+.sg-img-compose > img { display: block; }
+.sg-img-compose-overlay { position: absolute; width: 25%; bottom: 0; left: 0; }
+
+/* ---------- Guide page intro paragraphs ---------- */
+.sg-guide-intro { font-size: 1.05rem; color: #444; line-height: 1.85; }
+
+/* ---------- Centered page intro (team, section lead) ---------- */
+.sg-page-intro { color: #555; max-width: 600px; margin: 0 auto 3rem; }
+
+/* ---------- Homepage hero E-E-A-T facts row ---------- */
+.sg-hero-facts { font-size: .88rem; color: #555; }
+.sg-hero-facts i { color: var(--sg-primary); }
+
+/* ---------- CTA gradient section ---------- */
+.sg-cta-section { background: var(--sg-gradient); }
+.sg-cta-section .sg-cta-title { color: #fff; font-size: 1.6rem; font-weight: 800; margin-bottom: 1rem; }
+.sg-cta-section .sg-cta-lead { color: rgba(255,255,255,.85); max-width: 520px; margin: 0 auto 2rem; }
+.sg-cta-section .btn-sg-primary { background: #fff; color: var(--sg-primary); }
+.sg-cta-section .btn-sg-outline { border-color: #fff; color: #fff; }
+.sg-price-card .btn-sg-primary { background: #fff; color: var(--sg-primary); }
+
+/* ---------- Homepage hero text ---------- */
+.sg-hero-desc { color: #555; max-width: 520px; }
+.sg-hero-sub  { color: #555; font-size: .95rem; max-width: 520px; }
+
+/* ---------- Homepage profession icon images ---------- */
+.sg-profession-icon { height: 11rem; }
+
+/* ---------- Comparison table source note ---------- */
+.sg-source-note { font-size: .8rem; color: #aaa; }
+
+/* ---------- Legal pages ---------- */
+.sg-translation-note { font-size: .85rem; color: #888; border-left: 3px solid var(--sg-primary); padding-left: .75rem; margin-bottom: 2rem; }
+.sg-legal-note { font-size: .88rem; color: #666; margin-top: .75rem; }
