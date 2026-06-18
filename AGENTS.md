@@ -43,7 +43,6 @@ en/legal-notice.html
 llms.txt                                          AI crawler description (FR)
 en/llms.txt                                       AI crawler description (EN)
 assets/css/sigmund.css                            All custom styles (shared by all pages)
-assets/css/profession.css                         Overrides for profession landing pages (FR/EN/DE)
 assets/js/main.js                                 Active nav-link highlight
 assets/js/profession.js                           Contact form handler (Brevo fetch, validation, i18n via data-attributes)
 assets/images/                                    All images (webp + svg)
@@ -72,9 +71,9 @@ Custom CSS lives exclusively in `assets/css/sigmund.css`. CSS variables are defi
 --sg-gradient:   linear-gradient(135deg, #6BA4FA 0%, #4a86e8 100%)
 ```
 
-All custom classes use the `sg-` prefix. The three profession landing pages also include a `<style>` block inline for page-specific overrides — keep that pattern when adding new profession pages.
+All custom classes use the `sg-` prefix. Profession landing pages have `<body class="sg-profession">` — all profession-specific overrides (hero, section titles, testimonials, pricing, coming-soon callout, contact form) are scoped to `.sg-profession` in the "Profession landing pages" section at the bottom of `sigmund.css`. The profession pages also include a `<style>` block inline for page-specific overrides (e.g. testimonials background image URL).
 
-**Important CSS cascade note:** properties defined in `sigmund.css` apply to ALL pages including profession pages. The profession pages' inline `<style>` blocks only override properties they explicitly redeclare. If you add a new property to a shared class in `sigmund.css`, verify it doesn't unintentionally affect profession pages.
+**Important CSS cascade note:** properties defined in `sigmund.css` apply to ALL pages. Profession-specific overrides use `.sg-profession` ancestor scoping so they never affect non-profession pages. If you add a new property to a shared class in `sigmund.css`, verify it doesn't unintentionally affect profession pages.
 
 ## Key components (sigmund.css)
 
@@ -84,7 +83,7 @@ All custom classes use the `sg-` prefix. The three profession landing pages also
 - **`.sg-feat-list`** — checkmark feature list (CSS `::before` content); on mobile, forced `text-align: left; display: inline-block` to counteract the `.sg-hero { text-align: center }` rule
 - **`.sg-picto-card`** — feature cards with icon + title + description
 - **`.sg-carousel`** / **`.sg-carousel-track`** / **`.sg-carousel-slide`** — pure CSS scroll-snap carousel; JS inlined in each profession page
-- **`.sg-pricing`** — pricing card (white box on gradient background)
+- **`.sg-pricing`** — pricing card; on homepages: primary-color background; on profession pages (`.sg-profession`): white card on gradient background (inverted)
 - **`.sg-soon-card`** — "coming soon" feature cards
 - **`.sg-timeline`** — vertical timeline (company history)
 - **`.sg-faq`** — native `<details>`/`<summary>` accordion
