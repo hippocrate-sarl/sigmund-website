@@ -711,13 +711,13 @@ Co-fondateur & développeur
 Fondateur de Sigmund, Sylvain a créé le logiciel en 2013 pour répondre aux besoins de gestion de cabinet de son épouse psychothérapeute. Il est aujourd'hui à l'écoute de toute la communauté pour faire évoluer l'application au quotidien. Il dirige également
 Q-Leap
 LinkedIn
-Franck Amouyal
-Co-fondateur & administrateur
-Co-fondateur, Franck gère l'administration et les finances de Hippocrate Sàrl. Son sens de l'organisation garantit le bon fonctionnement de la structure.
-LinkedIn
 Guillaume Desrat
 Co-fondateur & développeur
 Co-fondateur, Guillaume assure le développement technique et les questions de protection des données. Il veille à ce que Sigmund soit sécurisé et conforme au RGPD.
+LinkedIn
+Franck Amouyal
+Co-fondateur & administrateur
+Co-fondateur, Franck gère l'administration et les finances de Hippocrate Sàrl. Son sens de l'organisation garantit le bon fonctionnement de la structure.
 LinkedIn
 
 ---
@@ -1437,13 +1437,13 @@ Co-founder & developer
 Founder of Sigmund, Sylvain created the software in 2013 to meet the practice management needs of his psychotherapist wife. He now listens closely to the whole community to continuously improve the application. He also serves as CEO of
 Q-Leap
 LinkedIn
-Franck Amouyal
-Co-founder & administrator
-Co-founder, Franck manages the administration and finances of Hippocrate Sàrl. His organisational skills ensure the smooth running of the company.
-LinkedIn
 Guillaume Desrat
 Co-founder & developer
 Co-founder, Guillaume handles technical development and data protection matters. He ensures Sigmund remains secure and fully GDPR-compliant.
+LinkedIn
+Franck Amouyal
+Co-founder & administrator
+Co-founder, Franck manages the administration and finances of Hippocrate Sàrl. His organisational skills ensure the smooth running of the company.
 LinkedIn
 
 ---
@@ -2165,13 +2165,13 @@ Mitgründer & Entwickler
 Gründer von Sigmund, entwickelte Sylvain die Software 2013, um den Praxisverwaltungsbedarf seiner Frau, einer Psychotherapeutin, zu decken. Heute hört er der gesamten Community aufmerksam zu, um die Anwendung kontinuierlich weiterzuentwickeln. Er ist außerdem CEO von
 Q-Leap
 LinkedIn
-Franck Amouyal
-Mitgründer & Administrator
-Mitgründer, Franck übernimmt die Verwaltung und Finanzen von Hippocrate Sàrl. Sein Organisationstalent sorgt für einen reibungslosen Betrieb des Unternehmens.
-LinkedIn
 Guillaume Desrat
 Mitgründer & Entwickler
 Mitgründer, Guillaume verantwortet die technische Entwicklung und den Datenschutz. Er sorgt dafür, dass Sigmund sicher und vollständig DSGVO-konform bleibt.
+LinkedIn
+Franck Amouyal
+Mitgründer & Administrator
+Mitgründer, Franck übernimmt die Verwaltung und Finanzen von Hippocrate Sàrl. Sein Organisationstalent sorgt für einen reibungslosen Betrieb des Unternehmens.
 LinkedIn
 
 ---
