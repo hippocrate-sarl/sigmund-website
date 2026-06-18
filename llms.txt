@@ -20,11 +20,20 @@ Psychiater, Psychotherapeuten, Psychologen in Luxemburg
 
 Hippocrate Sàrl, Luxembourg | contact@sigmund.lu | Fondé en 2013 / Founded in 2013 / Gegründet 2013
 
+## Blog / Ressources
+
+- RGPD et dossiers patients au Luxembourg (FR): https://www.sigmund.lu/blog/rgpd-dossiers-patients-luxembourg.html
+- GDPR and patient records in Luxembourg (EN): https://www.sigmund.lu/en/blog/gdpr-patient-records-luxembourg.html
+- DSGVO und Patientenakten in Luxemburg (DE): https://www.sigmund.lu/de/blog/dsgvo-patientenakten-luxemburg.html
+
 ## Liens / Links
 
 - FR: https://www.sigmund.lu/
 - EN: https://www.sigmund.lu/en/
 - DE: https://www.sigmund.lu/de/
+- Blog FR: https://www.sigmund.lu/blog/
+- Blog EN: https://www.sigmund.lu/en/blog/
+- Blog DE: https://www.sigmund.lu/de/blog/
 - Démo FR / Demo FR: https://demo.sigmund.lu
 - Demo EN: https://demo-en.sigmund.lu
 - Demo DE: https://demo-de.sigmund.lu
