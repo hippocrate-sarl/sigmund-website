@@ -794,6 +794,19 @@ body {
 .sg-team-card .btn-linkedin { display: inline-flex; align-items: center; gap: .4rem; font-size: .85rem; font-weight: 600; color: var(--sg-primary); border: 1.5px solid var(--sg-primary); border-radius: 50px; padding: .4rem 1rem; text-decoration: none; transition: all .2s; }
 .sg-team-card .btn-linkedin:hover { background: var(--sg-primary); color: #fff; }
 
+/* ---------- Blog ---------- */
+.sg-blog-card { background: #fff; border: 1px solid var(--sg-border); border-radius: 16px; overflow: hidden; box-shadow: var(--sg-shadow); transition: transform .2s, box-shadow .2s; height: 100%; display: flex; flex-direction: column; }
+.sg-blog-card:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(107,164,250,.25); }
+.sg-blog-card img { width: 100%; height: 200px; object-fit: cover; display: block; }
+.sg-blog-card-body { padding: 1.5rem; display: flex; flex-direction: column; flex: 1; }
+.sg-blog-card-body .btn-sg-outline,
+.sg-blog-card-body .btn-sg-primary { width: fit-content; }
+.sg-blog-category { display: inline-block; background: var(--sg-light-bg); color: var(--sg-primary); font-size: .72rem; font-weight: 600; padding: .2rem .65rem; border-radius: 20px; margin-bottom: .5rem; text-transform: uppercase; letter-spacing: .04em; }
+.sg-blog-card h2 { font-size: 1.05rem; font-weight: 700; color: var(--sg-dark); margin-bottom: .6rem; line-height: 1.4; }
+.sg-blog-card p { font-size: .88rem; color: #555; line-height: 1.6; margin-bottom: 1.25rem; flex: 1; }
+.sg-blog-card-composed { position: relative; height: 200px; overflow: hidden; }
+.sg-blog-card .sg-blog-card-img-overlay { position: absolute; width: 25%; height: auto; bottom: 0; left: 0; }
+
 /* ---------- Pricing page ---------- */
 .sg-price-card { background: var(--sg-gradient); border-radius: 20px; padding: 2.5rem; color: #fff; }
 .sg-price-card .price { font-size: 3.5rem; font-weight: 800; line-height: 1; }
