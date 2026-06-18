@@ -141,7 +141,7 @@ Amélioration continue
 Pendant dix ans, l'application s'est enrichie de nouvelles fonctionnalités spécifiques au quotidien des psychologues et psychothérapeutes.
 2023
 Lancement de l'application
-Avec l'arrivée du remboursement des psychothérapies et la demande répétée de confrères, l'application s'est ouverte à tous sous le nom de Sigmund.
+Hippocrate Sàrl est fondée. Avec l'arrivée du remboursement des psychothérapies et la demande répétée de confrères, l'application s'ouvre à tous sous le nom de Sigmund.
 2024
 Prise en charge du PID
 Labélisation par la CNS et prise en charge du PID (Paiement Immédiat Direct).
@@ -282,7 +282,7 @@ Amélioration continue
 Pendant dix ans, l'application s'est enrichie de nouvelles fonctionnalités spécifiques au quotidien des psychologues et psychothérapeutes.
 2023
 Lancement de l'application
-Avec l'arrivée du remboursement des psychothérapies et la demande répétée de confrères, l'application s'est ouverte à tous sous le nom de Sigmund.
+Hippocrate Sàrl est fondée. Avec l'arrivée du remboursement des psychothérapies et la demande répétée de confrères, l'application s'ouvre à tous sous le nom de Sigmund.
 2024
 Prise en charge du PID
 Labélisation par la CNS et prise en charge du PID (Paiement Immédiat Direct).
@@ -403,7 +403,7 @@ Amélioration continue
 Pendant dix ans, l'application s'est enrichie de nouvelles fonctionnalités spécifiques au quotidien des psychologues et psychothérapeutes.
 2023
 Lancement de l'application
-Avec l'arrivée du remboursement des psychothérapies et la demande répétée de confrères, l'application s'est ouverte à tous sous le nom de Sigmund.
+Hippocrate Sàrl est fondée. Avec l'arrivée du remboursement des psychothérapies et la demande répétée de confrères, l'application s'ouvre à tous sous le nom de Sigmund.
 2024
 Prise en charge du PID
 Labélisation par la CNS et prise en charge du PID (Paiement Immédiat Direct).
@@ -708,7 +708,7 @@ Hippocrate Sàrl
 , une équipe de trois fondateurs passionnés basée au Luxembourg depuis 2023.
 Sylvain Perez
 Co-fondateur & développeur
-Fondateur de Sigmund, Sylvain est à l'écoute des besoins des praticiens pour faire évoluer l'application au quotidien. Il dirige également
+Fondateur de Sigmund, Sylvain a créé le logiciel en 2013 pour répondre aux besoins de gestion de cabinet de son épouse psychothérapeute. Il est aujourd'hui à l'écoute de toute la communauté pour faire évoluer l'application au quotidien. Il dirige également
 Q-Leap
 LinkedIn
 Franck Amouyal
@@ -871,7 +871,7 @@ Continuous improvement
 Over ten years, the application was enriched with new features specific to the daily needs of psychologists and psychotherapists.
 2023
 Application launch
-With the arrival of psychotherapy reimbursement and repeated requests from colleagues, the application opened to all practitioners under the name Sigmund.
+Hippocrate Sàrl is founded. With the arrival of psychotherapy reimbursement and repeated requests from colleagues, the application opens to all practitioners under the name Sigmund.
 2024
 PID support
 CNS certification and implementation of PID (Immediate Direct Payment) support.
@@ -1010,7 +1010,7 @@ Continuous improvement
 Over ten years, the application was enriched with new features specific to the daily needs of psychologists and psychotherapists.
 2023
 Application launch
-With the arrival of psychotherapy reimbursement and repeated requests from colleagues, the application opened to all practitioners under the name Sigmund.
+Hippocrate Sàrl is founded. With the arrival of psychotherapy reimbursement and repeated requests from colleagues, the application opens to all practitioners under the name Sigmund.
 2024
 PID support
 CNS certification and implementation of PID (Immediate Direct Payment) support.
@@ -1130,7 +1130,7 @@ Continuous improvement
 Over ten years, the application was enriched with new features specific to the daily needs of psychologists and psychotherapists.
 2023
 Application launch
-With the arrival of psychotherapy reimbursement and repeated requests from colleagues, the application opened to all practitioners under the name Sigmund.
+Hippocrate Sàrl is founded. With the arrival of psychotherapy reimbursement and repeated requests from colleagues, the application opens to all practitioners under the name Sigmund.
 2024
 PID support
 CNS certification and implementation of PID (Immediate Direct Payment) support.
@@ -1434,7 +1434,7 @@ Hippocrate Sàrl
 , a team of three passionate founders based in Luxembourg since 2023.
 Sylvain Perez
 Co-founder & developer
-Founder of Sigmund, Sylvain listens closely to practitioners' needs to continuously improve the application. He also serves as CEO of
+Founder of Sigmund, Sylvain created the software in 2013 to meet the practice management needs of his psychotherapist wife. He now listens closely to the whole community to continuously improve the application. He also serves as CEO of
 Q-Leap
 LinkedIn
 Franck Amouyal
@@ -1598,7 +1598,7 @@ Kontinuierliche Verbesserung
 Über zehn Jahre hinweg wurde die Anwendung um neue Funktionen für den Alltag von Psychologen und Psychotherapeuten erweitert.
 2023
 Einführung der Anwendung
-Mit der Einführung der Erstattung von Psychotherapien und auf wiederholte Anfrage von Kollegen öffnete sich die Anwendung unter dem Namen Sigmund für alle.
+Hippocrate Sàrl wird gegründet. Mit der Einführung der Erstattung von Psychotherapien und auf wiederholte Anfrage von Kollegen öffnet sich die Anwendung unter dem Namen Sigmund für alle.
 2024
 PID-Unterstützung
 CNS-Zertifizierung und Einführung der Unterstützung für die Sofortige Direktzahlung (PID).
@@ -1739,7 +1739,7 @@ Kontinuierliche Verbesserung
 Über zehn Jahre hinweg wurde die Anwendung um neue Funktionen für den Alltag von Psychologen und Psychotherapeuten erweitert.
 2023
 Einführung der Anwendung
-Mit der Einführung der Erstattung von Psychotherapien und auf wiederholte Anfrage von Kollegen öffnete sich die Anwendung unter dem Namen Sigmund für alle.
+Hippocrate Sàrl wird gegründet. Mit der Einführung der Erstattung von Psychotherapien und auf wiederholte Anfrage von Kollegen öffnet sich die Anwendung unter dem Namen Sigmund für alle.
 2024
 PID-Unterstützung
 CNS-Zertifizierung und Einführung der Unterstützung für die Sofortige Direktzahlung (PID).
@@ -1863,7 +1863,7 @@ Kontinuierliche Verbesserung
 Über zehn Jahre hinweg wurde die Anwendung um neue Funktionen für den Alltag von Psychologen und Psychotherapeuten erweitert.
 2023
 Einführung der Anwendung
-Mit der Einführung der Erstattung von Psychotherapien und auf wiederholte Anfrage von Kollegen öffnete sich die Anwendung unter dem Namen Sigmund für alle.
+Hippocrate Sàrl wird gegründet. Mit der Einführung der Erstattung von Psychotherapien und auf wiederholte Anfrage von Kollegen öffnet sich die Anwendung unter dem Namen Sigmund für alle.
 2024
 PID-Unterstützung
 CNS-Zertifizierung und Einführung der Unterstützung für die Sofortige Direktzahlung (PID).
@@ -2162,7 +2162,7 @@ Hippocrate Sàrl
 entwickelt, einem Team aus drei leidenschaftlichen Gründern, das seit 2023 in Luxemburg ansässig ist.
 Sylvain Perez
 Mitgründer & Entwickler
-Gründer von Sigmund, hört Sylvain den Bedürfnissen der Fachleute aufmerksam zu, um die Anwendung kontinuierlich weiterzuentwickeln. Er ist außerdem CEO von
+Gründer von Sigmund, entwickelte Sylvain die Software 2013, um den Praxisverwaltungsbedarf seiner Frau, einer Psychotherapeutin, zu decken. Heute hört er der gesamten Community aufmerksam zu, um die Anwendung kontinuierlich weiterzuentwickeln. Er ist außerdem CEO von
 Q-Leap
 LinkedIn
 Franck Amouyal
