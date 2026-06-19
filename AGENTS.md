@@ -42,8 +42,7 @@ en/legal-notice.html
 en/blog/index.html                                Blog index (EN)
 en/blog/gdpr-patient-records-luxembourg.html      GDPR and patient records guide (EN)
 
-llms.txt                                          AI crawler description (FR)
-en/llms.txt                                       AI crawler description (EN)
+llms.txt                                          AI crawler description (FR/EN/DE — trilingual, root only)
 assets/css/sigmund.css                            All custom styles (shared by all pages)
 assets/js/main.js                                 Active nav-link highlight
 assets/js/profession.js                           Contact form handler (Brevo fetch, validation, i18n via data-attributes)
@@ -202,5 +201,6 @@ Always verify these files are up to date before staging a commit:
 
 - **`sitemap.xml`** — add any new page (with full `hreflang` alternates). Do not add legal/policy pages (they are `noindex`).
 - **`robots.txt`** — check that no new indexable page is accidentally disallowed, and that no new legal/policy page needs to be added to the disallow list.
+- **`llms.txt`** — update if pricing, team, offer, or site structure changed. H2 sections are for file lists only (`[name](url)` format); informational content goes as plain paragraphs (no H2).
 - **`AGENTS.md`** — update the file structure, DE URL mapping, or any section that describes the pages or conventions you just changed.
 - **`README.md`** — update the pages table if a new page was added or removed.

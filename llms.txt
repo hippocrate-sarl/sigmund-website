@@ -1,34 +1,21 @@
 # Sigmund
 
-> Logiciel de gestion de cabinet pour professionnels de la santé mentale au Luxembourg
-> Practice management software for mental health professionals in Luxembourg
-> Praxisverwaltungssoftware für Fachleute der psychischen Gesundheit in Luxemburg
+> Logiciel de gestion de cabinet pour professionnels de la santé mentale au Luxembourg. Practice management software for mental health professionals in Luxembourg. Praxisverwaltungssoftware für Fachleute der psychischen Gesundheit in Luxemburg.
 
-## Offre / Offer / Angebot
+Offre / Pricing / Preis : 90 €/mois · €90/month · 90 €/Monat — sans engagement / no commitment / ohne Verpflichtung. Option PID (Paiement Immédiat Direct CNS) : +45 €/mois. Essai gratuit 15 jours / 15-day free trial / 15 Tage kostenlos — sans CB / no credit card / ohne Kreditkarte.
 
-- 90 €/mois · €90/month · 90 €/Monat — sans engagement / no commitment / ohne Verpflichtung
-- Option PID (Paiement Immédiat Direct CNS) : +45 €/mois
-- Essai gratuit 15 jours / 15-day free trial / 15 Tage kostenlos — sans CB / no credit card / ohne Kreditkarte
+Cibles / Target users / Zielgruppe : Psychiatres, psychothérapeutes, psychologues en cabinet libéral au Luxembourg / Psychiatrists, psychotherapists, psychologists in private practice in Luxembourg / Psychiater, Psychotherapeuten, Psychologen in Luxemburg.
 
-## Cibles / Target users / Zielgruppe
-
-Psychiatres, psychothérapeutes, psychologues en cabinet libéral au Luxembourg
-Psychiatrists, psychotherapists, psychologists in private practice in Luxembourg
-Psychiater, Psychotherapeuten, Psychologen in Luxemburg
-
-## Entreprise / Company / Unternehmen
-
-Hippocrate Sàrl, Luxembourg | contact@sigmund.lu | Fondé en 2023 / Founded in 2023 / Gegründet 2023 | Logiciel Sigmund en service depuis 2013 / Sigmund software in service since 2013 / Sigmund-Software seit 2013
+Entreprise / Company / Unternehmen : Hippocrate Sàrl, Luxembourg | contact@sigmund.lu | Fondé en 2023 / Founded in 2023 / Gegründet 2023 | Logiciel Sigmund en service depuis 2013 / Sigmund software in service since 2013 / Sigmund-Software seit 2013.
 
 ## Liens / Links
 
-- FR: https://www.sigmund.lu/
-- EN: https://www.sigmund.lu/en/
-- DE: https://www.sigmund.lu/de/
-- Blog FR: https://www.sigmund.lu/blog/
-- Blog EN: https://www.sigmund.lu/en/blog/
-- Blog DE: https://www.sigmund.lu/de/blog/
-- Démo FR / Demo FR: https://demo.sigmund.lu
-- Demo EN: https://demo-en.sigmund.lu
-- Demo DE: https://demo-de.sigmund.lu
-- Contenu complet / Full content / Vollständiger Inhalt: https://www.sigmund.lu/llms-full.txt
+- [Site FR](https://www.sigmund.lu/): Page principale en français
+- [Site EN](https://www.sigmund.lu/en/): English version
+- [Site DE](https://www.sigmund.lu/de/): Deutsche Version
+- [Blog FR](https://www.sigmund.lu/blog/): Articles et guides en français
+- [Blog EN](https://www.sigmund.lu/en/blog/): Blog in English
+- [Blog DE](https://www.sigmund.lu/de/blog/): Blog auf Deutsch
+- [Démo FR / Demo FR](https://demo.sigmund.lu): Demande de démo en français / French demo request
+- [Demo EN](https://demo-en.sigmund.lu): English demo request
+- [Demo DE](https://demo-de.sigmund.lu): Deutsche Demo-Anfrage
