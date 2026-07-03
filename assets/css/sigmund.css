@@ -829,8 +829,8 @@ body {
 .sg-compare-table td.col-sigmund { text-align: center; background: rgba(107,164,250,.05); color: var(--sg-dark); font-weight: 600; }
 .sg-compare-table td.col-logicare { text-align: center; color: #666; }
 .sg-compare-table tr:last-child td { border-bottom: none; }
-.sg-compare-table .check { color: var(--sg-primary); font-size: 1.2rem; }
-.sg-compare-table .cross { color: #ccc; font-size: 1.2rem; }
+.sg-compare-table .check { color: var(--sg-primary); font-size: 1.2rem; vertical-align: -.13rem; }
+.sg-compare-table .cross { color: #ccc; font-size: 1.2rem; vertical-align: -.13rem; }
 .sg-compare-table .partial { color: #f0ad4e; font-size: .85rem; font-weight: 600; }
 .sg-compare-wrap { border: 1px solid var(--sg-border); border-radius: 16px; overflow: hidden; }
 .sg-diff-card { background: #fff; border: 1px solid var(--sg-border); border-radius: 14px; padding: 1.5rem; height: 100%; }
