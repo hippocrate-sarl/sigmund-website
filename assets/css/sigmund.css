@@ -987,7 +987,7 @@ body {
 .sg-hero-sub  { color: #555; font-size: .95rem; max-width: 520px; }
 
 /* ---------- Homepage profession icon images ---------- */
-.sg-profession-icon { height: 11rem; }
+.sg-picto-card img.sg-profession-icon { height: 11rem; }
 
 /* ---------- Comparison table source note ---------- */
 .sg-source-note { font-size: .8rem; color: #aaa; }
