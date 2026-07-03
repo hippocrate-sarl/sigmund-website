@@ -147,18 +147,7 @@ FR pages: assets at `assets/`, links relative from root (e.g. `href="en/index.ht
 EN pages: assets at `../assets/`, links relative from `en/` (e.g. `href="../index.html"`).
 DE pages: assets at `../assets/`, links relative from `de/` (e.g. `href="../index.html"`).
 
-DE page URL mapping:
-- `de/index.html` ↔ `index.html` / `en/index.html`
-- `de/psychiater.html` ↔ `psychiatre.html` / `en/psychiatrist.html`
-- `de/psychotherapeut.html` ↔ `psychotherapeute.html` / `en/psychotherapist.html`
-- `de/psychologe.html` ↔ `psychologue.html` / `en/psychologist.html`
-- `de/preise.html` ↔ `tarifs.html` / `en/pricing.html`
-- `de/team.html` ↔ `equipe.html` / `en/team.html`
-- `de/cns-abrechnung.html` ↔ `facturation-cns.html` / `en/cns-invoicing.html`
-- `de/direktzahlung.html` ↔ `paiement-immediat-direct.html` / `en/immediate-direct-payment.html`
-- `de/blog/index.html` ↔ `blog/index.html` / `en/blog/index.html`
-- `de/blog/dsgvo-patientenakten-luxemburg.html` ↔ `blog/rgpd-dossiers-patients-luxembourg.html` / `en/blog/gdpr-patient-records-luxembourg.html`
-- Legal: `de/cookie-richtlinie.html`, `de/datenschutz.html`, `de/impressum.html`
+DE filenames are German translations, not transliterations, of the FR/EN names (e.g. `de/preise.html`, not `de/tarifs.html`) — see the FR | EN | DE table in `README.md` for the full page mapping.
 
 ## SEO / GEO
 
@@ -178,7 +167,7 @@ DE page URL mapping:
 - **Psychotherapy reimbursement**: started in 2023 in Luxembourg — psychotherapists can now invoice CNS
 - Base subscription: **€90/month**, no commitment, 15-day free trial
 - Data stored in Luxembourg (Gandi SAS datacenter in Bissen), subject to Luxembourg law + GDPR
-- Demo request form FR: `https://demo.sigmund.lu/` — EN: `https://demo-en.sigmund.lu/` (CTA buttons throughout the site)
+- Demo request form FR: `https://demo.sigmund.lu/` — EN: `https://demo-en.sigmund.lu/` — DE: `https://demo-de.sigmund.lu/` (CTA buttons throughout the site)
 - Application URL (production): `https://app.sigmund.lu/` (FR + EN — same URL for both languages)
 - Competitor: **Logicare** (logicare.lu) — €83/month billed annually, multi-profession generalist, no PID
 

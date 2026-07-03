@@ -10,7 +10,7 @@ Developed and maintained by **Hippocrate Sàrl** (Bertrange, Luxembourg).
 
 Sigmund is a SaaS product that handles the administrative side of a private mental health practice: appointment scheduling, patient records, invoicing, CNS-format billing, PID (Paiement Immédiat Direct) management, unpaid invoice reminders, waiting list, session notes, prescriptions, and more.
 
-This repository is the **public-facing marketing website** only. The production application runs at `app.sigmund.lu` (FR + EN). Demo request forms are at `demo.sigmund.lu` (FR) and `demo-en.sigmund.lu` (EN).
+This repository is the **public-facing marketing website** only. The production application runs at `app.sigmund.lu` (FR + EN). Demo request forms are at `demo.sigmund.lu` (FR), `demo-en.sigmund.lu` (EN) and `demo-de.sigmund.lu` (DE).
 
 ---
 
@@ -22,38 +22,30 @@ No build step required. Open any HTML file directly in a browser.
 
 ## Pages
 
-| FR | EN | Description |
-|---|---|---|
-| `index.html` | `en/index.html` | Homepage |
-| `psychiatre.html` | `en/psychiatrist.html` | Psychiatrist landing page |
-| `psychotherapeute.html` | `en/psychotherapist.html` | Psychotherapist landing page |
-| `psychologue.html` | `en/psychologist.html` | Psychologist landing page |
-| `tarifs.html` | `en/pricing.html` | Pricing + Sigmund vs Logicare comparison |
-| `equipe.html` | `en/team.html` | Team page (E-E-A-T) |
-| `facturation-cns.html` | `en/cns-invoicing.html` | CNS invoicing guide |
-| `paiement-immediat-direct.html` | `en/immediate-direct-payment.html` | PID (Immediate Direct Payment) guide |
-| `blog/index.html` | `en/blog/index.html` | Blog index |
-| `blog/rgpd-dossiers-patients-luxembourg.html` | `en/blog/gdpr-patient-records-luxembourg.html` | GDPR and patient records guide |
-| — | — | — |
-| `de/index.html` | — | Homepage (DE) |
-| `de/psychiater.html` | — | Psychiatrist landing page (DE) |
-| `de/psychotherapeut.html` | — | Psychotherapist landing page (DE) |
-| `de/psychologe.html` | — | Psychologist landing page (DE) |
-| `de/preise.html` | — | Pricing (DE) |
-| `de/team.html` | — | Team page (DE) |
-| `de/cns-abrechnung.html` | — | CNS invoicing guide (DE) |
-| `de/direktzahlung.html` | — | PID guide (DE) |
-| `de/blog/index.html` | — | Blog index (DE) |
-| `de/blog/dsgvo-patientenakten-luxemburg.html` | — | GDPR and patient records guide (DE) |
-| `de/cookie-richtlinie.html` | — | Cookie policy (DE) |
-| `de/datenschutz.html` | — | Privacy policy (DE) |
-| `de/impressum.html` | — | Legal notice (DE) |
-| — | — | — |
-| `lb/politik-iwwer-perseinlech-donneeen.html` | — | Privacy policy (LB — standalone, no nav links) |
-| `pt/politica-relativa-aos-dados-pessoais.html` | — | Privacy policy (PT — standalone, no nav links) |
-| `politique-en-matiere-de-cookies.html` | `en/cookie-policy.html` | Cookie policy |
-| `politique-relative-aux-donnees-personnelles.html` | `en/privacy-policy.html` | Privacy policy |
-| `mentions-legales.html` | `en/legal-notice.html` | Legal notice |
+| FR | EN | DE | Description |
+|---|---|---|---|
+| `index.html` | `en/index.html` | `de/index.html` | Homepage |
+| `psychiatre.html` | `en/psychiatrist.html` | `de/psychiater.html` | Psychiatrist landing page |
+| `psychotherapeute.html` | `en/psychotherapist.html` | `de/psychotherapeut.html` | Psychotherapist landing page |
+| `psychologue.html` | `en/psychologist.html` | `de/psychologe.html` | Psychologist landing page |
+| `tarifs.html` | `en/pricing.html` | `de/preise.html` | Pricing + Sigmund vs Logicare comparison |
+| `equipe.html` | `en/team.html` | `de/team.html` | Team page (E-E-A-T) |
+| `facturation-cns.html` | `en/cns-invoicing.html` | `de/cns-abrechnung.html` | CNS invoicing guide |
+| `paiement-immediat-direct.html` | `en/immediate-direct-payment.html` | `de/direktzahlung.html` | PID (Immediate Direct Payment) guide |
+| `blog/index.html` | `en/blog/index.html` | `de/blog/index.html` | Blog index |
+| `blog/rgpd-dossiers-patients-luxembourg.html` | `en/blog/gdpr-patient-records-luxembourg.html` | `de/blog/dsgvo-patientenakten-luxemburg.html` | GDPR and patient records guide |
+| `politique-en-matiere-de-cookies.html` | `en/cookie-policy.html` | `de/cookie-richtlinie.html` | Cookie policy |
+| `politique-relative-aux-donnees-personnelles.html` | `en/privacy-policy.html` | `de/datenschutz.html` | Privacy policy |
+| `mentions-legales.html` | `en/legal-notice.html` | `de/impressum.html` | Legal notice |
+
+### Standalone pages
+
+Not linked from the navbar or footer — accessible only via a direct link (e.g. sent by email).
+
+| Page | Description |
+|---|---|
+| `lb/politik-iwwer-perseinlech-donneeen.html` | Privacy policy (LB) |
+| `pt/politica-relativa-aos-dados-pessoais.html` | Privacy policy (PT) |
 
 Legal pages are excluded from search engine indexing (`robots.txt` + `<meta name="robots" content="noindex">`).
 
@@ -68,13 +60,33 @@ assets/
 ├── css/
 │   └── sigmund.css           All custom styles shared by every page (profession overrides scoped under body.sg-profession)
 ├── js/
-│   ├── main.js               Active nav-link highlight
-│   └── profession.js         Contact form handler (Brevo fetch, validation, i18n via data-attributes)
+│   ├── main.js                Active nav-link highlight
+│   ├── profession.js          Contact form handler (Brevo fetch, validation, i18n via data-attributes)
+│   └── legal-toc.js           Auto-generated table of contents on legal/guide pages
 └── images/
+    ├── logo-sigmund.webp                                                       Logo
+    ├── made-in-luxembourg-blanc.webp                                          "Made in Luxembourg" footer badge
+    ├── sigmund-application-hero.webp / -1200.webp / -mobile.webp              Homepage hero (responsive srcset)
+    ├── sigmund-application-og.webp                                            Open Graph share image
+    ├── psychiatre-hero.svg / psychotherapeute-hero.svg / psychologue-hero.svg Homepage profession medallions
+    ├── picto-accessible.webp / picto-evolutif.webp / picto-intuitif.webp /
+    │   picto-securise.webp                                                    Feature pictos (homepage)
+    ├── dashboard.webp / adresses.webp / codes.webp / export.webp /
+    │   facture.webp / facture-un-clic.webp / notes-de-seance.webp /
+    │   patients.webp / prescription-medicaments.webp / PID.webp /
+    │   certificat.webp                                                        Product screenshots (feature sections)
+    ├── gestion-simple-factures.svg / gestion-cabinet-professionels-sante-tableau-de-bord.svg
+    │                                                                          CNS invoicing guide hero composition
+    ├── gestion-simple-agenda-psychologue-Luxembourg.webp /
+    │   secretaire-virtuel-pour-psychologues-Sigmund-Luxembourg.webp /
+    │   sigmund-abonnement-sans-engagement-psychotherapeute-Grand-Duche-de-Luxembourg.webp /
+    │   sigmund-solution-tout-en-un-psychotherapeute.webp /
+    │   sigmund-assistant-abonnement-psychiatre-Luxembourg.webp /
+    │   sigmund-assistant-administratif-medecin-psychiatre.webp /
+    │   protection-dossiers-patients-rgpd-luxembourg.webp                      Profession landing page & blog illustrations
     ├── team-sylvain-perez.webp
     ├── team-franck-amouyal.webp
-    ├── team-guillaume-desrat.webp
-    └── ...                   All other images (webp for photos, svg for illustrations)
+    └── team-guillaume-desrat.webp                                             Team page photos
 ```
 
 ---
