@@ -2,7 +2,7 @@
 
 > Logiciel de gestion de cabinet pour professionnels de la santé mentale au Luxembourg. Practice management software for mental health professionals in Luxembourg. Praxisverwaltungssoftware für Fachleute der psychischen Gesundheit in Luxemburg.
 
-Offre / Pricing / Preis : 90 €/mois · €90/month · 90 €/Monat — sans engagement / no commitment / ohne Verpflichtung. Option PID (Paiement Immédiat Direct CNS) : +45 €/mois. Essai gratuit 15 jours / 15-day free trial / 15 Tage kostenlos — sans CB / no credit card / ohne Kreditkarte.
+Offre / Pricing / Preis : 90 €/mois · €90/month · 90 €/Monat — sans engagement / no commitment / ohne Verpflichtung. PID (Paiement Immédiat Direct CNS) offert gratuitement aux psychiatres, et bientôt aux psychothérapeutes / free for psychiatrists, and soon for psychotherapists too / kostenlos für Psychiater, und bald auch für Psychotherapeuten. Essai gratuit 15 jours / 15-day free trial / 15 Tage kostenlos — sans CB / no credit card / ohne Kreditkarte.
 
 Cibles / Target users / Zielgruppe : Psychiatres, psychothérapeutes, psychologues en cabinet libéral au Luxembourg / Psychiatrists, psychotherapists, psychologists in private practice in Luxembourg / Psychiater, Psychotherapeuten, Psychologen in Luxemburg.
 

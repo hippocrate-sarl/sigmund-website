@@ -163,7 +163,7 @@ DE filenames are German translations, not transliterations, of the FR/EN names (
 ## Important domain knowledge
 
 - **CNS** = Caisse Nationale de Santé (Luxembourg national health fund)
-- **PID** = Paiement Immédiat Direct (CNS pays practitioner directly). Psychiatrists: available now at +€45/month. Psychotherapists: coming soon. Psychologists: not applicable.
+- **PID** = Paiement Immédiat Direct (CNS pays practitioner directly). Psychiatrists: available now, offered free of charge. Psychotherapists: coming soon, will also be offered free of charge once the CNS opens the service. Psychologists: not applicable.
 - **Psychotherapy reimbursement**: started in 2023 in Luxembourg — psychotherapists can now invoice CNS
 - Base subscription: **€90/month**, no commitment, 15-day free trial
 - Data stored in Luxembourg (Gandi SAS datacenter in Bissen), subject to Luxembourg law + GDPR
