@@ -188,7 +188,7 @@ DE filenames are German translations, not transliterations, of the FR/EN names (
 
 Always verify these files are up to date before staging a commit:
 
-- **`sitemap.xml`** — add any new page (with full `hreflang` alternates). Do not add legal/policy pages (they are `noindex`).
+- **`sitemap.xml`** — add any new page (with full `hreflang` alternates). Do not add legal/policy pages (they are `noindex`). Also, for any *existing* indexable page whose content you modified (not just non-indexable pages), bump its `<lastmod>` to today's date — do this even if the change came from a shared file like `sigmund.css` and only touches how certain pages render. Always propose this update to the user before staging the commit, don't wait to be asked.
 - **`robots.txt`** — check that no new indexable page is accidentally disallowed, and that no new legal/policy page needs to be added to the disallow list.
 - **`llms.txt`** — update if pricing, team, offer, or site structure changed. H2 sections are for file lists only (`[name](url)` format); informational content goes as plain paragraphs (no H2).
 - **`AGENTS.md`** — update the file structure, DE URL mapping, or any section that describes the pages or conventions you just changed.
