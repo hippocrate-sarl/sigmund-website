@@ -44,7 +44,7 @@ body {
   font-weight: 500;
   padding: .4rem .9rem !important;
   border-radius: 6px;
-  transition: background .2s, color .2s;
+  transition: background .2s, color .2s, border-radius .2s;
 }
 
 .sg-navbar .nav-link:hover,
