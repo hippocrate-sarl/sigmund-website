@@ -1060,3 +1060,9 @@ body {
 
 /* ---------- Footer "about us" paragraph ---------- */
 .sg-footer-about { color: #aaa; font-size: .87rem; line-height: 1.6; }
+
+/* ---------- Contact form heading (demoted below the demo CTA) ---------- */
+.sg-contact-eyebrow { text-align: center; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--sg-primary); margin-bottom: .5rem; }
+.sg-contact-heading { text-align: center; font-size: 1.35rem; font-weight: 700; color: var(--sg-dark); margin-bottom: .75rem; }
+.sg-contact-lead { text-align: center; color: #666; font-size: .95rem; max-width: 480px; margin: 0 auto 2rem; }
+.sg-contact-lead a { color: var(--sg-primary); font-weight: 600; }
