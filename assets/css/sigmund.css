@@ -98,6 +98,41 @@ body {
   font-size: .85rem;
 }
 
+/* ---------- Language suggestion banner ---------- */
+.sg-lang-banner {
+  background: var(--sg-light-bg);
+  border-bottom: 1px solid var(--sg-border);
+}
+
+.sg-lang-banner-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: .6rem 1rem;
+  font-size: .9rem;
+  color: #444;
+  text-align: center;
+}
+
+.sg-lang-banner-switch {
+  font-weight: 600;
+  color: var(--sg-primary);
+  text-decoration: underline;
+}
+
+.sg-lang-banner-close {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: #888;
+  padding: 0 .25rem;
+}
+
+.sg-lang-banner-close:hover { color: var(--sg-dark); }
+
 /* ---------- Hero ---------- */
 .sg-hero {
   background: linear-gradient(135deg, var(--sg-hero-from) 0%, var(--sg-hero-to) 100%);
