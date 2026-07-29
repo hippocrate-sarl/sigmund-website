@@ -74,6 +74,30 @@ body {
   color: var(--sg-primary);
 }
 
+.sg-navbar .sg-nav-cta {
+  background: var(--sg-primary);
+  color: var(--sg-white) !important;
+  border-radius: 50px;
+  padding: .5rem 1.4rem;
+  font-weight: 600;
+  font-size: .9rem;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
+  transition: background .2s, transform .1s;
+}
+
+.sg-navbar .sg-nav-cta:hover {
+  background: #5590e8;
+  color: var(--sg-white) !important;
+  transform: translateY(-1px);
+}
+
+.sg-navbar .sg-nav-cta-mobile {
+  padding: .4rem 1rem;
+  font-size: .85rem;
+}
+
 /* ---------- Hero ---------- */
 .sg-hero {
   background: linear-gradient(135deg, var(--sg-hero-from) 0%, var(--sg-hero-to) 100%);

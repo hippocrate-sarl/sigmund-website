@@ -97,7 +97,7 @@ All custom classes use the `sg-` prefix. Profession landing pages have `<body cl
 
 ## Key components (sigmund.css)
 
-- **`.sg-navbar`** — sticky top navbar; active link gets `class="nav-link active"`
+- **`.sg-navbar`** — sticky top navbar; active link gets `class="nav-link active"`. Includes a demo-booking CTA (`.sg-nav-cta`): full-text version inside the collapse, shown only at `lg`+ (`d-none d-lg-inline-block`); compact version (`.sg-nav-cta-mobile`, added text "Réservez une démo" / "Book a demo" / "Demo buchen") sits between the logo and hamburger toggler, visible only below `lg` (`d-lg-none`) so mobile visitors always see it without opening the menu. Points to the locale-specific demo URL (`demo.sigmund.lu` / `demo-en.sigmund.lu` / `demo-de.sigmund.lu`)
 - **`.btn-sg-primary`** / **`.btn-sg-outline`** — pill-shaped CTA buttons
 - **`.sg-hero`** — gradient hero section; `.sg-hero-img` has `border-radius: 16px` (homepages only — profession pages override with `border-radius: 0`)
 - **`.sg-feat-list`** — checkmark feature list (CSS `::before` content); on mobile, forced `text-align: left; display: inline-block` to counteract the `.sg-hero { text-align: center }` rule
