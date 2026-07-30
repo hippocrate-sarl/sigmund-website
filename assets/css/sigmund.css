@@ -20,13 +20,12 @@
   --sg-gradient:   linear-gradient(135deg, #6BA4FA 0%, #4a86e8 100%);
 }
 
-html { scroll-behavior: smooth; overflow-x: hidden; }
+html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
   color: var(--sg-dark);
   background: var(--sg-white);
-  overflow-x: hidden;
 }
 
 /* ---------- Navbar ---------- */
