@@ -1061,6 +1061,37 @@ body {
 /* ---------- Footer "about us" paragraph ---------- */
 .sg-footer-about { color: #aaa; font-size: .87rem; line-height: 1.6; }
 
+/* ---------- Comparison table — generic highlight/muted columns (reusable beyond Sigmund-vs-Logicare) ---------- */
+.sg-compare-table th.col-highlight { background: var(--sg-primary); color: #fff; border-radius: 12px 12px 0 0; text-align: center; }
+.sg-compare-table th.col-muted { background: #f0f0f0; color: #666; border-radius: 12px 12px 0 0; text-align: center; }
+.sg-compare-table td.col-highlight { text-align: center; background: rgba(107,164,250,.05); color: var(--sg-dark); font-weight: 600; }
+.sg-compare-table td.col-muted { text-align: center; color: #666; }
+
+/* ---------- Comparison table — neutral columns of equal weight (two valid options, not a winner/runner-up) ---------- */
+.sg-compare-table th.col-even { background: var(--sg-light-bg); color: var(--sg-dark); border-radius: 12px 12px 0 0; text-align: center; }
+.sg-compare-table td.col-even { text-align: center; color: var(--sg-dark); }
+
+/* ---------- Installation steps (blog guide) ---------- */
+.sg-install-steps { display: flex; flex-direction: column; gap: 1rem; margin: 1.75rem 0; }
+.sg-install-step { background: #fff; border: 1px solid var(--sg-border); border-radius: 14px; padding: 1.25rem 1.5rem; }
+.sg-install-step .step-num { width: 32px; height: 32px; border-radius: 50%; background: var(--sg-primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: .95rem; margin-bottom: .6rem; }
+.sg-install-step h3 { font-size: 1rem; font-weight: 700; color: var(--sg-dark); margin: 0 0 .3rem; overflow-wrap: break-word; -webkit-hyphens: auto; hyphens: auto; }
+.sg-install-step p { font-size: .88rem; color: #666; margin: 0; line-height: 1.6; overflow-wrap: break-word; -webkit-hyphens: auto; hyphens: auto; }
+.sg-install-arrow { display: flex; align-items: center; justify-content: center; color: var(--sg-primary); font-size: 1.2rem; }
+.sg-install-arrow i { display: inline-block; transform: rotate(90deg); }
+@media (min-width: 992px) {
+  .sg-install-steps { flex-direction: row; align-items: stretch; gap: .5rem; }
+  .sg-install-step { flex: 1; min-width: 0; }
+  .sg-install-arrow i { transform: none; }
+}
+
+/* ---------- Stat cards (blog guide, e.g. CNS reimbursement figures) ---------- */
+.sg-stat-cards { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.75rem 0 .5rem; }
+.sg-stat-card { flex: 1 1 140px; background: var(--sg-light-bg); border: 1px solid var(--sg-border); border-radius: 14px; padding: 1.5rem 1.25rem; text-align: center; }
+.sg-stat-card .stat-value { font-size: 1.9rem; font-weight: 800; color: var(--sg-primary); line-height: 1.1; margin-bottom: .4rem; }
+.sg-stat-card p { font-size: .85rem; color: #555; margin: 0; line-height: 1.5; }
+.sg-stat-source { font-size: .8rem; color: #888; margin: 0 0 1.5rem; }
+
 /* ---------- Contact form heading (demoted below the demo CTA) ---------- */
 .sg-contact-eyebrow { text-align: center; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--sg-primary); margin-bottom: .5rem; }
 .sg-contact-heading { text-align: center; font-size: 1.35rem; font-weight: 700; color: var(--sg-dark); margin-bottom: .75rem; }

@@ -24,6 +24,7 @@ tarifs.html                                       Pricing + Sigmund vs Logicare 
 equipe.html                                       Team page — E-E-A-T (FR)
 facturation-cns.html                              CNS invoicing guide (FR)
 paiement-immediat-direct.html                     PID guide (FR)
+s-installer-psychologue-psychotherapeute-luxembourg.html  Installation guide for psychologists/psychotherapists (FR)
 politique-en-matiere-de-cookies.html              Cookie policy (FR)
 politique-relative-aux-donnees-personnelles.html  Privacy policy (FR)
 mentions-legales.html                             Legal notice (FR)
@@ -36,11 +37,11 @@ en/pricing.html                                   Pricing (EN)
 en/team.html                                      Team page (EN)
 en/cns-invoicing.html                             CNS invoicing guide (EN)
 en/immediate-direct-payment.html                  PID guide (EN)
+en/setting-up-as-a-psychologist-in-luxembourg.html  Installation guide for psychologists/psychotherapists (EN)
 en/cookie-policy.html
 en/privacy-policy.html
 en/legal-notice.html
 en/blog/index.html                                Blog index (EN)
-en/blog/gdpr-patient-records-luxembourg.html      GDPR and patient records guide (EN)
 
 llms.txt                                          AI crawler description (FR/EN/DE — trilingual, root only)
 assets/css/sigmund.css                            All custom styles (shared by all pages)
@@ -51,7 +52,6 @@ assets/images/                                    All images (webp + svg)
   team-franck-amouyal.webp
   team-guillaume-desrat.webp
 blog/index.html                                   Blog index (FR)
-blog/rgpd-dossiers-patients-luxembourg.html       RGPD et dossiers patients guide (FR)
 
 de/index.html                                     Homepage (DE)
 de/psychiater.html
@@ -61,11 +61,11 @@ de/preise.html                                    Pricing (DE)
 de/team.html                                      Team page (DE)
 de/cns-abrechnung.html                            CNS invoicing guide (DE)
 de/direktzahlung.html                             PID guide (DE)
+de/niederlassung-als-psychologe-in-luxemburg.html  Installation guide for psychologists/psychotherapists (DE)
 de/cookie-richtlinie.html
 de/datenschutz.html
 de/impressum.html
 de/blog/index.html                                Blog index (DE)
-de/blog/dsgvo-patientenakten-luxemburg.html       DSGVO und Patientenakten guide (DE)
 
 favicon.ico
 robots.txt

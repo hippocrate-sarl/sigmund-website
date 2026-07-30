@@ -32,8 +32,8 @@ No build step required. Open any HTML file directly in a browser.
 | `equipe.html` | `en/team.html` | `de/team.html` | Team page (E-E-A-T) |
 | `facturation-cns.html` | `en/cns-invoicing.html` | `de/cns-abrechnung.html` | CNS invoicing guide |
 | `paiement-immediat-direct.html` | `en/immediate-direct-payment.html` | `de/direktzahlung.html` | PID (Immediate Direct Payment) guide |
+| `s-installer-psychologue-psychotherapeute-luxembourg.html` | `en/setting-up-as-a-psychologist-in-luxembourg.html` | `de/niederlassung-als-psychologe-in-luxemburg.html` | Installation guide for psychologists/psychotherapists |
 | `blog/index.html` | `en/blog/index.html` | `de/blog/index.html` | Blog index |
-| `blog/rgpd-dossiers-patients-luxembourg.html` | `en/blog/gdpr-patient-records-luxembourg.html` | `de/blog/dsgvo-patientenakten-luxemburg.html` | GDPR and patient records guide |
 | `politique-en-matiere-de-cookies.html` | `en/cookie-policy.html` | `de/cookie-richtlinie.html` | Cookie policy |
 | `politique-relative-aux-donnees-personnelles.html` | `en/privacy-policy.html` | `de/datenschutz.html` | Privacy policy |
 | `mentions-legales.html` | `en/legal-notice.html` | `de/impressum.html` | Legal notice |
@@ -82,8 +82,7 @@ assets/
     │   sigmund-abonnement-sans-engagement-psychotherapeute-Grand-Duche-de-Luxembourg.webp /
     │   sigmund-solution-tout-en-un-psychotherapeute.webp /
     │   sigmund-assistant-abonnement-psychiatre-Luxembourg.webp /
-    │   sigmund-assistant-administratif-medecin-psychiatre.webp /
-    │   protection-dossiers-patients-rgpd-luxembourg.webp                      Profession landing page & blog illustrations
+    │   sigmund-assistant-administratif-medecin-psychiatre.webp                Profession landing page & blog illustrations
     ├── team-sylvain-perez.webp
     ├── team-franck-amouyal.webp
     └── team-guillaume-desrat.webp                                             Team page photos
