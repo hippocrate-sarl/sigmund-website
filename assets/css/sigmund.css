@@ -20,12 +20,13 @@
   --sg-gradient:   linear-gradient(135deg, #6BA4FA 0%, #4a86e8 100%);
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
   font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
   color: var(--sg-dark);
   background: var(--sg-white);
+  overflow-x: hidden;
 }
 
 /* ---------- Navbar ---------- */
@@ -613,7 +614,14 @@ body {
   font-weight: 800;
   letter-spacing: -.5px;
   margin: 0 0 .75rem;
+  overflow-wrap: break-word;
 }
+
+/* Long headings (e.g. "psychothérapeute") can otherwise force this flex
+   row wider than the viewport on mobile, since flex items default to
+   min-width:auto. Target the text column via its sibling position so no
+   markup change is needed across the many pages using .sg-legal-header. */
+.sg-legal-header .header-icon + div { min-width: 0; }
 
 .sg-legal-header p {
   color: rgba(255,255,255,.85);
@@ -1070,6 +1078,20 @@ body {
 /* ---------- Comparison table — neutral columns of equal weight (two valid options, not a winner/runner-up) ---------- */
 .sg-compare-table th.col-even { background: var(--sg-light-bg); color: var(--sg-dark); border-radius: 12px 12px 0 0; text-align: center; }
 .sg-compare-table td.col-even { text-align: center; color: var(--sg-dark); }
+
+/* ---------- Comparison table — stacked-card layout on narrow mobile ---------- */
+/* Opt-in via .sg-compare-stack (applied to both the psychologist/psychotherapist
+   comparison and the Sigmund-vs-Logicare comparison) so any future .sg-compare-table
+   usage that fits fine as a horizontal table can skip this without extra markup. */
+@media (max-width: 575.98px) {
+  .sg-compare-stack thead { display: none; }
+  .sg-compare-stack, .sg-compare-stack tbody, .sg-compare-stack tr, .sg-compare-stack td { display: block; width: 100%; }
+  .sg-compare-stack tr { border-bottom: 8px solid var(--sg-light-bg); }
+  .sg-compare-stack tr:last-child { border-bottom: none; }
+  .sg-compare-stack td { border-bottom: 1px solid var(--sg-border); padding: .75rem 1.25rem; text-align: left !important; }
+  .sg-compare-stack td:first-child { font-weight: 700; color: var(--sg-dark); background: var(--sg-light-bg); }
+  .sg-compare-stack td[data-label]::before { content: attr(data-label); display: block; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--sg-primary); margin-bottom: .3rem; }
+}
 
 /* ---------- Installation steps (blog guide) ---------- */
 .sg-install-steps { display: flex; flex-direction: column; gap: 1rem; margin: 1.75rem 0; }
