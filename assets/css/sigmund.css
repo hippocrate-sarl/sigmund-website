@@ -993,7 +993,7 @@ body {
 .sg-profession .sg-pricing-section-bg { background: var(--sg-gradient); padding: 72px 0; }
 .sg-profession .sg-pricing { background: #fff; color: var(--sg-dark); }
 .sg-profession .sg-pricing ul li::before { content: none; }
-.sg-profession .sg-pricing ul li { display: flex; align-items: center; gap: .6rem; }
+.sg-profession .sg-pricing ul li { display: flex; align-items: center; gap: .6rem; text-align: left; }
 .sg-profession .sg-pricing ul li i { color: var(--sg-primary); font-size: 1.05rem; flex-shrink: 0; }
 .sg-profession .sg-pricing .pricing-label { font-size: 1.15rem; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; color: var(--sg-primary); margin-bottom: .75rem; }
 .sg-profession .sg-pricing .price { font-size: 3rem; font-weight: 800; letter-spacing: -1px; color: var(--sg-dark); }
