@@ -300,16 +300,16 @@ body {
 .sg-carousel-slide {
   flex: 0 0 100%;
   scroll-snap-align: start;
-  background: rgba(255,255,255,.13);
+  background: var(--sg-white);
   border-radius: 16px;
   padding: 2rem 2.5rem;
-  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 40px rgba(0,0,0,.15);
   box-sizing: border-box;
 }
 
 .sg-carousel-slide blockquote {
   font-size: .92rem;
-  color: #fff;
+  color: var(--sg-dark);
   line-height: 1.75;
   font-style: italic;
   border: none;
@@ -319,13 +319,14 @@ body {
 .sg-carousel-slide blockquote::before {
   content: '“';
   font-size: 2.5rem;
-  color: rgba(255,255,255,.4);
+  color: var(--sg-primary);
+  opacity: .4;
   display: block;
   line-height: .5;
   margin-bottom: .5rem;
 }
-.sg-carousel-slide .author-name { font-weight: 700; color: #fff; font-size: .88rem; margin: 0; }
-.sg-carousel-slide .author-role { color: rgba(255,255,255,.75); font-size: .82rem; margin: 0; }
+.sg-carousel-slide .author-name { font-weight: 700; color: var(--sg-primary); font-size: .88rem; margin: 0; }
+.sg-carousel-slide .author-role { color: var(--sg-primary); opacity: .8; font-size: .82rem; margin: 0; }
 
 .sg-carousel-dots {
   display: flex;
