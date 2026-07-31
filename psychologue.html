@@ -563,38 +563,7 @@ redirect_from:
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.sg-carousel').forEach(function(car) {
-    var track = car.querySelector('.sg-carousel-track');
-    var slides = car.querySelectorAll('.sg-carousel-slide');
-    var dots   = car.querySelectorAll('.sg-dot');
-    var current = 0;
-    var timer;
-
-    function goTo(idx) {
-      current = ((idx % slides.length) + slides.length) % slides.length;
-      track.scrollTo({ left: current * track.clientWidth, behavior: 'smooth' });
-      dots.forEach(function(d, i) { d.classList.toggle('active', i === current); });
-    }
-
-    function startAuto() { timer = setInterval(function() { goTo(current + 1); }, 6000); }
-    function stopAuto()  { clearInterval(timer); }
-
-    car.querySelector('.sg-carousel-prev').addEventListener('click', function() { stopAuto(); goTo(current - 1); startAuto(); });
-    car.querySelector('.sg-carousel-next').addEventListener('click', function() { stopAuto(); goTo(current + 1); startAuto(); });
-    dots.forEach(function(d, i) { d.addEventListener('click', function() { stopAuto(); goTo(i); startAuto(); }); });
-
-    track.addEventListener('scroll', function() {
-      var idx = Math.round(track.scrollLeft / track.clientWidth);
-      dots.forEach(function(d, i) { d.classList.toggle('active', i === idx); });
-      current = idx;
-    });
-
-    startAuto();
-  });
-  })
-</script>
+<script src="assets/js/sg-carousel.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/profession.js"></script>
 </body>

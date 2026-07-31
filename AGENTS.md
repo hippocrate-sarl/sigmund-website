@@ -46,6 +46,7 @@ en/blog/index.html                                Blog index (EN)
 llms.txt                                          AI crawler description (FR/EN/DE — trilingual, root only)
 assets/css/sigmund.css                            All custom styles (shared by all pages)
 assets/js/main.js                                 Active nav-link highlight
+assets/js/sg-carousel.js                          Shared CSS scroll-snap carousel logic (testimonials, etc.) — used on the homepage and all profession pages
 assets/js/profession.js                           Contact form handler (Brevo fetch, validation, i18n via data-attributes)
 assets/images/                                    All images (webp + svg)
   team-sylvain-perez.webp                         Team photo — downloaded from hippocrate.lu
@@ -102,7 +103,7 @@ All custom classes use the `sg-` prefix. Profession landing pages have `<body cl
 - **`.sg-hero`** — gradient hero section; `.sg-hero-img` has `border-radius: 16px` (homepages only — profession pages override with `border-radius: 0`)
 - **`.sg-feat-list`** — checkmark feature list (CSS `::before` content); on mobile, forced `text-align: left; display: inline-block` to counteract the `.sg-hero { text-align: center }` rule
 - **`.sg-picto-card`** — feature cards with icon + title + description
-- **`.sg-carousel`** / **`.sg-carousel-track`** / **`.sg-carousel-slide`** — pure CSS scroll-snap carousel; JS inlined in each profession page
+- **`.sg-carousel`** / **`.sg-carousel-track`** / **`.sg-carousel-slide`** — pure CSS scroll-snap carousel; logic in shared `assets/js/sg-carousel.js`
 - **`.sg-pricing`** — pricing card; on homepages: primary-color background; on profession pages (`.sg-profession`): white card on gradient background (inverted)
 - **`.sg-soon-card`** — "coming soon" feature cards
 - **`.sg-timeline`** — vertical timeline (company history)
