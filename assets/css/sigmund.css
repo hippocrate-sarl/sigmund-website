@@ -1053,7 +1053,18 @@ body {
 .sg-page-intro { color: #555; max-width: 600px; margin: 0 auto 3rem; }
 
 /* ---------- Homepage hero E-E-A-T facts row ---------- */
-.sg-hero-facts { font-size: .88rem; color: #555; }
+.sg-hero-facts { font-size: .85rem; }
+.sg-hero-facts span {
+  display: inline-flex;
+  align-items: center;
+  background: var(--sg-white);
+  border: 1px solid var(--sg-border);
+  border-radius: 50px;
+  padding: .4rem .9rem;
+  color: var(--sg-dark);
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(107,164,250,.12);
+}
 .sg-hero-facts i { color: var(--sg-primary); }
 
 /* ---------- CTA gradient section ---------- */
