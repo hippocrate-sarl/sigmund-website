@@ -360,20 +360,29 @@ body {
 
 /* ---------- Pricing ---------- */
 .sg-pricing {
-  background: var(--sg-primary);
+  background: var(--sg-gradient);
   color: var(--sg-white);
   border-radius: 20px;
   padding: 2.5rem 3rem;
-  text-align: center;
+  text-align: left;
+}
+
+.sg-pricing .price-label {
+  font-size: .9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  opacity: .8;
+  margin-bottom: .75rem;
 }
 
 .sg-pricing .price {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.1;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1;
 }
 
-.sg-pricing .price span { font-size: 1rem; font-weight: 400; }
+.sg-pricing .price span { font-size: 1rem; font-weight: 400; opacity: .85; }
 
 .sg-pricing ul {
   list-style: none;
@@ -382,11 +391,16 @@ body {
 }
 
 .sg-pricing ul li {
-  padding: .3rem 0;
+  padding: .4rem 0;
   font-size: .95rem;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
 }
 
-.sg-pricing ul li::before { content: '✓ '; font-weight: 700; }
+.sg-pricing ul li i { font-size: 1.1rem; flex-shrink: 0; }
+
+.sg-pricing .btn-sg-primary { background: var(--sg-white); color: var(--sg-primary); }
 
 /* ---------- FAQ Accordion ---------- */
 .sg-faq details {
@@ -991,7 +1005,8 @@ body {
 
 /* Pricing — inverted: gradient bg, white card */
 .sg-profession .sg-pricing-section-bg { background: var(--sg-gradient); padding: 72px 0; }
-.sg-profession .sg-pricing { background: #fff; color: var(--sg-dark); }
+.sg-profession .sg-pricing { background: #fff; color: var(--sg-dark); text-align: center; }
+.sg-profession .sg-pricing .btn-sg-primary { background: var(--sg-primary); color: var(--sg-white); }
 .sg-profession .sg-pricing ul li::before { content: none; }
 .sg-profession .sg-pricing ul li { display: flex; align-items: center; gap: .6rem; text-align: left; }
 .sg-profession .sg-pricing ul li i { color: var(--sg-primary); font-size: 1.05rem; flex-shrink: 0; }
