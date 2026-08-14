@@ -161,6 +161,20 @@ DE filenames are German translations, not transliterations, of the FR/EN names (
 - E-E-A-T badges on homepage hero: "En service depuis 2013" / "In service since 2013" / "In Betrieb seit 2013", "Données hébergées au Luxembourg", "+50 professionnels"
 - GEO-citable openings on profession pages: 20% admin time stat (Ordre national des médecins)
 
+## GTM tracking on demo-booking links
+
+Every link to the Microsoft Bookings demo form (`demo.sigmund.lu` / `demo-en.sigmund.lu` / `demo-de.sigmund.lu`) carries `data-cta="book"` plus a `data-cta-pos` describing where on the page it sits, for GTM click tracking:
+
+- `nav-mobile` / `nav-desktop` — navbar CTA (compact mobile version / full desktop version)
+- `hero` — hero section button
+- `social-proof` — homepage-only banner ("Vos consœurs et confrères...")
+- `mid-cta` — profession-page-only banner after the picto features, before testimonials
+- `pricing` — button inside the pricing/options card
+- `final-cta` — last CTA banner before the contact form (profession pages, tarifs/pricing, guide pages)
+- `summary` — inline text link inside the installation guide's "En résumé" paragraph (kept as an inline link, not a button)
+
+When adding a new demo-booking link anywhere on the site, tag it with both attributes following this taxonomy, across all 3 languages.
+
 ## Important domain knowledge
 
 - **CNS** = Caisse Nationale de Santé (Luxembourg national health fund)
