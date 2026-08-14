@@ -12,7 +12,7 @@ Developed by **Hippocrate Sàrl** (Bertrange, Luxembourg). Team: Sylvain Perez, 
 - **flag-icons 7.2** (CDN) — language switcher flags via `<span class="fi fi-*">`
 - **Google Fonts** — Inter (300/400/500/600/700/800)
 - Contact forms POST to Brevo (sibforms.com) via `fetch` + `mode: 'no-cors'`, handled by `assets/js/profession.js`
-- **Google Tag Manager** (container `GTM-TZPN6B4R`) — loaded via two Jekyll includes on every page: `_includes/gtm-head.html` (script, first line inside `<head>`) and `_includes/gtm-body-noscript.html` (`<noscript>` fallback, first line inside `<body>`). GitHub Pages already builds the site with Jekyll (see `_config.yml`, used previously for the `jekyll-redirect-from` plugin), so every `.html` page now carries a front matter block (even if empty) so Jekyll processes these `{% include %}` tags.
+- **Google Tag Manager** (container `GTM-TZPN6B4R`) — loaded via two Jekyll includes on every page: `_includes/gtm-head.html` (script, first line inside `<head>`) and `_includes/gtm-body-noscript.html` (`<noscript>` fallback, first line inside `<body>`). GitHub Pages already builds the site with Jekyll (see `_config.yml`, used previously for the `jekyll-redirect-from` plugin), so every `.html` page now carries a front matter block (even if empty) so Jekyll processes these include tags. `AGENTS.md` and `README.md` are excluded from the Jekyll build (see `_config.yml`) — the Liquid syntax in this file's prose is never evaluated.
 
 ## File structure
 
@@ -45,8 +45,8 @@ en/legal-notice.html
 en/blog/index.html                                Blog index (EN)
 
 llms.txt                                          AI crawler description (FR/EN/DE — trilingual, root only)
-_includes/gtm-head.html                           Google Tag Manager <head> snippet, included via {% include %} in <head> of every page
-_includes/gtm-body-noscript.html                  Google Tag Manager <noscript> fallback, included via {% include %} right after <body> of every page
+_includes/gtm-head.html                           Google Tag Manager <head> snippet, included in <head> of every page
+_includes/gtm-body-noscript.html                  Google Tag Manager <noscript> fallback, included right after <body> of every page
 assets/css/sigmund.css                            All custom styles (shared by all pages)
 assets/js/main.js                                 Active nav-link highlight
 assets/js/sg-carousel.js                          Shared CSS scroll-snap carousel logic (testimonials, etc.) — used on the homepage and all profession pages

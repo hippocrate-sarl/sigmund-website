@@ -1,2 +1,6 @@
 plugins:
   - jekyll-redirect-from
+
+exclude:
+  - AGENTS.md
+  - README.md
