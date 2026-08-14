@@ -12,6 +12,7 @@ Developed by **Hippocrate Sàrl** (Bertrange, Luxembourg). Team: Sylvain Perez, 
 - **flag-icons 7.2** (CDN) — language switcher flags via `<span class="fi fi-*">`
 - **Google Fonts** — Inter (300/400/500/600/700/800)
 - Contact forms POST to Brevo (sibforms.com) via `fetch` + `mode: 'no-cors'`, handled by `assets/js/profession.js`
+- **Google Tag Manager** (container `GTM-TZPN6B4R`) — loaded via a Jekyll include (`_includes/gtm-head.html`) on every page. GitHub Pages already builds the site with Jekyll (see `_config.yml`, used previously for the `jekyll-redirect-from` plugin), so every `.html` page now carries a front matter block (even if empty) so Jekyll processes its `{% include %}` tag.
 
 ## File structure
 
@@ -44,6 +45,7 @@ en/legal-notice.html
 en/blog/index.html                                Blog index (EN)
 
 llms.txt                                          AI crawler description (FR/EN/DE — trilingual, root only)
+_includes/gtm-head.html                           Google Tag Manager snippet, included via {% include %} in <head> of every page
 assets/css/sigmund.css                            All custom styles (shared by all pages)
 assets/js/main.js                                 Active nav-link highlight
 assets/js/sg-carousel.js                          Shared CSS scroll-snap carousel logic (testimonials, etc.) — used on the homepage and all profession pages
@@ -195,6 +197,7 @@ When adding a new demo-booking link anywhere on the site, tag it with both attri
 - `robots.txt` disallows legal/policy pages — do not add guide/resource pages to the disallow list
 - `lb/politik-iwwer-perseinlech-donneeen.html` — standalone Luxembourgish privacy policy, accessible only via email link
 - `pt/politica-relativa-aos-dados-pessoais.html` — standalone Portuguese privacy policy, accessible only via email link, no navbar/footer navigation links pointing to it. Uses minimal header (logo only) and sg-footer for copyright.
+- Every `.html` page now starts with a Jekyll front matter block (`---\n---`, empty unless the page also has `redirect_from`). Opening a page directly in a browser (no `bundle exec jekyll serve`) will show the raw front matter and `{% include gtm-head.html %}` tag as literal text at the top of the page — same known limitation that already existed for the 8 pages using `redirect_from`. Use a Jekyll build (or trust the GitHub Pages build) to see the real rendered output.
 - The cookie policy pages state that sigmund.lu sets no cookies. The Sigmund app (app.sigmund.lu) may use essential session cookies — that distinction is maintained in both the cookie policy and privacy policy pages
 - Hero H1s on all main menu pages are in sentence case (not uppercase) — consistent with index.html
 - Some HTML files previously had null bytes introduced by bulk PowerShell operations — stripped and resolved. All files are clean UTF-8
