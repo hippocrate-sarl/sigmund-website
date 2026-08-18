@@ -7,33 +7,39 @@
 
 #cc-main {
   /* ---------- Typography ---------- */
-  --cc-font-family: Arial, Helvetica, sans-serif;
+  --cc-font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
 
   /* ---------- Background and text ---------- */
   --cc-bg: #FFFFFF;
-  --cc-primary-color: #1A1A2E;   /* title and main text */
-  --cc-secondary-color: #33475B; /* secondary text */
+  --cc-primary-color: #333333;   /* title and main text — matches --sg-dark */
+  --cc-secondary-color: #555555; /* secondary text */
+
+  /* ---------- Shape ---------- */
+  --cc-modal-border-radius: 16px;
+  --cc-btn-border-radius: 50px;
 
   /* ---------- Button « Accept all » ---------- */
-  --cc-btn-primary-bg: #2E6FD9;
+  --cc-btn-primary-bg: #6BA4FA;
   --cc-btn-primary-color: #FFFFFF;
-  --cc-btn-primary-border-color: #2E6FD9;
-  --cc-btn-primary-hover-bg: #2559AE;
+  --cc-btn-primary-border-color: #6BA4FA;
+  --cc-btn-primary-hover-bg: #5590e8;
   --cc-btn-primary-hover-color: #FFFFFF;
-  --cc-btn-primary-hover-border-color: #2559AE;
+  --cc-btn-primary-hover-border-color: #5590e8;
 
-  /* ---------- Button « Refuse all » ----------
-    Intentionally designed to have equivalent visual weight: solid background,
-    white text, same size. See the compliance note. */
-  --cc-btn-secondary-bg: #33475B;
-  --cc-btn-secondary-color: #FFFFFF;
-  --cc-btn-secondary-border-color: #33475B;
-  --cc-btn-secondary-hover-bg: #1A1A2E;
-  --cc-btn-secondary-hover-color: #FFFFFF;
-  --cc-btn-secondary-hover-border-color: #1A1A2E;
+  /* ---------- Button « Personnaliser » / « Enregistrer » ----------
+    guiOptions.equalWeightButtons makes "Accept all" and "Reject all" share
+    the same (primary) class/color in both the banner and the preferences
+    modal, so they always look identical — these secondary tokens only
+    style "Personnaliser" and "Enregistrer mes choix". */
+  --cc-btn-secondary-bg: #EAEFF2;
+  --cc-btn-secondary-color: #2C2F31;
+  --cc-btn-secondary-border-color: #EAEFF2;
+  --cc-btn-secondary-hover-bg: #D4DAE0;
+  --cc-btn-secondary-hover-color: #2C2F31;
+  --cc-btn-secondary-hover-border-color: #D4DAE0;
 
   /* ---------- Switches ---------- */
-  --cc-toggle-on-bg: #2E6FD9;
+  --cc-toggle-on-bg: #6BA4FA;
   --cc-toggle-off-bg: #8A9BAA;
   --cc-toggle-on-knob-bg: #FFFFFF;
   --cc-toggle-off-knob-bg: #FFFFFF;
@@ -42,35 +48,41 @@
 
   /* ---------- Category blocks ---------- */
   --cc-cookie-category-block-bg: #F0F6FF;
-  --cc-cookie-category-block-border: #F0F6FF;
+  --cc-cookie-category-block-border: #E2ECFF;
   --cc-cookie-category-block-hover-bg: #E3EDFB;
-  --cc-cookie-category-block-hover-border: #E3EDFB;
+  --cc-cookie-category-block-hover-border: #E2ECFF;
   --cc-cookie-category-expanded-block-hover-bg: #D8E5F8;
 
   /* ---------- Separators, veil, foot ---------- */
-  --cc-separator-border-color: #E4EAED;
+  --cc-separator-border-color: #E2ECFF;
   --cc-overlay-bg: rgba(26, 26, 46, 0.60);
   --cc-footer-bg: #F0F6FF;
-  --cc-footer-color: #33475B;
-  --cc-footer-border-color: #E4EAED;
+  --cc-footer-color: #555555;
+  --cc-footer-border-color: #E2ECFF;
+
+  /* ---------- Links ---------- */
+  --cc-link-color: #6BA4FA;
 
   /* ---------- Scroll bar ---------- */
-  --cc-webkit-scrollbar-bg: #E4EAED;
-  --cc-webkit-scrollbar-hover-bg: #2E6FD9;
+  --cc-webkit-scrollbar-bg: #E2ECFF;
+  --cc-webkit-scrollbar-hover-bg: #6BA4FA;
 }
 
-/* Rounded corners aligned with the site button (dot).
-   Remove this block if you prefer the default corners. */
-#cc-main .cm__btn,
-#cc-main .pm__btn {
-  border-radius: 50px;
-}
-
-/* Links in the banner and preferences window */
-#cc-main a {
-  color: #2E6FD9;
-  text-decoration: underline;
-}
+/* Links in the banner and preferences window (--cc-link-color covers most,
+   this ensures the hover state matches the site's button-hover blue too) */
 #cc-main a:hover {
-  color: #2559AE;
+  color: #5590e8;
+}
+
+/* "Toujours actifs" badge text (library defaults it to --cc-secondary-color) */
+#cc-main .pm__badge {
+  color: #2C2F31;
+}
+
+/* Keep the category row's pill shape when expanded — the library squares
+   off its bottom corners (border-bottom-*-radius: 0) so the description
+   panel sits flush underneath. */
+#cc-main .pm__section--toggle.is-expanded .pm__section-title {
+  border-bottom-left-radius: var(--cc-btn-border-radius);
+  border-bottom-right-radius: var(--cc-btn-border-radius);
 }
