@@ -1,0 +1,76 @@
+/* ------------------------------------------------------------------
+   Sigmund — CookieConsent v3.1.0 stylesheet
+
+   Scoped on  #cc-main instead of :root so nothing is leaked to the
+   rest of the site.
+------------------------------------------------------------------ */
+
+#cc-main {
+  /* ---------- Typography ---------- */
+  --cc-font-family: Arial, Helvetica, sans-serif;
+
+  /* ---------- Background and text ---------- */
+  --cc-bg: #FFFFFF;
+  --cc-primary-color: #1A1A2E;   /* title and main text */
+  --cc-secondary-color: #33475B; /* secondary text */
+
+  /* ---------- Button « Accept all » ---------- */
+  --cc-btn-primary-bg: #2E6FD9;
+  --cc-btn-primary-color: #FFFFFF;
+  --cc-btn-primary-border-color: #2E6FD9;
+  --cc-btn-primary-hover-bg: #2559AE;
+  --cc-btn-primary-hover-color: #FFFFFF;
+  --cc-btn-primary-hover-border-color: #2559AE;
+
+  /* ---------- Button « Refuse all » ----------
+    Intentionally designed to have equivalent visual weight: solid background,
+    white text, same size. See the compliance note. */
+  --cc-btn-secondary-bg: #33475B;
+  --cc-btn-secondary-color: #FFFFFF;
+  --cc-btn-secondary-border-color: #33475B;
+  --cc-btn-secondary-hover-bg: #1A1A2E;
+  --cc-btn-secondary-hover-color: #FFFFFF;
+  --cc-btn-secondary-hover-border-color: #1A1A2E;
+
+  /* ---------- Switches ---------- */
+  --cc-toggle-on-bg: #2E6FD9;
+  --cc-toggle-off-bg: #8A9BAA;
+  --cc-toggle-on-knob-bg: #FFFFFF;
+  --cc-toggle-off-knob-bg: #FFFFFF;
+  --cc-toggle-readonly-bg: #D5DEE2;
+  --cc-toggle-readonly-knob-bg: #FFFFFF;
+
+  /* ---------- Category blocks ---------- */
+  --cc-cookie-category-block-bg: #F0F6FF;
+  --cc-cookie-category-block-border: #F0F6FF;
+  --cc-cookie-category-block-hover-bg: #E3EDFB;
+  --cc-cookie-category-block-hover-border: #E3EDFB;
+  --cc-cookie-category-expanded-block-hover-bg: #D8E5F8;
+
+  /* ---------- Separators, veil, foot ---------- */
+  --cc-separator-border-color: #E4EAED;
+  --cc-overlay-bg: rgba(26, 26, 46, 0.60);
+  --cc-footer-bg: #F0F6FF;
+  --cc-footer-color: #33475B;
+  --cc-footer-border-color: #E4EAED;
+
+  /* ---------- Scroll bar ---------- */
+  --cc-webkit-scrollbar-bg: #E4EAED;
+  --cc-webkit-scrollbar-hover-bg: #2E6FD9;
+}
+
+/* Rounded corners aligned with the site button (dot).
+   Remove this block if you prefer the default corners. */
+#cc-main .cm__btn,
+#cc-main .pm__btn {
+  border-radius: 50px;
+}
+
+/* Links in the banner and preferences window */
+#cc-main a {
+  color: #2E6FD9;
+  text-decoration: underline;
+}
+#cc-main a:hover {
+  color: #2559AE;
+}
