@@ -200,6 +200,23 @@ body {
   color: var(--sg-white);
 }
 
+.btn-sg-muted {
+  background: #EAEFF2;
+  color: #2C2F31;
+  border: none;
+  border-radius: 50px;
+  padding: .65rem 1.8rem;
+  font-weight: 600;
+  transition: background .2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-sg-muted:hover {
+  background: #D4DAE0;
+  color: #2C2F31;
+}
+
 /* ---------- Section titles ---------- */
 .sg-section { padding: 4.375rem 0; }
 .sg-section-alt { background: var(--sg-light-bg); }
