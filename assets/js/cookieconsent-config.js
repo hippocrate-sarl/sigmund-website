@@ -8,9 +8,16 @@ const PRIVACY_URLS = {
   de: '/de/datenschutz.html'
 };
 
-// Get Privacy URL for page language
+const COOKIE_URLS = {
+  fr: '/politique-en-matiere-de-cookies.html',
+  en: '/en/cookie-policy.html',
+  de: '/de/cookie-richtlinie.html'
+};
+
+// Get Privacy/Cookie URL for page language
 const LANG = (document.documentElement.lang || 'fr').slice(0, 2).toLowerCase();
 const PRIVACY_URL = PRIVACY_URLS[LANG] || PRIVACY_URLS.fr;
+const COOKIE_URL = COOKIE_URLS[LANG] || COOKIE_URLS.fr;
 
 // Bridge to Google Consent Mode v2
 function updateGoogleConsent() {
@@ -92,7 +99,7 @@ CookieConsent.run({
           acceptAllBtn: 'Tout accepter',
           acceptNecessaryBtn: 'Tout refuser',
           showPreferencesBtn: 'Personnaliser',
-          footer: '<a href="' + PRIVACY_URL + '">Politique de confidentialité</a>'
+          footer: '<a href="' + COOKIE_URL + '">Politique de cookies</a><a href="' + PRIVACY_URL + '">Politique de confidentialité</a>'
         },
         preferencesModal: {
           title: 'Préférences de confidentialité',
@@ -150,7 +157,7 @@ CookieConsent.run({
           acceptAllBtn: 'Accept all',
           acceptNecessaryBtn: 'Decline all',
           showPreferencesBtn: 'Customise',
-          footer: '<a href="' + PRIVACY_URL + '">Privacy policy</a>'
+          footer: '<a href="' + COOKIE_URL + '">Cookie policy</a><a href="' + PRIVACY_URL + '">Privacy policy</a>'
         },
         preferencesModal: {
           title: 'Privacy preferences',
@@ -208,7 +215,7 @@ CookieConsent.run({
           acceptAllBtn: 'Alle akzeptieren',
           acceptNecessaryBtn: 'Alle ablehnen',
           showPreferencesBtn: 'Anpassen',
-          footer: '<a href="' + PRIVACY_URL + '">Datenschutz</a>'
+          footer: '<a href="' + COOKIE_URL + '">Cookie-Richtlinie</a><a href="' + PRIVACY_URL + '">Datenschutz</a>'
         },
         preferencesModal: {
           title: 'Datenschutz-Einstellungen',
