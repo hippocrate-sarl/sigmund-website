@@ -79,10 +79,23 @@
   color: #2C2F31;
 }
 
-/* Keep the category row's pill shape when expanded — the library squares
-   off its bottom corners (border-bottom-*-radius: 0) so the description
-   panel sits flush underneath. */
-#cc-main .pm__section--toggle.is-expanded .pm__section-title {
-  border-bottom-left-radius: var(--cc-btn-border-radius);
-  border-bottom-right-radius: var(--cc-btn-border-radius);
+/* Every section (the 3 category rows, plus the plain "Votre choix compte"/
+   "Plus d'informations" boxes) reuses --cc-btn-border-radius by default,
+   which pill-shapes them the same as the buttons. Give them back the
+   library's own plain rounded-rectangle radius instead. */
+#cc-main .pm__section,
+#cc-main .pm__section-title,
+#cc-main .pm__section--toggle,
+#cc-main .pm__section-desc-wrapper {
+  border-radius: .4rem;
+}
+
+/* The expanded description panel is a special case: the library scopes its
+   radius as #cc-main .pm__section--toggle .pm__section-desc-wrapper (2
+   classes), which outranks the plain rule above and left its bottom
+   corners at the full --cc-btn-border-radius pill while its top corners
+   are separately forced to 0 (flush under the title). Match specificity to
+   square it off entirely, flush on all sides like the title above it. */
+#cc-main .pm__section--toggle .pm__section-desc-wrapper {
+  border-radius: 0;
 }
