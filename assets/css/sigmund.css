@@ -586,6 +586,22 @@ body {
 
 .sg-footer a:hover { color: var(--sg-primary-lt); }
 
+.sg-footer .sg-footer-link-btn {
+  display: block;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0 0 .4rem;
+  font: inherit;
+  text-align: inherit;
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .2s;
+  -webkit-appearance: none;
+}
+.sg-footer .sg-footer-link-btn:hover { color: var(--sg-primary-lt); }
+
 
 .sg-footer .copyright { color: #666; font-size: .8rem; }
 
