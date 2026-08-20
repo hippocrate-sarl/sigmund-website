@@ -4,7 +4,7 @@ redirect_from: /de/datenschutzerklarung
 <!DOCTYPE html>
 <html lang="de">
 <head>
-{% include gtm-head.html %}
+{% include head.html %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Datenschutzerklärung — Sigmund</title>
@@ -24,7 +24,7 @@ redirect_from: /de/datenschutzerklarung
 
 </head>
 <body>
-{% include gtm-body-noscript.html %}
+{% include body.html %}
 
 <!-- NAVBAR -->
 <nav class="sg-navbar navbar navbar-expand-lg sticky-top">
@@ -153,8 +153,15 @@ redirect_from: /de/datenschutzerklarung
           <p>Auf der Rechtsgrundlage der Vertragserfüllung und unseres berechtigten Interesses, Sie zu kontaktieren und Ihnen einen Platz in der Patientenliste anzubieten, verarbeiten wir Ihre persönlichen Identifikations- und Kontaktdaten, wie von unseren Kunden erfasst. Wir bewahren diese Daten drei Jahre ab dem Datum der Erfassung, drei Jahre nach der letzten gemeldeten Interaktion oder bis zum Widerruf Ihrer Einwilligung auf, maximal jedoch für die Dauer des Vertrags zuzüglich eines Monats sowie bis zu sechs Monate in unseren verschlüsselten Sicherungskopien. Sie haben das Recht auf Zugang, Berichtigung und Löschung dieser Daten, ausübbar bei unseren Kunden oder über die genannten Kontaktmöglichkeiten.</p>
 
           <h2 id="cookies">Cookies</h2>
-          <p>Die Informationswebsite <strong>sigmund.lu</strong> ist eine rein statische Website, die keine Cookies in Ihrem Browser speichert.</p>
-          <p>Die Sigmund-Anwendung (app.sigmund.lu) verwendet Sitzungs-Cookies, die für ihren Betrieb unbedingt erforderlich sind (Authentifizierung, Zugang zu vorbehaltenen Funktionen). Diese Cookies sind gemäß den von der CNPD definierten Kriterien von der Einwilligungspflicht ausgenommen (<a href="https://cnpd.public.lu/content/dam/cnpd/fr/actualites/national/2022/fiche-pratique-CNPD-cookies-2022-01-27.pdf" target="_blank" rel="noopener">CNPD-Merkblatt</a>).</p>
+          <p>Die Website <strong>sigmund.lu</strong> zeigt ein Einwilligungsbanner an, mit dem Sie nicht unbedingt erforderliche Cookies kategorienweise akzeptieren oder ablehnen können. Es wird kein Cookie zur Reichweitenmessung oder für Werbung gesetzt, bevor Sie Ihre Zustimmung gegeben haben.</p>
+          <p>Wir verwenden folgende Cookie-Kategorien:</p>
+          <ul>
+            <li><strong>Unbedingt erforderlich</strong> — ein technisches Cookie, das Ihre Cookie-Auswahl speichert und gemäß den von der CNPD definierten Kriterien von der Einwilligungspflicht ausgenommen ist (<a href="https://cnpd.public.lu/content/dam/cnpd/fr/actualites/national/2022/fiche-pratique-CNPD-cookies-2022-01-27.pdf" target="_blank" rel="noopener">CNPD-Merkblatt</a>).</li>
+            <li><strong>Reichweitenmessung</strong> — Google-Analytics-Cookies, die nur mit Ihrer Zustimmung gesetzt werden.</li>
+            <li><strong>Werbung</strong> — Google-Ads-Cookies, die nur mit Ihrer Zustimmung gesetzt werden.</li>
+          </ul>
+          <p>Diese Cookies werden über Google Tag Manager verwaltet und mit Google Consent Mode konfiguriert: Solange Sie keine Zustimmung erteilt haben, werden keine Mess- oder Werbedaten an Google übermittelt. Die detaillierte Liste der Cookies, ihre Zwecke und Speicherfristen finden Sie in unserer <a href="cookie-richtlinie.html">Cookie-Richtlinie</a>.</p>
+          <p>Die Sigmund-Anwendung (app.sigmund.lu) verwendet außerdem Sitzungs-Cookies, die für ihren Betrieb unbedingt erforderlich sind (Authentifizierung, Zugang zu vorbehaltenen Funktionen). Diese Cookies sind ebenfalls gemäß den von der CNPD definierten Kriterien von der Einwilligungspflicht ausgenommen.</p>
 
           <h2 id="providers">Dienstleister und Unterauftragsverarbeiter</h2>
           <p>Um unseren Kunden Dienste und Software bereitzustellen, aber auch für die betrieblichen Bedürfnisse unseres Unternehmens, stützen wir uns auf eine begrenzte Liste von Dienstleistern.</p>
@@ -207,6 +214,14 @@ redirect_from: /de/datenschutzerklarung
             106 boulevard Haussmann<br>75008 Paris — FRANKREICH</p>
           </div>
 
+          <div class="sg-provider-card">
+            <div class="provider-name"><i class="bi bi-google me-2"></i>Google</div>
+            <p>Für die Tag-Verwaltung (Google Tag Manager), die Reichweitenmessung (Google Analytics) und, mit Ihrer Zustimmung, die Erfolgsmessung unserer Werbekampagnen (Google Ads) auf der Website sigmund.lu nutzen wir die Dienste der irischen Gesellschaft Google Ireland Limited, einer Tochtergesellschaft der US-amerikanischen Gesellschaft Google LLC — weiter unten bereits als DPF-zertifiziert genannt.</p>
+            <p>Sie können diese Gesellschaft per Post kontaktieren:<br>
+            <strong>Google Ireland Limited</strong><br>
+            Gordon House, Barrow Street<br>Dublin 4 — IRLAND</p>
+          </div>
+
           <h2 id="transfer">Datenübermittlung außerhalb der Europäischen Union oder des Europäischen Wirtschaftsraums</h2>
           <p>Grundsätzlich werden die Daten, die wir mit unseren eigenen Diensten und Software verarbeiten, ausschließlich im Großherzogtum Luxemburg verarbeitet. Die personenbezogenen Daten unserer Kunden, die wir über Unterauftragsverarbeiter verarbeiten, werden nicht notwendigerweise innerhalb der Europäischen Union gespeichert. Odoo beispielsweise nutzt die Dienste der irischen Gesellschaft Google Cloud EMEA Ltd, einer Tochtergesellschaft des US-Unternehmens Google LLC, um Daten in Frankreich und Belgien zu speichern, kann jedoch nicht garantieren, dass auch Sicherungskopien dort gespeichert werden. Microsoft verfügt über Rechenzentren in Europa, unterliegt jedoch weiterhin dem US-amerikanischen Recht.</p>
           <p>Die Vereinigten Staaten sind ein Land, dessen Datenschutzniveau nur teilweise mit dem europäischen DSGVO übereinstimmt. Nur Übermittlungen personenbezogener Daten an im Data Privacy Framework (DPF) zertifizierte Einrichtungen erfordern keine zusätzlichen Übermittlungsmechanismen. Microsoft Corporation und Google LLC sind DPF-zertifiziert, was die Übermittlung personenbezogener Daten autorisiert, ob auf unsere Initiative oder als Folge der internen Organisation unserer Unterauftragsverarbeiter.</p>
@@ -218,7 +233,7 @@ redirect_from: /de/datenschutzerklarung
           <p>Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten durch Hippocrate Sàrl einen Verstoß gegen die Datenschutz-Grundverordnung (DSGVO) darstellt, können Sie eine Beschwerde bei der <a href="https://cnpd.public.lu" target="_blank" rel="noopener">CNPD</a> (Nationale Kommission für Datenschutz) einreichen.</p>
 
           <h2 id="updates">Aktualisierungen unserer Richtlinie</h2>
-          <div class="sg-update-badge"><i class="bi bi-clock-history me-2"></i>Letzte Aktualisierung: Montag, 15. Dezember 2025, geändert am Mittwoch, 15. Juli 2026</div>
+          <div class="sg-update-badge"><i class="bi bi-clock-history me-2"></i>Letzte Aktualisierung: Montag, 15. Dezember 2025, letzte Änderung: Dienstag, 18. August 2026</div>
           <p>Wir können diese Richtlinie aktualisieren, um bestimmte Begriffe zu klären oder Änderungen im Betrieb unserer Websites oder Software widerzuspiegeln. Jedes Mal, wenn eine neue Version veröffentlicht wird, wird das Datum der letzten Aktualisierung oben in der Richtlinie aktualisiert, und wir werden unseren Softwarekunden und betroffenen Personen so weit wie möglich eine Zusammenfassung der Änderungen mitteilen.</p>
 
           <h2 id="contact">Kontakt</h2>
@@ -245,6 +260,7 @@ redirect_from: /de/datenschutzerklarung
         <h6>Nützliche Links</h6>
         <a href="team.html">Unser Team</a>
         <a href="cookie-richtlinie.html">Cookie-Richtlinie</a>
+        <button type="button" class="sg-footer-link-btn" data-cc="show-preferencesModal">Meine Cookie-Einstellungen</button>
         <a href="datenschutz.html">Datenschutzerklärung</a>
         <a href="impressum.html">Impressum</a>
         <h6 class="mt-3">Ressourcen</h6>

@@ -12,7 +12,10 @@ Developed by **Hippocrate Sàrl** (Bertrange, Luxembourg). Team: Sylvain Perez, 
 - **flag-icons 7.2** (CDN) — language switcher flags via `<span class="fi fi-*">`
 - **Google Fonts** — Inter (300/400/500/600/700/800)
 - Contact forms POST to Brevo (sibforms.com) via `fetch` + `mode: 'no-cors'`, handled by `assets/js/profession.js`
-- **Google Tag Manager** (container `GTM-TZPN6B4R`) — loaded via two Jekyll includes on every page: `_includes/gtm-head.html` (script, first line inside `<head>`) and `_includes/gtm-body-noscript.html` (`<noscript>` fallback, first line inside `<body>`). GitHub Pages already builds the site with Jekyll (see `_config.yml`, used previously for the `jekyll-redirect-from` plugin), so every `.html` page now carries a front matter block (even if empty) so Jekyll processes these include tags. `AGENTS.md` and `README.md` are excluded from the Jekyll build (see `_config.yml`) — the Liquid syntax in this file's prose is never evaluated.
+- **Google Tag Manager** (container `GTM-TZPN6B4R`) — loaded via two Jekyll includes on every page: `_includes/head.html` (script, first line inside `<head>`; also the place for any other shared `<head>` lines) and `_includes/body.html` (`<noscript>` fallback, first line inside `<body>`; also the place for any other shared lines right after `<body>`). GitHub Pages already builds the site with Jekyll (see `_config.yml`, used previously for the `jekyll-redirect-from` plugin), so every `.html` page now carries a front matter block (even if empty) so Jekyll processes these include tags. `AGENTS.md` and `README.md` are excluded from the Jekyll build (see `_config.yml`) — the Liquid syntax in this file's prose is never evaluated.
+- **Google Consent Mode v2** — default state (all storage `denied` except `security_storage`) is set inline at the top of `_includes/head.html`, before the GTM snippet loads. `assets/js/cookieconsent-config.js` calls `gtag('consent', 'update', ...)` on `onFirstConsent`/`onConsent`/`onChange` to grant `analytics_storage`/`ad_storage`/`ad_user_data`/`ad_personalization` once the visitor opts in via the banner.
+- **CookieConsent v3.1.0** (self-hosted, [orestbida/cookieconsent](https://github.com/orestbida/cookieconsent)) — the cookie-consent banner. `assets/js/cookieconsent.esm.js` is the vendored library (do not hand-edit; replace wholesale to upgrade), `assets/js/cookieconsent-config.js` holds the `CookieConsent.run({...})` config with full FR/EN/DE translations, `assets/css/cookieconsent.css` is the library's own stylesheet, `assets/css/cookieconsent-sigmund.css` is the Sigmund brand override (all four loaded from `_includes/head.html`/`body.html`, see [What to watch out for](#what-to-watch-out-for) for known quirks).
+- **Local dev tooling** — `Gemfile`/`Gemfile.lock` pin the same `github-pages` gem set GitHub Pages builds with; `serve.cmd` (Windows) / `serve.sh` (Linux/macOS) run `bundle exec jekyll serve` inside a `ruby:3.3` Docker container, so no local Ruby install is needed. These are local-only — `_config.yml`'s `exclude` list keeps them out of the actual Jekyll build.
 
 ## File structure
 
@@ -45,12 +48,16 @@ en/legal-notice.html
 en/blog/index.html                                Blog index (EN)
 
 llms.txt                                          AI crawler description (FR/EN/DE — trilingual, root only)
-_includes/gtm-head.html                           Google Tag Manager <head> snippet, included in <head> of every page
-_includes/gtm-body-noscript.html                  Google Tag Manager <noscript> fallback, included right after <body> of every page
+_includes/head.html                               Shared <head> snippet (GTM + Consent Mode default + CookieConsent stylesheets + other head lines), included in <head> of every page
+_includes/body.html                               Shared post-<body> snippet (GTM noscript fallback + CookieConsent script + other lines), included right after <body> of every page
 assets/css/sigmund.css                            All custom styles (shared by all pages)
+assets/css/cookieconsent.css                      CookieConsent v3.1.0 library stylesheet (vendored, do not hand-edit)
+assets/css/cookieconsent-sigmund.css              Sigmund brand override for the CookieConsent banner (#cc-main scoped)
 assets/js/main.js                                 Active nav-link highlight
 assets/js/sg-carousel.js                          Shared CSS scroll-snap carousel logic (testimonials, etc.) — used on the homepage and all profession pages
 assets/js/profession.js                           Contact form handler (Brevo fetch, validation, i18n via data-attributes)
+assets/js/cookieconsent.esm.js                    CookieConsent v3.1.0 library (vendored, do not hand-edit)
+assets/js/cookieconsent-config.js                 CookieConsent config: categories, FR/EN/DE translations, Google Consent Mode v2 bridge
 assets/images/                                    All images (webp + svg)
   team-sylvain-perez.webp                         Team photo — downloaded from hippocrate.lu
   team-franck-amouyal.webp
@@ -74,6 +81,9 @@ de/blog/index.html                                Blog index (DE)
 favicon.ico
 robots.txt
 sitemap.xml
+
+Gemfile / Gemfile.lock                            Local Jekyll dev dependencies (matches GitHub Pages' gem set) — excluded from the Jekyll build itself
+serve.cmd / serve.sh                              Run Jekyll locally via Docker (Windows / Linux-macOS) — excluded from the Jekyll build itself
 ```
 
 ## CSS conventions
@@ -198,8 +208,9 @@ When adding a new demo-booking link anywhere on the site, tag it with both attri
 - `robots.txt` disallows legal/policy pages — do not add guide/resource pages to the disallow list
 - `lb/politik-iwwer-perseinlech-donneeen.html` — standalone Luxembourgish privacy policy, accessible only via email link
 - `pt/politica-relativa-aos-dados-pessoais.html` — standalone Portuguese privacy policy, accessible only via email link, no navbar/footer navigation links pointing to it. Uses minimal header (logo only) and sg-footer for copyright.
-- Every `.html` page now starts with a Jekyll front matter block (`---\n---`, empty unless the page also has `redirect_from`). Opening a page directly in a browser (no `bundle exec jekyll serve`) will show the raw front matter and the `{% include gtm-head.html %}` / `{% include gtm-body-noscript.html %}` tags as literal text — same known limitation that already existed for the 8 pages using `redirect_from`. Use a Jekyll build (or trust the GitHub Pages build) to see the real rendered output.
-- The cookie policy pages state that sigmund.lu sets no cookies. The Sigmund app (app.sigmund.lu) may use essential session cookies — that distinction is maintained in both the cookie policy and privacy policy pages
+- Every `.html` page now starts with a Jekyll front matter block (`---\n---`, empty unless the page also has `redirect_from`). Opening a page directly in a browser (no `bundle exec jekyll serve`) will show the raw front matter and the `{% include head.html %}` / `{% include body.html %}` tags as literal text — same known limitation that already existed for the 8 pages using `redirect_from`. Use a Jekyll build (or trust the GitHub Pages build) to see the real rendered output.
+- The cookie policy pages (FR/EN/DE) and privacy policy pages (FR/EN/DE + the standalone LB/PT pages) have all been rewritten to describe actual cookie/analytics/ads usage (GTM, Consent Mode, CookieConsent banner, Google Ireland Limited as sub-processor) — this was previously stale (pages claimed no cookies/no analytics) and the LB/PT pages were initially missed when FR/EN/DE were fixed, so double-check LB/PT specifically whenever this content changes again (see the checklist item below).
+- **CookieConsent quirks found while styling the banner** (see `assets/css/cookieconsent-sigmund.css`): (1) `guiOptions.equalWeightButtons: true` makes the library apply the *same* class (and therefore color) to "Accept all" and "Reject all" — the `--cc-btn-secondary-*` tokens only reach "Personnaliser"/"Enregistrer mes choix", not "Reject all", regardless of `[data-role]`. (2) `--cc-link-color` only applies to elements with the library's own `.cc__link` class — plain `<a>` tags (like the footer privacy-policy link built in `cookieconsent-config.js`) don't get it automatically. (3) the library defaults `hideFromBots: true`, which checks `navigator.webdriver` and silently no-ops the entire banner (no error, promise resolves) in any automated/headless browser (e.g. Playwright) — pass `hideFromBots: false` or neutralize `navigator.webdriver` when testing it.
 - Hero H1s on all main menu pages are in sentence case (not uppercase) — consistent with index.html
 - Some HTML files previously had null bytes introduced by bulk PowerShell operations — stripped and resolved. All files are clean UTF-8
 
@@ -212,3 +223,9 @@ Always verify these files are up to date before staging a commit:
 - **`llms.txt`** — update if pricing, team, offer, or site structure changed. H2 sections are for file lists only (`[name](url)` format); informational content goes as plain paragraphs (no H2).
 - **`AGENTS.md`** — update the file structure, DE URL mapping, or any section that describes the pages or conventions you just changed.
 - **`README.md`** — update the pages table if a new page was added or removed.
+
+Some categories of change tend to get missed because they don't touch a page's visible content — check for these explicitly:
+
+- **New shared `<head>`/`<body>` line** (script, meta tag, stylesheet, etc. meant to apply site-wide) — add it to `_includes/head.html` / `_includes/body.html`, never by editing individual pages one by one. Update the "Tech stack" and file-structure sections of `AGENTS.md` to describe what was added and why.
+- **New or modified third-party script that sets cookies, tracks users, or loads analytics/ads** (GTM tags, consent tooling, embeds, etc.) — check whether the cookie policy and privacy policy pages (FR/EN/DE, **and** the standalone `lb/politik-iwwer-perseinlech-donneeen.html` + `pt/politica-relativa-aos-dados-pessoais.html` privacy pages) still accurately describe what the site does. LB/PT are easy to miss since they carry no navbar/footer links and aren't part of the trilingual FR/EN/DE structure — they were missed the first time this section was rewritten. If any of them don't match, say so explicitly before proposing the commit rather than shipping a mismatch silently.
+- **New local-only dev tooling** (build scripts, linters, Docker configs, etc.) — add it to `_config.yml`'s `exclude` list so it isn't pulled into the Jekyll build, and document it in both `AGENTS.md` (Tech stack / file structure) and `README.md` (Running locally).

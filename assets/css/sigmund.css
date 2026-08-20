@@ -200,6 +200,23 @@ body {
   color: var(--sg-white);
 }
 
+.btn-sg-muted {
+  background: #EAEFF2;
+  color: #2C2F31;
+  border: none;
+  border-radius: 50px;
+  padding: .65rem 1.8rem;
+  font-weight: 600;
+  transition: background .2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-sg-muted:hover {
+  background: #D4DAE0;
+  color: #2C2F31;
+}
+
 /* ---------- Section titles ---------- */
 .sg-section { padding: 4.375rem 0; }
 .sg-section-alt { background: var(--sg-light-bg); }
@@ -568,6 +585,22 @@ body {
 }
 
 .sg-footer a:hover { color: var(--sg-primary-lt); }
+
+.sg-footer .sg-footer-link-btn {
+  display: block;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0 0 .4rem;
+  font: inherit;
+  text-align: inherit;
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .2s;
+  -webkit-appearance: none;
+}
+.sg-footer .sg-footer-link-btn:hover { color: var(--sg-primary-lt); }
 
 
 .sg-footer .copyright { color: #666; font-size: .8rem; }

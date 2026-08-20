@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-{% include gtm-head.html %}
+{% include head.html %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cookie-Richtlinie — Sigmund</title>
@@ -23,7 +23,7 @@
 
 </head>
 <body>
-{% include gtm-body-noscript.html %}
+{% include body.html %}
 
 <!-- NAVBAR -->
 <nav class="sg-navbar navbar navbar-expand-lg sticky-top">
@@ -63,12 +63,45 @@
       <div class="col-lg-8">
         <div class="sg-legal-content">
 
-          <h2 id="keine-cookies">Diese Website verwendet keine Cookies</h2>
-          <p><strong>sigmund.lu ist eine rein statische Website.</strong> Sie speichert keine Cookies in Ihrem Browser, erfasst keine Navigationsdaten und verwendet keine Analyse-Tools von Drittanbietern.</p>
-          <p>Es ist keine Aktion Ihrerseits erforderlich. Ihr Besuch auf dieser Website erzeugt keine Datenspeicherung in Ihrem Browser.</p>
+          <h2 id="einwilligung">Einwilligung zu Cookies</h2>
+          <p>Die Website <strong>sigmund.lu</strong> zeigt bei Ihrem ersten Besuch ein Einwilligungsbanner an, mit dem Sie nicht unbedingt erforderliche Cookies kategorienweise akzeptieren oder ablehnen können. Es wird kein Cookie zur Reichweitenmessung oder für Werbung gesetzt, bevor Sie Ihre Zustimmung gegeben haben.</p>
+          <p>Sie können Ihre Auswahl jederzeit ändern: <button type="button" class="btn-sg-muted" data-cc="show-preferencesModal">Meine Cookie-Einstellungen</button></p>
+
+          <h2 id="kategorien">Die von uns verwendeten Cookies</h2>
+
+          <div class="sg-cookie-card mb-3">
+            <div class="sg-cookie-category">Unbedingt erforderlich — immer aktiv</div>
+            <p class="mb-2">Notwendig für den Betrieb der Website und zum Speichern Ihrer Cookie-Auswahl.</p>
+            <p class="mb-0"><span class="sg-cookie-name">cc_cookie</span> — sigmund.lu — 6 Monate</p>
+          </div>
+
+          <div class="sg-cookie-card mb-3">
+            <div class="sg-cookie-category">Reichweitenmessung — Google Analytics</div>
+            <p class="mb-2">Ermöglichen uns zu verstehen, welche Seiten aufgerufen werden, und die Website zu verbessern. Werden nur mit Ihrer Zustimmung gesetzt.</p>
+            <p class="mb-0">
+              <span class="sg-cookie-name">_ga</span> — Google — 2 Jahre<br>
+              <span class="sg-cookie-name">_ga_*</span> — Google — 2 Jahre<br>
+              <span class="sg-cookie-name">_gid</span> — Google — 24 Stunden
+            </p>
+          </div>
+
+          <div class="sg-cookie-card mb-3">
+            <div class="sg-cookie-category">Werbung — Google Ads</div>
+            <p class="mb-2">Ermöglichen uns, die Wirksamkeit unserer Werbekampagnen zu messen und Ihnen keine Werbung zu zeigen, wenn Sie bereits Kunde sind. Werden nur mit Ihrer Zustimmung gesetzt.</p>
+            <p class="mb-0">
+              <span class="sg-cookie-name">_gcl_au</span> — Google — 90 Tage<br>
+              <span class="sg-cookie-name">IDE</span> — Google (doubleclick.net) — 13 Monate<br>
+              <span class="sg-cookie-name">test_cookie</span> — Google (doubleclick.net) — 15 Minuten
+            </p>
+          </div>
+
+          <p>Diese Cookies werden über Google Tag Manager verwaltet und mit Google Consent Mode konfiguriert: Solange keine Zustimmung erteilt wurde, werden keine Mess- oder Werbedaten an Google übermittelt. Weitere Einzelheiten zu den entsprechenden Datenverarbeitungen finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
 
           <h2 id="anwendung">Die Sigmund-Anwendung</h2>
           <p>Die Sigmund-Anwendung (zugänglich unter <a href="https://app.sigmund.lu" target="_blank" rel="noopener">app.sigmund.lu</a>) ist von dieser Informationswebsite getrennt. Sie kann Sitzungs-Cookies verwenden, die für ihren Betrieb unbedingt erforderlich sind (Authentifizierung, Präferenzen). Diese Cookies sind gemäß den von der <a href="https://cnpd.public.lu" target="_blank" rel="noopener">CNPD</a> definierten Kriterien von der Einwilligungspflicht ausgenommen.</p>
+
+          <h2 id="aktualisierung">Aktualisierung</h2>
+          <div class="sg-update-badge"><i class="bi bi-clock-history me-2"></i>Letzte Aktualisierung: Dienstag, 18. August 2026</div>
 
         </div>
       </div>
@@ -86,6 +119,7 @@
         <h6>Nützliche Links</h6>
         <a href="team.html">Unser Team</a>
         <a href="cookie-richtlinie.html">Cookie-Richtlinie</a>
+        <button type="button" class="sg-footer-link-btn" data-cc="show-preferencesModal">Meine Cookie-Einstellungen</button>
         <a href="datenschutz.html">Datenschutzerklärung</a>
         <a href="impressum.html">Impressum</a>
         <h6 class="mt-3">Ressourcen</h6>

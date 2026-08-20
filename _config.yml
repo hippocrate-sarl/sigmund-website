@@ -4,3 +4,9 @@ plugins:
 exclude:
   - AGENTS.md
   - README.md
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - .jekyll-cache/
+  - serve.cmd
+  - serve.sh

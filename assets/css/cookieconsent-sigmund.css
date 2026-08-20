@@ -1,0 +1,101 @@
+/* ------------------------------------------------------------------
+   Sigmund — CookieConsent v3.1.0 stylesheet
+
+   Scoped on  #cc-main instead of :root so nothing is leaked to the
+   rest of the site.
+------------------------------------------------------------------ */
+
+#cc-main {
+  /* ---------- Typography ---------- */
+  --cc-font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  /* ---------- Background and text ---------- */
+  --cc-bg: #FFFFFF;
+  --cc-primary-color: #333333;   /* title and main text — matches --sg-dark */
+  --cc-secondary-color: #555555; /* secondary text */
+
+  /* ---------- Shape ---------- */
+  --cc-modal-border-radius: 16px;
+  --cc-btn-border-radius: 50px;
+
+  /* ---------- Button « Accept all » ---------- */
+  --cc-btn-primary-bg: #6BA4FA;
+  --cc-btn-primary-color: #FFFFFF;
+  --cc-btn-primary-border-color: #6BA4FA;
+  --cc-btn-primary-hover-bg: #5590e8;
+  --cc-btn-primary-hover-color: #FFFFFF;
+  --cc-btn-primary-hover-border-color: #5590e8;
+
+  /* ---------- Button « Personnaliser » / « Enregistrer » ----------
+    guiOptions.equalWeightButtons makes "Accept all" and "Reject all" share
+    the same (primary) class/color in both the banner and the preferences
+    modal, so they always look identical — these secondary tokens only
+    style "Personnaliser" and "Enregistrer mes choix". */
+  --cc-btn-secondary-bg: #EAEFF2;
+  --cc-btn-secondary-color: #2C2F31;
+  --cc-btn-secondary-border-color: #EAEFF2;
+  --cc-btn-secondary-hover-bg: #D4DAE0;
+  --cc-btn-secondary-hover-color: #2C2F31;
+  --cc-btn-secondary-hover-border-color: #D4DAE0;
+
+  /* ---------- Switches ---------- */
+  --cc-toggle-on-bg: #6BA4FA;
+  --cc-toggle-off-bg: #8A9BAA;
+  --cc-toggle-on-knob-bg: #FFFFFF;
+  --cc-toggle-off-knob-bg: #FFFFFF;
+  --cc-toggle-readonly-bg: #D5DEE2;
+  --cc-toggle-readonly-knob-bg: #FFFFFF;
+
+  /* ---------- Category blocks ---------- */
+  --cc-cookie-category-block-bg: #F0F6FF;
+  --cc-cookie-category-block-border: #E2ECFF;
+  --cc-cookie-category-block-hover-bg: #E3EDFB;
+  --cc-cookie-category-block-hover-border: #E2ECFF;
+  --cc-cookie-category-expanded-block-hover-bg: #D8E5F8;
+
+  /* ---------- Separators, veil, foot ---------- */
+  --cc-separator-border-color: #E2ECFF;
+  --cc-overlay-bg: rgba(26, 26, 46, 0.60);
+  --cc-footer-bg: #F0F6FF;
+  --cc-footer-color: #555555;
+  --cc-footer-border-color: #E2ECFF;
+
+  /* ---------- Links ---------- */
+  --cc-link-color: #6BA4FA;
+
+  /* ---------- Scroll bar ---------- */
+  --cc-webkit-scrollbar-bg: #E2ECFF;
+  --cc-webkit-scrollbar-hover-bg: #6BA4FA;
+}
+
+/* Links in the banner and preferences window (--cc-link-color covers most,
+   this ensures the hover state matches the site's button-hover blue too) */
+#cc-main a:hover {
+  color: #5590e8;
+}
+
+/* "Toujours actifs" badge text (library defaults it to --cc-secondary-color) */
+#cc-main .pm__badge {
+  color: #2C2F31;
+}
+
+/* Every section (the 3 category rows, plus the plain "Votre choix compte"/
+   "Plus d'informations" boxes) reuses --cc-btn-border-radius by default,
+   which pill-shapes them the same as the buttons. Give them back the
+   library's own plain rounded-rectangle radius instead. */
+#cc-main .pm__section,
+#cc-main .pm__section-title,
+#cc-main .pm__section--toggle,
+#cc-main .pm__section-desc-wrapper {
+  border-radius: .4rem;
+}
+
+/* The expanded description panel is a special case: the library scopes its
+   radius as #cc-main .pm__section--toggle .pm__section-desc-wrapper (2
+   classes), which outranks the plain rule above and left its bottom
+   corners at the full --cc-btn-border-radius pill while its top corners
+   are separately forced to 0 (flush under the title). Match specificity to
+   square it off entirely, flush on all sides like the title above it. */
+#cc-main .pm__section--toggle .pm__section-desc-wrapper {
+  border-radius: 0;
+}

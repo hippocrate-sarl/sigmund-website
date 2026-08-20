@@ -16,7 +16,14 @@ This repository is the **public-facing marketing website** only. The production 
 
 ## Running locally
 
-No build step required. Open any HTML file directly in a browser.
+Every page carries a Jekyll front matter block and pulls in shared `<head>`/`<body>` snippets via `{% include %}` (see `_includes/`), so opening an HTML file directly in a browser shows that Liquid syntax as raw text instead of the real output. To preview the site as GitHub Pages actually builds it, run Jekyll locally via Docker (no local Ruby install needed):
+
+```
+serve.cmd            # Windows
+./serve.sh           # Linux/macOS
+```
+
+Then open `http://localhost:4000`. `Gemfile`/`Gemfile.lock` pin the same `github-pages` gem set GitHub Pages builds with.
 
 ---
 
@@ -49,7 +56,7 @@ Not linked from the navbar or footer — accessible only via a direct link (e.g.
 
 Legal pages are excluded from search engine indexing (`robots.txt` + `<meta name="robots" content="noindex">`).
 
-The cookie policy pages reflect that sigmund.lu is a static site with no cookies. The Sigmund application (app.sigmund.lu) may still use essential session cookies — this distinction is documented in both the cookie policy and privacy policy.
+**Known gap:** the cookie policy and privacy policy pages currently still state that sigmund.lu sets no cookies and uses no analytics. That was accurate before Google Tag Manager and the CookieConsent banner were added (see "Tech stack" below) — it no longer is, and these pages need a rewrite before that claim is true again.
 
 ---
 
@@ -58,11 +65,15 @@ The cookie policy pages reflect that sigmund.lu is a static site with no cookies
 ```
 assets/
 ├── css/
-│   └── sigmund.css           All custom styles shared by every page (profession overrides scoped under body.sg-profession)
+│   ├── sigmund.css                  All custom styles shared by every page (profession overrides scoped under body.sg-profession)
+│   ├── cookieconsent.css            CookieConsent v3.1.0 library stylesheet (vendored, don't hand-edit)
+│   └── cookieconsent-sigmund.css    Sigmund brand override for the cookie-consent banner
 ├── js/
 │   ├── main.js                Active nav-link highlight
 │   ├── profession.js          Contact form handler (Brevo fetch, validation, i18n via data-attributes)
-│   └── legal-toc.js           Auto-generated table of contents on legal/guide pages
+│   ├── legal-toc.js           Auto-generated table of contents on legal/guide pages
+│   ├── cookieconsent.esm.js       CookieConsent v3.1.0 library (vendored, don't hand-edit)
+│   └── cookieconsent-config.js    CookieConsent config: categories, FR/EN/DE translations, Consent Mode v2 bridge
 └── images/
     ├── logo-sigmund.webp                                                       Logo
     ├── made-in-luxembourg-blanc.webp                                          "Made in Luxembourg" footer badge
@@ -92,7 +103,7 @@ assets/
 
 ## Tech stack
 
-All dependencies are loaded from CDN — nothing to install.
+Most dependencies are loaded from CDN — nothing to install. CookieConsent is the one exception: it's vendored directly under `assets/` rather than loaded from a CDN.
 
 | Library | Version | Purpose |
 |---|---|---|
@@ -100,8 +111,12 @@ All dependencies are loaded from CDN — nothing to install.
 | Bootstrap Icons | 1.11.3 | Icons (`bi bi-*`) |
 | flag-icons | 7.2.3 | Language switcher flags (`fi fi-*`) |
 | Google Fonts — Inter | — | Body font (300–800) |
+| Google Tag Manager | container `GTM-TZPN6B4R` | Tag/analytics management, loaded via `_includes/head.html` + `body.html` |
+| CookieConsent (orestbida) | 3.1.0, self-hosted | Cookie-consent banner, bridged to Google Consent Mode v2 — see `assets/js/cookieconsent-config.js` |
 
 Contact forms on profession pages POST to Brevo (sibforms.com) via `fetch` with `mode: 'no-cors'`.
+
+Local Jekyll builds run via Docker (see "Running locally") — `Gemfile`/`Gemfile.lock` and `serve.cmd`/`serve.sh` are dev-only and excluded from the actual Jekyll build (`_config.yml`).
 
 ---
 

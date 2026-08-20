@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
 <head>
-{% include gtm-head.html %}
+{% include head.html %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Politique en matière de cookies — Sigmund</title>
@@ -23,7 +23,7 @@
 
 </head>
 <body>
-{% include gtm-body-noscript.html %}
+{% include body.html %}
 
 <!-- NAVBAR -->
 <nav class="sg-navbar navbar navbar-expand-lg sticky-top">
@@ -66,12 +66,45 @@
 
         <div class="sg-legal-content">
 
-          <h2 id="presentation">Ce site n’utilise pas de cookies</h2>
-          <p><strong>sigmund.lu est un site purement statique.</strong> Il ne dépose aucun cookie sur votre navigateur, ne collecte aucune donnée de navigation et n’utilise aucun outil analytique tiers.</p>
-          <p>Aucune action de votre part n’est nécessaire. Votre visite sur ce site ne génère aucun stockage de données dans votre navigateur.</p>
+          <h2 id="presentation">Consentement aux cookies</h2>
+          <p>Le site vitrine <strong>sigmund.lu</strong> affiche un bandeau de consentement dès votre première visite, vous permettant d'accepter ou de refuser, catégorie par catégorie, les cookies non strictement nécessaires. Aucun cookie de mesure d'audience ou de publicité n'est déposé avant que vous n'ayez donné votre accord.</p>
+          <p>Vous pouvez modifier votre choix à tout moment : <button type="button" class="btn-sg-muted" data-cc="show-preferencesModal">Gestion de mes cookies</button></p>
+
+          <h2 id="categories">Les cookies que nous utilisons</h2>
+
+          <div class="sg-cookie-card mb-3">
+            <div class="sg-cookie-category">Strictement nécessaires — toujours actifs</div>
+            <p class="mb-2">Indispensable au fonctionnement du site et à la mémorisation de votre choix en matière de cookies.</p>
+            <p class="mb-0"><span class="sg-cookie-name">cc_cookie</span> — sigmund.lu — 6 mois</p>
+          </div>
+
+          <div class="sg-cookie-card mb-3">
+            <div class="sg-cookie-category">Mesure d'audience — Google Analytics</div>
+            <p class="mb-2">Nous permettent de comprendre quelles pages sont consultées et d'améliorer le site. Déposés uniquement avec votre accord.</p>
+            <p class="mb-0">
+              <span class="sg-cookie-name">_ga</span> — Google — 2 ans<br>
+              <span class="sg-cookie-name">_ga_*</span> — Google — 2 ans<br>
+              <span class="sg-cookie-name">_gid</span> — Google — 24 heures
+            </p>
+          </div>
+
+          <div class="sg-cookie-card mb-3">
+            <div class="sg-cookie-category">Publicité — Google Ads</div>
+            <p class="mb-2">Nous permettent de mesurer l'efficacité de nos campagnes publicitaires et d'éviter de vous montrer une publicité si vous êtes déjà client. Déposés uniquement avec votre accord.</p>
+            <p class="mb-0">
+              <span class="sg-cookie-name">_gcl_au</span> — Google — 90 jours<br>
+              <span class="sg-cookie-name">IDE</span> — Google (doubleclick.net) — 13 mois<br>
+              <span class="sg-cookie-name">test_cookie</span> — Google (doubleclick.net) — 15 minutes
+            </p>
+          </div>
+
+          <p>Ces cookies sont gérés via Google Tag Manager et configurés avec Google Consent Mode : tant qu'aucun accord n'a été donné, aucune donnée de mesure ou publicitaire n'est envoyée à Google. Pour plus de détails sur les traitements de données associés, consultez notre <a href="politique-relative-aux-donnees-personnelles.html">politique relative aux données personnelles</a>.</p>
 
           <h2 id="application">L’application Sigmund</h2>
           <p>L’application Sigmund (accessible sur <a href="https://app.sigmund.lu" target="_blank" rel="noopener">app.sigmund.lu</a>) est distincte de ce site vitrine. Elle peut utiliser des cookies de session nécessaires à son fonctionnement (authentification, préférences). Ces cookies sont strictement essentiels et exemptés de consentement conformément aux critères définis par la <a href="https://cnpd.public.lu" target="_blank" rel="noopener">CNPD</a>.</p>
+
+          <h2 id="maj">Mise à jour</h2>
+          <div class="sg-update-badge"><i class="bi bi-clock-history me-2"></i>Dernière mise à jour : mardi 18 août 2026</div>
 
         </div>
       </div>
@@ -89,6 +122,7 @@
         <h6>Liens utiles</h6>
         <a href="equipe.html">Notre équipe</a>
         <a href="politique-en-matiere-de-cookies.html">Politique en matière de cookies</a>
+        <button type="button" class="sg-footer-link-btn" data-cc="show-preferencesModal">Gestion de mes cookies</button>
         <a href="politique-relative-aux-donnees-personnelles.html">Politique relative aux données personnelles</a>
         <a href="mentions-legales.html">Mentions légales</a>
         <h6 class="mt-3">Ressources</h6>
