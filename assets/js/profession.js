@@ -40,6 +40,13 @@
     if (!submitting) return;
     submitting = false;
     if (timeoutId) { clearTimeout(timeoutId); timeoutId = null; }
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'generate_lead',
+      form_id: form.dataset.formId || 'contact'
+    });
+
     form.style.display = 'none';
     if (errorPanel) errorPanel.style.display = 'none';
     if (successPanel) successPanel.style.display = 'block';

@@ -188,6 +188,10 @@ Every link to the Microsoft Bookings demo form (`demo.sigmund.lu` / `demo-en.sig
 
 When adding a new demo-booking link anywhere on the site, tag it with both attributes following this taxonomy, across all 3 languages.
 
+## GTM tracking on contact form submissions
+
+`assets/js/profession.js` pushes a `generate_lead` event to `window.dataLayer` once the Brevo contact form (`#sg-form`) confirms success (iframe `load`), with `form_id` taken from the form's `data-form-id` attribute (defaults to `'contact'` if unset). This feeds a GA4 event via the existing GTM container — no new cookies are set, it rides on the `analytics_storage` consent already granted through Consent Mode.
+
 ## Important domain knowledge
 
 - **CNS** = Caisse Nationale de Santé (Luxembourg national health fund)
