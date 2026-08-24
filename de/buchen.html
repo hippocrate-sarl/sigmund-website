@@ -69,8 +69,12 @@
     </div>
   </div>
   <div class="sg-booking-wrap">
-    <div class="sg-booking-frame">
-      <iframe class="sg-booking-iframe" src="https://bookings.cloud.microsoft/book/SigmundvonHippocrate1@sigmund.lu/?ismsaljsauthenabled=true" scrolling="yes" title="Sigmund-Demo buchen"></iframe>
+    <div class="sg-booking-frame" data-sg-booking-src="https://bookings.cloud.microsoft/book/SigmundvonHippocrate1@sigmund.lu/?ismsaljsauthenabled=true" data-sg-booking-title="Sigmund-Demo buchen">
+      <div class="sg-booking-placeholder">
+        <i class="bi bi-calendar2-week"></i>
+        <p>Der Kalender wird von Microsoft Bookings bereitgestellt, das eigene Cookies setzt. Klicken Sie, um ihn anzuzeigen — Sie können Ihre Wahl jederzeit in Ihren Cookie-Einstellungen ändern.</p>
+        <button type="button" class="btn-sg-primary" data-sg-booking-load>Kalender anzeigen</button>
+      </div>
     </div>
   </div>
 </section>
@@ -118,5 +122,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/main.js"></script>
+<script src="../assets/js/booking-frame.js"></script>
 </body>
 </html>
