@@ -1,0 +1,122 @@
+---
+---
+<!DOCTYPE html>
+<html lang="de">
+<head>
+{% include head.html %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo buchen — Sigmund</title>
+  <meta name="description" content="Wählen Sie einen Termin und buchen Sie Ihre persönliche Sigmund-Demo, die Praxisverwaltungssoftware für Fachleute der psychischen Gesundheit in Luxemburg.">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="https://www.sigmund.lu/de/buchen/">
+  <link rel="alternate" hreflang="fr" href="../reserver.html">
+  <link rel="alternate" hreflang="en" href="../en/book.html">
+  <link rel="alternate" hreflang="de" href="buchen.html">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/sigmund.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+{% include body.html %}
+
+<!-- NAVBAR -->
+<nav class="sg-navbar navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="../assets/images/logo-sigmund.webp" alt="Sigmund" height="52"></a>
+    <a href="buchen.html" class="sg-nav-cta sg-nav-cta-mobile d-lg-none" data-cta="book" data-cta-pos="nav-mobile">Demo buchen</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Menü"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Startseite</a></li>
+        <li class="nav-item"><a class="nav-link" href="psychiater.html">Psychiater</a></li>
+        <li class="nav-item"><a class="nav-link" href="psychotherapeut.html">Psychotherapeut</a></li>
+        <li class="nav-item"><a class="nav-link" href="psychologe.html">Psychologe</a></li>
+        <li class="nav-item"><a class="nav-link" href="preise.html">Preise</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <a href="buchen.html" class="sg-nav-cta d-none d-lg-inline-block" data-cta="book" data-cta-pos="nav-desktop">Demo buchen</a>
+        <div class="sg-lang-switch"><a href="../reserver.html" aria-label="Français"><span class="fi fi-fr"></span></a> <a href="../en/book.html" aria-label="English"><span class="fi fi-gb"></span></a> <a href="buchen.html" class="active" aria-label="Deutsch"><span class="fi fi-de"></span></a></div>
+      </div>
+    </div>
+  </div>
+</nav>
+<main>
+
+<!-- PAGE HEADER -->
+<div class="sg-legal-header">
+  <div class="container">
+    <div class="d-flex align-items-start gap-3">
+      <div class="header-icon mt-1"><i class="bi bi-calendar-check"></i></div>
+      <div>
+        <h1>Buchen Sie Ihre Demo</h1>
+        <p>Wählen Sie den Termin, der Ihnen passt — unser Team zeigt Ihnen Sigmund live, ohne Verpflichtung.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BOOKING -->
+<section class="sg-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <p class="sg-guide-intro text-center mb-4">Die Demo dauert etwa 60 Minuten und findet per Videoanruf oder persönlich statt. Wählen Sie unten einen Termin — Sie erhalten sofort eine Bestätigung per E-Mail.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sg-booking-wrap">
+    <div class="sg-booking-frame">
+      <iframe class="sg-booking-iframe" src="https://bookings.cloud.microsoft/book/DmoSigmund@sigmund.lu/?ismsaljsauthenabled=true" scrolling="yes" title="Sigmund-Demo buchen"></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+<!-- FOOTER -->
+
+<footer class="sg-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h6>Nützliche Links</h6>
+        <a href="team.html">Unser Team</a>
+        <a href="cookie-richtlinie.html">Cookie-Richtlinie</a>
+        <button type="button" class="sg-footer-link-btn" data-cc="show-preferencesModal">Meine Cookie-Einstellungen</button>
+        <a href="datenschutz.html">Datenschutzerklärung</a>
+        <a href="impressum.html">Impressum</a>
+        <h6 class="mt-3">Ressourcen</h6>
+        <a href="cns-abrechnung.html">CNS-Abrechnung</a>
+        <a href="direktzahlung.html">Sofortige Direktzahlung</a>
+        <a href="blog/index.html">Blog</a>
+      </div>
+      <div class="col-md-4">
+        <h6>Über uns</h6>
+        <p class="sg-footer-about">Wir sind ein Team von Enthusiasten, dessen Ziel es ist, den Arbeitskomfort von Psychiatern, Psychotherapeuten und Psychologen durch Sigmund zu verbessern, herausgegeben von <a href="https://www.hippocrate.lu/de" target="_blank" rel="noopener"><strong>Hippocrate</strong></a>. Wir sind überzeugt, dass Technologie relevant und nützlich sein muss, während sie sich hinter dem von ihr ermöglichten Einsatz zurückzieht.</p>
+        <img src="../assets/images/made-in-luxembourg-blanc.webp" alt="Made in Luxembourg" height="52">
+      </div>
+      <div class="col-md-4">
+        <h6>Kontakt</h6>
+          <a href="mailto:contact@sigmund.lu"><i class="bi bi-envelope me-2"></i>contact@sigmund.lu</a>
+          <a href="tel:+352621223881"><i class="bi bi-telephone me-2"></i>+352&nbsp;621&nbsp;223&nbsp;881</a>
+          <a href="tel:+352621641447"><i class="bi bi-telephone me-2"></i>+352&nbsp;621&nbsp;641&nbsp;447</a>
+          <a href="https://maps.app.goo.gl/HJKtFqZwnAyrUAAv7" target="_blank" rel="noopener"><i class="bi bi-geo-alt me-2"></i>11 rue des Aubépines L-8052 Bertrange</a>
+          <a href="https://lu.linkedin.com/company/hippocrate-sarl" target="_blank" rel="noopener"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+          <a href="https://www.facebook.com/sigmund.luxembourg/" target="_blank" rel="noopener"><i class="bi bi-facebook me-2"></i>Facebook</a>
+          <a href="https://www.instagram.com/sigmund_lux/" target="_blank" rel="noopener"><i class="bi bi-instagram me-2"></i>Instagram</a>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between mt-4 align-items-center flex-wrap gap-2">
+      <p class="copyright mb-0">Copyright 2024-2026 © <a href="https://www.hippocrate.lu/de" target="_blank" rel="noopener">Hippocrate Sàrl</a> — Alle Rechte vorbehalten | Gestaltung: <a href="https://www.e-conique.com/" target="_blank" rel="noopener">studio e-conique</a></p>
+      <div class="sg-lang-switch"><a href="../reserver.html">Français</a> | <a href="../en/book.html">English (UK)</a> | <a href="buchen.html" class="active">Deutsch</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

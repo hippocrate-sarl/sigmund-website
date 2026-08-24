@@ -10,7 +10,7 @@ Developed and maintained by **Hippocrate Sàrl** (Bertrange, Luxembourg).
 
 Sigmund is a SaaS product that handles the administrative side of a private mental health practice: appointment scheduling, patient records, invoicing, CNS-format billing, PID (Paiement Immédiat Direct) management, unpaid invoice reminders, waiting list, session notes, prescriptions, and more.
 
-This repository is the **public-facing marketing website** only. The production application runs at `app.sigmund.lu` (FR + EN). Demo request forms are at `demo.sigmund.lu` (FR), `demo-en.sigmund.lu` (EN) and `demo-de.sigmund.lu` (DE).
+This repository is the **public-facing marketing website** only. The production application runs at `app.sigmund.lu` (FR + EN). Visitors in all 3 languages book a demo on-site (`reserver.html` / `en/book.html` / `de/buchen.html`, all embedding Microsoft Bookings).
 
 ---
 
@@ -24,6 +24,40 @@ serve.cmd            # Windows
 ```
 
 Then open `http://localhost:4000`. `Gemfile`/`Gemfile.lock` pin the same `github-pages` gem set GitHub Pages builds with.
+
+### Testing the Microsoft Bookings iframe (reserver.html / en/book.html / de/buchen.html)
+
+The Microsoft Bookings iframe embedded on `reserver.html`, `en/book.html` and `de/buchen.html` **does not load over plain HTTP**. `bundle exec jekyll serve` serves `http://localhost:4000`, so the iframe will silently fail to display when you preview it that way — this is expected, not a bug in the page. It only requires HTTPS; the tunnel's own hostname/certificate don't need to match `sigmund.lu`.
+
+To test it locally, tunnel the local Jekyll server through [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/do-more-with-tunnels/trycloudflare/) (`cloudflared`), which gives you a real public HTTPS URL forwarding to `localhost:4000` — no certificates or browser trust setup needed:
+
+1. Start Jekyll as usual (`serve.cmd` / `./serve.sh`).
+2. In another terminal, run:
+   ```
+   cloudflared tunnel --url http://localhost:4000
+   ```
+3. Open the `https://<random>.trycloudflare.com` URL it prints — the Bookings iframe will load there.
+
+Stop the tunnel with `Ctrl+C` when done; it's a throwaway URL, regenerated each run.
+
+#### Installing cloudflared
+
+**Windows** (via [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/)):
+```
+winget install --id Cloudflare.cloudflared
+```
+Alternatively, via [Chocolatey](https://chocolatey.org/): `choco install cloudflared`, or download the `.exe` directly from the [cloudflared releases page](https://github.com/cloudflare/cloudflared/releases/latest).
+
+**Ubuntu / Debian:**
+```
+sudo mkdir -p --mode=0755 /usr/share/keyrings
+curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
+echo "deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/cloudflared.list
+sudo apt-get update && sudo apt-get install cloudflared
+```
+(Or, for a one-off install without adding the apt repo: download the `.deb` directly from the [cloudflared releases page](https://github.com/cloudflare/cloudflared/releases/latest) and install it with `sudo dpkg -i cloudflared-linux-amd64.deb`.)
+
+Verify with `cloudflared --version` on either platform.
 
 ---
 
@@ -41,6 +75,7 @@ Then open `http://localhost:4000`. `Gemfile`/`Gemfile.lock` pin the same `github
 | `paiement-immediat-direct.html` | `en/immediate-direct-payment.html` | `de/direktzahlung.html` | PID (Immediate Direct Payment) guide |
 | `s-installer-psychologue-psychotherapeute-luxembourg.html` | `en/setting-up-as-a-psychologist-in-luxembourg.html` | `de/niederlassung-als-psychologe-in-luxemburg.html` | Installation guide for psychologists/psychotherapists |
 | `blog/index.html` | `en/blog/index.html` | `de/blog/index.html` | Blog index |
+| `reserver.html` | `en/book.html` | `de/buchen.html` | Demo booking page (embeds Microsoft Bookings) |
 | `politique-en-matiere-de-cookies.html` | `en/cookie-policy.html` | `de/cookie-richtlinie.html` | Cookie policy |
 | `politique-relative-aux-donnees-personnelles.html` | `en/privacy-policy.html` | `de/datenschutz.html` | Privacy policy |
 | `mentions-legales.html` | `en/legal-notice.html` | `de/impressum.html` | Legal notice |
@@ -55,8 +90,6 @@ Not linked from the navbar or footer — accessible only via a direct link (e.g.
 | `pt/politica-relativa-aos-dados-pessoais.html` | Privacy policy (PT) |
 
 Legal pages are excluded from search engine indexing (`robots.txt` + `<meta name="robots" content="noindex">`).
-
-**Known gap:** the cookie policy and privacy policy pages currently still state that sigmund.lu sets no cookies and uses no analytics. That was accurate before Google Tag Manager and the CookieConsent banner were added (see "Tech stack" below) — it no longer is, and these pages need a rewrite before that claim is true again.
 
 ---
 

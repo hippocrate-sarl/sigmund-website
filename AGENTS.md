@@ -29,6 +29,7 @@ equipe.html                                       Team page — E-E-A-T (FR)
 facturation-cns.html                              CNS invoicing guide (FR)
 paiement-immediat-direct.html                     PID guide (FR)
 s-installer-psychologue-psychotherapeute-luxembourg.html  Installation guide for psychologists/psychotherapists (FR)
+reserver.html                                      Demo booking page — embeds Microsoft Bookings via iframe (FR; see en/book.html and de/buchen.html for EN/DE)
 politique-en-matiere-de-cookies.html              Cookie policy (FR)
 politique-relative-aux-donnees-personnelles.html  Privacy policy (FR)
 mentions-legales.html                             Legal notice (FR)
@@ -42,6 +43,7 @@ en/team.html                                      Team page (EN)
 en/cns-invoicing.html                             CNS invoicing guide (EN)
 en/immediate-direct-payment.html                  PID guide (EN)
 en/setting-up-as-a-psychologist-in-luxembourg.html  Installation guide for psychologists/psychotherapists (EN)
+en/book.html                               Demo booking page — embeds Microsoft Bookings via iframe (EN)
 en/cookie-policy.html
 en/privacy-policy.html
 en/legal-notice.html
@@ -73,6 +75,7 @@ de/team.html                                      Team page (DE)
 de/cns-abrechnung.html                            CNS invoicing guide (DE)
 de/direktzahlung.html                             PID guide (DE)
 de/niederlassung-als-psychologe-in-luxemburg.html  Installation guide for psychologists/psychotherapists (DE)
+de/buchen.html                               Demo booking page — embeds Microsoft Bookings via iframe (DE)
 de/cookie-richtlinie.html
 de/datenschutz.html
 de/impressum.html
@@ -176,7 +179,7 @@ DE filenames are German translations, not transliterations, of the FR/EN names (
 
 ## GTM tracking on demo-booking links
 
-Every link to the Microsoft Bookings demo form (`demo.sigmund.lu` / `demo-en.sigmund.lu` / `demo-de.sigmund.lu`) carries `data-cta="book"` plus a `data-cta-pos` describing where on the page it sits, for GTM click tracking:
+Every demo-booking CTA, across FR/EN/DE, now points to an on-site page embedding the Microsoft Bookings iframe (`reserver.html` / `en/book.html` / `de/buchen.html`) instead of the old external `demo(-en/-de).sigmund.lu` forms, with `target`/`rel` dropped since these are internal links now. Every one of these links carries `data-cta="book"` plus a `data-cta-pos` describing where on the page it sits, for GTM click tracking:
 
 - `nav-mobile` / `nav-desktop` — navbar CTA (compact mobile version / full desktop version)
 - `hero` — hero section button
@@ -199,7 +202,7 @@ When adding a new demo-booking link anywhere on the site, tag it with both attri
 - **Psychotherapy reimbursement**: started in 2023 in Luxembourg — psychotherapists can now invoice CNS
 - Base subscription: **€90/month**, no commitment, 15-day free trial
 - Data stored in Luxembourg (Gandi SAS datacenter in Bissen), subject to Luxembourg law + GDPR
-- Demo request form FR: `https://demo.sigmund.lu/` — EN: `https://demo-en.sigmund.lu/` — DE: `https://demo-de.sigmund.lu/` (CTA buttons throughout the site)
+- Demo booking, on-site in all 3 languages — FR: `reserver.html` — EN: `en/book.html` — DE: `de/buchen.html` — all three embed the same Microsoft Bookings iframe (`https://bookings.cloud.microsoft/book/DmoSigmund@sigmund.lu/?ismsaljsauthenabled=true`). CTA buttons throughout the site.
 - Application URL (production): `https://app.sigmund.lu/` (FR + EN — same URL for both languages)
 - Competitor: **Logicare** (logicare.lu) — €83/month billed annually, multi-profession generalist, no PID
 
@@ -217,6 +220,9 @@ When adding a new demo-booking link anywhere on the site, tag it with both attri
 - **CookieConsent quirks found while styling the banner** (see `assets/css/cookieconsent-sigmund.css`): (1) `guiOptions.equalWeightButtons: true` makes the library apply the *same* class (and therefore color) to "Accept all" and "Reject all" — the `--cc-btn-secondary-*` tokens only reach "Personnaliser"/"Enregistrer mes choix", not "Reject all", regardless of `[data-role]`. (2) `--cc-link-color` only applies to elements with the library's own `.cc__link` class — plain `<a>` tags (like the footer privacy-policy link built in `cookieconsent-config.js`) don't get it automatically. (3) the library defaults `hideFromBots: true`, which checks `navigator.webdriver` and silently no-ops the entire banner (no error, promise resolves) in any automated/headless browser (e.g. Playwright) — pass `hideFromBots: false` or neutralize `navigator.webdriver` when testing it.
 - Hero H1s on all main menu pages are in sentence case (not uppercase) — consistent with index.html
 - Some HTML files previously had null bytes introduced by bulk PowerShell operations — stripped and resolved. All files are clean UTF-8
+- `reserver.html` (FR), `en/book.html` (EN) and `de/buchen.html` (DE) are the only pages on the site that embed a third-party iframe directly (Microsoft Bookings) rather than just linking out to one — it loads unconditionally (not gated behind a consent click), on the reasoning that booking is the entire purpose of that page. The cookie policy and privacy policy pages in all 3 languages, plus the standalone LB/PT privacy pages, all carry a line disclosing this; keep it in sync if the booking mechanism changes (e.g. if it moves behind a click-to-load gate)
+- The Microsoft Bookings iframe on these three booking pages refuses to load over plain HTTP — `bundle exec jekyll serve` alone isn't enough to preview it locally. Tunnel it through `cloudflared` first (see README.md's "Testing the Microsoft Bookings iframe" section for install + usage instructions on Windows/Ubuntu). This isn't an issue in production since GitHub Pages serves the site over HTTPS.
+- `.sg-booking-frame`'s height (in `sigmund.css`) is a hand-tuned fixed pixel value (desktop and a taller one under the mobile breakpoint), not something computed automatically. Because the Bookings iframe is cross-origin, there's no JS API to read its actual content height and auto-size the frame — the values were picked by visually checking, through the `cloudflared` tunnel, that the widget's own internal scrollbar disappears without leaving a big empty gap at the bottom. Re-check both breakpoints visually if you touch this again.
 
 ## Before proposing a commit
 
