@@ -599,6 +599,7 @@ body {
   cursor: pointer;
   transition: color .2s;
   -webkit-appearance: none;
+  appearance: none;
 }
 .sg-footer .sg-footer-link-btn:hover { color: var(--sg-primary-lt); }
 
