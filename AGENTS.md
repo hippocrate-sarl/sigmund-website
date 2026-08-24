@@ -202,7 +202,7 @@ When adding a new demo-booking link anywhere on the site, tag it with both attri
 - **Psychotherapy reimbursement**: started in 2023 in Luxembourg — psychotherapists can now invoice CNS
 - Base subscription: **€90/month**, no commitment, 15-day free trial
 - Data stored in Luxembourg (Gandi SAS datacenter in Bissen), subject to Luxembourg law + GDPR
-- Demo booking, on-site in all 3 languages — FR: `reserver.html` — EN: `en/book.html` — DE: `de/buchen.html` — all three embed the same Microsoft Bookings iframe (`https://bookings.cloud.microsoft/book/DmoSigmund@sigmund.lu/?ismsaljsauthenabled=true`). CTA buttons throughout the site.
+- Demo booking, on-site in all 3 languages, each with its own Microsoft Bookings calendar/iframe — FR: `reserver.html` (`.../book/DmoSigmund@sigmund.lu/...`) — EN: `en/book.html` (`.../book/SigmundbyHippocrate@sigmund.lu/...`) — DE: `de/buchen.html` (`.../book/SigmundvonHippocrate1@sigmund.lu/...`). CTA buttons throughout the site.
 - Application URL (production): `https://app.sigmund.lu/` (FR + EN — same URL for both languages)
 - Competitor: **Logicare** (logicare.lu) — €83/month billed annually, multi-profession generalist, no PID
 
