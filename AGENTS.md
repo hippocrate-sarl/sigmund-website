@@ -13,6 +13,7 @@ Developed by **Hippocrate Sàrl** (Bertrange, Luxembourg). Team: Sylvain Perez, 
 - **Google Fonts** — Inter (300/400/500/600/700/800)
 - Contact forms POST to Brevo (sibforms.com) via `fetch` + `mode: 'no-cors'`, handled by `assets/js/profession.js`
 - **Google Tag Manager** (container `GTM-TZPN6B4R`) — loaded via two Jekyll includes on every page: `_includes/head.html` (script, first line inside `<head>`; also the place for any other shared `<head>` lines) and `_includes/body.html` (`<noscript>` fallback, first line inside `<body>`; also the place for any other shared lines right after `<body>`). GitHub Pages already builds the site with Jekyll (see `_config.yml`, used previously for the `jekyll-redirect-from` plugin), so every `.html` page now carries a front matter block (even if empty) so Jekyll processes these include tags. `AGENTS.md` and `README.md` are excluded from the Jekyll build (see `_config.yml`) — the Liquid syntax in this file's prose is never evaluated.
+- **`_includes/footer-contact.html`** — the footer's "Contact" column (email, phones, address, social links), included on all 42 pages that have a full 3-column footer via `{%- include footer-contact.html lang="fr|en|de" -%}`. `lang` picks the FR/EN "Contact" vs. DE "Kontakt" heading. Only this column is an include — the rest of the footer (language switcher, "Ressources"/nav links) varies too much per page (different relative depth *and* a different target filename per language per page) to genericize the same way without a lot of extra Liquid parameters, so it's still hand-duplicated per page. The Qwice link uses `bi-globe2` (a generic Bootstrap Icons glyph) followed by the text "Qwice", matching the LinkedIn/Facebook/Instagram pattern exactly — there's no Bootstrap Icons brand glyph for Qwice, and an earlier attempt at self-hosting Qwice's own logo (as a plain `<img>`, then as a CSS mask) was abandoned as visually inconsistent with the rest of the column.
 - **Google Consent Mode v2** — default state (all storage `denied` except `security_storage`) is set inline at the top of `_includes/head.html`, before the GTM snippet loads. `assets/js/cookieconsent-config.js` calls `gtag('consent', 'update', ...)` on `onFirstConsent`/`onConsent`/`onChange` to grant `analytics_storage`/`ad_storage`/`ad_user_data`/`ad_personalization` once the visitor opts in via the banner.
 - **CookieConsent v3.1.0** (self-hosted, [orestbida/cookieconsent](https://github.com/orestbida/cookieconsent)) — the cookie-consent banner. `assets/js/cookieconsent.esm.js` is the vendored library (do not hand-edit; replace wholesale to upgrade), `assets/js/cookieconsent-config.js` holds the `CookieConsent.run({...})` config with full FR/EN/DE translations, `assets/css/cookieconsent.css` is the library's own stylesheet, `assets/css/cookieconsent-sigmund.css` is the Sigmund brand override (all four loaded from `_includes/head.html`/`body.html`, see [What to watch out for](#what-to-watch-out-for) for known quirks).
 - **Local dev tooling** — `Gemfile`/`Gemfile.lock` pin the same `github-pages` gem set GitHub Pages builds with; `serve.cmd` (Windows) / `serve.sh` (Linux/macOS) run `bundle exec jekyll serve` inside a `ruby:3.3` Docker container, so no local Ruby install is needed. These are local-only — `_config.yml`'s `exclude` list keeps them out of the actual Jekyll build.
@@ -52,6 +53,7 @@ en/blog/index.html                                Blog index (EN)
 llms.txt                                          AI crawler description (FR/EN/DE — trilingual, root only)
 _includes/head.html                               Shared <head> snippet (GTM + Consent Mode default + CookieConsent stylesheets + other head lines), included in <head> of every page
 _includes/body.html                               Shared post-<body> snippet (GTM noscript fallback + CookieConsent script + other lines), included right after <body> of every page
+_includes/footer-contact.html                     Shared footer "Contact" column (email, phones, address, social links incl. Qwice), included on all pages with a full footer, parameterized by lang ("fr"/"en"/"de") and rel (relative path prefix to assets/)
 assets/css/sigmund.css                            All custom styles (shared by all pages)
 assets/css/cookieconsent.css                      CookieConsent v3.1.0 library stylesheet (vendored, do not hand-edit)
 assets/css/cookieconsent-sigmund.css              Sigmund brand override for the CookieConsent banner (#cc-main scoped)
@@ -151,9 +153,11 @@ These classes are defined inline in the pages that use them, not in `sigmund.css
 Three columns on all pages:
 1. **Liens utiles / Useful links** — navigation links + a "Ressources / Resources" sub-section (with `<h6 class="mt-3">`) for guide pages
 2. **À propos de nous / About Us** — company description + Made in Luxembourg badge
-3. **Contact** — email, phones, address, social links (LinkedIn, Facebook, Instagram)
+3. **Contact** — email, phones, address, social links (LinkedIn, Facebook, Instagram, Qwice) — rendered via the `_includes/footer-contact.html` include (see Tech stack / file structure above), not hand-duplicated per page
 
 When adding a new resource page, add its link to the "Ressources" sub-section in the footer of **all** existing pages (FR and EN separately).
+
+When adding a new footer social link, add it once to `_includes/footer-contact.html` instead of editing every page.
 
 When adding a new blog article, add its card to all 3 blog index pages (`blog/index.html`, `en/blog/index.html`, `de/blog/index.html`) and add all 3 article URLs to `sitemap.xml`.
 
