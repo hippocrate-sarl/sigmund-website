@@ -1181,7 +1181,12 @@ body {
 .sg-contact-lead a { color: var(--sg-primary); font-weight: 600; }
 
 /* ---------- Booking page (reserver.html) ---------- */
-.sg-booking-wrap { max-width: 1600px; margin: 0 auto; padding: 0 1rem; }
+.sg-booking-reassurance { max-width: 620px; margin: 0 auto 2rem; }
+.sg-booking-testimonials { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 1000px; margin: 0 auto 3rem; }
+@media (max-width: 768px) {
+  .sg-booking-testimonials { grid-template-columns: 1fr; }
+}
+.sg-booking-wrap { max-width: 1600px; margin: 0 auto 3rem; padding: 0 1rem; }
 .sg-booking-frame.is-loaded {
   border-radius: 16px;
   box-shadow: 0 16px 60px rgba(0,0,0,.12);
@@ -1203,7 +1208,7 @@ body {
   border-radius: 16px;
 }
 .sg-booking-placeholder i { font-size: 2.75rem; color: var(--sg-primary); margin-bottom: 1.25rem; }
-.sg-booking-placeholder p { color: #555; margin-bottom: 1.5rem; line-height: 1.6; }
+.sg-booking-placeholder .sg-booking-consent-note { color: #555; font-size: .8rem; font-style: italic; line-height: 1.6; margin: 1.25rem 0 0; }
 
 @media (max-width: 768px) {
   .sg-booking-frame.is-loaded { height: 2400px; }
