@@ -8,7 +8,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/index.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/index.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/index.html"/>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -17,7 +17,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychiatre.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychiatrist.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychiater.html"/>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -26,7 +26,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychotherapeute.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychotherapist.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychotherapeut.html"/>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -35,7 +35,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychologue.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychologist.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychologe.html"/>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -44,7 +44,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/tarifs.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/pricing.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/preise.html"/>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -53,7 +53,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/facturation-cns.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/cns-invoicing.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/cns-abrechnung.html"/>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -62,7 +62,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/paiement-immediat-direct.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/immediate-direct-payment.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/direktzahlung.html"/>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -71,7 +71,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/s-installer-psychologue-psychotherapeute-luxembourg.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/setting-up-as-a-psychologist-in-luxembourg.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/niederlassung-als-psychologe-in-luxemburg.html"/>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -81,9 +81,19 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/equipe.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/team.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/team.html"/>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sigmund.lu/reserver.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/reserver.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/book.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/buchen.html"/>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- EN pages -->
@@ -92,7 +102,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/index.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/index.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/index.html"/>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -101,7 +111,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychiatrist.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychiatre.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychiater.html"/>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -110,7 +120,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychotherapist.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychotherapeute.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychotherapeut.html"/>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -119,7 +129,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychologist.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychologue.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychologe.html"/>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -128,7 +138,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/pricing.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/tarifs.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/preise.html"/>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -137,7 +147,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/cns-invoicing.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/facturation-cns.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/cns-abrechnung.html"/>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -146,7 +156,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/immediate-direct-payment.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/paiement-immediat-direct.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/direktzahlung.html"/>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -155,7 +165,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/setting-up-as-a-psychologist-in-luxembourg.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/s-installer-psychologue-psychotherapeute-luxembourg.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/niederlassung-als-psychologe-in-luxemburg.html"/>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -165,9 +175,19 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/team.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/equipe.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/team.html"/>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sigmund.lu/en/book.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/book.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/reserver.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/buchen.html"/>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Blog indexes -->
@@ -176,7 +196,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/blog/index.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/blog/index.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/blog/index.html"/>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -185,7 +205,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/blog/index.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/blog/index.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/blog/index.html"/>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -194,7 +214,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/blog/index.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/blog/index.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/blog/index.html"/>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -205,7 +225,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/index.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/index.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/index.html"/>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -214,7 +234,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychiater.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychiatre.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychiatrist.html"/>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -223,7 +243,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychotherapeut.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychotherapeute.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychotherapist.html"/>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -232,7 +252,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/psychologe.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/psychologue.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/psychologist.html"/>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -241,7 +261,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/preise.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/tarifs.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/pricing.html"/>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -250,7 +270,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/team.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/equipe.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/team.html"/>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -259,7 +279,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/cns-abrechnung.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/facturation-cns.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/cns-invoicing.html"/>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -268,7 +288,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/direktzahlung.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/paiement-immediat-direct.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/immediate-direct-payment.html"/>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -277,9 +297,19 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/niederlassung-als-psychologe-in-luxemburg.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/s-installer-psychologue-psychotherapeute-luxembourg.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/setting-up-as-a-psychologist-in-luxembourg.html"/>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sigmund.lu/de/buchen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.sigmund.lu/de/buchen.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sigmund.lu/reserver.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sigmund.lu/en/book.html"/>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>

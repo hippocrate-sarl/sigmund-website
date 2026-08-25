@@ -29,6 +29,7 @@ equipe.html                                       Team page — E-E-A-T (FR)
 facturation-cns.html                              CNS invoicing guide (FR)
 paiement-immediat-direct.html                     PID guide (FR)
 s-installer-psychologue-psychotherapeute-luxembourg.html  Installation guide for psychologists/psychotherapists (FR)
+reserver.html                                      Demo booking page — embeds Microsoft Bookings via iframe (FR; see en/book.html and de/buchen.html for EN/DE)
 politique-en-matiere-de-cookies.html              Cookie policy (FR)
 politique-relative-aux-donnees-personnelles.html  Privacy policy (FR)
 mentions-legales.html                             Legal notice (FR)
@@ -42,6 +43,7 @@ en/team.html                                      Team page (EN)
 en/cns-invoicing.html                             CNS invoicing guide (EN)
 en/immediate-direct-payment.html                  PID guide (EN)
 en/setting-up-as-a-psychologist-in-luxembourg.html  Installation guide for psychologists/psychotherapists (EN)
+en/book.html                               Demo booking page — embeds Microsoft Bookings via iframe (EN)
 en/cookie-policy.html
 en/privacy-policy.html
 en/legal-notice.html
@@ -58,6 +60,7 @@ assets/js/sg-carousel.js                          Shared CSS scroll-snap carouse
 assets/js/profession.js                           Contact form handler (Brevo fetch, validation, i18n via data-attributes)
 assets/js/cookieconsent.esm.js                    CookieConsent v3.1.0 library (vendored, do not hand-edit)
 assets/js/cookieconsent-config.js                 CookieConsent config: categories, FR/EN/DE translations, Google Consent Mode v2 bridge
+assets/js/booking-frame.js                        Click-to-load Microsoft Bookings iframe, gated on the "bookings" service (thirdparty category) — used on reserver.html/en/book.html/de/buchen.html
 assets/images/                                    All images (webp + svg)
   team-sylvain-perez.webp                         Team photo — downloaded from hippocrate.lu
   team-franck-amouyal.webp
@@ -73,6 +76,7 @@ de/team.html                                      Team page (DE)
 de/cns-abrechnung.html                            CNS invoicing guide (DE)
 de/direktzahlung.html                             PID guide (DE)
 de/niederlassung-als-psychologe-in-luxemburg.html  Installation guide for psychologists/psychotherapists (DE)
+de/buchen.html                               Demo booking page — embeds Microsoft Bookings via iframe (DE)
 de/cookie-richtlinie.html
 de/datenschutz.html
 de/impressum.html
@@ -176,7 +180,7 @@ DE filenames are German translations, not transliterations, of the FR/EN names (
 
 ## GTM tracking on demo-booking links
 
-Every link to the Microsoft Bookings demo form (`demo.sigmund.lu` / `demo-en.sigmund.lu` / `demo-de.sigmund.lu`) carries `data-cta="book"` plus a `data-cta-pos` describing where on the page it sits, for GTM click tracking:
+Every demo-booking CTA, across FR/EN/DE, now points to an on-site page embedding the Microsoft Bookings iframe (`reserver.html` / `en/book.html` / `de/buchen.html`) instead of the old external `demo(-en/-de).sigmund.lu` forms, with `target`/`rel` dropped since these are internal links now. Every one of these links carries `data-cta="book"` plus a `data-cta-pos` describing where on the page it sits, for GTM click tracking:
 
 - `nav-mobile` / `nav-desktop` — navbar CTA (compact mobile version / full desktop version)
 - `hero` — hero section button
@@ -199,7 +203,7 @@ When adding a new demo-booking link anywhere on the site, tag it with both attri
 - **Psychotherapy reimbursement**: started in 2023 in Luxembourg — psychotherapists can now invoice CNS
 - Base subscription: **€90/month**, no commitment, 15-day free trial
 - Data stored in Luxembourg (Gandi SAS datacenter in Bissen), subject to Luxembourg law + GDPR
-- Demo request form FR: `https://demo.sigmund.lu/` — EN: `https://demo-en.sigmund.lu/` — DE: `https://demo-de.sigmund.lu/` (CTA buttons throughout the site)
+- Demo booking, on-site in all 3 languages, each with its own Microsoft Bookings calendar/iframe — FR: `reserver.html` (`.../book/DmoSigmund@sigmund.lu/...`) — EN: `en/book.html` (`.../book/SigmundbyHippocrate@sigmund.lu/...`) — DE: `de/buchen.html` (`.../book/SigmundvonHippocrate1@sigmund.lu/...`). CTA buttons throughout the site.
 - Application URL (production): `https://app.sigmund.lu/` (FR + EN — same URL for both languages)
 - Competitor: **Logicare** (logicare.lu) — €83/month billed annually, multi-profession generalist, no PID
 
@@ -217,6 +221,10 @@ When adding a new demo-booking link anywhere on the site, tag it with both attri
 - **CookieConsent quirks found while styling the banner** (see `assets/css/cookieconsent-sigmund.css`): (1) `guiOptions.equalWeightButtons: true` makes the library apply the *same* class (and therefore color) to "Accept all" and "Reject all" — the `--cc-btn-secondary-*` tokens only reach "Personnaliser"/"Enregistrer mes choix", not "Reject all", regardless of `[data-role]`. (2) `--cc-link-color` only applies to elements with the library's own `.cc__link` class — plain `<a>` tags (like the footer privacy-policy link built in `cookieconsent-config.js`) don't get it automatically. (3) the library defaults `hideFromBots: true`, which checks `navigator.webdriver` and silently no-ops the entire banner (no error, promise resolves) in any automated/headless browser (e.g. Playwright) — pass `hideFromBots: false` or neutralize `navigator.webdriver` when testing it.
 - Hero H1s on all main menu pages are in sentence case (not uppercase) — consistent with index.html
 - Some HTML files previously had null bytes introduced by bulk PowerShell operations — stripped and resolved. All files are clean UTF-8
+- `reserver.html` (FR), `en/book.html` (EN) and `de/buchen.html` (DE) are the only pages on the site that embed a third-party iframe (Microsoft Bookings). The iframe is click-gated: the page shows a `.sg-booking-placeholder` (icon + button + a small italic `.sg-booking-consent-note` explaining the cookies, below the button) instead of the iframe until the visitor clicks the button ("Réserver mon créneau maintenant" / "Book my slot now" / "Termin jetzt buchen") — `assets/js/booking-frame.js` then injects it and calls `CookieConsent.acceptService('bookings', 'thirdparty')`. Returning visitors who already accepted that service get the iframe loaded automatically (no re-click). This exists because a real cookie audit of the Bookings widget turned up 3 cookies (`MC1`, `MS0`, `MSFPC`) that are Microsoft's own cross-site analytics cookies, not scoped to the booking function — not defensible as "strictly necessary," hence the opt-in `thirdparty` category + `bookings` service in `cookieconsent-config.js` rather than the `necessary` category used elsewhere. The cookie policy and privacy policy pages in all 3 languages, plus the standalone LB/PT privacy pages, disclose this (with a dated cookie snapshot, since Microsoft can change these without notice) — keep all of them in sync if the booking mechanism or its cookies change.
+- Page layout on all 3 booking pages, top to bottom: `.sg-legal-header` (H1 states the demo length and the 15-day trial up front, e.g. "Réservez votre démonstration — 60 minutes, puis 15 jours d'essai gratuit"), a `.sg-contact-heading` ("Ce qu'il faut savoir avant de réserver" / "What to know before you book" / "Was Sie vor der Buchung wissen sollten") followed by a 3-item `.sg-feat-list.sg-booking-reassurance` (what the demo covers / who runs it / what happens next), the `.sg-booking-wrap` widget itself (full-bleed, sibling of the surrounding `.container`s so it isn't squeezed to column width), then two named testimonials in `.sg-booking-testimonials` (`.sg-carousel-slide` cards reused outside the carousel) — Magali Cahen and Catherine Hausherr, with the exact translated quotes already used in the EN/DE homepage carousels, kept in sync if those quotes ever change.
+- The Microsoft Bookings iframe on these three booking pages refuses to load over plain HTTP — `bundle exec jekyll serve` alone isn't enough to preview it locally. Tunnel it through `cloudflared` first (see README.md's "Testing the Microsoft Bookings iframe" section for install + usage instructions on Windows/Ubuntu). This isn't an issue in production since GitHub Pages serves the site over HTTPS.
+- `.sg-booking-frame`'s height (in `sigmund.css`) is a hand-tuned fixed pixel value (desktop and a taller one under the mobile breakpoint), not something computed automatically. Because the Bookings iframe is cross-origin, there's no JS API to read its actual content height and auto-size the frame — the values were picked by visually checking, through the `cloudflared` tunnel, that the widget's own internal scrollbar disappears without leaving a big empty gap at the bottom. Re-check both breakpoints visually if you touch this again. This also means the short confirmation screen shown after a successful booking leaves a large empty gap below it inside the fixed-height frame, and there's no way to shrink the frame dynamically for it: confirmed by testing that Bookings sends no `postMessage` to the parent window, and swaps in the confirmation screen via client-side routing rather than a full navigation, so the iframe's own `load` event never re-fires either. Reducing the fixed height would shrink the gap but reintroduce an internal scrollbar during the normal multi-step slot selection — a trade-off deliberately left as-is for now.
 
 ## Before proposing a commit
 

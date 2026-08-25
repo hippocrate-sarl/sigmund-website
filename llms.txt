@@ -16,6 +16,6 @@ Entreprise / Company / Unternehmen : Hippocrate Sàrl, Luxembourg | contact@sigm
 - [Blog FR](https://www.sigmund.lu/blog/): Articles et guides en français
 - [Blog EN](https://www.sigmund.lu/en/blog/): Blog in English
 - [Blog DE](https://www.sigmund.lu/de/blog/): Blog auf Deutsch
-- [Démo FR / Demo FR](https://demo.sigmund.lu): Demande de démo en français / French demo request
-- [Demo EN](https://demo-en.sigmund.lu): English demo request
-- [Demo DE](https://demo-de.sigmund.lu): Deutsche Demo-Anfrage
+- [Démo FR / Demo FR](https://www.sigmund.lu/reserver.html): Réservation de démo en français / French demo booking
+- [Demo EN](https://www.sigmund.lu/en/book.html): English demo booking
+- [Demo DE](https://www.sigmund.lu/de/buchen.html): Deutsche Demo-Buchung

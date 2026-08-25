@@ -2,6 +2,16 @@
 
 import * as CookieConsent from './cookieconsent.esm.js';
 
+// Exposed so plain (non-module) scripts, like assets/js/booking-frame.js,
+// can call CookieConsent.acceptedService()/acceptService() imperatively.
+window.CookieConsent = CookieConsent;
+
+const BOOKINGS_SERVICE_LABEL = {
+  fr: 'Microsoft Bookings — calendrier de réservation de démo',
+  en: 'Microsoft Bookings — demo booking calendar',
+  de: 'Microsoft Bookings — Demo-Buchungskalender'
+};
+
 const PRIVACY_URLS = {
   fr: '/politique-relative-aux-donnees-personnelles.html',
   en: '/en/privacy-policy.html',
@@ -74,6 +84,13 @@ CookieConsent.run({
           { name: 'test_cookie' }
         ]
       }
+    },
+    thirdparty: {
+      services: {
+        bookings: {
+          label: BOOKINGS_SERVICE_LABEL[LANG] || BOOKINGS_SERVICE_LABEL.fr
+        }
+      }
     }
   },
 
@@ -93,7 +110,8 @@ CookieConsent.run({
           title: 'Nous utilisons des cookies',
           description:
             'Sigmund utilise des cookies strictement nécessaires au fonctionnement du site, ' +
-            'et — avec votre accord uniquement — des cookies de mesure d\'audience et de publicité. ' +
+            'et — avec votre accord uniquement — des cookies de mesure d\'audience, de publicité ' +
+            'et de contenus tiers (comme notre calendrier de réservation). ' +
             'Vous pouvez accepter, refuser, ou choisir catégorie par catégorie. ' +
             'Votre choix est modifiable à tout moment.',
           acceptAllBtn: 'Tout accepter',
@@ -137,6 +155,13 @@ CookieConsent.run({
               linkedCategory: 'advertisement'
             },
             {
+              title: 'Contenus tiers',
+              description:
+                'Le calendrier de réservation de démo (Microsoft Bookings) n\'est chargé, et ses cookies ' +
+                'déposés, que si vous cliquez pour l\'afficher sur notre page de réservation.',
+              linkedCategory: 'thirdparty'
+            },
+            {
               title: 'Plus d\'informations',
               description:
                 'Le détail des données traitées et de leur durée de conservation figure dans notre ' +
@@ -152,8 +177,9 @@ CookieConsent.run({
           title: 'We use cookies',
           description:
             'Sigmund uses cookies that are strictly necessary for the site to work and — only with ' +
-            'your consent — analytics and advertising cookies. You can accept, decline, or choose ' +
-            'category by category. You can change your mind at any time.',
+            'your consent — analytics, advertising and third-party content cookies (like our booking ' +
+            'calendar). You can accept, decline, or choose category by category. You can change your ' +
+            'mind at any time.',
           acceptAllBtn: 'Accept all',
           acceptNecessaryBtn: 'Decline all',
           showPreferencesBtn: 'Customise',
@@ -195,6 +221,13 @@ CookieConsent.run({
               linkedCategory: 'advertisement'
             },
             {
+              title: 'Third-party content',
+              description:
+                'The demo booking calendar (Microsoft Bookings) is only loaded, and its cookies only ' +
+                'set, if you click to display it on our booking page.',
+              linkedCategory: 'thirdparty'
+            },
+            {
               title: 'More information',
               description:
                 'Details of the data processed and how long it is kept are set out in our ' +
@@ -210,7 +243,8 @@ CookieConsent.run({
           title: 'Wir verwenden Cookies',
           description:
             'Sigmund verwendet Cookies, die für den Betrieb der Website unbedingt erforderlich sind, ' +
-            'sowie — ausschließlich mit Ihrer Zustimmung — Cookies zur Reichweitenmessung und für Werbung. ' +
+            'sowie — ausschließlich mit Ihrer Zustimmung — Cookies zur Reichweitenmessung, für Werbung ' +
+            'und für Drittanbieter-Inhalte (wie unseren Buchungskalender). ' +
             'Sie können alles annehmen, ablehnen oder einzeln auswählen. Ihre Auswahl ist jederzeit änderbar.',
           acceptAllBtn: 'Alle akzeptieren',
           acceptNecessaryBtn: 'Alle ablehnen',
@@ -251,6 +285,13 @@ CookieConsent.run({
                 'Google Ads, um die Wirksamkeit unserer Anzeigen zu messen und Ihnen keine Werbung ' +
                 'zu zeigen, wenn Sie bereits Kunde sind oder schon einen Termin gebucht haben.',
               linkedCategory: 'advertisement'
+            },
+            {
+              title: 'Drittanbieter-Inhalte',
+              description:
+                'Der Demo-Buchungskalender (Microsoft Bookings) wird erst geladen, und seine Cookies erst ' +
+                'gesetzt, wenn Sie ihn auf unserer Buchungsseite anzeigen lassen.',
+              linkedCategory: 'thirdparty'
             },
             {
               title: 'Weitere Informationen',

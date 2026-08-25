@@ -599,6 +599,7 @@ body {
   cursor: pointer;
   transition: color .2s;
   -webkit-appearance: none;
+  appearance: none;
 }
 .sg-footer .sg-footer-link-btn:hover { color: var(--sg-primary-lt); }
 
@@ -971,6 +972,7 @@ body {
 .sg-cookie-name { font-size: .82rem; background: var(--sg-light-bg); padding: .15em .45em; border-radius: 4px; color: #c0392b; }
 .sg-cookie-provider { font-size: .82rem; color: #6c757d; margin-left: auto; }
 .sg-cookie-purpose { font-size: .85rem; color: #555; margin: 0; line-height: 1.6; }
+.sg-cookie-snapshot-note { font-size: .82rem; font-style: italic; color: #888; margin-bottom: 1.25rem; }
 
 /* ---------- Privacy policy ---------- */
 .sg-update-badge { display: inline-flex; align-items: center; gap: .5rem; background: #f8fbff; border: 1px solid rgba(107,164,250,.2); border-radius: 8px; padding: .4rem .9rem; font-size: .82rem; color: #666; margin-bottom: 1.5rem; }
@@ -1177,3 +1179,37 @@ body {
 .sg-contact-heading { text-align: center; font-size: 1.35rem; font-weight: 700; color: var(--sg-dark); margin-bottom: .75rem; }
 .sg-contact-lead { text-align: center; color: #666; font-size: .95rem; max-width: 480px; margin: 0 auto 2rem; }
 .sg-contact-lead a { color: var(--sg-primary); font-weight: 600; }
+
+/* ---------- Booking page (reserver.html) ---------- */
+.sg-booking-reassurance { max-width: 620px; margin: 0 auto 2rem; }
+.sg-booking-testimonials { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 1000px; margin: 0 auto 3rem; }
+@media (max-width: 768px) {
+  .sg-booking-testimonials { grid-template-columns: 1fr; }
+}
+.sg-booking-wrap { max-width: 1600px; margin: 0 auto 3rem; padding: 0 1rem; }
+.sg-booking-frame.is-loaded {
+  border-radius: 16px;
+  box-shadow: 0 16px 60px rgba(0,0,0,.12);
+  overflow: hidden;
+  height: 2000px;
+  background: var(--sg-light-bg);
+}
+.sg-booking-iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+.sg-booking-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  max-width: 480px;
+  margin: 0 auto;
+  background: var(--sg-light-bg);
+  border-radius: 16px;
+}
+.sg-booking-placeholder i { font-size: 2.75rem; color: var(--sg-primary); margin-bottom: 1.25rem; }
+.sg-booking-placeholder .sg-booking-consent-note { color: #555; font-size: .8rem; font-style: italic; line-height: 1.6; margin: 1.25rem 0 0; }
+
+@media (max-width: 768px) {
+  .sg-booking-frame.is-loaded { height: 2400px; }
+}

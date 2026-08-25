@@ -79,6 +79,13 @@
   color: #2C2F31;
 }
 
+/* "N Service(s)" counter badge (e.g. "Contenus tiers") — library defaults it
+   to --cc-btn-primary-bg/color (blue); match the gray "Toujours actifs" badge instead */
+#cc-main .pm__service-counter {
+  background: var(--cc-btn-secondary-bg);
+  color: #2C2F31;
+}
+
 /* Every section (the 3 category rows, plus the plain "Votre choix compte"/
    "Plus d'informations" boxes) reuses --cc-btn-border-radius by default,
    which pill-shapes them the same as the buttons. Give them back the
