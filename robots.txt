@@ -11,5 +11,8 @@ Disallow: /de/datenschutz.html
 Disallow: /de/impressum.html
 Disallow: /lb/politik-iwwer-perseinlech-donneeen.html
 Disallow: /pt/politica-relativa-aos-dados-pessoais.html
+Disallow: /slp-2026.html
+Disallow: /en/slp-2026.html
+Disallow: /de/slp-2026.html
 
 Sitemap: https://www.sigmund.lu/sitemap.xml

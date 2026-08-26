@@ -34,6 +34,7 @@ reserver.html                                      Demo booking page — embeds 
 politique-en-matiere-de-cookies.html              Cookie policy (FR)
 politique-relative-aux-donnees-personnelles.html  Privacy policy (FR)
 mentions-legales.html                             Legal notice (FR)
+slp-2026.html                                     SLP 2026 newsletter campaign landing page (FR; see en/slp-2026.html and de/slp-2026.html for EN/DE) — standalone, not in navbar/footer, noindex, not in sitemap.xml, disallowed in robots.txt, offer expires 2026-10-31
 
 en/index.html                                     Homepage (EN)
 en/psychiatrist.html
@@ -48,6 +49,7 @@ en/book.html                               Demo booking page — embeds Microsof
 en/cookie-policy.html
 en/privacy-policy.html
 en/legal-notice.html
+en/slp-2026.html                                  SLP 2026 newsletter campaign landing page (EN) — standalone, see slp-2026.html
 en/blog/index.html                                Blog index (EN)
 
 llms.txt                                          AI crawler description (FR/EN/DE — trilingual, root only)
@@ -55,6 +57,7 @@ _includes/head.html                               Shared <head> snippet (GTM + C
 _includes/body.html                               Shared post-<body> snippet (GTM noscript fallback + CookieConsent script + other lines), included right after <body> of every page
 _includes/footer-contact.html                     Shared footer "Contact" column (email, phones, address, social links incl. Qwice), included on all pages with a full footer, parameterized by lang ("fr"/"en"/"de") and rel (relative path prefix to assets/)
 assets/css/sigmund.css                            All custom styles (shared by all pages)
+assets/css/slp-2026.css                           Styles used only by slp-2026.html/en/slp-2026.html/de/slp-2026.html (.sg-slp-* classes) — kept out of sigmund.css so no other page loads them
 assets/css/cookieconsent.css                      CookieConsent v3.1.0 library stylesheet (vendored, do not hand-edit)
 assets/css/cookieconsent-sigmund.css              Sigmund brand override for the CookieConsent banner (#cc-main scoped)
 assets/js/main.js                                 Active nav-link highlight
@@ -82,6 +85,7 @@ de/buchen.html                               Demo booking page — embeds Micros
 de/cookie-richtlinie.html
 de/datenschutz.html
 de/impressum.html
+de/slp-2026.html                                  SLP 2026 newsletter campaign landing page (DE) — standalone, see slp-2026.html
 de/blog/index.html                                Blog index (DE)
 
 favicon.ico
@@ -94,7 +98,7 @@ serve.cmd / serve.sh                              Run Jekyll locally via Docker 
 
 ## CSS conventions
 
-Custom CSS lives exclusively in `assets/css/sigmund.css`. CSS variables are defined in `:root`:
+Custom CSS lives in `assets/css/sigmund.css`. The one exception is `assets/css/slp-2026.css`, which holds the `.sg-slp-*` classes used only by `slp-2026.html`, `en/slp-2026.html` and `de/slp-2026.html` — split out into its own file (loaded only on those 3 pages) so the other ~40 pages of the site don't pull in CSS they never use for a temporary campaign page. If a class is ever needed by more pages beyond this trio, move it back into `sigmund.css`. CSS variables are defined in `:root`:
 
 ```css
 --sg-primary:    #6BA4FA
@@ -193,6 +197,7 @@ Every demo-booking CTA, across FR/EN/DE, now points to an on-site page embedding
 - `pricing` — button inside the pricing/options card
 - `final-cta` — last CTA banner before the contact form (profession pages, tarifs/pricing, guide pages)
 - `summary` — inline text link inside the installation guide's "En résumé" paragraph (kept as an inline link, not a button)
+- `slp-2026` — the final CTA button on `slp-2026.html`/`en/slp-2026.html`/`de/slp-2026.html` (SLP newsletter campaign landing page); its earlier hero-section CTA on the same pages uses the existing `hero` value
 
 When adding a new demo-booking link anywhere on the site, tag it with both attributes following this taxonomy, across all 3 languages.
 
@@ -220,6 +225,7 @@ When adding a new demo-booking link anywhere on the site, tag it with both attri
 - `robots.txt` disallows legal/policy pages — do not add guide/resource pages to the disallow list
 - `lb/politik-iwwer-perseinlech-donneeen.html` — standalone Luxembourgish privacy policy, accessible only via email link
 - `pt/politica-relativa-aos-dados-pessoais.html` — standalone Portuguese privacy policy, accessible only via email link, no navbar/footer navigation links pointing to it. Uses minimal header (logo only) and sg-footer for copyright.
+- `slp-2026.html` / `en/slp-2026.html` / `de/slp-2026.html` — standalone, trilingual campaign landing page for the SLP (Société Luxembourgeoise de Psychologie) 2026 newsletter offer (3 months free, code `SLP-2026`, expires 2026-10-31). `noindex` on all 3, not in `sitemap.xml`, disallowed in `robots.txt` (same treatment as the trilingual cookie-policy/privacy-policy/legal-notice noindex pages — not the single-language `lb`/`pt` treatment, which skips `robots.txt`), no navbar/footer links on the rest of the site pointing to them — accessible only via the URL shared in the newsletter (or, for EN/DE, via the language switcher on the FR page). Unlike the `lb`/`pt` legal pages they keep the full standard navbar/footer (not a minimal header) since the page is designed to "stand alone" when forwarded between colleagues who never saw the newsletter — and, being fully trilingual, they DO carry the normal FR/EN/DE language switcher (navbar + footer) and `hreflang` alternates between the three, same as any other trilingual page. Its visual system (`.sg-slp-*` classes in `assets/css/slp-2026.css`, loaded only on these 3 pages) intentionally does not use the site's `--sg-primary` blue — it matches the newsletter's own palette (`#1A1A2E` navy, `#F5A623` gold, `#2E6FD9` blue) for immediate recognition by someone arriving from the email. Each language's two testimonials reuse the official translations already published elsewhere on the site (homepage/profession pages) rather than being freshly translated, and were deliberately chosen to not duplicate the ones already on `reserver.html`/`en/book.html`/`de/buchen.html` (Magali Cahen, Catherine Hausherr), since both CTAs on this page send the visitor straight to the localized booking page next. It intentionally has exactly two CTA buttons per language (same label in that language, both `data-cta="book"`): one right under the offer card in the hero for visitors already convinced by the newsletter who just want the booking link, one at the very end for those who read the whole page — plus the sticky navbar CTA present on every page. Don't add more; on a page aimed at a skeptical professional audience, repeating the CTA further reads as pushy rather than persuasive. Consider removing or archiving the pages after the offer expires.
 - Every `.html` page now starts with a Jekyll front matter block (`---\n---`, empty unless the page also has `redirect_from`). Opening a page directly in a browser (no `bundle exec jekyll serve`) will show the raw front matter and the `{% include head.html %}` / `{% include body.html %}` tags as literal text — same known limitation that already existed for the 8 pages using `redirect_from`. Use a Jekyll build (or trust the GitHub Pages build) to see the real rendered output.
 - The cookie policy pages (FR/EN/DE) and privacy policy pages (FR/EN/DE + the standalone LB/PT pages) have all been rewritten to describe actual cookie/analytics/ads usage (GTM, Consent Mode, CookieConsent banner, Google Ireland Limited as sub-processor) — this was previously stale (pages claimed no cookies/no analytics) and the LB/PT pages were initially missed when FR/EN/DE were fixed, so double-check LB/PT specifically whenever this content changes again (see the checklist item below).
 - **CookieConsent quirks found while styling the banner** (see `assets/css/cookieconsent-sigmund.css`): (1) `guiOptions.equalWeightButtons: true` makes the library apply the *same* class (and therefore color) to "Accept all" and "Reject all" — the `--cc-btn-secondary-*` tokens only reach "Personnaliser"/"Enregistrer mes choix", not "Reject all", regardless of `[data-role]`. (2) `--cc-link-color` only applies to elements with the library's own `.cc__link` class — plain `<a>` tags (like the footer privacy-policy link built in `cookieconsent-config.js`) don't get it automatically. (3) the library defaults `hideFromBots: true`, which checks `navigator.webdriver` and silently no-ops the entire banner (no error, promise resolves) in any automated/headless browser (e.g. Playwright) — pass `hideFromBots: false` or neutralize `navigator.webdriver` when testing it.
@@ -235,7 +241,7 @@ When adding a new demo-booking link anywhere on the site, tag it with both attri
 Always verify these files are up to date before staging a commit:
 
 - **`sitemap.xml`** — add any new page (with full `hreflang` alternates). Do not add legal/policy pages (they are `noindex`). Also, for any *existing* indexable page whose content you modified (not just non-indexable pages), bump its `<lastmod>` to today's date — do this even if the change came from a shared file like `sigmund.css` and only touches how certain pages render. Always propose this update to the user before staging the commit, don't wait to be asked.
-- **`robots.txt`** — check that no new indexable page is accidentally disallowed, and that no new legal/policy page needs to be added to the disallow list.
+- **`robots.txt`** — check that no new indexable page is accidentally disallowed, and that no new legal/policy page needs to be added to the disallow list. **Rule of thumb: any new page carrying `<meta name="robots" content="noindex">` needs a matching `Disallow` entry in `robots.txt`, one per language variant it has (FR/EN/DE).** The only exception is a page that is deliberately single-language and outside the trilingual structure (the `lb`/`pt` standalone privacy pages) — those rely on `noindex` alone, with no `robots.txt` entry, precisely because there's no sibling-language version to keep in sync. A page that starts single-language and later gains EN/DE siblings (as happened with `slp-2026.html`) needs its `robots.txt` entries added at that point — don't assume the original single-language noindex setup is still complete once siblings exist.
 - **`llms.txt`** — update if pricing, team, offer, or site structure changed. H2 sections are for file lists only (`[name](url)` format); informational content goes as plain paragraphs (no H2).
 - **`AGENTS.md`** — update the file structure, DE URL mapping, or any section that describes the pages or conventions you just changed.
 - **`README.md`** — update the pages table if a new page was added or removed.
@@ -245,3 +251,4 @@ Some categories of change tend to get missed because they don't touch a page's v
 - **New shared `<head>`/`<body>` line** (script, meta tag, stylesheet, etc. meant to apply site-wide) — add it to `_includes/head.html` / `_includes/body.html`, never by editing individual pages one by one. Update the "Tech stack" and file-structure sections of `AGENTS.md` to describe what was added and why.
 - **New or modified third-party script that sets cookies, tracks users, or loads analytics/ads** (GTM tags, consent tooling, embeds, etc.) — check whether the cookie policy and privacy policy pages (FR/EN/DE, **and** the standalone `lb/politik-iwwer-perseinlech-donneeen.html` + `pt/politica-relativa-aos-dados-pessoais.html` privacy pages) still accurately describe what the site does. LB/PT are easy to miss since they carry no navbar/footer links and aren't part of the trilingual FR/EN/DE structure — they were missed the first time this section was rewritten. If any of them don't match, say so explicitly before proposing the commit rather than shipping a mismatch silently.
 - **New local-only dev tooling** (build scripts, linters, Docker configs, etc.) — add it to `_config.yml`'s `exclude` list so it isn't pulled into the Jekyll build, and document it in both `AGENTS.md` (Tech stack / file structure) and `README.md` (Running locally).
+- **A `noindex` page gaining EN/DE siblings** — when a single-language `noindex` page (like `slp-2026.html` originally was) gets translated and becomes a trilingual set, its de-indexing setup needs re-checking as a whole, not just extended by analogy. This was missed once already: `slp-2026.html`'s `robots.txt` entry was never added in the first place (the single-language version correctly skipped it, following the `lb`/`pt` pattern), and when EN/DE siblings were added, the gap wasn't caught until the user asked why the pages didn't look de-indexed — at which point all 3 needed `Disallow` entries added retroactively, matching the treatment already used for the cookie-policy/privacy-policy/legal-notice noindex pages. Whenever `noindex` and "not linked from nav/footer" are both true for a page, treat `sitemap.xml` exclusion, `robots.txt` disallow, and the absence of nav/footer links as one bundle to verify together — not three separate, easy-to-partially-do checks.

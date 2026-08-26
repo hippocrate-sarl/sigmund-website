@@ -1,0 +1,222 @@
+/* ============================================
+   Page SLP 2026 (slp-2026.html) — campaign landing page
+   Palette matches the SLP newsletter visual (not the site's --sg-primary
+   blue) for immediate visual continuity with the e-mail. All classes are
+   uniquely prefixed .sg-slp-*, so no ancestor scoping is needed — nothing
+   here touches shared classes used on other pages.
+   ============================================ */
+
+/* Uniform space under every section title on this page (matches what
+   "Ce qui entre dans Sigmund..." had before its extra Bootstrap mt-2 was
+   removed in favor of this single rule). */
+body.sg-slp .sg-contact-heading { margin-bottom: 1.25rem; }
+body.sg-slp .sg-contact-heading.sg-slp-heading-gap-lg { margin-bottom: 1.75rem; }
+/* Testimonials are the last thing in their section, which already has its own
+   bottom padding via .sg-section — the shared 3rem margin-bottom (needed on
+   reserver.html, where more content follows) stacks with it and reads as too
+   much empty space here. */
+body.sg-slp .sg-booking-testimonials { margin-bottom: 1rem; }
+
+.sg-slp-hero {
+  background: #1A1A2E;
+  padding: 4rem 0 2.5rem;
+  color: #fff;
+  text-align: center;
+}
+.sg-slp-subtitle {
+  display: block;
+  font-size: .8rem;
+  font-weight: 500;
+  color: #92BCFB;
+  max-width: 34rem;
+  margin: 0 auto 1.25rem;
+  line-height: 1.6;
+}
+.sg-slp-hero h1 {
+  font-weight: 800;
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+.sg-slp-offer { max-width: 480px; margin: 0 auto; }
+.sg-slp-offer-band {
+  background: #F5A623;
+  color: #1A1A2E;
+  font-weight: 700;
+  font-size: .8rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: .75rem 1rem;
+  border-radius: 12px 12px 0 0;
+}
+.sg-slp-offer-card {
+  background: #fff;
+  border: 2px solid #F5A623;
+  border-top: 0;
+  border-radius: 0 0 12px 12px;
+  padding: 2rem 1.75rem 1.75rem;
+  text-align: center;
+}
+.sg-slp-offer-title {
+  font-weight: 800;
+  font-size: 2.1rem;
+  color: #2E6FD9;
+  margin-bottom: .5rem;
+}
+.sg-slp-offer-card p { color: #4A5C6E; font-size: .92rem; line-height: 1.6; margin-bottom: 1rem; }
+.sg-slp-offer-card strong { color: #1A1A2E; }
+.sg-slp-code-chip {
+  display: inline-block;
+  background: #FEF4E2;
+  border: 2px dashed #F5A623;
+  border-radius: 8px;
+  padding: .6rem 1.4rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: .12em;
+  color: #1A1A2E;
+  margin-bottom: 1rem;
+}
+.sg-slp-offer-date { font-weight: 700; color: #1A1A2E; font-size: .92rem; }
+
+.sg-slp-hero-cta { margin: 1.75rem 0; }
+
+.sg-slp-proof {
+  color: #92BCFB;
+  font-weight: 500;
+  text-align: center;
+  font-size: .8rem;
+  padding: 1.1rem 1.25rem 0;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Steps */
+.sg-slp-steps { list-style: none; padding: 0; counter-reset: slp-step; }
+.sg-slp-steps li {
+  counter-increment: slp-step;
+  position: relative;
+  padding: 1rem 1rem 1rem 3.5rem;
+  border: 1px solid var(--sg-border);
+  border-radius: 10px;
+  margin-bottom: .75rem;
+  background: #fff;
+  font-size: .95rem;
+  color: #444;
+  line-height: 1.7;
+}
+.sg-slp-steps li::before {
+  content: counter(slp-step);
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #2E6FD9;
+  color: #fff;
+  font-weight: 700;
+  font-size: .85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sg-slp-steps li strong { color: #1A1A2E; }
+.sg-slp-steps code {
+  font-family: inherit;
+  background: #FEF4E2;
+  border: 1px dashed #F5A623;
+  border-radius: 4px;
+  padding: .05rem .4rem;
+  color: #1A1A2E;
+  font-weight: 700;
+}
+
+/* Price, frontally */
+.sg-slp-calc {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.sg-slp-calc .sg-flow { margin: 0; }
+.sg-slp-calc .sg-flow-step.highlight { background: #2E6FD9; border-color: #2E6FD9; }
+.sg-slp-calc-source { font-size: .85rem; color: #666; font-style: italic; text-align: left; margin: .75rem 0 0; }
+
+/* Left-align any body paragraph running past ~2 lines — centered text with hard
+   line breaks slows re-scanning; titles/numbers/buttons stay centered. */
+.sg-slp-text-left {
+  text-align: left;
+  max-width: 640px;
+  margin: 0 auto 1.5rem;
+}
+.sg-slp-semibold { font-weight: 600; }
+
+/* Column subheading for the merged "what it replaces / what it doesn't do" section */
+.sg-slp-col-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1A1A2E;
+  margin-bottom: 1rem;
+}
+.sg-slp-col-note { color: #555; font-size: .93rem; font-style: italic; line-height: 1.7; margin: .15rem 0 0; }
+/* The shared .sg-feat-list has a 2rem margin-bottom meant for when other
+   content follows further down the page — here it's immediately followed by
+   .sg-slp-col-note, so that much space reads as a gap, not a paragraph break. */
+body.sg-slp .sg-feat-list { margin-bottom: .5rem; }
+
+/* What Sigmund doesn't do — plain text, no box, to match the left column */
+.sg-slp-honest > p { color: #555; font-size: .93rem; line-height: 1.7; margin: 0 0 1rem; }
+.sg-slp-honest > p:last-child { margin-bottom: 0; }
+.sg-slp-honest strong { font-weight: 600; color: #333; }
+
+/* Final CTA — white background gives a clean demarcation against the navy
+   footer right below it, and leaves the gold button as the only saturated
+   element on screen at the moment of decision (heading/body text stay
+   neutral navy/grey — no gold anywhere but the button).
+   .sg-slp-cta-btn is reused as-is for the earlier hero CTA (.sg-slp-hero-cta)
+   so both buttons read as the same gesture. */
+.sg-slp-cta {
+  background: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+.sg-slp-cta h2 {
+  font-weight: 800;
+  color: #1A1A2E;
+  font-size: 1.7rem;
+  margin-bottom: .75rem;
+}
+.sg-slp-cta p {
+  color: #4A5C6E;
+  max-width: 480px;
+  margin: 0 auto 2rem;
+  font-size: .98rem;
+  line-height: 1.7;
+}
+.sg-slp-cta p strong { color: #1A1A2E; }
+.sg-slp-cta-btn {
+  display: inline-block;
+  background: #F5A623;
+  color: #1A1A2E;
+  border: none;
+  border-radius: 50px;
+  padding: .9rem 2.5rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: background .2s, transform .1s;
+}
+.sg-slp-cta-btn:hover {
+  background: #ffb84d;
+  color: #1A1A2E;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 767px) {
+  .sg-slp-hero { padding: 3rem 0 2rem; }
+  .sg-slp-cta { padding: 3rem 0; }
+}

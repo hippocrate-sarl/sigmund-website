@@ -89,7 +89,13 @@ Not linked from the navbar or footer — accessible only via a direct link (e.g.
 | `lb/politik-iwwer-perseinlech-donneeen.html` | Privacy policy (LB) |
 | `pt/politica-relativa-aos-dados-pessoais.html` | Privacy policy (PT) |
 
-Legal pages are excluded from search engine indexing (`robots.txt` + `<meta name="robots" content="noindex">`).
+The SLP 2026 newsletter campaign landing page is trilingual like the main pages above (with the usual language switcher and `hreflang` alternates between the three), but — like the pages in the table above it — it is not linked from any navbar or footer:
+
+| FR | EN | DE | Description |
+|---|---|---|---|
+| `slp-2026.html` | `en/slp-2026.html` | `de/slp-2026.html` | SLP 2026 newsletter campaign landing page (offer expires 2026-10-31) |
+
+Legal pages and the SLP campaign pages are excluded from search engine indexing (`<meta name="robots" content="noindex">`); the SLP pages are additionally kept out of `sitemap.xml` and disallowed in `robots.txt` since the offer they describe is time-limited.
 
 ---
 
@@ -99,6 +105,7 @@ Legal pages are excluded from search engine indexing (`robots.txt` + `<meta name
 assets/
 ├── css/
 │   ├── sigmund.css                  All custom styles shared by every page (profession overrides scoped under body.sg-profession)
+│   ├── slp-2026.css                 Styles used only by the slp-2026.html/en/de pages — kept out of sigmund.css, loaded only there
 │   ├── cookieconsent.css            CookieConsent v3.1.0 library stylesheet (vendored, don't hand-edit)
 │   └── cookieconsent-sigmund.css    Sigmund brand override for the cookie-consent banner
 ├── js/
