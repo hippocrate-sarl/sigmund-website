@@ -16,7 +16,7 @@ Developed by **Hippocrate Sàrl** (Bertrange, Luxembourg). Team: Sylvain Perez, 
 - **`_includes/footer-contact.html`** — the footer's "Contact" column (email, phones, address, social links), included on all 42 pages that have a full 3-column footer via `{%- include footer-contact.html lang="fr|en|de" -%}`. `lang` picks the FR/EN "Contact" vs. DE "Kontakt" heading. Only this column is an include — the rest of the footer (language switcher, "Ressources"/nav links) varies too much per page (different relative depth *and* a different target filename per language per page) to genericize the same way without a lot of extra Liquid parameters, so it's still hand-duplicated per page. The Qwice link uses `bi-globe2` (a generic Bootstrap Icons glyph) followed by the text "Qwice", matching the LinkedIn/Facebook/Instagram pattern exactly — there's no Bootstrap Icons brand glyph for Qwice, and an earlier attempt at self-hosting Qwice's own logo (as a plain `<img>`, then as a CSS mask) was abandoned as visually inconsistent with the rest of the column.
 - **Google Consent Mode v2** — default state (all storage `denied` except `security_storage`) is set inline at the top of `_includes/head.html`, before the GTM snippet loads. `assets/js/cookieconsent-config.js` calls `gtag('consent', 'update', ...)` on `onFirstConsent`/`onConsent`/`onChange` to grant `analytics_storage`/`ad_storage`/`ad_user_data`/`ad_personalization` once the visitor opts in via the banner.
 - **CookieConsent v3.1.0** (self-hosted, [orestbida/cookieconsent](https://github.com/orestbida/cookieconsent)) — the cookie-consent banner. `assets/js/cookieconsent.esm.js` is the vendored library (do not hand-edit; replace wholesale to upgrade), `assets/js/cookieconsent-config.js` holds the `CookieConsent.run({...})` config with full FR/EN/DE translations, `assets/css/cookieconsent.css` is the library's own stylesheet, `assets/css/cookieconsent-sigmund.css` is the Sigmund brand override (all four loaded from `_includes/head.html`/`body.html`, see [What to watch out for](#what-to-watch-out-for) for known quirks).
-- **Local dev tooling** — `Gemfile`/`Gemfile.lock` pin the same `github-pages` gem set GitHub Pages builds with; `serve.cmd` (Windows) / `serve.sh` (Linux/macOS) run `bundle exec jekyll serve` inside a `ruby:3.3` Docker container, so no local Ruby install is needed. These are local-only — `_config.yml`'s `exclude` list keeps them out of the actual Jekyll build.
+- **Local dev tooling** — `Gemfile`/`Gemfile.lock` pin the same `github-pages` gem set GitHub Pages builds with; `serve.sh` runs `bundle exec jekyll serve` inside a `ruby:3.3` Docker container, so no local Ruby install is needed. This is local-only — `_config.yml`'s `exclude` list keeps it out of the actual Jekyll build. (The repo was developed on Windows via a `serve.cmd` counterpart; now that the dev environment is WSL2, `serve.cmd` was removed and `serve.sh` is the only local runner.)
 
 ## File structure
 
@@ -93,7 +93,7 @@ robots.txt
 sitemap.xml
 
 Gemfile / Gemfile.lock                            Local Jekyll dev dependencies (matches GitHub Pages' gem set) — excluded from the Jekyll build itself
-serve.cmd / serve.sh                              Run Jekyll locally via Docker (Windows / Linux-macOS) — excluded from the Jekyll build itself
+serve.sh                                           Run Jekyll locally via Docker (Linux/macOS/WSL2) — excluded from the Jekyll build itself
 ```
 
 ## CSS conventions

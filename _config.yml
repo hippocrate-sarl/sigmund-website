@@ -8,5 +8,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .jekyll-cache/
-  - serve.cmd
   - serve.sh

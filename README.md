@@ -19,8 +19,7 @@ This repository is the **public-facing marketing website** only. The production 
 Every page carries a Jekyll front matter block and pulls in shared `<head>`/`<body>` snippets via `{% include %}` (see `_includes/`), so opening an HTML file directly in a browser shows that Liquid syntax as raw text instead of the real output. To preview the site as GitHub Pages actually builds it, run Jekyll locally via Docker (no local Ruby install needed):
 
 ```
-serve.cmd            # Windows
-./serve.sh           # Linux/macOS
+./serve.sh
 ```
 
 Then open `http://localhost:4000`. `Gemfile`/`Gemfile.lock` pin the same `github-pages` gem set GitHub Pages builds with.
@@ -31,7 +30,7 @@ The Microsoft Bookings iframe embedded on `reserver.html`, `en/book.html` and `d
 
 To test it locally, tunnel the local Jekyll server through [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/do-more-with-tunnels/trycloudflare/) (`cloudflared`), which gives you a real public HTTPS URL forwarding to `localhost:4000` — no certificates or browser trust setup needed:
 
-1. Start Jekyll as usual (`serve.cmd` / `./serve.sh`).
+1. Start Jekyll as usual (`./serve.sh`).
 2. In another terminal, run:
    ```
    cloudflared tunnel --url http://localhost:4000
@@ -156,7 +155,7 @@ Most dependencies are loaded from CDN — nothing to install. CookieConsent is t
 
 Contact forms on profession pages POST to Brevo (sibforms.com) via `fetch` with `mode: 'no-cors'`.
 
-Local Jekyll builds run via Docker (see "Running locally") — `Gemfile`/`Gemfile.lock` and `serve.cmd`/`serve.sh` are dev-only and excluded from the actual Jekyll build (`_config.yml`).
+Local Jekyll builds run via Docker (see "Running locally") — `Gemfile`/`Gemfile.lock` and `serve.sh` are dev-only and excluded from the actual Jekyll build (`_config.yml`).
 
 ---
 
