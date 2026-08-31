@@ -109,7 +109,7 @@ assets/
 │   └── cookieconsent-sigmund.css    Sigmund brand override for the cookie-consent banner
 ├── js/
 │   ├── main.js                Active nav-link highlight
-│   ├── profession.js          Contact form handler (Brevo fetch, validation, i18n via data-attributes)
+│   ├── lead-form.js           Shared lead-capture form handler (Brevo, validation, i18n via data-attributes) — used by the profession-page contact forms and the reserver.html fallback form
 │   ├── legal-toc.js           Auto-generated table of contents on legal/guide pages
 │   ├── cookieconsent.esm.js       CookieConsent v3.1.0 library (vendored, don't hand-edit)
 │   └── cookieconsent-config.js    CookieConsent config: categories, FR/EN/DE translations, Consent Mode v2 bridge

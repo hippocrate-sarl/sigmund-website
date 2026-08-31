@@ -44,7 +44,7 @@
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: 'generate_lead',
-      form_id: form.dataset.formId || 'contact'
+      form_id: form.dataset.formId
     });
 
     form.style.display = 'none';
