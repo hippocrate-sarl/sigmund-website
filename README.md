@@ -92,7 +92,7 @@ The SLP 2026 newsletter campaign landing page is trilingual like the main pages 
 
 | FR | EN | DE | Description |
 |---|---|---|---|
-| `slp-2026.html` | `en/slp-2026.html` | `de/slp-2026.html` | SLP 2026 newsletter campaign landing page (offer expires 2026-10-31) |
+| `slp-2026.html` | `en/slp-2026.html` | `de/slp-2026.html` | SLP 2026 newsletter campaign page — offer ended 2026-10-31, now a thank-you page (what's still available + priority list for future offers) |
 
 Legal pages and the SLP campaign pages are excluded from search engine indexing (`<meta name="robots" content="noindex">`); the SLP pages are additionally kept out of `sitemap.xml` and disallowed in `robots.txt` since the offer they describe is time-limited.
 
@@ -109,7 +109,7 @@ assets/
 │   └── cookieconsent-sigmund.css    Sigmund brand override for the cookie-consent banner
 ├── js/
 │   ├── main.js                Active nav-link highlight
-│   ├── lead-form.js           Shared lead-capture form handler (Brevo, validation, i18n via data-attributes) — used by the profession-page contact forms and the reserver.html fallback form
+│   ├── lead-form.js           Shared lead-capture form handler (Brevo, validation, i18n via data-attributes) — used by the profession-page contact forms, the reserver.html fallback form and the slp-2026.html priority-list form
 │   ├── legal-toc.js           Auto-generated table of contents on legal/guide pages
 │   ├── cookieconsent.esm.js       CookieConsent v3.1.0 library (vendored, don't hand-edit)
 │   └── cookieconsent-config.js    CookieConsent config: categories, FR/EN/DE translations, Consent Mode v2 bridge
